@@ -3,9 +3,9 @@
 import React from 'react';
 import { ArrowRight, EyeOff, TrendingUp, Globe, DollarSign, Lock, Gavel, Users, Zap, Link2 } from 'lucide-react';
 
-const PINK = '#DB2777';
-const PINK_DARK = '#9D174D';
-const PINK_LIGHT = '#FCE7F3';
+const PINK = '#C4170C';
+const PINK_DARK = '#9A1208';
+const PINK_LIGHT = '#FEF2F2';
 const INK = '#1a1a1a';
 const INK_SOFT = '#4a4a4a';
 const INK_MUTE = '#6B7280';
@@ -16,8 +16,8 @@ const RED = '#C4170C';
 const LINK_FOOTPRIV = 'https://footpriv.com';
 const FOTO_AUTOR = 'https://media.licdn.com/dms/image/v2/D4D03AQEcZc_WGkcu7g/profile-displayphoto-scale_400_400/B4DZkRAeUnGkAg-/0/1756926962727?e=2147483647&v=beta&t=wuS4qcfeklxK1C8kXVF8qubvgpHUzu9rLo-BFViGai0';
 
-const PLACEHOLDER_1 = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FCE7F3"/><stop offset="100%" stop-color="#FBCFE8"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><text x="400" y="225" font-family="Arial" font-size="20" fill="#9D174D" text-anchor="middle" opacity="0.5">Imagem ilustrativa</text></svg>');
-const PLACEHOLDER_2 = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBCFE8"/><stop offset="100%" stop-color="#F9A8D4"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><text x="400" y="225" font-family="Arial" font-size="20" fill="#9D174D" text-anchor="middle" opacity="0.5">Imagem ilustrativa</text></svg>');
+const PLACEHOLDER_1 = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FEE2E2"/><stop offset="100%" stop-color="#FCA5A5"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><text x="400" y="225" font-family="Arial" font-size="20" fill="#9A1208" text-anchor="middle" opacity="0.5">Imagem ilustrativa</text></svg>');
+const PLACEHOLDER_2 = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FCA5A5"/><stop offset="100%" stop-color="#EF4444"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><text x="400" y="225" font-family="Arial" font-size="20" fill="#9A1208" text-anchor="middle" opacity="0.5">Imagem ilustrativa</text></svg>');
 
 const MENU = ['Home','Matérias','Economia','Mulheres','Oportunidades'];
 
@@ -201,7 +201,7 @@ export default function Page() {
           <p>O resultado dos três fatores combinados? Uma das chegadas mais rápidas de uma plataforma internacional ao mercado brasileiro nos últimos anos.</p>
         </B>
 
-        <div style={{ background:'#FEF7FB', border:'2px solid '+PINK+'40', borderRadius:14, padding:20, marginTop:32, marginBottom:32 }}>
+        <div style={{ background:'#FEF2F2', border:'2px solid '+PINK+'40', borderRadius:14, padding:20, marginTop:32, marginBottom:32 }}>
           <div style={{ fontSize:11, fontWeight:900, color:PINK_DARK, letterSpacing:'0.08em', marginBottom:8, textTransform:'uppercase' }}>Importante</div>
           <div style={{ fontSize:14, color:INK_SOFT, lineHeight:1.6 }}>
             A FootPriv é uma plataforma para maiores de 18 anos, com verificação de identidade obrigatória no cadastro. Todas as transações são reguladas e legalmente válidas. O conteúdo postado é exclusivamente foto de pé — qualquer outra natureza de conteúdo é removida automaticamente pelo sistema.
@@ -283,7 +283,7 @@ function B({ children }) {
 
 function Passo({ n, titulo, desc }) {
   return (
-    <div style={{ background:'#FEF7FB', border:'1.5px solid '+PINK+'30', borderRadius:14, padding:16 }}>
+    <div style={{ background:'#FEF2F2', border:'1.5px solid '+PINK+'30', borderRadius:14, padding:16 }}>
       <div style={{ width:32, height:32, borderRadius:10, background:PINK, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', fontSize:14, fontWeight:900, marginBottom:10 }}>{n}</div>
       <div style={{ fontSize:14, fontWeight:800, color:INK, marginBottom:4, letterSpacing:'-0.01em' }}>{titulo}</div>
       <div style={{ fontSize:12, color:INK_SOFT, lineHeight:1.5 }}>{desc}</div>
@@ -293,7 +293,7 @@ function Passo({ n, titulo, desc }) {
 
 function Stat({ icone: Icon, numero, label }) {
   return (
-    <div style={{ background:'#FEF7FB', border:'1.5px solid '+PINK+'30', borderRadius:14, padding:16 }}>
+    <div style={{ background:'#FEF2F2', border:'1.5px solid '+PINK+'30', borderRadius:14, padding:16 }}>
       <div style={{ width:34, height:34, borderRadius:10, background:PINK, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:10 }}>
         <Icon size={16} />
       </div>
