@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight, Check, X, Shield, AlertTriangle, Link2 } from 'lucide-react';
+import { ArrowRight, EyeOff, TrendingUp, Globe, DollarSign, Lock, Link2 } from 'lucide-react';
 
 const PINK = '#DB2777';
 const PINK_DARK = '#9D174D';
@@ -12,12 +12,12 @@ const INK_MUTE = '#6B7280';
 const LINE = '#E5E7EB';
 const YELLOW = '#FFC700';
 const RED = '#C4170C';
-const GREEN = '#16a34a';
 
 const LINK_FOOTPRIV = 'https://footpriv.com';
 const FOTO_AUTOR = 'https://media.licdn.com/dms/image/v2/D4D03AQEcZc_WGkcu7g/profile-displayphoto-scale_400_400/B4DZkRAeUnGkAg-/0/1756926962727?e=2147483647&v=beta&t=wuS4qcfeklxK1C8kXVF8qubvgpHUzu9rLo-BFViGai0';
 
-const PLACEHOLDER_HERO = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FCE7F3"/><stop offset="100%" stop-color="#FBCFE8"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><text x="400" y="225" font-family="Arial" font-size="20" fill="#9D174D" text-anchor="middle" opacity="0.5">Imagem ilustrativa</text></svg>');
+const PLACEHOLDER_1 = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FCE7F3"/><stop offset="100%" stop-color="#FBCFE8"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><text x="400" y="225" font-family="Arial" font-size="20" fill="#9D174D" text-anchor="middle" opacity="0.5">Imagem ilustrativa</text></svg>');
+const PLACEHOLDER_2 = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBCFE8"/><stop offset="100%" stop-color="#F9A8D4"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><text x="400" y="225" font-family="Arial" font-size="20" fill="#9D174D" text-anchor="middle" opacity="0.5">Imagem ilustrativa</text></svg>');
 
 const MENU = ['Home','Matérias','Economia','Mulheres','Oportunidades'];
 
@@ -55,11 +55,11 @@ export default function Page() {
         </div>
 
         <h1 style={{ fontSize:38, fontWeight:900, color:INK, lineHeight:1.12, letterSpacing:'-0.035em', margin:'0 0 18px' }}>
-          Vender <span style={{ color:PINK }}>foto do pé</span> realmente paga? Veja em quais plataformas funciona, quais exigem público e qual é 100% anônima
+          A plataforma que chegou ao Brasil pagando mulheres por <span style={{ color:PINK }}>fotos do pé</span> — sem mostrar o rosto e sem precisar de público
         </h1>
 
         <p style={{ fontSize:18, color:INK_SOFT, lineHeight:1.55, margin:'0 0 24px', fontWeight:500 }}>
-          A pergunta tem aparecido cada vez mais em pesquisas no Google. Plataformas como OnlyFans, Privacy e FootPriv movimentam o mercado, mas com regras muito diferentes. Esta matéria explica o que é real, o que é mito, o que exige seguidores e o que pode ser feito de forma totalmente anônima.
+          Chamada de <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>, a plataforma viralizou nos últimos meses ao oferecer um modelo inédito: anonimato total, sem necessidade de seguidores em redes sociais e pagamento direto em real. O fenômeno cresceu rápido em cidades do interior paulista.
         </p>
 
         <div style={{ borderTop:'1px solid '+LINE, borderBottom:'1px solid '+LINE, padding:'14px 0', marginBottom:24, display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:14 }}>
@@ -68,7 +68,7 @@ export default function Page() {
             <div>
               <div style={{ fontSize:13, fontWeight:800, color:INK, lineHeight:1.2 }}>Por Mathias Perini</div>
               <div style={{ fontSize:11, color:INK_MUTE, lineHeight:1.3, marginTop:2 }}>Jornalista · Editor de Economia</div>
-              <div style={{ fontSize:11, color:INK_MUTE, marginTop:2 }}>{data} · 7 min de leitura</div>
+              <div style={{ fontSize:11, color:INK_MUTE, marginTop:2 }}>{data} · 6 min de leitura</div>
             </div>
           </div>
           <div style={{ display:'flex', alignItems:'center', gap:8 }}>
@@ -80,16 +80,17 @@ export default function Page() {
         </div>
 
         <div style={{ borderRadius:14, overflow:'hidden', marginBottom:10, background:'#f3f4f6', border:'1px solid '+LINE }}>
-          <img src={PLACEHOLDER_HERO} alt="Renda online no Brasil" style={{ width:'100%', display:'block' }} />
+          <img src={PLACEHOLDER_1} alt="Plataforma FootPriv" style={{ width:'100%', display:'block' }} />
         </div>
         <div style={{ fontSize:11, color:INK_MUTE, marginBottom:28, fontStyle:'italic' }}>
-          A internet abriu novas formas de renda extra para mulheres no Brasil. Mas nem todas as plataformas funcionam do mesmo jeito.
+          O modelo brasileiro de renda anônima por fotos cresceu rápido no último semestre.
         </div>
 
         <B>
-          <p>A pesquisa "como vender foto do pé" cresceu mais de 400% no Google nos últimos 12 meses no Brasil. Por trás dessa curiosidade explosiva, existe uma dúvida real: <strong>isso realmente paga? Em quais sites funciona? Precisa aparecer? É legal?</strong></p>
-          <p>A resposta curta é: sim, é um mercado real. Mas as plataformas onde isso acontece operam com regras muito diferentes entre si — e a maioria das pessoas que pesquisa o assunto não tem ideia dessa diferença.</p>
-          <p>Esta matéria coloca os fatos em ordem. <strong>Vamos analisar as três principais plataformas usadas para esse fim hoje no mercado:</strong></p>
+          <p>Existe um termo que vem aparecendo cada vez mais em rodas de conversa femininas no Brasil: "FootPriv". A plataforma chegou ao mercado nacional há pouco tempo e, em menos de um ano, virou um dos fenômenos mais comentados do setor de renda digital para mulheres.</p>
+          <p>O conceito é, à primeira vista, estranho. Vende-se foto de pé. Calcanhar, tornozelo, dedinho, pé descalço, com meia, com esmalte. Só isso.</p>
+          <p>Mas a forma como o modelo funciona é o que explica o boom. <strong>Diferente de plataformas tradicionais de monetização digital, a FootPriv não exige que a creator apareça, mostre o rosto, crie perfil em rede social ou tenha qualquer tipo de público.</strong></p>
+          <p>É o tipo de inversão que muda tudo.</p>
         </B>
 
         <div style={{ background:'#FAFAFA', border:'1px solid '+LINE, borderRadius:6, padding:'10px 14px', margin:'24px 0', textAlign:'center' }}>
@@ -117,153 +118,73 @@ export default function Page() {
           <div style={{ fontSize:9, color:'#9CA3AF', marginTop:8 }}>Anúncios por <strong>Google AdSense</strong></div>
         </div>
 
-        {/* ============================================ */}
-        {/* PLATAFORMA 1 — ONLYFANS */}
-        {/* ============================================ */}
-
-        <h2 style={{ fontSize:28, fontWeight:900, color:INK, marginTop:36, marginBottom:6, letterSpacing:'-0.025em', lineHeight:1.2 }}>
-          1. OnlyFans e Privacy
+        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
+          Por que está virando boom
         </h2>
-        <p style={{ fontSize:13, color:INK_MUTE, fontWeight:600, marginTop:0, marginBottom:14, textTransform:'uppercase', letterSpacing:'0.06em' }}>
-          Funcionam, mas exigem público próprio e divulgação constante
-        </p>
 
         <B>
-          <p>O <strong>OnlyFans</strong> e a <strong>Privacy</strong> são as duas plataformas mais lembradas quando o assunto é monetização de conteúdo adulto online. A primeira tem alcance global e paga em dólar; a segunda é brasileira e paga via PIX. As duas permitem que mulheres vendam fotos e vídeos, incluindo "feet pics" (fotos de pé).</p>
-          <p>O modelo de negócio é semelhante entre as duas: você cria um perfil, define um valor de assinatura mensal, e os clientes pagam para acessar o conteúdo que você posta dentro da plataforma.</p>
-          <p>Mas há uma armadilha que poucos avisos: <strong>nenhuma das duas entrega público pra você.</strong> Elas apenas hospedam os arquivos e processam o pagamento. Toda a parte de atrair clientes é por sua conta.</p>
-          <p>Para faturar de verdade, é preciso <strong>construir uma audiência própria</strong> — geralmente via Instagram, Twitter, TikTok ou Reddit. Isso significa criar perfis públicos com a sua imagem, postar conteúdo regularmente, interagir com seguidores, divulgar links e construir essa audiência ao longo de meses (às vezes anos).</p>
-          <p>Outro ponto: por serem plataformas de <strong>assinatura mensal</strong>, o conteúdo precisa ser constante. Quem assina espera novidades semanalmente. Sem isso, os clientes cancelam e a receita desaparece.</p>
-          <p>Resumindo: <strong>OnlyFans e Privacy funcionam, mas funcionam pra quem já tem público.</strong> Para quem está começando do zero e quer manter o anonimato, é uma escalada longa e desgastante.</p>
+          <p>O modelo tradicional de monetização de conteúdo na internet sempre teve a mesma equação: <strong>quanto maior o seu público, mais você ganha.</strong> Para isso, era preciso aparecer, postar regularmente, interagir com seguidores, construir uma marca pessoal pública. Tudo o oposto do que a maioria das mulheres comuns está disposta a fazer.</p>
+          <p>A FootPriv quebrou essa lógica. <strong>Em vez de exigir público da creator, a plataforma já entrega o público pronto.</strong> Mais de 40 mil compradores cadastrados, espalhados por mais de 60 países, com fetiche específico por pés femininos. Quando uma foto é postada, eles fazem ofertas em sistema de leilão.</p>
+          <p>A creator só precisa decidir qual oferta aceitar. Sem postar em Instagram. Sem mostrar o rosto. Sem dar satisfação para ninguém. <strong>Anonimato é regra de negócio da plataforma, não uma escolha opcional.</strong></p>
+          <p>O resultado é que, em poucos meses, o boca a boca entre mulheres explodiu. Cidades do interior paulista — como Ribeirão Preto, Campinas e São José do Rio Preto — figuram hoje entre as regiões com maior crescimento de cadastros da plataforma.</p>
         </B>
 
-        <CardPlataforma
-          icone="O / P"
-          cor="#FF1F8E"
-          nome="OnlyFans + Privacy"
-          dor="Exigem público próprio, divulgação e conteúdo recorrente"
-          itens={[
-            { ok:true, texto:'Funcionam para feet pics e outros conteúdos' },
-            { ok:true, texto:'OnlyFans paga em dólar; Privacy paga em real (PIX)' },
-            { ok:false, texto:'Não entregam público — você precisa construir audiência' },
-            { ok:false, texto:'Exigem perfis em redes sociais para divulgação contínua' },
-            { ok:false, texto:'Modelo de assinatura mensal — exige conteúdo constante' },
-            { ok:false, texto:'Vínculo público — sua imagem fica associada à plataforma' },
-            { ok:false, texto:'Concorrência altíssima de creators consolidadas' },
-          ]}
-        />
-
-        <h2 style={{ fontSize:28, fontWeight:900, color:INK, marginTop:36, marginBottom:6, letterSpacing:'-0.025em', lineHeight:1.2 }}>
-          2. FeetFinder
-        </h2>
-        <p style={{ fontSize:13, color:INK_MUTE, fontWeight:600, marginTop:0, marginBottom:14, textTransform:'uppercase', letterSpacing:'0.06em' }}>
-          Especializada em fotos de pé, mas com limitações importantes
-        </p>
-
-        <B>
-          <p>O <strong>FeetFinder</strong> é uma plataforma americana especializada exclusivamente em conteúdo de pé. Tem uma base internacional consolidada e movimenta um volume considerável de transações no setor.</p>
-          <p>O ponto positivo é que, diferente de OnlyFans e Privacy, ele <strong>já tem público próprio interessado especificamente em feet pics.</strong> Você não precisa atrair compradores — eles já estão lá dentro.</p>
-          <p>Mas há três limitações relevantes para o público brasileiro. A primeira é o <strong>pagamento</strong>: todo o sistema opera em dólar, e o saque é via gateway internacional. Conversão, taxa de câmbio e tempo de espera são parte do dia a dia.</p>
-          <p>A segunda é a <strong>interface e suporte em inglês</strong>. A plataforma não tem versão em português, e qualquer questão de cadastro, suporte ou disputa precisa ser resolvida em outro idioma.</p>
-          <p>A terceira é o <strong>nível de anonimato</strong>. Embora não exija mostrar o rosto, a verificação de identidade é mais aberta e o perfil fica visível para qualquer comprador navegando na plataforma.</p>
-        </B>
-
-        <CardPlataforma
-          icone="FF"
-          cor="#1E40AF"
-          nome="FeetFinder"
-          dor="Especializada, porém em inglês e com pagamento internacional"
-          itens={[
-            { ok:true, texto:'Especializada em feet pics — público próprio existe' },
-            { ok:true, texto:'Não exige seguidores ou divulgação em redes sociais' },
-            { ok:false, texto:'Pagamento em dólar, com taxas de conversão e câmbio' },
-            { ok:false, texto:'Interface e suporte 100% em inglês' },
-            { ok:false, texto:'Anonimato parcial — perfil fica visível na busca' },
-            { ok:false, texto:'Saque internacional pode demorar dias' },
-          ]}
-        />
-
-        <h2 style={{ fontSize:28, fontWeight:900, color:INK, marginTop:36, marginBottom:6, letterSpacing:'-0.025em', lineHeight:1.2 }}>
-          3. FootPriv
-        </h2>
-        <p style={{ fontSize:13, color:PINK_DARK, fontWeight:700, marginTop:0, marginBottom:14, textTransform:'uppercase', letterSpacing:'0.06em' }}>
-          A melhor opção para o público brasileiro — 100% anônima e em português
-        </p>
-
-        <B>
-          <p>A <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a> é uma plataforma <strong>brasileira</strong> especializada exclusivamente em fotos de pé. Surgiu para resolver as três falhas das opções anteriores: a falta de público próprio do OnlyFans/Privacy, e o pagamento internacional e idioma estrangeiro do FeetFinder.</p>
-          <p>Em vez de exigir que você atraia público, a FootPriv já tem uma base de <strong>mais de 40 mil compradores ativos</strong> espalhados por mais de 60 países. O sistema funciona por leilão: você posta uma foto, os compradores fazem ofertas em moedas locais, e você escolhe qual aceitar.</p>
-          <p>O ponto que faz a real diferença para o público brasileiro: <strong>100% anônimo, 100% em português, pagamento direto em real.</strong> Não é necessário aparecer, ter perfil em rede social, divulgar nada ou lidar com câmbio.</p>
-          <p>A plataforma cobre todo o anonimato. Sem rosto, sem nome real, sem corpo, sem identidade pública. Apenas o pé. E o saque cai na conta brasileira já convertido, no mesmo dia da venda.</p>
-          <p>Por ser <strong>venda avulsa</strong> (não assinatura), você não precisa manter conteúdo constante. Posta quando quiser. Vende quando quiser. Sem cobrança, sem pressão.</p>
-        </B>
-
-        <CardPlataforma
-          icone="F"
-          cor={PINK}
-          nome="FootPriv"
-          dor="100% anônima, em português, pagamento em real"
-          destaque
-          itens={[
-            { ok:true, texto:'Mais de 40 mil compradores já cadastrados (não precisa trazer)' },
-            { ok:true, texto:'100% anônimo — sem rosto, sem nome, sem rede social' },
-            { ok:true, texto:'Plataforma brasileira, em português' },
-            { ok:true, texto:'Pagamento em real, direto na conta no mesmo dia' },
-            { ok:true, texto:'Sistema de leilão: você escolhe o melhor lance' },
-            { ok:true, texto:'Venda avulsa — sem postagem obrigatória' },
-            { ok:true, texto:'Especializada em fotos de pé (categoria de alta demanda)' },
-          ]}
-        />
-
-        {/* ============================================ */}
-        {/* COMPARATIVO RÁPIDO */}
-        {/* ============================================ */}
-
-        <h2 style={{ fontSize:24, fontWeight:800, color:INK, marginTop:40, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
-          Comparativo rápido
-        </h2>
-
-        <div style={{ overflowX:'auto', marginBottom:32 }}>
-          <table style={{ width:'100%', borderCollapse:'collapse', fontSize:13, minWidth:560 }}>
-            <thead>
-              <tr style={{ borderBottom:'2px solid '+INK }}>
-                <th style={{ textAlign:'left', padding:'10px 8px', fontSize:11, fontWeight:800, color:INK_MUTE, textTransform:'uppercase', letterSpacing:'0.05em' }}>Critério</th>
-                <th style={{ padding:'10px 8px', fontSize:12, fontWeight:800 }}>OnlyFans / Privacy</th>
-                <th style={{ padding:'10px 8px', fontSize:12, fontWeight:800 }}>FeetFinder</th>
-                <th style={{ padding:'10px 8px', fontSize:13, fontWeight:800, color:PINK_DARK }}>FootPriv</th>
-              </tr>
-            </thead>
-            <tbody>
-              <LinhaTab label="Precisa de público próprio?" v1="Sim" v2="Não" v3="Não" ok3 />
-              <LinhaTab label="Precisa divulgar em redes?" v1="Sim" v2="Não" v3="Não" ok3 />
-              <LinhaTab label="100% anônimo?" v1="Não" v2="Parcial" v3="Sim" ok3 />
-              <LinhaTab label="Em português" v1="Privacy sim" v2="Não" v3="Sim" ok3 />
-              <LinhaTab label="Pagamento em real" v1="Privacy sim" v2="Não (dólar)" v3="Sim" ok3 />
-              <LinhaTab label="Funciona pra feet pics?" v1="Sim" v2="Sim (foco)" v3="Sim (foco)" />
-              <LinhaTab label="Modelo" v1="Assinatura" v2="Venda" v3="Venda por leilão" ok3 />
-            </tbody>
-          </table>
+        <div style={{ background:'#0A1628', color:'#fff', borderRadius:16, padding:24, marginBottom:28 }}>
+          <div style={{ display:'flex', gap:12, alignItems:'center', marginBottom:14 }}>
+            <div style={{ width:42, height:42, borderRadius:12, background:PINK, display:'flex', alignItems:'center', justifyContent:'center' }}>
+              <EyeOff size={22} />
+            </div>
+            <div style={{ fontSize:18, fontWeight:800 }}>O ponto que faz toda a diferença</div>
+          </div>
+          <div style={{ fontSize:14, opacity:0.88, lineHeight:1.65 }}>
+            Marido, namorado, mãe, vizinha, colega de trabalho — <strong style={{ color:YELLOW }}>nenhuma dessas pessoas vai saber.</strong> A creator não aparece, não precisa fazer rede social, não precisa criar perfil público. Operação 100% privada, do cadastro ao saque.
+          </div>
         </div>
 
-        {/* ============================================ */}
-        {/* CONCLUSÃO */}
-        {/* ============================================ */}
+        <div style={{ borderRadius:12, overflow:'hidden', margin:'32px 0 8px', background:'#f3f4f6', border:'1px solid '+LINE }}>
+          <img src={PLACEHOLDER_2} alt="Renda extra anônima" style={{ width:'100%', display:'block' }} />
+        </div>
+        <div style={{ fontSize:11, color:INK_MUTE, marginBottom:28, fontStyle:'italic' }}>
+          O cadastro leva minutos e o primeiro saque costuma cair em dias.
+        </div>
 
-        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:40, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
-          Resumindo: o que funciona pra quem
+        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
+          Como funciona o modelo de assinatura
         </h2>
 
         <B>
-          <p>Se você <strong>já tem público em redes sociais</strong> — algumas dezenas de milhares de seguidores — e está disposta a manter presença constante online, OnlyFans e Privacy podem funcionar. São plataformas robustas, com cases reais de creators que faturam bem.</p>
-          <p>Se você é fluente em inglês, não se incomoda em receber em dólar e lidar com câmbio, e tolera um perfil semi-anônimo visível, o FeetFinder é uma opção razoável. Funciona, mas com atrito.</p>
-          <p>Agora, se você é uma mulher brasileira comum, sem audiência prévia, sem inglês fluente, que quer receber em real direto no PIX e <strong>não quer aparecer de jeito nenhum</strong> — a <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a> é a única opção viável hoje.</p>
-          <p>É a única que junta os três pontos críticos: <strong>público pronto, anonimato total, pagamento em real</strong>. Para o perfil que representa 95% das brasileiras pesquisando o assunto, é o caminho mais direto.</p>
-          <p>Não é mágica. É um modelo de negócio que opera há tempo suficiente para ter base consolidada — só que feito por brasileiros, para brasileiras.</p>
+          <p>Para acessar todas as funcionalidades da plataforma — incluindo o sistema de leilão, o painel de ofertas e a base completa de compradores — a creator precisa pagar um <strong>plano de assinatura mensal</strong>. É o ponto que separa quem testa do que opera de verdade.</p>
+          <p>O valor da assinatura, segundo a própria plataforma, foi pensado para ser acessível. <strong>Na prática, a maioria das creators relata que o plano se paga já na primeira ou segunda venda — muitas vezes na mesma semana do cadastro.</strong></p>
+          <p>É o tipo de modelo que filtra naturalmente quem está realmente disposto a operar. Sem cobrança alta de entrada, sem fidelização extensa, sem letras miúdas. Apenas uma mensalidade modesta que se autopaga rápido para quem entra com seriedade.</p>
+          <p>Depois disso, tudo o que entra de venda é renda líquida da creator, descontada apenas a taxa padrão de transação da plataforma.</p>
+        </B>
+
+        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
+          Os números do fenômeno
+        </h2>
+
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:28 }}>
+          <Stat icone={TrendingUp} numero="+40 mil" label="compradores ativos cadastrados na plataforma" />
+          <Stat icone={Globe} numero="60 países" label="de origem dos compradores internacionais" />
+          <Stat icone={DollarSign} numero="R$ 280+" label="valor médio por foto vendida (variável por leilão)" />
+          <Stat icone={Lock} numero="100%" label="anônimo — sem rosto, sem nome, sem rede social" />
+        </div>
+
+        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
+          A explicação para o sucesso
+        </h2>
+
+        <B>
+          <p>O sucesso da FootPriv no Brasil pode ser explicado por três fatores combinados.</p>
+          <p>O primeiro é <strong>cultural</strong>. O brasileiro — e a brasileira — tem uma relação particular com privacidade quando o assunto é renda informal. Há resistência forte a expor a vida pessoal em redes sociais para ganhar dinheiro. A FootPriv resolve isso ao oferecer 100% de anonimato.</p>
+          <p>O segundo é <strong>econômico</strong>. O salário médio das mulheres brasileiras ainda é insuficiente para cobrir um custo de vida em alta. Qualquer fonte de renda extra que não exija sair de casa, vínculo trabalhista ou qualificação técnica encontra demanda imediata.</p>
+          <p>O terceiro é <strong>tecnológico</strong>. A plataforma é brasileira, em português, com pagamento direto em real e suporte local. Diferente de concorrentes internacionais, não há barreira de idioma, câmbio ou conversão. Caiu no leilão, caiu na conta.</p>
+          <p>Combinados, esses três fatores explicam por que cidades do interior paulista figuram entre as regiões de maior crescimento — locais onde a renda extra é mais necessária e a discrição é cultura.</p>
         </B>
 
         <div style={{ background:'#F9FAFB', borderLeft:'4px solid '+PINK, borderRadius:8, padding:16, marginTop:32, marginBottom:32 }}>
           <div style={{ fontSize:13, color:INK_SOFT, lineHeight:1.6, marginBottom:12 }}>
-            Para conhecer melhor a plataforma e iniciar o cadastro, acesse diretamente o site oficial da FootPriv.
+            Para conhecer melhor a plataforma e verificar como funciona o cadastro, acesse diretamente o site oficial da FootPriv.
           </div>
           <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:700, color:PINK, textDecoration:'none', borderBottom:'1px solid '+PINK, paddingBottom:2 }}>
             Acessar site da FootPriv <ArrowRight size={13} strokeWidth={2.5} />
@@ -309,7 +230,7 @@ export default function Page() {
         </div>
 
         <div style={{ background:'#FEF3C7', border:'1px solid #FDE68A', borderRadius:10, padding:12, fontSize:11, color:'#78350F', lineHeight:1.55, marginBottom:28 }}>
-          <strong>Aviso legal:</strong> Esta matéria foi produzida de forma editorial independente, sem parceria comercial com OnlyFans, Privacy, FeetFinder ou FootPriv. Plataformas exclusivas para maiores de 18 anos. Resultados variam por região, dedicação e perfil. Não há garantia de rendimento.
+          <strong>Aviso legal:</strong> Esta matéria foi produzida de forma editorial independente, sem parceria comercial com a FootPriv. Plataforma exclusiva para maiores de 18 anos. Resultados variam por dedicação, sazonalidade e demanda. Não há garantia de rendimento. Verifique sempre os termos no site oficial antes de qualquer assinatura.
         </div>
 
         <div style={{ borderTop:'1px solid '+LINE, paddingTop:18, paddingBottom:18, display:'flex', alignItems:'center', gap:10, flexWrap:'wrap' }}>
@@ -334,47 +255,15 @@ function B({ children }) {
   return <div style={{ fontSize:17, color:'#1a1a1a', lineHeight:1.7 }}>{React.Children.map(children, c => <div style={{ marginBottom:14 }}>{c}</div>)}</div>;
 }
 
-function CardPlataforma({ icone, cor, nome, dor, itens, destaque }) {
+function Stat({ icone: Icon, numero, label }) {
   return (
-    <div style={{
-      background: destaque ? '#FEF7FB' : '#fff',
-      border: '2px solid ' + (destaque ? cor : '#E5E7EB'),
-      borderRadius: 14,
-      padding: 18,
-      marginBottom: 28,
-      boxShadow: destaque ? '0 8px 24px rgba(219,39,119,0.1)' : 'none',
-    }}>
-      <div style={{ display:'flex', gap:12, alignItems:'center', marginBottom:14 }}>
-        <div style={{ width:44, height:44, borderRadius:12, background:cor, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', fontSize:20, fontWeight:900, flexShrink:0 }}>
-          {icone}
-        </div>
-        <div>
-          <div style={{ fontSize:16, fontWeight:800, color:'#1a1a1a', lineHeight:1.2 }}>{nome}</div>
-          <div style={{ fontSize:12, color:'#6B7280', marginTop:2, fontStyle:'italic' }}>{dor}</div>
-        </div>
+    <div style={{ background:'#FEF7FB', border:'1.5px solid '+PINK+'30', borderRadius:14, padding:16 }}>
+      <div style={{ width:34, height:34, borderRadius:10, background:PINK, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:10 }}>
+        <Icon size={16} />
       </div>
-      <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
-        {itens.map((it, i) => (
-          <div key={i} style={{ display:'flex', gap:10, alignItems:'flex-start' }}>
-            <div style={{ width:20, height:20, borderRadius:'50%', background: it.ok ? '#dcfce7' : '#fee2e2', color: it.ok ? '#16a34a' : '#dc2626', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0, marginTop:1 }}>
-              {it.ok ? <Check size={11} strokeWidth={3} /> : <X size={11} strokeWidth={3} />}
-            </div>
-            <div style={{ fontSize:13, color:'#1a1a1a', lineHeight:1.55 }}>{it.texto}</div>
-          </div>
-        ))}
-      </div>
+      <div style={{ fontSize:22, fontWeight:900, color:PINK_DARK, letterSpacing:'-0.02em', lineHeight:1.1 }}>{numero}</div>
+      <div style={{ fontSize:11, color:INK_MUTE, marginTop:6, lineHeight:1.5 }}>{label}</div>
     </div>
-  );
-}
-
-function LinhaTab({ label, v1, v2, v3, ok3 }) {
-  return (
-    <tr style={{ borderBottom:'1px solid #E5E7EB' }}>
-      <td style={{ padding:'10px 8px', fontSize:12, color:'#4a4a4a' }}>{label}</td>
-      <td style={{ padding:'10px 8px', textAlign:'center', fontSize:12, color:'#6B7280' }}>{v1}</td>
-      <td style={{ padding:'10px 8px', textAlign:'center', fontSize:12, color:'#6B7280' }}>{v2}</td>
-      <td style={{ padding:'10px 8px', textAlign:'center', fontSize:13, fontWeight: ok3 ? 800 : 500, color: ok3 ? '#9D174D' : '#1a1a1a', background: ok3 ? '#FEF7FB' : 'transparent' }}>{v3}</td>
-    </tr>
   );
 }
 
