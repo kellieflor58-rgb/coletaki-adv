@@ -89,7 +89,7 @@ export default function Page() {
         <B>
           <p>A pesquisa "como vender foto do pé" cresceu mais de 400% no Google nos últimos 12 meses no Brasil. Por trás dessa curiosidade explosiva, existe uma dúvida real: <strong>isso realmente paga? Em quais sites funciona? Precisa aparecer? É legal?</strong></p>
           <p>A resposta curta é: sim, é um mercado real. Mas as plataformas onde isso acontece operam com regras muito diferentes entre si — e a maioria das pessoas que pesquisa o assunto não tem ideia dessa diferença.</p>
-          <p>Esta matéria coloca os fatos em ordem. <strong>Vamos comparar as três principais plataformas usadas para esse fim no Brasil hoje:</strong></p>
+          <p>Esta matéria coloca os fatos em ordem. <strong>Vamos analisar as três principais plataformas usadas para esse fim hoje no mercado:</strong></p>
         </B>
 
         <div style={{ background:'#FAFAFA', border:'1px solid '+LINE, borderRadius:6, padding:'10px 14px', margin:'24px 0', textAlign:'center' }}>
@@ -122,98 +122,96 @@ export default function Page() {
         {/* ============================================ */}
 
         <h2 style={{ fontSize:28, fontWeight:900, color:INK, marginTop:36, marginBottom:6, letterSpacing:'-0.025em', lineHeight:1.2 }}>
-          1. OnlyFans
+          1. OnlyFans e Privacy
         </h2>
         <p style={{ fontSize:13, color:INK_MUTE, fontWeight:600, marginTop:0, marginBottom:14, textTransform:'uppercase', letterSpacing:'0.06em' }}>
-          Funciona, mas exige público próprio
+          Funcionam, mas exigem público próprio e divulgação constante
         </p>
 
         <B>
-          <p>O OnlyFans é a plataforma mais conhecida internacionalmente. Mulheres podem vender fotos e vídeos, incluindo conteúdos como "feet pics" (fotos de pé). O pagamento vem em dólar e depois é convertido em real.</p>
-          <p>Mas tem um detalhe que poucos avisos: <strong>o OnlyFans não te entrega público.</strong> Ele apenas hospeda seus arquivos e processa o pagamento.</p>
-          <p>Para faturar de verdade ali, você precisa <strong>trazer seguidores por conta própria</strong> — geralmente via Instagram, Twitter, TikTok ou Reddit. Isso significa criar perfis públicos, postar conteúdo regularmente, interagir, divulgar links e construir uma audiência ao longo de meses.</p>
-          <p>Sem público, ninguém entra. Sem entrar, ninguém paga.</p>
+          <p>O <strong>OnlyFans</strong> e a <strong>Privacy</strong> são as duas plataformas mais lembradas quando o assunto é monetização de conteúdo adulto online. A primeira tem alcance global e paga em dólar; a segunda é brasileira e paga via PIX. As duas permitem que mulheres vendam fotos e vídeos, incluindo "feet pics" (fotos de pé).</p>
+          <p>O modelo de negócio é semelhante entre as duas: você cria um perfil, define um valor de assinatura mensal, e os clientes pagam para acessar o conteúdo que você posta dentro da plataforma.</p>
+          <p>Mas há uma armadilha que poucos avisos: <strong>nenhuma das duas entrega público pra você.</strong> Elas apenas hospedam os arquivos e processam o pagamento. Toda a parte de atrair clientes é por sua conta.</p>
+          <p>Para faturar de verdade, é preciso <strong>construir uma audiência própria</strong> — geralmente via Instagram, Twitter, TikTok ou Reddit. Isso significa criar perfis públicos com a sua imagem, postar conteúdo regularmente, interagir com seguidores, divulgar links e construir essa audiência ao longo de meses (às vezes anos).</p>
+          <p>Outro ponto: por serem plataformas de <strong>assinatura mensal</strong>, o conteúdo precisa ser constante. Quem assina espera novidades semanalmente. Sem isso, os clientes cancelam e a receita desaparece.</p>
+          <p>Resumindo: <strong>OnlyFans e Privacy funcionam, mas funcionam pra quem já tem público.</strong> Para quem está começando do zero e quer manter o anonimato, é uma escalada longa e desgastante.</p>
         </B>
 
         <CardPlataforma
-          icone="O"
-          cor="#00AFF0"
-          nome="OnlyFans"
-          dor="Você precisa construir seu próprio público"
+          icone="O / P"
+          cor="#FF1F8E"
+          nome="OnlyFans + Privacy"
+          dor="Exigem público próprio, divulgação e conteúdo recorrente"
           itens={[
-            { ok:true, texto:'Vende qualquer tipo de conteúdo (incluindo feet pics)' },
-            { ok:true, texto:'Pagamento internacional (dólar)' },
-            { ok:false, texto:'Exige criar perfis em redes sociais para divulgação' },
-            { ok:false, texto:'Sem público próprio, faturamento é zero' },
-            { ok:false, texto:'Vínculo público — pode comprometer privacidade' },
-            { ok:false, texto:'Concorrência altíssima de creators globais' },
+            { ok:true, texto:'Funcionam para feet pics e outros conteúdos' },
+            { ok:true, texto:'OnlyFans paga em dólar; Privacy paga em real (PIX)' },
+            { ok:false, texto:'Não entregam público — você precisa construir audiência' },
+            { ok:false, texto:'Exigem perfis em redes sociais para divulgação contínua' },
+            { ok:false, texto:'Modelo de assinatura mensal — exige conteúdo constante' },
+            { ok:false, texto:'Vínculo público — sua imagem fica associada à plataforma' },
+            { ok:false, texto:'Concorrência altíssima de creators consolidadas' },
           ]}
         />
-
-        {/* ============================================ */}
-        {/* PLATAFORMA 2 — PRIVACY */}
-        {/* ============================================ */}
 
         <h2 style={{ fontSize:28, fontWeight:900, color:INK, marginTop:36, marginBottom:6, letterSpacing:'-0.025em', lineHeight:1.2 }}>
-          2. Privacy
+          2. FeetFinder
         </h2>
         <p style={{ fontSize:13, color:INK_MUTE, fontWeight:600, marginTop:0, marginBottom:14, textTransform:'uppercase', letterSpacing:'0.06em' }}>
-          A versão brasileira do OnlyFans
+          Especializada em fotos de pé, mas com limitações importantes
         </p>
 
         <B>
-          <p>A Privacy é a maior plataforma brasileira de assinatura de conteúdo. Permite vender fotos e vídeos, com pagamento direto via PIX. É mais acessível para o público local porque dispensa câmbio.</p>
-          <p>O modelo é semelhante ao OnlyFans: você cria um perfil, define preços de assinatura mensal, e os clientes pagam pra ter acesso ao conteúdo.</p>
-          <p>O problema é o mesmo: <strong>a Privacy também não traz público.</strong> Você precisa divulgar em redes sociais brasileiras, criar conteúdo de chamada, manter perfis ativos, responder DMs. Quem entra sem seguidores prontos não chega nem perto da renda divulgada nos cases de sucesso.</p>
-          <p>Outro ponto: por ser uma plataforma de assinatura mensal, o conteúdo precisa ser constante. Não basta postar uma foto e esperar dinheiro.</p>
+          <p>O <strong>FeetFinder</strong> é uma plataforma americana especializada exclusivamente em conteúdo de pé. Tem uma base internacional consolidada e movimenta um volume considerável de transações no setor.</p>
+          <p>O ponto positivo é que, diferente de OnlyFans e Privacy, ele <strong>já tem público próprio interessado especificamente em feet pics.</strong> Você não precisa atrair compradores — eles já estão lá dentro.</p>
+          <p>Mas há três limitações relevantes para o público brasileiro. A primeira é o <strong>pagamento</strong>: todo o sistema opera em dólar, e o saque é via gateway internacional. Conversão, taxa de câmbio e tempo de espera são parte do dia a dia.</p>
+          <p>A segunda é a <strong>interface e suporte em inglês</strong>. A plataforma não tem versão em português, e qualquer questão de cadastro, suporte ou disputa precisa ser resolvida em outro idioma.</p>
+          <p>A terceira é o <strong>nível de anonimato</strong>. Embora não exija mostrar o rosto, a verificação de identidade é mais aberta e o perfil fica visível para qualquer comprador navegando na plataforma.</p>
         </B>
 
         <CardPlataforma
-          icone="P"
-          cor="#FF1F8E"
-          nome="Privacy"
-          dor="Exige público brasileiro e conteúdo recorrente"
+          icone="FF"
+          cor="#1E40AF"
+          nome="FeetFinder"
+          dor="Especializada, porém em inglês e com pagamento internacional"
           itens={[
-            { ok:true, texto:'Pagamento em real, via PIX' },
-            { ok:true, texto:'Funciona bem para feet pics e conteúdos similares' },
-            { ok:false, texto:'Precisa de seguidores em redes sociais brasileiras' },
-            { ok:false, texto:'Modelo de assinatura exige posts constantes' },
-            { ok:false, texto:'Vínculo público — perfil precisa ser ativo' },
-            { ok:false, texto:'Sem audiência prévia, renda é insignificante' },
+            { ok:true, texto:'Especializada em feet pics — público próprio existe' },
+            { ok:true, texto:'Não exige seguidores ou divulgação em redes sociais' },
+            { ok:false, texto:'Pagamento em dólar, com taxas de conversão e câmbio' },
+            { ok:false, texto:'Interface e suporte 100% em inglês' },
+            { ok:false, texto:'Anonimato parcial — perfil fica visível na busca' },
+            { ok:false, texto:'Saque internacional pode demorar dias' },
           ]}
         />
-
-        {/* ============================================ */}
-        {/* PLATAFORMA 3 — FOOTPRIV */}
-        {/* ============================================ */}
 
         <h2 style={{ fontSize:28, fontWeight:900, color:INK, marginTop:36, marginBottom:6, letterSpacing:'-0.025em', lineHeight:1.2 }}>
           3. FootPriv
         </h2>
         <p style={{ fontSize:13, color:PINK_DARK, fontWeight:700, marginTop:0, marginBottom:14, textTransform:'uppercase', letterSpacing:'0.06em' }}>
-          A única 100% anônima — sem divulgação, sem rosto, sem público
+          A melhor opção para o público brasileiro — 100% anônima e em português
         </p>
 
         <B>
-          <p>A <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a> é uma plataforma brasileira que opera com um modelo totalmente diferente das duas anteriores. Ela é <strong>especializada apenas em fotos de pé</strong> — e isso muda tudo.</p>
-          <p>Em vez de exigir que você atraia público próprio, a FootPriv já tem uma base de <strong>mais de 40 mil compradores ativos</strong> espalhados pelo mundo. O sistema funciona por leilão: você posta uma foto e os compradores fazem ofertas. Você escolhe qual aceitar.</p>
-          <p>O ponto que faz a real diferença: <strong>não é necessário aparecer, ter perfil em rede social ou divulgar nada.</strong> A plataforma cobre todo o anonimato. Sem rosto, sem nome real, sem corpo. Apenas o pé.</p>
-          <p>O pagamento vai direto para a conta brasileira, em real. Não é um sistema de assinatura mensal — é venda avulsa, por foto vendida.</p>
+          <p>A <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a> é uma plataforma <strong>brasileira</strong> especializada exclusivamente em fotos de pé. Surgiu para resolver as três falhas das opções anteriores: a falta de público próprio do OnlyFans/Privacy, e o pagamento internacional e idioma estrangeiro do FeetFinder.</p>
+          <p>Em vez de exigir que você atraia público, a FootPriv já tem uma base de <strong>mais de 40 mil compradores ativos</strong> espalhados por mais de 60 países. O sistema funciona por leilão: você posta uma foto, os compradores fazem ofertas em moedas locais, e você escolhe qual aceitar.</p>
+          <p>O ponto que faz a real diferença para o público brasileiro: <strong>100% anônimo, 100% em português, pagamento direto em real.</strong> Não é necessário aparecer, ter perfil em rede social, divulgar nada ou lidar com câmbio.</p>
+          <p>A plataforma cobre todo o anonimato. Sem rosto, sem nome real, sem corpo, sem identidade pública. Apenas o pé. E o saque cai na conta brasileira já convertido, no mesmo dia da venda.</p>
+          <p>Por ser <strong>venda avulsa</strong> (não assinatura), você não precisa manter conteúdo constante. Posta quando quiser. Vende quando quiser. Sem cobrança, sem pressão.</p>
         </B>
 
         <CardPlataforma
           icone="F"
           cor={PINK}
           nome="FootPriv"
-          dor="A única que não exige público ou divulgação"
+          dor="100% anônima, em português, pagamento em real"
           destaque
           itens={[
             { ok:true, texto:'Mais de 40 mil compradores já cadastrados (não precisa trazer)' },
             { ok:true, texto:'100% anônimo — sem rosto, sem nome, sem rede social' },
-            { ok:true, texto:'Especializada em fotos de pé (categoria de alta demanda)' },
+            { ok:true, texto:'Plataforma brasileira, em português' },
+            { ok:true, texto:'Pagamento em real, direto na conta no mesmo dia' },
             { ok:true, texto:'Sistema de leilão: você escolhe o melhor lance' },
-            { ok:true, texto:'Pagamento em real, direto na conta' },
-            { ok:true, texto:'Venda avulsa — sem necessidade de postar conteúdo constante' },
+            { ok:true, texto:'Venda avulsa — sem postagem obrigatória' },
+            { ok:true, texto:'Especializada em fotos de pé (categoria de alta demanda)' },
           ]}
         />
 
@@ -230,18 +228,19 @@ export default function Page() {
             <thead>
               <tr style={{ borderBottom:'2px solid '+INK }}>
                 <th style={{ textAlign:'left', padding:'10px 8px', fontSize:11, fontWeight:800, color:INK_MUTE, textTransform:'uppercase', letterSpacing:'0.05em' }}>Critério</th>
-                <th style={{ padding:'10px 8px', fontSize:13, fontWeight:800 }}>OnlyFans</th>
-                <th style={{ padding:'10px 8px', fontSize:13, fontWeight:800 }}>Privacy</th>
+                <th style={{ padding:'10px 8px', fontSize:12, fontWeight:800 }}>OnlyFans / Privacy</th>
+                <th style={{ padding:'10px 8px', fontSize:12, fontWeight:800 }}>FeetFinder</th>
                 <th style={{ padding:'10px 8px', fontSize:13, fontWeight:800, color:PINK_DARK }}>FootPriv</th>
               </tr>
             </thead>
             <tbody>
-              <LinhaTab label="Precisa de público próprio?" v1="Sim" v2="Sim" v3="Não" ok3 />
-              <LinhaTab label="Precisa divulgar?" v1="Sim" v2="Sim" v3="Não" ok3 />
-              <LinhaTab label="100% anônimo?" v1="Não" v2="Não" v3="Sim" ok3 />
-              <LinhaTab label="Pagamento em real" v1="Não" v2="Sim" v3="Sim" ok3 />
-              <LinhaTab label="Funciona para feet pics?" v1="Sim" v2="Sim" v3="Sim" />
-              <LinhaTab label="Modelo" v1="Assinatura" v2="Assinatura" v3="Venda por foto" ok3 />
+              <LinhaTab label="Precisa de público próprio?" v1="Sim" v2="Não" v3="Não" ok3 />
+              <LinhaTab label="Precisa divulgar em redes?" v1="Sim" v2="Não" v3="Não" ok3 />
+              <LinhaTab label="100% anônimo?" v1="Não" v2="Parcial" v3="Sim" ok3 />
+              <LinhaTab label="Em português" v1="Privacy sim" v2="Não" v3="Sim" ok3 />
+              <LinhaTab label="Pagamento em real" v1="Privacy sim" v2="Não (dólar)" v3="Sim" ok3 />
+              <LinhaTab label="Funciona pra feet pics?" v1="Sim" v2="Sim (foco)" v3="Sim (foco)" />
+              <LinhaTab label="Modelo" v1="Assinatura" v2="Venda" v3="Venda por leilão" ok3 />
             </tbody>
           </table>
         </div>
@@ -256,9 +255,10 @@ export default function Page() {
 
         <B>
           <p>Se você <strong>já tem público em redes sociais</strong> — algumas dezenas de milhares de seguidores — e está disposta a manter presença constante online, OnlyFans e Privacy podem funcionar. São plataformas robustas, com cases reais de creators que faturam bem.</p>
-          <p>Mas se você é uma mulher comum, sem audiência prévia, que não quer aparecer, criar perfil ou se expor de nenhuma forma, <strong>essas duas plataformas não vão funcionar pra você.</strong> Sem público, é fila de espera vazia.</p>
-          <p>Para esse perfil — que é o de 95% das pessoas que pesquisam "vender foto do pé" — a única opção realmente viável hoje é a <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>. É a única que entrega a base de compradores pronta e mantém o anonimato total.</p>
-          <p>Não é mágica. É um modelo de negócio diferente, focado em uma categoria muito específica de produto digital, que opera há tempo suficiente para ter uma base internacional consolidada.</p>
+          <p>Se você é fluente em inglês, não se incomoda em receber em dólar e lidar com câmbio, e tolera um perfil semi-anônimo visível, o FeetFinder é uma opção razoável. Funciona, mas com atrito.</p>
+          <p>Agora, se você é uma mulher brasileira comum, sem audiência prévia, sem inglês fluente, que quer receber em real direto no PIX e <strong>não quer aparecer de jeito nenhum</strong> — a <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a> é a única opção viável hoje.</p>
+          <p>É a única que junta os três pontos críticos: <strong>público pronto, anonimato total, pagamento em real</strong>. Para o perfil que representa 95% das brasileiras pesquisando o assunto, é o caminho mais direto.</p>
+          <p>Não é mágica. É um modelo de negócio que opera há tempo suficiente para ter base consolidada — só que feito por brasileiros, para brasileiras.</p>
         </B>
 
         <div style={{ background:'#F9FAFB', borderLeft:'4px solid '+PINK, borderRadius:8, padding:16, marginTop:32, marginBottom:32 }}>
@@ -309,7 +309,7 @@ export default function Page() {
         </div>
 
         <div style={{ background:'#FEF3C7', border:'1px solid #FDE68A', borderRadius:10, padding:12, fontSize:11, color:'#78350F', lineHeight:1.55, marginBottom:28 }}>
-          <strong>Aviso legal:</strong> Esta matéria foi produzida de forma editorial independente, sem parceria comercial com OnlyFans, Privacy ou FootPriv. Plataformas exclusivas para maiores de 18 anos. Resultados variam por região, dedicação e perfil. Não há garantia de rendimento.
+          <strong>Aviso legal:</strong> Esta matéria foi produzida de forma editorial independente, sem parceria comercial com OnlyFans, Privacy, FeetFinder ou FootPriv. Plataformas exclusivas para maiores de 18 anos. Resultados variam por região, dedicação e perfil. Não há garantia de rendimento.
         </div>
 
         <div style={{ borderTop:'1px solid '+LINE, paddingTop:18, paddingBottom:18, display:'flex', alignItems:'center', gap:10, flexWrap:'wrap' }}>
