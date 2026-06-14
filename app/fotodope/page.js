@@ -144,8 +144,9 @@ export default function Page() {
           <p>Foi essa inversão que mais chamou atenção das brasileiras nos grupos de WhatsApp: não é mais um aplicativo que promete renda futura — é um aplicativo onde a renda começa no primeiro dia.</p>
         </B>
 
-        
-          <div style={{ fontSize:14, opacity:0.88, lineHeight:1.65 }}>
+        <div style={{ background:'#7A0B05', color:'#fff', borderRadius:12, padding:'20px 22px', margin:'24px 0' }}>
+          <div style={{ fontSize:11, fontWeight:800, color:YELLOW, letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:10 }}>Ponto-chave</div>
+          <div style={{ fontSize:14, opacity:0.95, lineHeight:1.65 }}>
             Marido, namorado, mãe, vizinha, colega de trabalho — <strong style={{ color:YELLOW }}>nenhuma dessas pessoas vai saber.</strong> A creator não aparece em lugar nenhum. Não precisa criar perfil público, não precisa divulgar, não precisa explicar. Operação 100% privada, do cadastro ao recebimento.
           </div>
         </div>
