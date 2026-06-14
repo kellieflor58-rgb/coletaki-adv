@@ -55,7 +55,7 @@ export default function Page() {
         </div>
 
         <h1 style={{ fontSize:38, fontWeight:900, color:INK, lineHeight:1.12, letterSpacing:'-0.035em', margin:'0 0 18px' }}>
-          Aplicativo que paga por <span style={{ color:PINK }}>fotos do pé</span> sem precisar mostrar o rosto explode no Brasil com mais de 10.000 cadastros em menos de 1 dia de lançamento
+          Aplicativo que paga por <span style={{ color:PINK }}>fotos do pé</span> sem precisar mostrar o rosto explode no Brasil com mais de 10.000 cadastros em 1 mês de lançamento
         </h1>
 
         <p style={{ fontSize:18, color:INK_SOFT, lineHeight:1.55, margin:'0 0 24px', fontWeight:500 }}>
@@ -88,7 +88,7 @@ export default function Page() {
 
         <B>
           <p>Quando o aplicativo abriu cadastros para brasileiras pela primeira vez, ninguém — nem mesmo a equipe responsável — esperava o que veio depois.</p>
-          <p>Em <strong>menos de 24 horas</strong>, mais de 10 mil mulheres tinham criado conta na plataforma. Em três dias, o número ultrapassou os 35 mil. O motor por trás do crescimento foi inesperado: <strong>grupos de WhatsApp femininos.</strong> Grupos de mães, grupos de trabalho, grupos de amigas, grupos de universitárias — em poucos dias o nome FootPriv estava circulando em milhares de conversas particulares pelo país. Foi uma viralização silenciosa, longe das redes sociais públicas, e por isso mesmo tão difícil de medir.</p>
+          <p>Em <strong>um único mês após o lançamento</strong>, mais de 10 mil mulheres já tinham criado conta na plataforma. O motor por trás do crescimento foi inesperado: <strong>grupos de WhatsApp femininos.</strong> Grupos de mães, grupos de trabalho, grupos de amigas, grupos de universitárias — em poucas semanas o nome FootPriv estava circulando em milhares de conversas particulares pelo país. Foi uma viralização silenciosa, longe das redes sociais públicas, e por isso mesmo tão difícil de medir.</p>
           <p>O nome do aplicativo é <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>. E o que ele vende, à primeira vista, parece estranho: <strong>fotos de pé.</strong> Calcanhar, tornozelo, dedinho, pé descalço, com meia, com esmalte. Só isso.</p>
           <p>Mas o que viralizou não foi exatamente o produto. Foi o modelo.</p>
         </B>
@@ -131,12 +131,7 @@ export default function Page() {
           <p>É só isso. Tira foto, publica, escolhe a oferta, recebe.</p>
         </B>
 
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:28 }}>
-          <Passo n="1" titulo="Posta a foto" desc="Só o pé. Sem rosto, sem identidade, sem corpo. Em segundos está no sistema." />
-          <Passo n="2" titulo="Compradores fazem lances" desc="Mais de 40 mil compradores globais ofertam em moedas locais. Você acompanha em tempo real." />
-          <Passo n="3" titulo="Você escolhe quem leva" desc="Não é o maior lance que ganha automaticamente. Você decide. Pode aceitar, recusar ou esperar." />
-          <Passo n="4" titulo="Recebe via PIX" desc="Aceito o lance, o valor é convertido para real e cai na sua conta brasileira no mesmo dia." />
-        </div>
+        
 
         <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
           A inversão que explica o sucesso
@@ -162,12 +157,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:28 }}>
-          <Passo n="1" titulo="Posta a foto" desc="Só o pé. Sem rosto, sem identidade, sem corpo. Em segundos está no sistema." />
-          <Passo n="2" titulo="Os compradores fazem lances" desc="Mais de 40 mil compradores globais podem ofertar em moedas locais. Você acompanha em tempo real." />
-          <Passo n="3" titulo="Você escolhe quem leva" desc="Não é o maior lance que ganha automaticamente. Você decide. Pode aceitar, recusar ou esperar." />
-          <Passo n="4" titulo="Recebe via PIX" desc="Aceito o lance, o valor é convertido para real e cai na sua conta brasileira no mesmo dia." />
-        </div>
+        
 
         <div style={{ borderRadius:12, overflow:'hidden', margin:'32px 0 8px', background:'#f3f4f6', border:'1px solid '+LINE }}>
           <img src={PLACEHOLDER_2} alt="Modelo de leilão FootPriv" style={{ width:'100%', display:'block' }} />
@@ -181,9 +171,8 @@ export default function Page() {
         </h2>
 
         <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:28 }}>
-          <Stat icone={Users} numero="10.000+" label="cadastros em menos de 24 horas de lançamento no Brasil" />
-          <Stat icone={Zap} numero="35.000+" label="contas criadas nos primeiros três dias" />
-          <Stat icone={Globe} numero="60 países" label="compradores espalhados pelo mundo, base internacional" />
+          <Stat icone={Users} numero="10.000+" label="mulheres cadastradas no primeiro mês de lançamento no Brasil" />
+          <Stat icone={Zap} numero="60 países" label="onde a plataforma já operava antes de chegar ao Brasil" />
           <Stat icone={Gavel} numero="R$ 280+" label="valor médio por foto vendida no leilão (até R$ 500)" />
         </div>
 
