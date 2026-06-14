@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight, EyeOff, TrendingUp, Globe, DollarSign, Lock, Link2 } from 'lucide-react';
+import { ArrowRight, EyeOff, TrendingUp, Globe, DollarSign, Lock, Gavel, Users, Zap, Link2 } from 'lucide-react';
 
 const PINK = '#DB2777';
 const PINK_DARK = '#9D174D';
@@ -55,11 +55,11 @@ export default function Page() {
         </div>
 
         <h1 style={{ fontSize:38, fontWeight:900, color:INK, lineHeight:1.12, letterSpacing:'-0.035em', margin:'0 0 18px' }}>
-          A plataforma que chegou ao Brasil pagando mulheres por <span style={{ color:PINK }}>fotos do pé</span> — sem mostrar o rosto e sem precisar de público
+          Aplicativo que paga por <span style={{ color:PINK }}>fotos do pé</span> sem precisar mostrar o rosto explode no Brasil com mais de 10.000 cadastros em menos de 1 dia de lançamento
         </h1>
 
         <p style={{ fontSize:18, color:INK_SOFT, lineHeight:1.55, margin:'0 0 24px', fontWeight:500 }}>
-          Chamada de <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>, a plataforma viralizou nos últimos meses ao oferecer um modelo inédito: anonimato total, sem necessidade de seguidores em redes sociais e pagamento direto em real. O fenômeno cresceu rápido em cidades do interior paulista.
+          Chamada de <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>, a plataforma já operava em outros países há anos e finalmente desembarcou no Brasil em 2026. Em poucos dias, levantou ondas de mulheres curiosas pelo modelo: anonimato total, sem necessidade de seguidores e pagamento direto em real via PIX.
         </p>
 
         <div style={{ borderTop:'1px solid '+LINE, borderBottom:'1px solid '+LINE, padding:'14px 0', marginBottom:24, display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:14 }}>
@@ -80,17 +80,17 @@ export default function Page() {
         </div>
 
         <div style={{ borderRadius:14, overflow:'hidden', marginBottom:10, background:'#f3f4f6', border:'1px solid '+LINE }}>
-          <img src={PLACEHOLDER_1} alt="Plataforma FootPriv" style={{ width:'100%', display:'block' }} />
+          <img src={PLACEHOLDER_1} alt="Plataforma FootPriv chega ao Brasil" style={{ width:'100%', display:'block' }} />
         </div>
         <div style={{ fontSize:11, color:INK_MUTE, marginBottom:28, fontStyle:'italic' }}>
-          O modelo brasileiro de renda anônima por fotos cresceu rápido no último semestre.
+          A FootPriv desembarcou oficialmente no Brasil em 2026, após anos consolidada no mercado internacional.
         </div>
 
         <B>
-          <p>Existe um termo que vem aparecendo cada vez mais em rodas de conversa femininas no Brasil: "FootPriv". A plataforma chegou ao mercado nacional há pouco tempo e, em menos de um ano, virou um dos fenômenos mais comentados do setor de renda digital para mulheres.</p>
-          <p>O conceito é, à primeira vista, estranho. Vende-se foto de pé. Calcanhar, tornozelo, dedinho, pé descalço, com meia, com esmalte. Só isso.</p>
-          <p>Mas a forma como o modelo funciona é o que explica o boom. <strong>Diferente de plataformas tradicionais de monetização digital, a FootPriv não exige que a creator apareça, mostre o rosto, crie perfil em rede social ou tenha qualquer tipo de público.</strong></p>
-          <p>É o tipo de inversão que muda tudo.</p>
+          <p>Quando o aplicativo abriu cadastros para brasileiras pela primeira vez, ninguém — nem mesmo a equipe responsável — esperava o que veio depois.</p>
+          <p>Em <strong>menos de 24 horas</strong>, mais de 10 mil mulheres tinham criado conta na plataforma. Em três dias, o número ultrapassou os 35 mil. Vídeos no TikTok comentando o modelo passaram da casa dos milhões de visualizações em uma única semana. Influencers de finanças, mães desabafando sobre dificuldade financeira, jovens universitárias — todas começaram a falar sobre o assunto.</p>
+          <p>O nome do aplicativo é <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>. E o que ele vende, à primeira vista, parece estranho: <strong>fotos de pé.</strong> Calcanhar, tornozelo, dedinho, pé descalço, com meia, com esmalte. Só isso.</p>
+          <p>Mas o que viralizou não foi exatamente o produto. Foi o modelo.</p>
         </B>
 
         <div style={{ background:'#FAFAFA', border:'1px solid '+LINE, borderRadius:6, padding:'10px 14px', margin:'24px 0', textAlign:'center' }}>
@@ -119,14 +119,14 @@ export default function Page() {
         </div>
 
         <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
-          Por que está virando boom
+          A inversão que mudou tudo
         </h2>
 
         <B>
-          <p>O modelo tradicional de monetização de conteúdo na internet sempre teve a mesma equação: <strong>quanto maior o seu público, mais você ganha.</strong> Para isso, era preciso aparecer, postar regularmente, interagir com seguidores, construir uma marca pessoal pública. Tudo o oposto do que a maioria das mulheres comuns está disposta a fazer.</p>
-          <p>A FootPriv quebrou essa lógica. <strong>Em vez de exigir público da creator, a plataforma já entrega o público pronto.</strong> Mais de 40 mil compradores cadastrados, espalhados por mais de 60 países, com fetiche específico por pés femininos. Quando uma foto é postada, eles fazem ofertas em sistema de leilão.</p>
-          <p>A creator só precisa decidir qual oferta aceitar. Sem postar em Instagram. Sem mostrar o rosto. Sem dar satisfação para ninguém. <strong>Anonimato é regra de negócio da plataforma, não uma escolha opcional.</strong></p>
-          <p>O resultado é que, em poucos meses, o boca a boca entre mulheres explodiu. Cidades do interior paulista — como Ribeirão Preto, Campinas e São José do Rio Preto — figuram hoje entre as regiões com maior crescimento de cadastros da plataforma.</p>
+          <p>Plataformas tradicionais de monetização digital sempre operaram com a mesma regra: <strong>quanto maior o seu público, mais você ganha.</strong> Para isso, era preciso aparecer, postar regularmente, interagir com seguidores, construir uma marca pessoal pública.</p>
+          <p>Tudo o oposto do que a maioria das mulheres comuns está disposta a fazer para ter renda extra.</p>
+          <p>A FootPriv quebrou essa lógica de forma simples e brutal. <strong>Em vez de exigir público da creator, a plataforma já entrega o público pronto.</strong> A base internacional consolidada ao longo dos anos no exterior — mais de 40 mil compradores ativos, espalhados por mais de 60 países — agora está acessível para brasileiras.</p>
+          <p>A creator não precisa atrair ninguém. Não precisa aparecer. Não precisa ter perfil em rede social. Não precisa explicar nada para ninguém. Anonimato é regra de negócio da plataforma — não uma escolha opcional.</p>
         </B>
 
         <div style={{ background:'#0A1628', color:'#fff', borderRadius:16, padding:24, marginBottom:28 }}>
@@ -134,57 +134,83 @@ export default function Page() {
             <div style={{ width:42, height:42, borderRadius:12, background:PINK, display:'flex', alignItems:'center', justifyContent:'center' }}>
               <EyeOff size={22} />
             </div>
-            <div style={{ fontSize:18, fontWeight:800 }}>O ponto que faz toda a diferença</div>
+            <div style={{ fontSize:18, fontWeight:800 }}>Por que viralizou tão rápido</div>
           </div>
           <div style={{ fontSize:14, opacity:0.88, lineHeight:1.65 }}>
-            Marido, namorado, mãe, vizinha, colega de trabalho — <strong style={{ color:YELLOW }}>nenhuma dessas pessoas vai saber.</strong> A creator não aparece, não precisa fazer rede social, não precisa criar perfil público. Operação 100% privada, do cadastro ao saque.
+            Marido, namorado, mãe, vizinha, colega de trabalho — <strong style={{ color:YELLOW }}>nenhuma dessas pessoas vai saber.</strong> A creator não aparece em lugar nenhum. Não precisa criar perfil público, não precisa divulgar, não precisa explicar. Operação 100% privada, do cadastro ao saque via PIX.
           </div>
+        </div>
+
+        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
+          Como funciona o modelo de leilão
+        </h2>
+
+        <B>
+          <p>Aqui está o ponto que mais impressionou o público no TikTok: o modelo de venda da FootPriv não é fixo, é por <strong>leilão.</strong></p>
+          <p>Quando a creator posta uma foto na plataforma, ela fica visível para os mais de 40 mil compradores cadastrados. Eles fazem ofertas — em moedas locais de seus países (dólar, euro, dirham, libra, peso, o que for). O sistema converte automaticamente para real.</p>
+          <p>A creator não é obrigada a aceitar o maior lance. <strong>Ela escolhe.</strong> Pode aceitar pela oferta mais alta, pelo perfil do comprador, ou simplesmente recusar todas e refazer o leilão depois.</p>
+          <p>É esse controle que faz toda a diferença. Você decide o preço mínimo aceitável, decide quando publicar, decide quando vender. <strong>Sem chefe, sem patrão, sem cota mensal, sem cobrança.</strong></p>
+          <p>Uma foto pode receber lances que ultrapassam R$ 500 dependendo da combinação (tipo de foto, demanda momentânea, perfil do comprador). E o dinheiro cai direto na conta brasileira, em real, via PIX, no mesmo dia da venda concluída.</p>
+        </B>
+
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:28 }}>
+          <Passo n="1" titulo="Posta a foto" desc="Só o pé. Sem rosto, sem identidade, sem corpo. Em segundos está no sistema." />
+          <Passo n="2" titulo="Os compradores fazem lances" desc="Mais de 40 mil compradores globais podem ofertar em moedas locais. Você acompanha em tempo real." />
+          <Passo n="3" titulo="Você escolhe quem leva" desc="Não é o maior lance que ganha automaticamente. Você decide. Pode aceitar, recusar ou esperar." />
+          <Passo n="4" titulo="Recebe via PIX" desc="Aceito o lance, o valor é convertido para real e cai na sua conta brasileira no mesmo dia." />
         </div>
 
         <div style={{ borderRadius:12, overflow:'hidden', margin:'32px 0 8px', background:'#f3f4f6', border:'1px solid '+LINE }}>
-          <img src={PLACEHOLDER_2} alt="Renda extra anônima" style={{ width:'100%', display:'block' }} />
+          <img src={PLACEHOLDER_2} alt="Modelo de leilão FootPriv" style={{ width:'100%', display:'block' }} />
         </div>
         <div style={{ fontSize:11, color:INK_MUTE, marginBottom:28, fontStyle:'italic' }}>
-          O cadastro leva minutos e o primeiro saque costuma cair em dias.
+          O sistema de leilão é o que mais chamou atenção nas redes sociais brasileiras.
         </div>
 
         <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
-          Como funciona o modelo de assinatura
-        </h2>
-
-        <B>
-          <p>Para acessar todas as funcionalidades da plataforma — incluindo o sistema de leilão, o painel de ofertas e a base completa de compradores — a creator precisa pagar um <strong>plano de assinatura mensal</strong>. É o ponto que separa quem testa do que opera de verdade.</p>
-          <p>O valor da assinatura, segundo a própria plataforma, foi pensado para ser acessível. <strong>Na prática, a maioria das creators relata que o plano se paga já na primeira ou segunda venda — muitas vezes na mesma semana do cadastro.</strong></p>
-          <p>É o tipo de modelo que filtra naturalmente quem está realmente disposto a operar. Sem cobrança alta de entrada, sem fidelização extensa, sem letras miúdas. Apenas uma mensalidade modesta que se autopaga rápido para quem entra com seriedade.</p>
-          <p>Depois disso, tudo o que entra de venda é renda líquida da creator, descontada apenas a taxa padrão de transação da plataforma.</p>
-        </B>
-
-        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
-          Os números do fenômeno
+          Os números do boom
         </h2>
 
         <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:28 }}>
-          <Stat icone={TrendingUp} numero="+40 mil" label="compradores ativos cadastrados na plataforma" />
-          <Stat icone={Globe} numero="60 países" label="de origem dos compradores internacionais" />
-          <Stat icone={DollarSign} numero="R$ 280+" label="valor médio por foto vendida (variável por leilão)" />
-          <Stat icone={Lock} numero="100%" label="anônimo — sem rosto, sem nome, sem rede social" />
+          <Stat icone={Users} numero="10.000+" label="cadastros em menos de 24 horas de lançamento no Brasil" />
+          <Stat icone={Zap} numero="35.000+" label="contas criadas nos primeiros três dias" />
+          <Stat icone={Globe} numero="60 países" label="compradores espalhados pelo mundo, base internacional" />
+          <Stat icone={Gavel} numero="R$ 280+" label="valor médio por foto vendida no leilão (até R$ 500)" />
         </div>
 
         <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
-          A explicação para o sucesso
+          O modelo de assinatura
         </h2>
 
         <B>
-          <p>O sucesso da FootPriv no Brasil pode ser explicado por três fatores combinados.</p>
-          <p>O primeiro é <strong>cultural</strong>. O brasileiro — e a brasileira — tem uma relação particular com privacidade quando o assunto é renda informal. Há resistência forte a expor a vida pessoal em redes sociais para ganhar dinheiro. A FootPriv resolve isso ao oferecer 100% de anonimato.</p>
-          <p>O segundo é <strong>econômico</strong>. O salário médio das mulheres brasileiras ainda é insuficiente para cobrir um custo de vida em alta. Qualquer fonte de renda extra que não exija sair de casa, vínculo trabalhista ou qualificação técnica encontra demanda imediata.</p>
-          <p>O terceiro é <strong>tecnológico</strong>. A plataforma é brasileira, em português, com pagamento direto em real e suporte local. Diferente de concorrentes internacionais, não há barreira de idioma, câmbio ou conversão. Caiu no leilão, caiu na conta.</p>
-          <p>Combinados, esses três fatores explicam por que cidades do interior paulista figuram entre as regiões de maior crescimento — locais onde a renda extra é mais necessária e a discrição é cultura.</p>
+          <p>Para acessar todas as funcionalidades — o sistema de leilão completo, o painel de ofertas e a base de compradores — a creator precisa pagar uma <strong>assinatura mensal.</strong> É o ponto que separa quem só fuçou no app de quem realmente entra para operar.</p>
+          <p>O valor, segundo a plataforma, foi pensado para ser acessível ao público brasileiro — bem distante de mensalidades de softwares profissionais. <strong>Na prática, a maioria das creators relata que a assinatura se paga já na primeira ou segunda venda — muitas vezes na mesma semana do cadastro.</strong></p>
+          <p>É o tipo de modelo que se autopaga rápido para quem entra disposta a operar de verdade. Quem testa por curiosidade vai pagar uma mensalidade pequena. Quem opera sério paga isso em horas.</p>
+          <p>Depois disso, tudo o que entra de venda é receita líquida — descontada apenas a taxa padrão de transação do leilão.</p>
         </B>
+
+        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
+          Por que agora — e por que tão rápido
+        </h2>
+
+        <B>
+          <p>A explicação do boom passa por três fatores convergindo no mesmo momento.</p>
+          <p><strong>1. Plataforma já consolidada lá fora.</strong> A FootPriv não é uma startup testando ideia. Opera há vários anos em mercados internacionais, com base de compradores madura, sistema de leilão refinado e logística de pagamento testada. Quando chegou ao Brasil, chegou pronta.</p>
+          <p><strong>2. Brasileira precisa de renda anônima.</strong> Pesquisas de mercado consistentemente mostram que mulheres brasileiras resistem a expor a vida pessoal em redes sociais para ganhar dinheiro. Plataformas tradicionais (OnlyFans, Privacy) exigem exatamente isso. A FootPriv resolve essa fricção cultural ao garantir 100% de anonimato.</p>
+          <p><strong>3. TikTok amplificou.</strong> O algoritmo do TikTok pegou os primeiros vídeos comentando o lançamento e levou para milhões. Em poucos dias, era assunto generalizado nas redes sociais femininas brasileiras. Curiosidade legítima virou cadastro.</p>
+          <p>O resultado dos três fatores combinados? Uma das chegadas mais rápidas de uma plataforma internacional ao mercado brasileiro nos últimos anos.</p>
+        </B>
+
+        <div style={{ background:'#FEF7FB', border:'2px solid '+PINK+'40', borderRadius:14, padding:20, marginTop:32, marginBottom:32 }}>
+          <div style={{ fontSize:11, fontWeight:900, color:PINK_DARK, letterSpacing:'0.08em', marginBottom:8, textTransform:'uppercase' }}>Importante</div>
+          <div style={{ fontSize:14, color:INK_SOFT, lineHeight:1.6 }}>
+            A FootPriv é uma plataforma para maiores de 18 anos, com verificação de identidade obrigatória no cadastro. Todas as transações são reguladas e legalmente válidas. O conteúdo postado é exclusivamente foto de pé — qualquer outra natureza de conteúdo é removida automaticamente pelo sistema.
+          </div>
+        </div>
 
         <div style={{ background:'#F9FAFB', borderLeft:'4px solid '+PINK, borderRadius:8, padding:16, marginTop:32, marginBottom:32 }}>
           <div style={{ fontSize:13, color:INK_SOFT, lineHeight:1.6, marginBottom:12 }}>
-            Para conhecer melhor a plataforma e verificar como funciona o cadastro, acesse diretamente o site oficial da FootPriv.
+            Para conhecer a plataforma e verificar como funciona o cadastro, acesse diretamente o site oficial da FootPriv.
           </div>
           <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:700, color:PINK, textDecoration:'none', borderBottom:'1px solid '+PINK, paddingBottom:2 }}>
             Acessar site da FootPriv <ArrowRight size={13} strokeWidth={2.5} />
@@ -253,6 +279,16 @@ export default function Page() {
 
 function B({ children }) {
   return <div style={{ fontSize:17, color:'#1a1a1a', lineHeight:1.7 }}>{React.Children.map(children, c => <div style={{ marginBottom:14 }}>{c}</div>)}</div>;
+}
+
+function Passo({ n, titulo, desc }) {
+  return (
+    <div style={{ background:'#FEF7FB', border:'1.5px solid '+PINK+'30', borderRadius:14, padding:16 }}>
+      <div style={{ width:32, height:32, borderRadius:10, background:PINK, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', fontSize:14, fontWeight:900, marginBottom:10 }}>{n}</div>
+      <div style={{ fontSize:14, fontWeight:800, color:INK, marginBottom:4, letterSpacing:'-0.01em' }}>{titulo}</div>
+      <div style={{ fontSize:12, color:INK_SOFT, lineHeight:1.5 }}>{desc}</div>
+    </div>
+  );
 }
 
 function Stat({ icone: Icon, numero, label }) {
