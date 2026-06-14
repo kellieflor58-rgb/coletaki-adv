@@ -59,7 +59,7 @@ export default function Page() {
         </h1>
 
         <p style={{ fontSize:18, color:INK_SOFT, lineHeight:1.55, margin:'0 0 24px', fontWeight:500 }}>
-          Chamada de <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>, a plataforma já operava em outros países há anos e finalmente desembarcou no Brasil em 2026. Em poucos dias, levantou ondas de mulheres curiosas pelo modelo: anonimato total, sem necessidade de seguidores e pagamento direto em real via PIX.
+          Chamada de <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>, a plataforma já operava em outros países há anos e finalmente desembarcou no Brasil em 2026. Em poucos dias, levantou ondas de mulheres curiosas pelo modelo: anonimato total, sem necessidade de seguidores e pagamento na hora, em moeda real, direto na conta.
         </p>
 
         <div style={{ borderTop:'1px solid '+LINE, borderBottom:'1px solid '+LINE, padding:'14px 0', marginBottom:24, display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:14 }}>
@@ -87,10 +87,9 @@ export default function Page() {
         </div>
 
         <B>
-          <p>Quando o aplicativo abriu cadastros para brasileiras pela primeira vez, ninguém — nem mesmo a equipe responsável — esperava o que veio depois.</p>
+          <p>Pouca gente esperava o tamanho do impacto que a chegada da FootPriv teria no Brasil.</p>
           <p>Em <strong>um único mês após o lançamento</strong>, mais de 10 mil mulheres já tinham criado conta na plataforma. O motor por trás do crescimento foi inesperado: <strong>grupos de WhatsApp femininos.</strong> Grupos de mães, grupos de trabalho, grupos de amigas, grupos de universitárias — em poucas semanas o nome FootPriv estava circulando em milhares de conversas particulares pelo país. Foi uma viralização silenciosa, longe das redes sociais públicas, e por isso mesmo tão difícil de medir.</p>
-          <p>O nome do aplicativo é <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>. E o que ele vende, à primeira vista, parece estranho: <strong>fotos de pé.</strong> Calcanhar, tornozelo, dedinho, pé descalço, com meia, com esmalte. Só isso.</p>
-          <p>Mas o que viralizou não foi exatamente o produto. Foi o modelo.</p>
+          <p>O aplicativo se chama <a href={LINK_FOOTPRIV} target="_blank" rel="noopener" style={{ color:PINK, textDecoration:'underline', fontWeight:700 }}>FootPriv</a>. O que ele vende, à primeira vista, parece estranho: <strong>fotos de pé.</strong> Apenas isso — calcanhar, tornozelo, dedinho, pé descalço, com meia, com esmalte. Mas o que chamou atenção das brasileiras não foi o produto. Foi como o modelo funciona.</p>
         </B>
 
         <div style={{ background:'#FAFAFA', border:'1px solid '+LINE, borderRadius:6, padding:'10px 14px', margin:'24px 0', textAlign:'center' }}>
@@ -127,7 +126,7 @@ export default function Page() {
           <p>A partir daí, é simples: ela tira uma foto do pé (calcanhar, tornozelo, dedinho, descalço, com meia, com esmalte) e publica. <strong>Sem rosto, sem nome real, sem corpo, sem rede social vinculada.</strong></p>
           <p>A foto entra automaticamente em um sistema de <strong>leilão</strong>. Os mais de 40 mil compradores cadastrados — espalhados por mais de 60 países — podem fazer ofertas em moedas locais (dólar, euro, libra, peso, dirham). O sistema converte tudo para real automaticamente.</p>
           <p>A creator <strong>não é obrigada a aceitar o maior lance.</strong> Ela escolhe. Pode aceitar a oferta mais alta, pode escolher por outro critério, ou pode simplesmente recusar todas e refazer o leilão depois.</p>
-          <p>Aceito o lance, o pagamento é processado e cai direto na conta brasileira via PIX, no mesmo dia. Sem espera, sem câmbio, sem burocracia.</p>
+          <p>Aceito o lance, o pagamento é processado e cai direto na conta brasileira na hora, em moeda real, direto na conta. Sem espera, sem câmbio, sem burocracia.</p>
           <p>É só isso. Tira foto, publica, escolhe a oferta, recebe.</p>
         </B>
 
@@ -138,22 +137,16 @@ export default function Page() {
         </h2>
 
         <B>
-          <p>O detalhe que muda tudo está em uma frase: <strong>a creator não precisa ter público.</strong></p>
-          <p>Plataformas tradicionais de monetização digital — OnlyFans, Privacy, Patreon — sempre operaram com a mesma regra: quanto maior o seu público, mais você ganha. Para isso, era preciso aparecer, postar em redes sociais, interagir com seguidores, construir uma marca pessoal pública. Tudo o oposto do que a maioria das mulheres comuns está disposta a fazer.</p>
-          <p>A FootPriv quebrou essa lógica. <strong>Em vez de exigir público da creator, a plataforma já entrega o público pronto.</strong> A base internacional consolidada ao longo dos anos — 40 mil compradores ativos em 60 países — está acessível desde o primeiro dia.</p>
-          <p>A creator chega e já vende. Não precisa atrair ninguém. Não precisa aparecer. Não precisa explicar nada pra ninguém.</p>
-          <p>Foi essa inversão que viralizou nos grupos de WhatsApp femininos. Não é mais um app que promete renda — é um app onde a renda já começa no primeiro dia.</p>
+          <p>O ponto que muda tudo cabe em uma frase: <strong>a creator não precisa ter público.</strong></p>
+          <p>Plataformas tradicionais de monetização digital sempre operaram com a mesma regra — quanto maior o público, maior o ganho. Para alcançar isso, era preciso aparecer, postar em redes sociais, interagir constantemente, construir uma marca pessoal pública. Tudo o oposto do que a maioria das mulheres comuns está disposta a fazer.</p>
+          <p>A FootPriv quebrou essa lógica. <strong>Em vez de exigir público da creator, a própria plataforma já entrega o público pronto.</strong> A base internacional consolidada ao longo de anos — milhares de compradores ativos em mais de 60 países — fica acessível desde o primeiro dia de uso.</p>
+          <p>A creator chega e já vende. Sem precisar atrair ninguém, sem precisar aparecer, sem precisar explicar nada a ninguém.</p>
+          <p>Foi essa inversão que mais chamou atenção das brasileiras nos grupos de WhatsApp: não é mais um aplicativo que promete renda futura — é um aplicativo onde a renda começa no primeiro dia.</p>
         </B>
 
-        <div style={{ background:'#0A1628', color:'#fff', borderRadius:16, padding:24, marginBottom:28 }}>
-          <div style={{ display:'flex', gap:12, alignItems:'center', marginBottom:14 }}>
-            <div style={{ width:42, height:42, borderRadius:12, background:PINK, display:'flex', alignItems:'center', justifyContent:'center' }}>
-              <EyeOff size={22} />
-            </div>
-            <div style={{ fontSize:18, fontWeight:800 }}>Por que viralizou tão rápido</div>
-          </div>
+        
           <div style={{ fontSize:14, opacity:0.88, lineHeight:1.65 }}>
-            Marido, namorado, mãe, vizinha, colega de trabalho — <strong style={{ color:YELLOW }}>nenhuma dessas pessoas vai saber.</strong> A creator não aparece em lugar nenhum. Não precisa criar perfil público, não precisa divulgar, não precisa explicar. Operação 100% privada, do cadastro ao saque via PIX.
+            Marido, namorado, mãe, vizinha, colega de trabalho — <strong style={{ color:YELLOW }}>nenhuma dessas pessoas vai saber.</strong> A creator não aparece em lugar nenhum. Não precisa criar perfil público, não precisa divulgar, não precisa explicar. Operação 100% privada, do cadastro ao recebimento.
           </div>
         </div>
 
@@ -166,15 +159,7 @@ export default function Page() {
           O sistema de leilão é o que mais chamou atenção nas redes sociais brasileiras.
         </div>
 
-        <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
-          Os números do boom
-        </h2>
-
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:28 }}>
-          <Stat icone={Users} numero="10.000+" label="mulheres cadastradas no primeiro mês de lançamento no Brasil" />
-          <Stat icone={Zap} numero="60 países" label="onde a plataforma já operava antes de chegar ao Brasil" />
-          <Stat icone={Gavel} numero="R$ 280+" label="valor médio por foto vendida no leilão (até R$ 500)" />
-        </div>
+        
 
         <h2 style={{ fontSize:26, fontWeight:800, color:INK, marginTop:36, marginBottom:14, letterSpacing:'-0.02em', lineHeight:1.25 }}>
           O modelo de assinatura
@@ -233,7 +218,7 @@ export default function Page() {
           <Noticia
             tag="MERCADO"
             titulo="Mercado de creators no exterior movimenta US$ 15 bilhões em 2025"
-            resumo="Brasileiras figuram entre as maiores beneficiárias de plataformas internacionais, com pagamentos em real via PIX."
+            resumo="Brasileiras figuram entre as maiores beneficiárias de plataformas internacionais, com pagamentos na hora, em moeda real."
           />
           <Noticia
             tag="OPORTUNIDADE"
