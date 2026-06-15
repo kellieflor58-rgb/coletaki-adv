@@ -86,11 +86,19 @@ export default function Page() {
         <div style={{ fontSize:17, color:INK, lineHeight:1.75 }}>
 
           <p style={{ marginBottom:18 }}>
-            Marcos acorda às 7h, toma café, e por volta das 8h já está com o portão da garagem entreaberto recebendo o primeiro entregador. Sandra, na sala dos fundos do imóvel onde mora com a família, separa os pacotes que chegaram no dia anterior em três pequenos baldes plásticos rotulados: "Mercado Livre", "Shopee" e "Amazon". Em outra cidade, na zona norte, Patrícia organiza envelopes pardos sobre uma mesa improvisada no quartinho que antes guardava o material de limpeza.
+            Por volta das 8h da manhã, um carro encosta na porta da casa. Alguém da equipe da <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> desce e deixa alguns pacotes — daqueles do Mercado Livre, da Shopee, do Pegaki. O cadastrado recebe, confere e guarda tudo no espaço que separou em casa.
           </p>
 
           <p style={{ marginBottom:18 }}>
-            São três pessoas diferentes, em três regiões do país, que nunca se viram. Mas todas fazem parte de uma mesma rede silenciosa que vem crescendo em ritmo acelerado no Brasil: a de pontos residenciais de coleta para os maiores marketplaces do mercado de e-commerce nacional.
+            Lá pelas 11 horas, o carro passa de novo. Traz mais pacotes e leva os primeiros que ficaram aguardando. Às 14 horas, a última passagem do dia: recolhe o que sobrou e segue para a distribuição final ao consumidor.
+          </p>
+
+          <p style={{ marginBottom:18 }}>
+            Essa é a rotina inteira do ponto. Receber, conferir, guardar, entregar de volta para o motorista da Coletaki quando ele retorna. <strong>O cadastrado nunca despacha pacote, nunca atende cliente final, nunca tem contato com comprador.</strong> Toda a movimentação acontece entre a casa do ponto e o sistema logístico da empresa.
+          </p>
+
+          <p style={{ marginBottom:18 }}>
+            Quinze dias depois, o pagamento cai na conta do cadastrado. O valor varia conforme o volume do ponto, a quantidade de marketplaces ativos na região e a época do ano — datas como Black Friday e Natal costumam concentrar o maior fluxo de pacotes.
           </p>
 
           <p style={{ marginBottom:18 }}>
@@ -106,11 +114,11 @@ export default function Page() {
           </h2>
 
           <p style={{ marginBottom:18 }}>
-            O ponto de coleta opera dentro de uma operação maior, gerida pela <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> — empresa intermediária que faz a ponte entre os marketplaces e as casas dos cadastrados em todo o país. Funciona assim: ao longo do dia, motoboys e entregadores parceiros dos grandes marketplaces deixam pacotes destinados a moradores próximos. O ponto residencial recebe esses pacotes, confere a integridade da embalagem, registra a entrega no app e armazena tudo até que o destinatário final retire.
+            O ponto de coleta opera dentro de uma operação maior, gerida pela <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> — empresa intermediária que faz a ponte entre os marketplaces e as casas dos cadastrados em todo o país. Funciona assim: ao longo do dia, motoboys e entregadores parceiros dos grandes marketplaces deixam pacotes destinados a moradores próximos. O ponto residencial recebe esses pacotes da equipe Coletaki, confere a integridade da embalagem, registra no app e armazena tudo até que a equipe passe novamente para recolher e seguir com a distribuição.
           </p>
 
           <p style={{ marginBottom:18 }}>
-            Cada pacote recebido e devidamente registrado gera uma comissão fixa para o operador do ponto. O modelo é por unidade — não por hora, não por mês. Quanto mais pacotes o ponto consegue receber e despachar, maior a receita.
+            Cada pacote recebido, conferido e devolvido à equipe gera uma comissão fixa para o operador do ponto. O modelo é por unidade — não por hora, não por mês. Quanto maior o volume processado pelo ponto, maior a receita do cadastrado.
           </p>
 
           <p style={{ marginBottom:18 }}>
@@ -137,7 +145,7 @@ export default function Page() {
           </p>
 
           <p style={{ marginBottom:18 }}>
-            Para quem vive da própria casa, é mãe ou pai em tempo integral, está aposentado, é cuidador familiar ou simplesmente busca uma renda complementar sem se deslocar todos os dias, o modelo costuma se encaixar com facilidade. O esforço diário é compatível com a rotina doméstica: recebimento de pacotes em janelas pré-definidas de horário, registro no app, organização e entrega aos destinatários no momento em que vêm retirar.
+            Para quem vive da própria casa, é mãe ou pai em tempo integral, está aposentado, é cuidador familiar ou simplesmente busca uma renda complementar sem se deslocar todos os dias, o modelo costuma se encaixar com facilidade. O esforço diário é compatível com a rotina doméstica: recebimento de pacotes em janelas pré-definidas, conferência, organização e devolução dos pacotes ao motorista da equipe Coletaki nas passagens do dia.
           </p>
 
           <div style={{ borderRadius:6, overflow:'hidden', margin:'30px 0 8px' }}>
