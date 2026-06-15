@@ -58,11 +58,11 @@ export default function Page() {
         </div>
 
         <h1 style={{ fontSize:36, fontWeight:900, color:INK, lineHeight:1.15, letterSpacing:'-0.025em', margin:'0 0 16px' }}>
-          De R$ 3 a R$ 6 mil por mês trabalhando em casa, com CPF e sem chefe: como milhares de brasileiros estão usando um cantinho de casa pra gerar renda
+          Em casa, no próprio CPF e sem virar empresa: brasileiros faturam de R$ 3 a R$ 6 mil por mês recebendo pacotes de grandes marketplaces
         </h1>
 
         <p style={{ fontSize:18, color:INK_SOFT, lineHeight:1.55, margin:'0 0 24px', fontWeight:500 }}>
-          Operação descentralizada de logística para grandes marketplaces vem se espalhando pelo Brasil. Quem tem um espaço pequeno em casa pode se cadastrar pelo CPF, sem CNPJ, sem investimento inicial, sem experiência prévia.
+          Hoje vamos falar da <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a>, a empresa que conecta a rotina de quem mora em casa com a operação logística de grandes marketplaces. Vou contar como funciona, quem pode se cadastrar e quanto rende.
         </p>
 
         <div style={{ borderTop:'1px solid '+LINE, borderBottom:'1px solid '+LINE, padding:'14px 0', marginBottom:24, display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:14 }}>
@@ -106,7 +106,7 @@ export default function Page() {
           </h2>
 
           <p style={{ marginBottom:18 }}>
-            O ponto de coleta opera dentro de uma operação maior, gerida pela Coletaki — empresa intermediária que faz a ponte entre os marketplaces e as casas dos cadastrados em todo o país. Funciona assim: ao longo do dia, motoboys e entregadores parceiros dos grandes marketplaces deixam pacotes destinados a moradores próximos. O ponto residencial recebe esses pacotes, confere a integridade da embalagem, registra a entrega no app e armazena tudo até que o destinatário final retire.
+            O ponto de coleta opera dentro de uma operação maior, gerida pela <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> — empresa intermediária que faz a ponte entre os marketplaces e as casas dos cadastrados em todo o país. Funciona assim: ao longo do dia, motoboys e entregadores parceiros dos grandes marketplaces deixam pacotes destinados a moradores próximos. O ponto residencial recebe esses pacotes, confere a integridade da embalagem, registra a entrega no app e armazena tudo até que o destinatário final retire.
           </p>
 
           <p style={{ marginBottom:18 }}>
@@ -114,7 +114,7 @@ export default function Page() {
           </p>
 
           <p style={{ marginBottom:18 }}>
-            Pontos ativos em capitais e cidades médias brasileiras vêm apresentando, segundo dados divulgados pela própria Coletaki em comunicação com cadastrados, uma média mensal entre R$ 3 mil e R$ 6 mil por ponto operacional. O número varia conforme a localização da residência (regiões mais densas tendem a receber mais pacotes), a disponibilidade de horário do operador e a regularidade no atendimento.
+            Pontos ativos em capitais e cidades médias brasileiras vêm apresentando, segundo dados divulgados pela própria <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> em comunicação com cadastrados, uma média mensal entre R$ 3 mil e R$ 6 mil por ponto operacional. O número varia conforme a localização da residência (regiões mais densas tendem a receber mais pacotes), a disponibilidade de horário do operador e a regularidade no atendimento.
           </p>
 
           <div style={{ background:RED_LIGHT, border:'1px solid '+LINE, borderLeft:'4px solid '+RED, padding:'18px 22px', margin:'24px 0', borderRadius:'0 6px 6px 0' }}>
@@ -133,7 +133,7 @@ export default function Page() {
           </p>
 
           <p style={{ marginBottom:18 }}>
-            Não é necessário ter conhecimento técnico em logística, em e-commerce ou em uso de aplicativos. A Coletaki oferece treinamento gratuito ao cadastrado — em geral, com cerca de quatro horas de duração — explicando passo a passo o funcionamento técnico e operacional do ponto. Após o treinamento, o operador opera com autonomia, sempre com suporte da equipe central caso surjam dúvidas.
+            Não é necessário ter conhecimento técnico em logística, em e-commerce ou em uso de aplicativos. A <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> oferece treinamento gratuito ao cadastrado — em geral, com cerca de quatro horas de duração — explicando passo a passo o funcionamento técnico e operacional do ponto. Após o treinamento, o operador opera com autonomia, sempre com suporte da equipe central caso surjam dúvidas.
           </p>
 
           <p style={{ marginBottom:18 }}>
@@ -168,7 +168,7 @@ export default function Page() {
           </h2>
 
           <p style={{ marginBottom:18 }}>
-            Zero. O modelo da Coletaki não cobra taxa de adesão, mensalidade ou qualquer outra forma de pagamento ao cadastrado. O custo da empresa fica por conta do percentual da comissão sobre cada pacote — modelo de negócio chamado de "cobrança por sucesso", em que a Coletaki só ganha quando o operador também ganha.
+            Zero. O modelo da <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> não cobra taxa de adesão, mensalidade ou qualquer outra forma de pagamento ao cadastrado. O custo da empresa fica por conta do percentual da comissão sobre cada pacote — modelo de negócio chamado de "cobrança por sucesso", em que a <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> só ganha quando o operador também ganha.
           </p>
 
           <p style={{ marginBottom:18 }}>
@@ -180,11 +180,11 @@ export default function Page() {
           </h2>
 
           <p style={{ marginBottom:18 }}>
-            O processo de inscrição é totalmente digital e leva, em média, três minutos. O interessado acessa o site oficial da Coletaki, informa o CEP da residência para verificação de cobertura do programa, preenche dados básicos como nome, CPF, endereço completo, telefone para contato e detalhes do espaço disponível em casa (tamanho aproximado, tipo de cômodo, horários previstos de operação).
+            O processo de inscrição é totalmente digital e leva, em média, três minutos. O interessado acessa o site oficial da <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a>, informa o CEP da residência para verificação de cobertura do programa, preenche dados básicos como nome, CPF, endereço completo, telefone para contato e detalhes do espaço disponível em casa (tamanho aproximado, tipo de cômodo, horários previstos de operação).
           </p>
 
           <p style={{ marginBottom:18 }}>
-            Concluída essa etapa, o cadastro é encaminhado para análise interna. Se aprovado, o candidato é contatado por um consultor da Coletaki — por telefone ou videochamada — para alinhar detalhes finais e agendar o treinamento operacional. O treinamento, conforme já citado, dura cerca de quatro horas no total e cobre todo o passo a passo técnico e prático do dia a dia do ponto.
+            Concluída essa etapa, o cadastro é encaminhado para análise interna. Se aprovado, o candidato é contatado por um consultor da <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> — por telefone ou videochamada — para alinhar detalhes finais e agendar o treinamento operacional. O treinamento, conforme já citado, dura cerca de quatro horas no total e cobre todo o passo a passo técnico e prático do dia a dia do ponto.
           </p>
 
           <p style={{ marginBottom:18 }}>
@@ -193,7 +193,7 @@ export default function Page() {
 
           <div style={{ background:'#FFFBEA', border:'1px solid #FDE68A', borderLeft:'4px solid '+YELLOW, padding:'20px 22px', margin:'32px 0', borderRadius:'0 6px 6px 0' }}>
             <div style={{ fontSize:14, color:INK, lineHeight:1.6, marginBottom:14 }}>
-              <strong>Para fazer o cadastro como ponto de coleta Coletaki:</strong>
+              <strong>Para fazer o cadastro como ponto de coleta <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a>:</strong>
             </div>
             <button onClick={ir} style={{ background:RED, color:'#fff', border:'none', padding:'12px 22px', borderRadius:6, fontSize:14, fontWeight:800, cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8, fontFamily:'inherit' }}>
               Iniciar cadastro pela Coletaki <ArrowRight size={15} />
@@ -209,7 +209,7 @@ export default function Page() {
           </p>
 
           <p style={{ marginBottom:18 }}>
-            A solução, segundo especialistas, passa pela capilaridade — ou seja, ter pontos pequenos e próximos do destinatário final em vez de centros de distribuição grandes e distantes. A Coletaki é uma das empresas brasileiras que está apostando nessa abordagem, e o reflexo aparece no crescimento mensal de pontos ativos.
+            A solução, segundo especialistas, passa pela capilaridade — ou seja, ter pontos pequenos e próximos do destinatário final em vez de centros de distribuição grandes e distantes. A <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a> é uma das empresas brasileiras que está apostando nessa abordagem, e o reflexo aparece no crescimento mensal de pontos ativos.
           </p>
 
           <p style={{ marginBottom:18 }}>
@@ -236,11 +236,11 @@ export default function Page() {
           </p>
 
           <p style={{ marginBottom:30 }}>
-            Para mais informações sobre o programa, condições de operação e disponibilidade na sua região, o cadastro inicial pode ser feito diretamente pelo site da Coletaki.
+            Para mais informações sobre o programa, condições de operação e disponibilidade na sua região, o cadastro inicial pode ser feito diretamente pelo site da <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a>.
           </p>
 
           <div style={{ borderTop:'1px solid '+LINE, paddingTop:18, fontSize:12, color:INK_MUTE, lineHeight:1.7, fontStyle:'italic', marginTop:30 }}>
-            <strong>Aviso editorial:</strong> Reportagem produzida com fontes públicas e comunicação direta com a empresa Coletaki. Resultados financeiros variam conforme localização, dedicação e demanda regional. Verifique sempre os termos atualizados no site oficial antes de qualquer cadastro.
+            <strong>Aviso editorial:</strong> Reportagem produzida com fontes públicas e comunicação direta com a empresa <a href="https://cadastro-coletaki.vercel.app" target="_blank" rel="noopener" style={{ color: RED, textDecoration: 'underline', fontWeight: 700 }}>Coletaki</a>. Resultados financeiros variam conforme localização, dedicação e demanda regional. Verifique sempre os termos atualizados no site oficial antes de qualquer cadastro.
           </div>
 
         </div>
