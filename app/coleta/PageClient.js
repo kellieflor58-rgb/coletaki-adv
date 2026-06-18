@@ -93,7 +93,7 @@ export default function PageClient() {
           <img src={IMG_HERO} alt="Garagem com pacotes" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
         </div>
         <div style={{ fontSize: 12, color: INK_MUTE, fontStyle: 'italic', textAlign: 'center', marginBottom: 50 }}>
-          A garagem da minha casa, hoje. Era depósito de tralha velha. Hoje paga meus boletos.
+          Meu apartamento, hoje. Era só uma sala de bagunça. Hoje paga meus boletos.
         </div>
 
         <div style={{ maxWidth: 640, margin: '0 auto' }}>
@@ -142,7 +142,7 @@ export default function PageClient() {
 
           <Para>A Coletaki é uma empresa que faz a ponte entre os grandes marketplaces — Mercado Livre, Shopee, Amazon e outros — e pontos de coleta espalhados em casas comuns no Brasil. Em vez de ter um centro de distribuição gigante atendendo cada região, eles usam essa malha de pequenos pontos residenciais, coordenados por motoristas que fazem rotas curtas durante o dia.</Para>
 
-          <Para>Pra mim, como ponto, a operação acontece assim. Por volta das oito da manhã, um motorista da <Link>Coletaki</Link> encosta o carro na minha porta. Ele desce com uns pacotes, em geral dez, quinze por passagem, que vieram dos marketplaces. Eu confiro pacote por pacote junto com ele, registro a entrada no app que eles disponibilizam, e guardo tudo na garagem que separei pra isso.</Para>
+          <Para>Pra mim, como ponto, a operação acontece assim. Por volta das oito da manhã, um motorista da <Link>Coletaki</Link> encosta o carro na minha porta. Ele desce com uns pacotes, em geral dez, quinze por passagem, que vieram dos marketplaces. Eu confiro pacote por pacote junto com ele, registro a entrada no app que eles disponibilizam, e guardo tudo no cômodo do apartamento que separei pra isso.</Para>
 
           <Para>Às onze, ele passa de novo. Traz mais pacotes e leva os que ficaram aguardando do dia anterior, pra distribuição final. Às duas da tarde, última passagem. Recolhe o que sobrou e o meu dia operacional encerra ali.</Para>
 
@@ -155,7 +155,7 @@ export default function PageClient() {
           <Para>Na quarta-feira da semana seguinte, meu ponto entrou em operação.</Para>
 
           <div style={{ margin: '40px 0 16px', borderRadius: 12, overflow: 'hidden' }}>
-            <img src={IMG_PACOTES} alt="Pacotes organizados na garagem" style={{ width: '100%', display: 'block' }} />
+            <img src={IMG_PACOTES} alt="Pacotes organizados no apartamento" style={{ width: '100%', display: 'block' }} />
           </div>
           <div style={{ fontSize: 12, color: INK_MUTE, fontStyle: 'italic', textAlign: 'center', marginBottom: 50 }}>
             Minha manhã: pacotes recém-chegados, prontos pra conferência antes da próxima passagem do motorista.
@@ -163,7 +163,7 @@ export default function PageClient() {
 
           <H2>O primeiro mês: ainda desconfiado</H2>
 
-          <Para>Comecei a operar no dia 22 de janeiro. Primeira passagem do motorista, oito e dezessete da manhã. Onze pacotes. Conferi um por um, registrei no app, organizei na garagem que tinha esvaziado na semana anterior. Coloquei umas prateleiras simples com madeira que já tava em casa.</Para>
+          <Para>Comecei a operar no dia 22 de janeiro. Primeira passagem do motorista, oito e dezessete da manhã. Onze pacotes. Conferi um por um, registrei no app, organizei no cômodo do apartamento que tinha esvaziado na semana anterior. Coloquei umas prateleiras simples com madeira que já tava em casa.</Para>
 
           <Para>O volume foi crescendo aos poucos. Primeira semana, fechei com sessenta pacotes processados. Segunda semana, cento e vinte. Terceira, duzentos. Quarta semana, quase trezentos.</Para>
 
