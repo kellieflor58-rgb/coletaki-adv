@@ -63,7 +63,7 @@ export default function PageClient() {
             <span style={{ width: 4, height: 4, borderRadius: '50%', background: GOLD }} />
             <span>relato pessoal</span>
             <span style={{ width: 4, height: 4, borderRadius: '50%', background: GOLD }} />
-            <span>9 min de leitura</span>
+            <span>7 min de leitura</span>
           </div>
         </div>
 
@@ -90,7 +90,7 @@ export default function PageClient() {
         </div>
 
         <div style={{ borderRadius: 16, overflow: 'hidden', marginBottom: 14, aspectRatio: '2/1', boxShadow: '0 16px 48px rgba(15,42,92,0.18)' }}>
-          <img src={IMG_HERO} alt="Garagem com pacotes" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          <img src={IMG_HERO} alt="Apartamento operando como ponto de coleta" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
         </div>
         <div style={{ fontSize: 12, color: INK_MUTE, fontStyle: 'italic', textAlign: 'center', marginBottom: 50 }}>
           Meu apartamento, hoje. Era só uma sala de bagunça. Hoje paga meus boletos.
@@ -100,120 +100,90 @@ export default function PageClient() {
 
           <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>E aí, beleza?</strong></p>
 
-          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Passei a vida inteira de carteira assinada, naquela rotina de acordar cedo, pegar trânsito, voltar tarde, sem tempo pra nada. Em junho do ano passado, cansei. Quis ter horário próprio, fazer minha vida do meu jeito. Pedi as contas e virei motorista de aplicativo.</Para>
+          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Passei a vida inteira de carteira assinada até cansar e querer ter horário próprio. Em junho do ano passado pedi as contas e virei motorista de aplicativo.</Para>
 
-          <H2>Uber: dava pra viver, mas não pra crescer</H2>
+          <Para>No Uber dava pra ir levando — tirava uns <strong>R$ 80 líquidos por dia</strong> trabalhando 8, 9 horas. Mas aí o carro começou a precisar de manutenção e a conta não fechava mais. Era trabalhar pra manter o carro rodando.</Para>
 
-          <Para>No começo até parecia que ia dar pra ir levando. Tirava uns <strong>R$ 80 líquidos por dia, às vezes R$ 90 nos dias bons</strong>, trabalhando 8, 9 horas. Mas aí o carro começou a precisar de manutenção — troca de pastilha, óleo, alinhamento, um pneu novo. Aquilo foi comendo o dinheiro que eu achava que tava sobrando. <strong>No fim do mês, depois das despesas com o carro, a conta não fechava.</strong> Era trabalhar pra manter o carro rodando, basicamente.</Para>
+          <H2>A descoberta veio numa corrida</H2>
 
-          <Para>Aquela rotina virou meu mundo durante uns meses. Sair de manhã, voltar à noite cansado, comer qualquer coisa, dormir, sair de novo. A esposa via meu desânimo crescendo. Eu também via.</Para>
+          <Para>Foi numa terça à noite no comecinho de janeiro. Última corrida do dia, eu já tava cansado. Peguei um cara perto do centro, uns 40 anos, simpático. No meio da viagem ele me perguntou sobre o trabalho e eu acabei desabafando — falei do gasto com o carro, do desânimo, da sensação de não tá indo a lugar nenhum.</Para>
 
-          <H2>A conversa de carro que mudou minha vida</H2>
-
-          <Para>Foi numa terça-feira no comecinho de janeiro deste ano. Lembro porque tava frio, eu tava com fome, e era a última corrida do dia.</Para>
-
-          <Para>Peguei um passageiro perto do centro pra deixar num bairro residencial — uns 25 minutos de viagem. Cara de uns 40 anos, simpático. Começou conversando bobagem, depois perguntou se eu trabalhava só com aplicativo. Eu, pra falar a verdade, tava cansado mas era educado. Contei rapidão que tava no aplicativo há uns meses depois de sair da CLT querendo ter horário próprio, mas que a conta não tava fechando direito por causa do gasto com o carro.</Para>
-
-          <Para>Quando terminei de explicar, ele balançou a cabeça. <em>"Pô, entendo perfeitamente. Conheço gente que passou exatamente por isso. Sabe o que tá dando certo agora pra quem quer trabalhar do próprio jeito? Olha, vou te falar uma coisa que eu fiquei sabendo semana passada..."</em></Para>
+          <Para>Ele ouviu, ficou quieto um momento, e respondeu:</Para>
 
           <div style={{ background: PAPER_WARM, borderLeft: '3px solid ' + GOLD, padding: '24px 28px', margin: '32px 0', borderRadius: '0 8px 8px 0' }}>
             <p style={{ fontSize: 19, fontStyle: 'italic', color: NAVY, lineHeight: 1.55, margin: 0 }}>
-              "Um amigo meu virou ponto de coleta dessas empresas que entregam pacote de marketplace. Tipo, deixa o motorista deixar pacote na casa dele e depois passa pra buscar de novo, várias vezes por dia. Ele tá ganhando uns R$ 4 mil, R$ 5 mil por mês, em casa. Acho que vou tentar também. Tá crescendo um bocado."
+              "Cara, conheço um amigo que tava nessa mesma de Uber. Hoje ele virou ponto de coleta dessas empresas de marketplace — basicamente recebe pacote em casa, várias vezes por dia, e devolve pro motorista pegar de volta. Tá tirando uns quatro, cinco mil por mês. Sem ter que sair de casa."
             </p>
           </div>
 
-          <Para>Eu prestei atenção porque era a primeira vez que ouvia alguém falar disso na vida real, não em vídeo de propaganda. Era um cara comum no banco de trás do meu carro, num diálogo casual. Pedi pra ele me passar o nome da empresa. Ele falou: <em>"acho que se chama Coletaki, deixa eu confirmar."</em> Pesquisou no celular, achou o site, me mandou o link pelo zap.</Para>
+          <Para>Pedi o nome da empresa. Ele pesquisou no celular, achou o site da <Link>Coletaki</Link> e me mandou o link pelo zap. Cheguei em casa naquela noite, sentei no computador e fui pesquisar até de madrugada.</Para>
 
-          <Para>Deixei ele no destino, fui pra casa pensando naquilo o caminho todo.</Para>
+          <Para>Empresa formal, operando há quatro anos, com mais de 800 pontos ativos no Brasil. Reportagens em sites de notícia, avaliações em sites de defesa do consumidor, depoimentos de gente comum operando. Mostrei pra esposa na manhã seguinte. Ela ficou desconfiada no começo, mas depois de uma semana pesquisando junto, fechou comigo: <em>"Carlos, vamos tentar."</em></Para>
 
-          <H2>Cheguei em casa e pesquisei até de madrugada</H2>
+          <H2>O processo de cadastro</H2>
 
-          <Para>Naquela mesma noite, depois do jantar, sentei no computador. Comecei pela <Link>Coletaki</Link>, depois fui pra reportagens em sites de notícia de cidades do interior que falavam de pontos de coleta, depois sites de defesa do consumidor pra ver reclamações. Empresa formal, registrada, operando há quatro anos, com mais de 800 pontos ativos em cidades brasileiras.</Para>
+          <Para>O cadastro no site durou três minutos. Pediu o CEP pra confirmar cobertura (tinha), nome, CPF, endereço, descrição do espaço disponível e horários que eu podia atender.</Para>
 
-          <Para>Vi vários depoimentos de gente comum operando. Uma senhora aposentada tirando R$ 3 mil por mês na casa dela. Um casal jovem perto de R$ 5 mil. Um homem de meia-idade com R$ 6 mil em um espaço maior. Sem chefe, sem CNPJ, sem investimento. Cadastro pelo CPF, treinamento gratuito, pagamento por pacote processado.</Para>
+          <Para>Em três dias me ligaram pra agendar uma <strong>videochamada de verificação</strong> — eles queriam ver o espaço real onde eu ia operar. Mostrei pelo celular o cômodo que tinha separado, com prateleiras simples, fechado a chave, longe da circulação da família. Eles aprovaram na hora e marcaram o treinamento online pra dois dias depois.</Para>
 
-          <Para>Mostrei pra esposa quando ela acordou na manhã seguinte. A primeira reação dela foi de pé atrás: <em>"Carlos, eu vou olhar tudo com lupa antes de a gente investir tempo nisso."</em> Eu também tava com pé atrás. Mas a gente passou uma semana pesquisando junto. Quanto mais a gente conferia, mais convincente parecia.</Para>
+          <Para>O treinamento durou quatro horas. Cobriu uso do app, regras de conferência, leitura de QR code, política de pacote com avaria, calendário de pagamento. Direto, sem enrolação. Na quarta-feira da semana seguinte meu ponto entrou em operação.</Para>
 
-          <Para>No dia 12 de janeiro eu me cadastrei.</Para>
+          <H2>Como funciona o dia a dia</H2>
 
-          <H2>Como funciona, contando como eu mesmo entendi</H2>
+          <Para>Por volta das oito da manhã, o motorista encosta na minha porta. Às vezes é alguém do CD de distribuição do próprio marketplace (Mercado Livre, Shopee, Amazon), às vezes é um terceirizado de carro contratado pela <Link>Coletaki</Link> pra fazer a rota. Não muda nada pra mim — o procedimento é o mesmo.</Para>
 
-          <Para>Pra quem nunca ouviu falar dessa operação (eu mesmo era assim até essa corrida de Uber), vou explicar do jeito mais natural possível. Sem termo técnico, sem firula.</Para>
+          <Para>Ele desce com os pacotes. Em geral chegam entre <strong>20 e 60 pacotes por passagem</strong>, todos pequenos — caixinhas, envelopes, embalagens leves de e-commerce comum. Eu leio o QR code de entrada de cada pacote no app, junto com o motorista, e guardo tudo no cômodo separado.</Para>
 
-          <Para>A Coletaki é uma empresa que faz a ponte entre os grandes marketplaces — Mercado Livre, Shopee, Amazon e outros — e pontos de coleta espalhados em casas comuns no Brasil. Em vez de ter um centro de distribuição gigante atendendo cada região, eles usam essa malha de pequenos pontos residenciais, coordenados por motoristas que fazem rotas curtas durante o dia.</Para>
+          <Para>Às onze ele passa de novo. Traz mais pacotes e leva os que ficaram do dia anterior. Às duas da tarde, última passagem do dia. Quando os pacotes saem, é o mesmo procedimento — leitura de QR code de saída no app. Tudo registrado.</Para>
 
-          <Para>Pra mim, como ponto, a operação acontece assim. Por volta das oito da manhã, um motorista da <Link>Coletaki</Link> encosta o carro na minha porta. Ele desce com uns pacotes, em geral dez, quinze por passagem, que vieram dos marketplaces. Eu confiro pacote por pacote junto com ele, registro a entrada no app que eles disponibilizam, e guardo tudo no cômodo do apartamento que separei pra isso.</Para>
-
-          <Para>Às onze, ele passa de novo. Traz mais pacotes e leva os que ficaram aguardando do dia anterior, pra distribuição final. Às duas da tarde, última passagem. Recolhe o que sobrou e o meu dia operacional encerra ali.</Para>
-
-          <Para>A parte que eu não tinha entendido direito antes de começar é essa: <strong>eu não despacho pacote, não atendo cliente, não tenho contato com comprador.</strong> Eu só recebo, guardo e devolvo pro motorista quando ele volta. Toda a relação com o destinatário final é responsabilidade da Coletaki e do marketplace. Eu opero a parte intermediária.</Para>
-
-          <Para>O pagamento é por pacote processado. Cada pacote conferido e devolvido gera uma comissão fixa. Não tem mensalidade, não tem taxa de adesão, não tem investimento inicial. Pagamento na conta a cada quinze dias, direto no meu CPF.</Para>
-
-          <Para>O cadastro durou três minutos no site. Pediu CEP pra ver se minha região tinha cobertura (tinha), nome, CPF, endereço, descrição do espaço disponível e horários. Em três dias me ligaram pra agendar o treinamento online — quatro horas na quinta-feira seguinte. Foi prático: uso do app, regras de armazenamento, conferência de pacotes, política de extravio. Sem enrolação.</Para>
-
-          <Para>Na quarta-feira da semana seguinte, meu ponto entrou em operação.</Para>
+          <Para>A parte importante é essa: <strong>eu não despacho, não atendo cliente, não tenho contato com comprador.</strong> Só recebo, leio o QR, guardo, devolvo pro motorista quando ele volta. O sistema da Coletaki cuida do resto.</Para>
 
           <div style={{ margin: '40px 0 16px', borderRadius: 12, overflow: 'hidden' }}>
-            <img src={IMG_PACOTES} alt="Pacotes organizados no apartamento" style={{ width: '100%', display: 'block' }} />
+            <img src={IMG_PACOTES} alt="Pacotes organizados aguardando próxima passagem" style={{ width: '100%', display: 'block' }} />
           </div>
           <div style={{ fontSize: 12, color: INK_MUTE, fontStyle: 'italic', textAlign: 'center', marginBottom: 50 }}>
-            Minha manhã: pacotes recém-chegados, prontos pra conferência antes da próxima passagem do motorista.
+            Manhã típica: 30 pacotes recém-chegados, todos pequenos, aguardando a próxima passagem.
           </div>
 
-          <H2>O primeiro mês: ainda desconfiado</H2>
+          <H2>O pagamento: dia 1 e dia 16</H2>
 
-          <Para>Comecei a operar no dia 22 de janeiro. Primeira passagem do motorista, oito e dezessete da manhã. Onze pacotes. Conferi um por um, registrei no app, organizei no cômodo do apartamento que tinha esvaziado na semana anterior. Coloquei umas prateleiras simples com madeira que já tava em casa.</Para>
+          <Para>O pagamento é por pacote processado, depositado <strong>quinzenalmente: todo dia 01 e todo dia 16</strong> direto na minha conta vinculada ao CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial.</Para>
 
-          <Para>O volume foi crescendo aos poucos. Primeira semana, fechei com sessenta pacotes processados. Segunda semana, cento e vinte. Terceira, duzentos. Quarta semana, quase trezentos.</Para>
+          <Para>Pra você ter uma referência, esses foram meus 4 meses operando:</Para>
 
-          <Para>No dia 22 de fevereiro, o primeiro pagamento caiu na conta: <strong>R$ 2.140</strong>. Eu olhei pra esposa, ela olhou pra mim. Era pouco menos do que eu ganhava de CLT no último emprego, mas era líquido, em casa, com cinco horas de trabalho por dia. E sem chefe, sem trânsito, sem aquele aperto no peito de domingo à noite pensando na segunda.</Para>
+          <Para><strong>Janeiro</strong> (primeiro mês, ritmo crescendo): R$ 2.140<br /><strong>Fevereiro</strong>: R$ 4.180<br /><strong>Março</strong> (volume estabilizou): R$ 6.020<br /><strong>Abril</strong>: R$ 5.870</Para>
 
-          <Para>A esposa só falou: <em>"Carlos, isso pode dar certo."</em> Eu ainda não tava acreditando totalmente. Mas tava começando.</Para>
+          <Para>Hoje minha média gira entre <strong>R$ 3 mil e R$ 6 mil por mês</strong>, dependendo do volume da semana e da época. <strong>Black Friday e Natal puxam pra cima. Janeiro e fevereiro tendem a ser mais fracos.</strong></Para>
 
-          <H2>A coisa virou no segundo mês</H2>
+          <H2>Os pontos negativos (porque tem)</H2>
 
-          <Para>Em fevereiro, o volume continuou crescendo. O sistema da Coletaki começa a direcionar mais pacotes pros pontos que atendem com regularidade e sem erro de registro. Como eu tava lá todo dia, no horário, sem perder pacote, eles foram aumentando o volume da minha região comigo. Fechei o mês com <strong>R$ 4.180</strong>.</Para>
+          <Para>Quero ser honesto contigo. Tem dois pontos negativos importantes pra considerar antes de entrar.</Para>
 
-          <Para>Foi nessa hora que eu sentei e disse pra esposa que não ia mais procurar emprego. A gente conversou bastante naquele domingo. Era um risco — eu tava abandonando a busca por estabilidade tradicional pra apostar em algo que ainda tinha três meses de operação. Mas a conta tava fazendo sentido pela primeira vez em meses.</Para>
+          <Para><strong>O primeiro é responsabilidade pela integridade do pacote.</strong> Quando o motorista deixa o pacote no seu ponto, a responsabilidade passa pra você. Se algum pacote sair com avaria, semi-aberto ou quebrado, e você não registrou que ele já chegou assim, a Coletaki pode descontar isso do seu pagamento ou ainda gerar advertência.</Para>
 
-          <Para>Março foi a virada definitiva. Operei no ritmo total: mil e quatrocentos pacotes processados no mês. Pagamento depositado: <strong>R$ 6.020</strong>. Mais do que eu ganhava no melhor mês da CLT, com hora extra. Tirei o extrato, fui no quarto onde a esposa tava ajudando as crianças com o dever, mostrei a tela do celular pra ela. Ela leu, releu, fechou o olho um segundo. Não falou nada. Só me abraçou.</Para>
+          <Para>O que eu faço sempre: na hora da chegada, qualquer pacote que parece estranho — caixa amassada, fita rompida, embalagem suspeita — eu <strong>fotografo na hora pelo app e marco no sistema</strong>. Isso documenta que o problema veio de fora, não foi causado por mim. Já fiz isso umas cinco vezes em quatro meses, e em todas a Coletaki resolveu sem desconto pra mim.</Para>
 
-          <Para>Abril foi mês de estabilização. <strong>R$ 5.870</strong>. Hoje, depois de quatro meses operando, minha média gira entre R$ 3,5 mil e R$ 6 mil por mês, dependendo do volume da semana, da época do ano, da quantidade de marketplaces ativos na região. <strong>Datas como Black Friday e Natal a tendência é puxar pra cima. Janeiro e fevereiro tendem a ser meses mais fracos.</strong></Para>
+          <Para><strong>O segundo ponto negativo é a regularidade obrigatória.</strong> O sistema da Coletaki direciona volume pra quem atende com confiabilidade. Se você falta uma passagem sem avisar antes, perde priorização. Se faltar várias vezes, pode até ser desligado. Não tem como tratar como bico — é compromisso de horário.</Para>
 
-          <H2>O que mudou de verdade</H2>
+          <H2>O que mudou na minha rotina</H2>
 
-          <Para>Não foi só dinheiro. O dinheiro é importante e mudou minha situação financeira — voltei a pagar conta sem aperto, recuperei a reserva que tinha queimado, comecei a guardar um pouco pro futuro. Mas a virada de verdade foi a rotina.</Para>
+          <Para>Hoje eu acordo às sete, tomo café com os filhos, levo eles na escola. Volto, atendo a passagem das oito. Almoço decente em casa, atendo a das onze. Tiro uma soneca se quero. Atendo a das duas. Resto da tarde tô livre — busco as crianças, faço caminhada com a esposa, janto cedo, durmo bem.</Para>
 
-          <Para>Hoje eu acordo às sete. Tomo café com os filhos antes da escola, levo eles no carro. Volto pra casa, atendo a primeira passagem das oito. Faço um almoço decente, tomo banho, atendo a passagem das onze. Tiro uma soneca no meio da tarde se quero. Atendo a passagem das duas. Depois disso, tô livre. Vou buscar as crianças, dou uma caminhada com a esposa, faço janta cedo, durmo bem.</Para>
+          <Para>Em mais de dez anos de CLT eu nunca tive uma rotina dessas. <strong>Essa é a diferença que ninguém te conta quando fala de "trabalhar em casa".</strong></Para>
 
-          <Para>Em mais de dez anos de CLT, eu nunca tive uma rotina assim. Nunca. Era sempre a corrida — acordar exausto, sair correndo, voltar exausto. A vida acontecia nas pequenas brechas. Hoje a vida é o principal, e o trabalho é uma parte boa e organizada do dia. <strong>Essa é a diferença que ninguém te conta quando fala de "trabalhar em casa".</strong></Para>
+          <H2>Por que esse modelo tá crescendo no Brasil</H2>
 
-          <H2>Antes de fechar: não é pra todo mundo</H2>
+          <Para>Conversando com gente do meio e lendo reportagens, comecei a entender por que essa operação tá se espalhando rápido pelo país.</Para>
 
-          <Para>Quero ser honesto contigo. Não é solução universal. Existem pré-requisitos reais que precisam ser respeitados pra esse modelo fazer sentido.</Para>
+          <Para>A dor número um dos grandes marketplaces hoje é a <strong>última milha</strong> — aquela parte final da entrega, do CD até a casa do cliente. É a parte que mais demora, mais reclama, mais custa. Quando o Mercado Livre, a Shopee ou a Amazon precisam atender bairros inteiros usando só centros de distribuição grandes, a entrega trava em 2, 3, 5 dias.</Para>
 
-          <Para>Você precisa ter um cômodo fechado em casa, com chave, separado da circulação cotidiana da família. Não pode ser corredor, não pode ser sala compartilhada. Pacotes precisam ficar trancados e seguros. Quem mora em apartamento pequeno sem espaço extra vai ter dificuldade.</Para>
+          <Para>Com pontos residenciais espalhados pela cidade, eles resolvem isso. <strong>Em vez de um CD gigante atender bairros distantes, dezenas de pontos pequenos cobrem cada região.</strong> A entrega final fica mais rápida pro cliente, e a logística fica drasticamente mais barata pra empresa. Por isso eles pagam bem pra quem opera ponto — porque resolve um problema que custa milhões em frustração de cliente e custo logístico.</Para>
 
-          <Para>Precisa ter disponibilidade durante o dia. As passagens do motorista acontecem em horários específicos e precisam ser atendidas. Quem trabalha CLT em horário comercial não consegue conciliar.</Para>
-
-          <Para>Precisa ter regularidade. O sistema da Coletaki direciona volume pra quem mostra confiabilidade. Quem opera de forma inconstante perde priorização rapidamente.</Para>
-
-          <Para>Por último, precisa que a sua região tenha cobertura do programa. Isso é o primeiro filtro do cadastro — você informa o CEP e o sistema te diz se ali tem operação ativa.</Para>
-
-          <Para>Pra quem tem essas quatro coisas — <strong>espaço fechado, disponibilidade, regularidade e região coberta</strong> — é a oportunidade mais sólida que eu vi nos últimos anos.</Para>
-
-          <H2>Por que tô escrevendo isso</H2>
-
-          <Para>Não tô vendendo curso, não sou afiliado, não sou influencer de nada. Cheguei nessa história por uma conversa de Uber num dia que eu tava cansado e desanimado. Testei na pele. Ainda opero meu ponto todo dia.</Para>
-
-          <Para>Tô contando porque sei que tem muita gente como eu há alguns meses — cansada da CLT, querendo trabalhar do próprio jeito, tentando aplicativo ou outras coisas que não fecham a conta. Achei justo dividir a história de alguém comum como eu, que conseguiu sair desse buraco, sem propaganda barata.</Para>
-
-          <Para>Se você tá pesquisando isso agora e a sua situação parece com a minha do final do ano passado, talvez valha a pena olhar com calma. Não como salvação garantida, mas como um caminho real que existe.</Para>
+          <Para>Esse modelo não é moda. É evolução natural do e-commerce brasileiro, que cresceu rápido demais pra ser atendido só com infraestrutura tradicional.</Para>
 
           <div style={{ textAlign: 'center', padding: '44px 0', borderTop: '1px solid ' + LINE, borderBottom: '1px solid ' + LINE, margin: '50px 0' }}>
             <p style={{ fontSize: 16, color: INK_SOFT, lineHeight: 1.65, maxWidth: 540, margin: '0 auto 28px', fontStyle: 'italic' }}>
-              Pra conhecer a Coletaki, verificar se sua região tem cobertura e fazer o cadastro inicial pelo CPF, é tudo direto no site da empresa. Sem custo, sem compromisso, sem cartão pedido na entrada.
+              Pra conhecer a Coletaki, ver se sua região tem cobertura e fazer o cadastro pelo CPF, é tudo direto no site da empresa. Sem custo, sem compromisso.
             </p>
             <a href={LINK_COLETAKI} target="_blank" rel="noopener" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: NAVY, color: '#fff', padding: '16px 32px', borderRadius: 999, fontWeight: 700, fontSize: 15, textDecoration: 'none', boxShadow: '0 10px 28px rgba(15,42,92,0.32)' }}>
               Conhecer a Coletaki →
