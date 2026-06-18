@@ -100,9 +100,15 @@ export default function PageClient() {
 
           <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>E aí, beleza?</strong></p>
 
-          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Passei a vida inteira de carteira assinada até cansar e querer ter horário próprio. Em junho do ano passado pedi as contas e virei motorista de aplicativo.</Para>
+          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Moro em Ribeirão Preto, interior de São Paulo. Passei mais de dez anos de carteira assinada — daqueles trabalhos que parecem que vão durar a vida toda, com chefe ruim, plano de saúde caindo de qualidade ano após ano, e o salário aumentando bem menos do que o aluguel.</Para>
 
-          <Para>No Uber dava pra ir levando — tirava uns <strong>R$ 80 a R$ 110 líquidos por dia</strong> trabalhando 8, 9 horas. Mas aí o carro começou a precisar de manutenção e a conta não fechava mais. Era trabalhar pra manter o carro rodando.</Para>
+          <Para>Junho do ano passado bateu o cansaço de verdade. Tinha trinta e dois anos, dois filhos pequenos em casa, e a sensação cada vez mais clara de que eu tava acordando cedo todo dia pra construir o sonho dos outros. Pedi as contas num impulso, mas com uma certeza no peito: queria ter horário próprio, queria almoçar com minha esposa de vez em quando, queria pegar meu filho na escola sem precisar pedir permissão pra ninguém.</Para>
+
+          <Para>Virei motorista de aplicativo no susto. No começo até parecia que ia dar tudo certo. Tirava uns <strong>R$ 80 a R$ 110 líquidos por dia</strong> trabalhando 8, 9 horas. Não era o melhor salário do mundo, mas era todo dia — entrava algum dinheiro mesmo nos dias mais ruins. Ribeirão Preto é uma cidade que roda bem pra Uber: tem universidade, tem hospital, tem evento toda semana, e o trânsito não é o caos de São Paulo capital. Achei que tinha encontrado meu lugar.</Para>
+
+          <Para>Só que ninguém me avisou de uma coisa: <strong>o carro também trabalha.</strong> E o carro cansa, junto com o motorista. Em uns três meses eu já tinha gastado com pneu novo, troca de óleo dupla, pastilha de freio, alinhamento, balanceamento, e ainda um conserto chato na suspensão depois de um buraco fatal na Avenida Brasil. Cada manutenção comia uma semana inteira de corrida.</Para>
+
+          <Para>Quando eu fechava o mês, sentava com a esposa pra fazer as contas, e o resultado era sempre o mesmo: <strong>tava trabalhando pra manter o carro rodando.</strong> O dinheiro entrava na conta, mas saía igualzinho pelo posto de gasolina e pela mecânica. A esposa não falava nada, mas eu via a preocupação no olhar dela. Eu mesmo tava começando a achar que tinha tomado a pior decisão da minha vida.</Para>
 
           <H2>A descoberta veio numa corrida</H2>
 
