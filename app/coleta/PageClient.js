@@ -68,11 +68,11 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.15, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          Como faturo de <span style={{ color: GOLD }}>R$ 3,5 a R$ 6 mil</span> em casa sendo ponto de coleta de marketplace: minha jornada completa em 4 meses
+          Como faturo <span style={{ color: GOLD }}>R$ 5 mil por mês</span> em casa sendo ponto de coleta de marketplace
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 640 }}>
-          Saí da carteira assinada em junho do ano passado. Fiquei desempregado, virei Uber, queimei reserva, tentei coisa que deu prejuízo. Em janeiro descobri o modelo de ponto de coleta de marketplaces. Em 4 meses estabilizei minha renda entre R$ 3,5 e R$ 6 mil. Esse é o passo a passo completo e sem maquiagem.
+          Cansei da CLT e virei motorista de aplicativo pra ter horário livre. Numa corrida casual de janeiro, um passageiro me contou sobre um modelo de ponto de coleta de marketplaces que mudou tudo. Hoje, 4 meses depois, faturo em média R$ 5 mil por mês na minha garagem. Sem chefe, sem CNPJ, sem propaganda.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
@@ -100,17 +100,9 @@ export default function PageClient() {
 
           <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>E aí, beleza?</strong></p>
 
-          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Moro no interior, em uma cidade média do estado de São Paulo. Trabalhei 6 anos como supervisor de operações em uma empresa de logística, dessas grandes que atendem e-commerce, até que em junho do ano passado pedi as contas.</Para>
+          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Passei a vida inteira de carteira assinada, naquela rotina de acordar cedo, pegar trânsito, voltar tarde, sem tempo pra nada. Em junho do ano passado, cansei. Quis ter horário próprio, fazer minha vida do meu jeito. Pedi as contas e virei motorista de aplicativo.</Para>
 
-          <H2>A demissão e a busca frustrada</H2>
-
-          <Para>O motivo de eu sair foi cansaço, basicamente. Seis anos é tempo que cabe muita coisa, e cabia muita coisa ruim ali no fim. Pedi as contas num impulso depois de uma reunião onde fui humilhado na frente da equipe inteira. Saí com a rescisão na conta e a certeza de que ia recolocar fácil.</Para>
-
-          <Para>Os dois primeiros meses foram só busca por emprego. O problema é que as vagas que apareciam pagavam quase metade do que eu ganhava antes. Não dava conta das minhas despesas de jeito nenhum. Recusei algumas propostas, esperei mais um pouco, mas nada melhor apareceu.</Para>
-
-          <H2>Virei motorista de aplicativo no susto</H2>
-
-          <Para>Em agosto, com a conta apertando de verdade, baixei o aplicativo de motorista e botei o carro na rua. Foi uma decisão sem orgulho nenhum. Era o que eu tinha pra fazer naquele momento.</Para>
+          <H2>Uber: dava pra viver, mas não pra crescer</H2>
 
           <Para>No começo até parecia que ia dar pra ir levando. Tirava uns <strong>R$ 80 líquidos por dia, às vezes R$ 90 nos dias bons</strong>, trabalhando 8, 9 horas. Mas aí o carro começou a precisar de manutenção — troca de pastilha, óleo, alinhamento, um pneu novo. Aquilo foi comendo o dinheiro que eu achava que tava sobrando. <strong>No fim do mês, depois das despesas com o carro, a conta não fechava.</strong> Era trabalhar pra manter o carro rodando, basicamente.</Para>
 
@@ -120,9 +112,9 @@ export default function PageClient() {
 
           <Para>Foi numa terça-feira no comecinho de janeiro deste ano. Lembro porque tava frio, eu tava com fome, e era a última corrida do dia.</Para>
 
-          <Para>Peguei um passageiro perto do centro pra deixar num bairro residencial — uns 25 minutos de viagem. Cara de uns 40 anos, simpático. Começou conversando bobagem, depois perguntou se eu trabalhava só com aplicativo. Eu, pra falar a verdade, tava cansado mas era educado. Contei rapidão que tava entre empregos, que tinha tentado um curso de afiliado na internet que não deu certo e perdi um dinheiro, e que tava no aplicativo enquanto procurava outra coisa.</Para>
+          <Para>Peguei um passageiro perto do centro pra deixar num bairro residencial — uns 25 minutos de viagem. Cara de uns 40 anos, simpático. Começou conversando bobagem, depois perguntou se eu trabalhava só com aplicativo. Eu, pra falar a verdade, tava cansado mas era educado. Contei rapidão que tava no aplicativo há uns meses depois de sair da CLT querendo ter horário próprio, mas que a conta não tava fechando direito por causa do gasto com o carro.</Para>
 
-          <Para>Quando falei do curso, ele riu. <em>"Pô, eu já fui nessa também. Perdi um dinheiro tentando viver de internet. Não é pra qualquer um. Sabe o que tá dando certo agora? Olha, vou te falar uma coisa que eu fiquei sabendo semana passada..."</em></Para>
+          <Para>Quando terminei de explicar, ele balançou a cabeça. <em>"Pô, entendo perfeitamente. Conheço gente que passou exatamente por isso. Sabe o que tá dando certo agora pra quem quer trabalhar do próprio jeito? Olha, vou te falar uma coisa que eu fiquei sabendo semana passada..."</em></Para>
 
           <div style={{ background: PAPER_WARM, borderLeft: '3px solid ' + GOLD, padding: '24px 28px', margin: '32px 0', borderRadius: '0 8px 8px 0' }}>
             <p style={{ fontSize: 19, fontStyle: 'italic', color: NAVY, lineHeight: 1.55, margin: 0 }}>
@@ -140,7 +132,7 @@ export default function PageClient() {
 
           <Para>Vi vários depoimentos de gente comum operando. Uma senhora aposentada tirando R$ 3 mil por mês na casa dela. Um casal jovem perto de R$ 5 mil. Um homem de meia-idade com R$ 6 mil em um espaço maior. Sem chefe, sem CNPJ, sem investimento. Cadastro pelo CPF, treinamento gratuito, pagamento por pacote processado.</Para>
 
-          <Para>Mostrei pra esposa quando ela acordou na manhã seguinte. A primeira reação dela foi de pé atrás: <em>"Carlos, depois do curso de afiliado, eu vou olhar tudo com lupa."</em> Eu também tava com pé atrás. Mas a gente passou uma semana pesquisando junto. Quanto mais a gente conferia, mais convincente parecia.</Para>
+          <Para>Mostrei pra esposa quando ela acordou na manhã seguinte. A primeira reação dela foi de pé atrás: <em>"Carlos, eu vou olhar tudo com lupa antes de a gente investir tempo nisso."</em> Eu também tava com pé atrás. Mas a gente passou uma semana pesquisando junto. Quanto mais a gente conferia, mais convincente parecia.</Para>
 
           <Para>No dia 12 de janeiro eu me cadastrei.</Para>
 
@@ -179,7 +171,7 @@ export default function PageClient() {
 
           <Para>A esposa só falou: <em>"Carlos, isso pode dar certo."</em> Eu ainda não tava acreditando totalmente. Mas tava começando.</Para>
 
-          <H2>Fevereiro, março, abril: a coisa virou</H2>
+          <H2>A coisa virou no segundo mês</H2>
 
           <Para>Em fevereiro, o volume continuou crescendo. O sistema da Coletaki começa a direcionar mais pacotes pros pontos que atendem com regularidade e sem erro de registro. Como eu tava lá todo dia, no horário, sem perder pacote, eles foram aumentando o volume da minha região comigo. Fechei o mês com <strong>R$ 4.180</strong>.</Para>
 
@@ -195,7 +187,7 @@ export default function PageClient() {
 
           <Para>Hoje eu acordo às sete. Tomo café com os filhos antes da escola, levo eles no carro. Volto pra casa, atendo a primeira passagem das oito. Faço um almoço decente, tomo banho, atendo a passagem das onze. Tiro uma soneca no meio da tarde se quero. Atendo a passagem das duas. Depois disso, tô livre. Vou buscar as crianças, dou uma caminhada com a esposa, faço janta cedo, durmo bem.</Para>
 
-          <Para>Em seis anos de logística, eu nunca tive uma rotina assim. Nunca. Era sempre a corrida — acordar exausto, sair correndo, voltar exausto. A vida acontecia nas pequenas brechas. Hoje a vida é o principal, e o trabalho é uma parte boa e organizada do dia. <strong>Essa é a diferença que ninguém te conta quando fala de "trabalhar em casa".</strong></Para>
+          <Para>Em mais de dez anos de CLT, eu nunca tive uma rotina assim. Nunca. Era sempre a corrida — acordar exausto, sair correndo, voltar exausto. A vida acontecia nas pequenas brechas. Hoje a vida é o principal, e o trabalho é uma parte boa e organizada do dia. <strong>Essa é a diferença que ninguém te conta quando fala de "trabalhar em casa".</strong></Para>
 
           <H2>Antes de fechar: não é pra todo mundo</H2>
 
@@ -215,7 +207,7 @@ export default function PageClient() {
 
           <Para>Não tô vendendo curso, não sou afiliado, não sou influencer de nada. Cheguei nessa história por uma conversa de Uber num dia que eu tava cansado e desanimado. Testei na pele. Ainda opero meu ponto todo dia.</Para>
 
-          <Para>Tô contando porque sei que tem muita gente como eu cinco meses atrás — pedindo demissão por impulso, queimando reserva, tentando coisa que dá errado, perdendo dinheiro em curso furado. Achei justo dividir a história de alguém comum como eu, que conseguiu sair desse buraco, sem propaganda barata.</Para>
+          <Para>Tô contando porque sei que tem muita gente como eu há alguns meses — cansada da CLT, querendo trabalhar do próprio jeito, tentando aplicativo ou outras coisas que não fecham a conta. Achei justo dividir a história de alguém comum como eu, que conseguiu sair desse buraco, sem propaganda barata.</Para>
 
           <Para>Se você tá pesquisando isso agora e a sua situação parece com a minha do final do ano passado, talvez valha a pena olhar com calma. Não como salvação garantida, mas como um caminho real que existe.</Para>
 
