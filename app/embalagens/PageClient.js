@@ -68,11 +68,11 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.15, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          Caí no golpe do "trabalho em casa montando embalagens" e descobri o que <span style={{ color: GOLD }}>realmente funciona</span>
+          Era entregador da Shopee, ganhava R$ 3 mil e gastava R$ 1.000 em combustível. <span style={{ color: GOLD }}>Virei o ponto de coleta e ganho mais sem rodar.</span>
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 640 }}>
-          Comprei um kit de R$ 297 prometendo R$ 4 mil por mês montando embalagens em casa. Nunca chegou. Por acaso, três meses depois, acabei descobrindo um modelo de logística residencial que funciona de verdade — e tô há quatro meses operando. Conto a história sem firula.
+          Dois anos correndo a cidade inteira entregando pacote pra Shopee. Tirava R$ 3 mil brutos por mês, mas o combustível e a manutenção do carro comiam mais de R$ 1.000. Conhecendo a operação por dentro, descobri o outro lado dela: os pontos residenciais. Pulei pra esse lado e nunca mais voltei pra rua.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
@@ -93,90 +93,94 @@ export default function PageClient() {
           <img src={IMG_HERO} alt="Operação de coleta no apartamento" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
         </div>
         <div style={{ fontSize: 12, color: INK_MUTE, fontStyle: 'italic', textAlign: 'center', marginBottom: 50 }}>
-          Hoje opero um ponto de coleta de marketplaces no meu apartamento. Mas o caminho até aqui passou por um golpe.
+          Hoje o motorista da Shopee passa na minha porta três vezes por dia. Antes, era eu na rua.
         </div>
 
         <div style={{ maxWidth: 640, margin: '0 auto' }}>
 
           <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>E aí, beleza?</strong></p>
 
-          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Moro em Ribeirão Preto, interior de São Paulo. Esse texto aqui é meio que um desabafo + alerta + dica, tudo junto. Vou contar uma história que me incomoda até hoje, mas que terminou bem — e talvez a sua possa terminar antes de começar mal.</Para>
+          <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Moro em Ribeirão Preto, interior de São Paulo. Hoje vou contar uma história que tem ironia até demais: passei dois anos da minha vida entregando pacote da Shopee na rua, gastando combustível, comendo poeira, brigando com trânsito. Até que descobri quem ganhava mais dinheiro na operação inteira: <strong>as pessoas que ficam em casa recebendo os pacotes que eu entregava.</strong></Para>
 
-          <Para>Em setembro do ano passado, eu tava desempregado havia uns meses. Tinha pedido as contas em junho, cansado da CLT, achando que ia recolocar fácil. Não recolocaram. Os meses foram passando, a reserva foi minguando, e a ansiedade foi tomando conta.</Para>
+          <Para>Hoje sou um deles. E nunca mais voltei pra rua.</Para>
 
-          <H2>O anúncio que parecia perfeito demais</H2>
+          <H2>Dois anos como entregador da Shopee</H2>
 
-          <Para>Foi numa madrugada de sexta-feira que me deparei com aquele anúncio. Tava rolando o feed do Instagram sem rumo, e apareceu um vídeo de uma mulher sorridente mostrando uma sala arrumadinha com várias caixinhas decorativas, fitas, papel de presente. A legenda dizia algo como <em>"Faço R$ 4 mil por mês montando embalagens no conforto da minha casa. Quer aprender?"</em></Para>
+          <Para>Em meados de 2023 a Shopee tava explodindo no Brasil. Tinha um anúncio em todo canto pedindo entregador autônomo — só precisava ter CNH, carro próprio (ou moto) e disposição. Eu tava saindo de uma CLT cansativa, queria flexibilidade, e comprei o discurso da "liberdade do entregador". Me cadastrei numa terça, comecei a rodar na quinta.</Para>
 
-          <Para>Cliquei. Caí numa página com depoimentos de pessoas comuns: dona de casa, aposentada, mãe solo, estudante. Todos contando que tinham começado <strong>comprando um kit profissional</strong> e em poucas semanas já tavam recebendo pedidos de empresas grandes — Mercado Livre, Magalu, Shein. Era só montar embalagens, colocar etiqueta, e pronto. Pagamento por unidade.</Para>
+          <Para>No começo era animado. A gente buscava lote de pacotes num hub local — uma transportadora terceirizada da Shopee, no caso da minha região — e tinha o dia todo pra entregar. Em torno de 80, 100 pacotes por dia, cada um a uns R$ 2 de comissão. Fazia uma média de <strong>R$ 3.000 brutos por mês</strong> trabalhando seis dias por semana.</Para>
 
-          <Para>O kit custava R$ 297. Incluía os materiais iniciais, "acesso ao sistema de captação de pedidos", treinamento em vídeo e suporte. Prometiam que em até 15 dias eu já tava recebendo encomendas em casa pra montar. Parecia certinho demais. Mas eu tava desesperado, e desespero é péssimo conselheiro.</Para>
+          <Para>Parecia bom. Mas a conta nunca era só o que entrava.</Para>
 
-          <Para>Mostrei pra esposa. Ela ficou desconfiada — <em>"Carlos, isso aí cheira a coisa errada."</em> Mas eu argumentei. Falei dos depoimentos, do site que parecia profissional, dos números. Acabei convencendo ela e a mim mesmo. Paguei R$ 297 no cartão.</Para>
+          <H2>O combustível e a manutenção que ninguém fala</H2>
 
-          <H2>O kit que nunca chegou</H2>
+          <Para>Ribeirão Preto é uma cidade grande, espalhada. Quando você é entregador, você roda muito — bairro do Sumarezinho de manhã, Vila Virgínia depois do almoço, Greenville no fim da tarde. Em um dia normal, eu rodava entre 120 e 180 km. Final de mês, dava uns 4.000 km no carro.</Para>
 
-          <Para>No e-mail de confirmação dizia que o kit seria entregue em até 7 dias úteis. Esperei. No oitavo dia, comecei a estranhar. Mandei mensagem no WhatsApp deles — respondeu uma atendente dizendo que tinha tido "problema na transportadora", e que o prazo tinha sido estendido pra 15 dias úteis.</Para>
+          <Para>Combustível? <strong>Entre R$ 800 e R$ 1.000 por mês.</strong> Manutenção? Pneu desgastando rápido, troca de óleo a cada 45 dias, pastilha de freio em 3 meses, alinhamento mensal, e a cada 6 meses um susto maior — suspensão, embreagem, alguma coisa elétrica. <strong>Soma tudo e dava mais R$ 400, R$ 500 mensais.</strong></Para>
 
-          <Para>Aceitei. Esperei mais. No 16º dia útil, mandei mensagem de novo. Outra atendente, outra desculpa: <em>"problema logístico, vamos enviar com prioridade essa semana."</em> Não enviaram. Mandei de novo no 20º. Sem resposta. No 25º, o número do WhatsApp tinha simplesmente sumido.</Para>
+          <Para>Quando eu fechava o mês de verdade, líquido na conta, sobrava entre <strong>R$ 1.400 e R$ 1.700</strong>. Trabalhando 9, 10 horas por dia, comendo na rua, perdendo final de semana com a família. A esposa começou a perceber. Eu também — só não queria admitir.</Para>
 
-          <Para>Voltei no site original. O domínio estava no ar, mas o chat de suporte tava desativado. Pesquisei o CNPJ da empresa — não constava em nenhum cadastro válido. Procurei a marca em sites de defesa do consumidor — dezenas de reclamações idênticas à minha, todas dos últimos 6 meses, todas sem resposta.</Para>
+          <H2>O dia que eu olhei pro outro lado do balcão</H2>
 
-          <Para><strong>Eu tinha caído num golpe.</strong> R$ 297 que entraram no buraco. Não era o fim do mundo, mas pra quem tava sem emprego e contando moeda, doía.</Para>
+          <Para>Nas minhas rotas eu tinha alguns endereços fixos que apareciam toda semana. Casas comuns em bairros residenciais, onde eu não entregava só pro morador — eu deixava lote. Cinco, dez, quinze pacotes de uma vez só, todos pra moradores diferentes da região. Quem recebia separava, organizava, e depois entregava pros vizinhos certos.</Para>
 
-          <Para>Pior que o prejuízo financeiro foi o estrago no humor. Passei dias me sentindo um idiota por ter caído numa coisa tão batida. A esposa não falou nada, mas eu sabia que ela tava pensando "eu te avisei". Eu mesmo tava pensando isso.</Para>
+          <Para>Eram os pontos de coleta residencial. Eu sabia que existiam, achava prático pra logística, mas nunca tinha pensado muito sobre eles. Eram só mais um endereço na lista do dia.</Para>
 
-          <H2>O Uber e a corrida que mudou tudo</H2>
+          <Para>Tinha um senhor numa casa simples no Jardim Paulista que sempre me recebia bem. Cumprimentava, oferecia café, conversa rápida. Em uma manhã de fim de novembro, cheguei pra deixar um lote grande nele — uns 40 pacotes, dia movimentado de promoção. Enquanto a gente conferia, ele puxou conversa:</Para>
 
-          <Para>Em outubro, ainda sem emprego e agora com R$ 297 a menos na conta, baixei o aplicativo de motorista. Foi a primeira coisa que eu fiz que tinha rendimento garantido — não muito, mas todo dia entrava algum dinheiro. Tirava entre R$ 80 e R$ 110 líquidos por dia, trabalhando 8, 9 horas. O carro foi começando a precisar de manutenção e a conta mal fechava. Mas pelo menos não era golpe.</Para>
+          <Para><em>"E aí Carlos, como tão as entregas? Tá rodando muito?"</em></Para>
 
-          <Para>Foi numa terça-feira no comecinho de janeiro deste ano. Última corrida do dia. Peguei um cara perto do centro, uns 40 anos, simpático. No meio da viagem ele me perguntou se eu trabalhava só de Uber. Eu acabei desabafando — falei do gasto com o carro, falei do desânimo, e em algum momento contei sobre o golpe das embalagens. Disse que tinha perdido R$ 297 achando que ia trabalhar em casa.</Para>
-
-          <Para>Ele ouviu até o fim, ficou quieto um momento, e respondeu:</Para>
+          <Para>Eu desabafei. Falei do combustível, da manutenção, do cansaço, do quanto tava sobrando líquido. Ele me ouviu com paciência, mexeu numa caneca de café que tava sobre a mesa, e respondeu:</Para>
 
           <div style={{ background: PAPER_WARM, borderLeft: '3px solid ' + GOLD, padding: '24px 28px', margin: '32px 0', borderRadius: '0 8px 8px 0' }}>
             <p style={{ fontSize: 19, fontStyle: 'italic', color: NAVY, lineHeight: 1.55, margin: 0 }}>
-              "Cara, tá cheio desses golpes por aí. Mas existe um modelo de trabalho em casa que funciona de verdade. Conheço um amigo que virou ponto de coleta dessas empresas de marketplace — recebe pacote em casa três vezes por dia e devolve pro motorista. Tá tirando uns quatro, cinco mil por mês. Sem comprar kit nenhum, sem pagar nada antes."
+              "Carlos, eu faço esse ponto aqui há um ano e meio. Não rodo um metro, não gasto combustível, não troco pneu, não tenho que correr com o sol nem com a chuva. Recebo entre R$ 4 mil e R$ 5 mil por mês, líquido, depositado direto na conta. Você tá no lado errado da equação, meu filho."
             </p>
           </div>
 
-          <Para>Pedi o nome da empresa. Ele pesquisou no celular, achou o site da <Link>Coletaki</Link> e me mandou pelo zap. Anotei mentalmente, agradeci, deixei ele no destino.</Para>
+          <Para>Fiquei mudo. Olhei pra ele, olhei pros pacotes empilhados na sala, olhei pro meu carro lá fora todo sujo de poeira do dia. E pensei: <em>"como eu não tinha visto isso antes?"</em></Para>
 
-          <H2>Cheguei em casa e contei pra esposa</H2>
+          <H2>A pergunta certa, finalmente</H2>
 
-          <Para>Cheguei em casa direto pro jantar com a esposa e as crianças. Depois que os filhos foram dormir, sentei na mesa e desabafei de novo — só que dessa vez já com a história do passageiro fresca na cabeça. Comentei sobre o tal site que o cara me indicou, falei o que ele tinha contado do amigo.</Para>
+          <Para>Pedi mais detalhes. Ele explicou que operava com uma empresa chamada <Link>Coletaki</Link>, que era a intermediária entre os marketplaces e os pontos residenciais. Falou do cadastro gratuito pelo CPF, do treinamento, da rotina de três passagens por dia, do pagamento quinzenal.</Para>
 
-          <Para>Ela ficou desconfiada imediatamente. <em>"Carlos, depois do golpe das embalagens, eu vou olhar tudo com lupa."</em> Justo. Mas pediu pra eu mostrar o site. Abrimos o computador ali mesmo, na sala.</Para>
+          <Para>Anotei tudo. Saí dali pensando, fui terminar a rota, mas a cabeça já não tava mais na entrega. Tava fazendo conta de cabeça. <strong>Se eu trocasse de lado, em vez de gastar R$ 1.500 de combustível e manutenção pra tirar R$ 1.500 líquidos, eu poderia receber R$ 4 mil sem rodar nada.</strong></Para>
 
-          <Para>A diferença saltava aos olhos. <strong>Não pediam pagamento. Não vendiam kit. Não tinha "investimento inicial".</strong> Era cadastro gratuito pelo CPF, treinamento online gratuito, e o pagamento vinha por pacote processado — quem ganhava quando o operador ganhava. A empresa só lucrava se o ponto também lucrasse.</Para>
+          <Para>Naquela noite, no jantar, contei tudo pra esposa. Mostrei o site da Coletaki no celular. Ela ficou desconfiada de cara — <em>"Carlos, isso parece bom demais."</em> Justo. Mas pediu pra eu pesquisar com calma. Passamos a semana inteira olhando reportagens em sites de notícia de cidades do interior, depoimentos em vídeo, avaliações em sites de defesa do consumidor.</Para>
 
-          <Para>Continuamos pesquisando juntos por uma semana. Achei reportagens em sites de notícia de cidades do interior, depoimentos em vídeo de pontos operando, avaliações em sites de defesa do consumidor. <strong>Empresa formal, operando há quatro anos, com mais de 800 pontos ativos pelo Brasil.</strong> No fim, ela me olhou e disse: <em>"Carlos, pelo menos tenta. Se der ruim, sinceramente, não tem muito como piorar."</em></Para>
+          <Para><strong>Empresa formal, operando há quatro anos, com mais de 800 pontos ativos pelo Brasil.</strong> Sem cobrança de adesão, sem mensalidade, sem investimento inicial. Pagamento por pacote processado, depositado direto no CPF.</Para>
 
-          <H2>O cadastro: completamente diferente do golpe</H2>
+          <Para>No fim da semana, ela me olhou e disse: <em>"Carlos, pelo menos tenta. Você já tá rodando pra Shopee mesmo. Se der ruim, volta pra rua. Mas se der certo, a gente recupera muita coisa."</em> Foi a permissão que eu precisava.</Para>
 
-          <Para>Acordei cedo no dia seguinte. Antes mesmo de levar o filho na escola, abri o site da <Link>Coletaki</Link> e a gente foi preenchendo o cadastro juntos no celular, ali no café da manhã. Levou uns três minutos. Pediu o CEP pra confirmar cobertura (tinha), nome, CPF, endereço, descrição do espaço disponível e horários.</Para>
+          <H2>O cadastro: completamente diferente da estrada</H2>
 
-          <Para>Saí pra levar o filho, depois fiz algumas corridas de Uber pra não perder o dia. Voltei pra almoçar e tomei um susto bom — minha esposa já tinha falado com a equipe da Coletaki no telefone e marcado uma <strong>videochamada de verificação pra dois dias depois</strong>. O propósito da chamada era simples: confirmar que o endereço existia, que o local tinha higiene adequada e que era pessoa real do outro lado.</Para>
+          <Para>Acordei cedo no dia seguinte. Antes mesmo de sair pra rota, abri o site da <Link>Coletaki</Link> e preenchi o cadastro junto com a esposa no café da manhã. Levou uns três minutos. Pediu CEP pra confirmar cobertura (tinha), nome, CPF, endereço, descrição do espaço disponível e horários.</Para>
 
-          <Para>Na chamada, você precisa <strong>mostrar o rosto e apresentar um documento de identidade</strong> pra confirmar que é você. Depois é só mostrar o espaço pelo celular. Eles olham o cômodo, conferem a limpeza, verificam que dá pra trancar e que fica fora da circulação. O único pedido foi pra deixar os pacotes fora do alcance das crianças e animais. Aprovado na hora.</Para>
+          <Para>Saí pra rodar a rota da Shopee como sempre. Voltei pra almoçar e tomei um susto bom — minha esposa já tinha falado com a equipe da Coletaki no telefone e marcado uma <strong>videochamada de verificação pra dois dias depois</strong>. O propósito da chamada era simples: confirmar que o endereço existia, que o local tinha higiene adequada e que era pessoa real do outro lado.</Para>
 
-          <Para>Se identificarem alguma irregularidade, te dão 72 horas pra ajustar. As regras: sem infiltração de água, longe de janelas que dão pra rua, sem animais visíveis durante a gravação. Era um processo sério, profissional. <strong>Nada parecido com o que tinha me prometido no golpe das embalagens.</strong></Para>
+          <Para>Na chamada, você precisa <strong>mostrar o rosto e apresentar um documento de identidade</strong>. Depois é só mostrar o espaço pelo celular. Eles olham o cômodo, conferem a limpeza, verificam que dá pra trancar e que fica fora da circulação. O único pedido foi pra deixar os pacotes fora do alcance das crianças e animais. Aprovado na hora.</Para>
+
+          <Para>Se identificarem irregularidade, te dão 72 horas pra ajustar. As regras: sem infiltração de água, longe de janelas que dão pra rua, sem animais visíveis durante a gravação. <strong>Era um processo sério, profissional.</strong> Bem diferente de qualquer "cadastro de entregador" que eu já tinha feito.</Para>
 
           <H2>O contrato de responsabilidades</H2>
 
-          <Para>No mesmo dia da videochamada me mandaram um contrato de responsabilidades pra ler com calma e assinar digitalmente. Aqui pra mim, depois do golpe que tinha passado, foi um teste importante. Li tudo com atenção, parágrafo por parágrafo.</Para>
+          <Para>No mesmo dia da videochamada me mandaram um contrato de responsabilidades pra ler com calma e assinar digitalmente. Como entregador antigo, eu já sabia o quanto avaria de pacote pega gente despreparada. Li tudo com atenção.</Para>
 
           <Para>O contrato diz, em resumo: quase todas as mercadorias têm seguro. Se um cliente final receber algo danificado por avaria comprovada, a Coletaki cobre. Mas eles não pagam ao ponto se o motivo da devolução for avaria <strong>e</strong> o último registro tiver sido na sua casa <strong>e</strong> você não tiver comunicado o sistema que ele já chegou avariado.</Para>
 
-          <Para>A ferramenta de proteção é simples: avisar no app no momento do recebimento que a mercadoria já chegou com sinais de avaria, tirar foto, deixar registro. Se você fizer isso, sua responsabilidade tá coberta. Direto, sem letras miúdas escondidas.</Para>
+          <Para>A ferramenta de proteção é simples: avisar no app no momento do recebimento que a mercadoria já chegou com sinais de avaria, tirar foto, deixar registro. Se você fizer isso, sua responsabilidade tá coberta.</Para>
 
-          <Para>Logo depois veio o treinamento online de quatro horas. Uso do app, regras de conferência, leitura de QR code, registro de avaria, calendário de pagamento. Profissional. Na quarta-feira seguinte meu ponto entrou em operação.</Para>
+          <Para>Depois veio o treinamento online de quatro horas. Uso do app, regras de conferência, leitura de QR code, registro de avaria, calendário de pagamento. Direto, sem enrolação. Na quarta-feira seguinte meu ponto entrou em operação.</Para>
 
-          <H2>Como funciona o dia a dia</H2>
+          <Para>E aqui vai uma ironia: <strong>quem me deixou os primeiros pacotes foi um entregador que eu conhecia da rua.</strong> A gente trabalhava no mesmo hub. Ele olhou pra mim com cara de espanto e perguntou: <em>"Carlos, você virou ponto agora?"</em> Eu ri. <em>"Virei. Te ajudo a chegar mais rápido em casa, e ainda ganho mais que você."</em></Para>
 
-          <Para>Por volta das 8h, o motorista encosta na minha porta. Às vezes é alguém do CD de distribuição do próprio marketplace, às vezes terceirizado contratado pela Coletaki. Não muda nada pra mim. Ele desce com os pacotes — em geral entre <strong>20 e 60 por passagem</strong>, todos pequenos: caixinhas, envelopes, embalagens leves de e-commerce comum. Eu leio o QR code de entrada de cada um no app, junto com ele, e guardo no cômodo separado.</Para>
+          <H2>Como funciona o dia a dia agora</H2>
 
-          <Para>Às 11h passa de novo. Traz mais pacotes e leva os que ficaram do dia anterior e os que cheguei pela manhã. Às 14h, última passagem do dia: deixa mais alguns, recolhe parte do que ficou das 11. Quando os pacotes saem, leitura de QR code de saída no app, um por um. Essa parte é crucial — se uma encomenda sumir em algum momento da cadeia, o sistema rastreia pelo QR qual foi o último local onde foi escaneada.</Para>
+          <Para>Por volta das 8h, o motorista encosta na minha porta. Às vezes é alguém do CD da Shopee, às vezes é alguém da Coletaki, às vezes terceirizado. Não muda nada pra mim. Ele desce com os pacotes — em geral entre <strong>20 e 60 por passagem</strong>, todos pequenos: caixinhas, envelopes, embalagens leves de e-commerce comum. Eu leio o QR code de entrada de cada um no app, junto com o motorista, e guardo no cômodo separado.</Para>
+
+          <Para>Às 11h passa de novo. Traz mais pacotes e leva os que ficaram do dia anterior e os que cheguei pela manhã. Às 14h, última passagem do dia: deixa mais alguns, recolhe parte do que ficou das 11. Quando os pacotes saem, leitura de QR code de saída no app, um por um.</Para>
+
+          <Para>Essa parte é crucial — se uma encomenda sumir em algum momento da cadeia, o sistema rastreia pelo QR qual foi o último local onde foi escaneada. Como eu já vivi a outra ponta, eu sei o quanto isso protege quem tá operando o ponto.</Para>
 
           <div style={{ margin: '40px 0 16px', borderRadius: 12, overflow: 'hidden' }}>
             <img src={IMG_PACOTES} alt="Pacotes organizados no apartamento" style={{ width: '100%', display: 'block' }} />
@@ -195,21 +199,33 @@ export default function PageClient() {
 
           <Para>Hoje minha média gira entre <strong>R$ 3 mil e R$ 6 mil por mês</strong>. Black Friday, Natal e Dia dos Namorados puxam pra cima. Janeiro e fevereiro tendem a ser mais fracos.</Para>
 
-          <H2>A diferença entre golpe e operação real</H2>
+          <Para>Mas o número que mais importa pra mim é outro: <strong>esses valores são líquidos.</strong> Não tem combustível pra descontar. Não tem manutenção. Não tem pneu, não tem freio, não tem mecânica. O que cai na conta, fica.</Para>
 
-          <Para>Olhando pra trás, eu vejo com clareza o que diferenciava o golpe das embalagens da operação real da Coletaki. Em todo trabalho legítimo, a lógica é a mesma: <strong>você ganha quando produz, não quando paga pra começar.</strong></Para>
+          <H2>A virada matemática completa</H2>
 
-          <Para>O golpe das embalagens pedia R$ 297 antes mesmo de eu ver qualquer trabalho. A Coletaki não pediu um centavo. O golpe prometia "empresas grandes mandando encomendas em até 15 dias" sem nenhum vínculo formal — a Coletaki tem contrato assinado, treinamento, processo de aprovação. O golpe sumiu quando virei pra cobrar — a Coletaki me liga toda semana só pra acompanhar.</Para>
+          <Para>Vou fazer a comparação direta, porque doeu na alma quando finalmente sentei pra calcular:</Para>
 
-          <Para>Se você tá pesquisando "trabalho em casa montando embalagens" agora, deixo um pedido honesto: <strong>desconfie de qualquer coisa que peça dinheiro antes de você começar a trabalhar.</strong> Trabalho de verdade não cobra entrada. Você pode até precisar de espaço, de tempo, de organização. Mas dinheiro pra começar? Não.</Para>
+          <Para><strong>Como entregador da Shopee:</strong> R$ 3.000 brutos · menos R$ 900 de combustível médio · menos R$ 450 de manutenção média · menos R$ 250 de alimentação na rua = <strong>R$ 1.400 líquidos</strong> trabalhando 9 horas por dia, 6 dias por semana, na rua.</Para>
 
-          <H2>O que mudou na minha rotina</H2>
+          <Para><strong>Como ponto de coleta da Coletaki:</strong> média de R$ 4.500 líquidos · zero combustível · zero manutenção · zero alimentação fora = <strong>R$ 4.500 líquidos</strong> trabalhando 5 horas por dia, em casa, com a família por perto.</Para>
 
-          <Para>Hoje eu acordo às seis, tomo café com os filhos, levo eles na escola. Volto, atendo a passagem das oito. Almoço decente em casa, atendo a das onze. Tiro uma soneca se quero. Atendo a das duas. Resto da tarde tô livre — busco as crianças, faço caminhada com a esposa, janto cedo, durmo bem.</Para>
+          <Para><strong>A mesma operação. O mesmo mercado. Lados opostos.</strong></Para>
 
-          <Para>No começo eu ainda fazia algumas corridas de Uber depois das duas, com medo de não cair dinheiro no dia do pagamento. Demorou uns dois meses pra eu acreditar que era sólido. Hoje, com a operação rodando estável, prefiro priorizar minha qualidade de vida.</Para>
+          <H2>O que mudou na minha vida</H2>
 
-          <Para>Em mais de dez anos de CLT eu nunca tive uma rotina dessas. E quase não tive essa também — porque por pouco não desisti de procurar saída depois do golpe das embalagens. <strong>É por isso que tô contando essa história aqui hoje.</strong></Para>
+          <Para>Hoje eu acordo às seis, tomo café com os filhos, levo eles na escola. Volto, atendo a passagem das oito. Almoço decente em casa, atendo a das onze. Tiro uma soneca se quero. Atendo a das duas. Resto da tarde tô livre.</Para>
+
+          <Para>No começo eu ainda fazia algumas corridas extras de entrega como freelancer depois das duas, com medo de não cair dinheiro no dia do pagamento. Demorou uns dois meses pra eu acreditar que era sólido. Hoje, com a operação rodando estável, prefiro priorizar minha qualidade de vida. Busco as crianças, faço caminhada com a esposa, janto cedo, durmo bem.</Para>
+
+          <Para>O carro, que era meu instrumento de trabalho, virou só meio de transporte de novo. Faz três meses que eu não troco óleo. <strong>Aliás, faz três meses que eu não brigo com trânsito também.</strong></Para>
+
+          <H2>Pra quem ainda tá entregando</H2>
+
+          <Para>Se você é entregador hoje — Shopee, Mercado Livre, Amazon, iFood, qualquer um — e tá lendo isso, deixo um pedido: <strong>senta e faz a sua conta de verdade.</strong> Pega o quanto você fatura no mês, desconta combustível real, manutenção real, alimentação real, desgaste do carro. Vê quanto sobra de fato.</Para>
+
+          <Para>Se o que sobra é menos do que você poderia tirar como ponto de coleta na sua região, talvez seja hora de virar o jogo. Não é pra todo mundo — precisa ter espaço fechado em casa, disponibilidade nos horários, regularidade. Mas pra quem já tá rodando há um tempo e tá cansado da rua, vale pesquisar.</Para>
+
+          <Para>Eu juro de pés juntos que não ganho nada pra escrever esse texto. Cheguei na <Link>Coletaki</Link> por uma conversa com um senhor de cabelo branco numa manhã de novembro, tomando café na sala dele enquanto descarregava pacotes. Testei na pele. Tô há quatro meses, ganhando o triplo do que tirava na rua, em metade do tempo. <strong>Achei justo dividir.</strong></Para>
 
           <div style={{ textAlign: 'center', padding: '44px 0', borderTop: '1px solid ' + LINE, borderBottom: '1px solid ' + LINE, margin: '50px 0' }}>
             <p style={{ fontSize: 16, color: INK_SOFT, lineHeight: 1.65, maxWidth: 580, margin: '0 auto 28px', fontStyle: 'italic' }}>
@@ -236,7 +252,7 @@ export default function PageClient() {
           <div style={{ fontSize: 11, color: GOLD, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 8 }}>E aí, sou o Carlos</div>
           <div style={{ fontSize: 26, fontWeight: 800, color: NAVY, marginBottom: 12 }}>Café com Dicas</div>
           <div style={{ fontSize: 15, color: INK_SOFT, lineHeight: 1.7, maxWidth: 480, margin: '0 auto' }}>
-            Aqui é meu cantinho pra contar coisas reais: como saí da CLT, o que aprendi tentando coisa que não deu certo, o que finalmente funcionou. Sem firula, sem curso pra vender. Papo reto de quem tá vivendo.
+            Aqui é meu cantinho pra contar coisas reais: como saí da rua, o que aprendi como entregador, o que finalmente funcionou. Sem firula, sem curso pra vender. Papo reto de quem tá vivendo.
           </div>
         </div>
 

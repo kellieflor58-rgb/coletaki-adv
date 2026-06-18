@@ -1,8 +1,8 @@
 import PageClient from './PageClient';
 
 export const metadata = {
-  title: 'Caí no golpe do "trabalho em casa montando embalagens" e descobri o que realmente funciona · Café com Dicas',
-  description: 'Comprei um kit de R$ 297 prometendo R$ 4 mil por mês montando embalagens em casa. Nunca chegou. Acabei descobrindo um modelo de logística residencial que funciona de verdade. Conto a história sem firula.',
+  title: 'Era entregador da Shopee, gastava R$ 1.000 em combustível. Hoje sou ponto de coleta e ganho mais sem rodar · Café com Dicas',
+  description: 'Dois anos entregando para a Shopee na rua, faturando R$ 3 mil brutos mas gastando R$ 1.000 só em combustível. Conheci o outro lado da operação pegando pacotes em pontos residenciais. Hoje eu sou o ponto, e ganho mais sem rodar um metro.',
   icons: {
     icon: '/cafe-favicon.png',
     apple: '/cafe-apple.png',
