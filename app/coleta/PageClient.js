@@ -72,7 +72,7 @@ export default function PageClient() {
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 640 }}>
-          Hoje vou te contar como transformei meu apartamento num negócio: os prós, os contras, e o passo a passo pra entrar e até quanto dá pra faturar.
+          Hoje vou te contar como transformei meu apartamento num negócio: os prós, os contras, e o passo a passo pra entrar e até quanto dá pra faturar com a Coletaki.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
@@ -102,11 +102,11 @@ export default function PageClient() {
 
           <Para>Meu nome é Carlos, tenho 33 anos, casado, dois filhos. Passei a vida inteira de carteira assinada até cansar e querer ter horário próprio. Em junho do ano passado pedi as contas e virei motorista de aplicativo.</Para>
 
-          <Para>No Uber dava pra ir levando — tirava uns <strong>R$ 80 líquidos por dia</strong> trabalhando 8, 9 horas. Mas aí o carro começou a precisar de manutenção e a conta não fechava mais. Era trabalhar pra manter o carro rodando.</Para>
+          <Para>No Uber dava pra ir levando — tirava uns <strong>R$ 80 a R$ 110 líquidos por dia</strong> trabalhando 8, 9 horas. Mas aí o carro começou a precisar de manutenção e a conta não fechava mais. Era trabalhar pra manter o carro rodando.</Para>
 
           <H2>A descoberta veio numa corrida</H2>
 
-          <Para>Foi numa terça à noite no comecinho de janeiro. Última corrida do dia, eu já tava cansado. Peguei um cara perto do centro, uns 40 anos, simpático. No meio da viagem ele me perguntou sobre o trabalho e eu acabei desabafando — falei do gasto com o carro, do desânimo, da sensação de não tá indo a lugar nenhum.</Para>
+          <Para>Foi numa terça à noite no comecinho de janeiro. Última corrida do dia, eu já tava cansado. Peguei um cara perto do centro, uns 40 anos, simpático. No meio da viagem ele me perguntou se eu trabalhava só de Uber. Eu acabei desabafando — falei do gasto com o carro, do desânimo, da sensação de não tá indo a lugar nenhum.</Para>
 
           <Para>Ele ouviu, ficou quieto um momento, e respondeu:</Para>
 
@@ -116,17 +116,33 @@ export default function PageClient() {
             </p>
           </div>
 
-          <Para>Pedi o nome da empresa. Ele pesquisou no celular, achou o site da <Link>Coletaki</Link> e me mandou o link pelo zap. Cheguei em casa naquela noite, sentei no computador e fui pesquisar até de madrugada.</Para>
+          <Para>Pedi o nome da empresa. Ele pesquisou no celular, achou o site da <Link>Coletaki</Link> e me mandou o link pelo zap. Anotei mentalmente, agradeci, deixei ele no destino.</Para>
 
-          <Para>Empresa formal, operando há quatro anos, com mais de 800 pontos ativos no Brasil. Reportagens em sites de notícia, avaliações em sites de defesa do consumidor, depoimentos de gente comum operando. Mostrei pra esposa na manhã seguinte. Ela ficou desconfiada no começo, mas depois de uma semana pesquisando junto, fechou comigo: <em>"Carlos, vamos tentar."</em></Para>
+          <H2>Cheguei em casa e contei pra esposa</H2>
 
-          <H2>O processo de cadastro</H2>
+          <Para>Cheguei em casa direto pro jantar com a esposa e as crianças. Depois que os filhos foram dormir, sentei na mesa e desabafei de novo — só que dessa vez já com a história do passageiro fresca na cabeça. Comentei sobre o tal site que o cara me indicou, falei o que ele tinha me contado do amigo dele.</Para>
 
-          <Para>O cadastro no site durou três minutos. Pediu o CEP pra confirmar cobertura (tinha), nome, CPF, endereço, descrição do espaço disponível e horários que eu podia atender.</Para>
+          <Para>Ela me ouviu até o fim, ficou quieta um pouco, e respondeu uma coisa que ficou na minha cabeça: <em>"Carlos, pelo menos tenta. Se der ruim, sinceramente, não tem muito como piorar."</em></Para>
 
-          <Para>Em três dias me ligaram pra agendar uma <strong>videochamada de verificação</strong> — eles queriam ver o espaço real onde eu ia operar. Mostrei pelo celular o cômodo que tinha separado, com prateleiras simples, fechado a chave, longe da circulação da família. Eles aprovaram na hora e marcaram o treinamento online pra dois dias depois.</Para>
+          <Para>Foi a permissão que eu precisava ouvir.</Para>
 
-          <Para>O treinamento durou quatro horas. Cobriu uso do app, regras de conferência, leitura de QR code, política de pacote com avaria, calendário de pagamento. Direto, sem enrolação. Na quarta-feira da semana seguinte meu ponto entrou em operação.</Para>
+          <H2>No dia seguinte, no café da manhã</H2>
+
+          <Para>Acordei cedo no dia seguinte. Antes mesmo de levar o filho na escola, abri o site da <Link>Coletaki</Link> e a gente foi preenchendo o cadastro juntos no celular, ali no café da manhã. Levou uns três minutos. Pediu o CEP pra confirmar cobertura da região (tinha), nome, CPF, endereço, descrição do espaço disponível e horários.</Para>
+
+          <Para>Saí pra levar o filho, depois engatei algumas corridas de Uber pra não perder o dia. Voltei pra almoçar e tomei um susto — minha esposa já tinha falado com a equipe da Coletaki no telefone e marcado uma <strong>videochamada de verificação pra dois dias depois</strong>. O propósito da chamada era simples: confirmar que o endereço existia mesmo, que o local tinha higiene adequada e que não era nada esquisito.</Para>
+
+          <Para>Na chamada, mostrei o cômodo que tinha separado pelo celular. Eles olharam o espaço, conferiram a limpeza, verificaram que dava pra trancar e que ficava fora da circulação cotidiana. <strong>O único pedido foi pra deixar os pacotes fora do alcance das crianças.</strong> Aprovado na hora.</Para>
+
+          <H2>O contrato de responsabilidades</H2>
+
+          <Para>No mesmo dia da videochamada me mandaram pelo email um <strong>contrato de responsabilidades</strong> pra eu ler com calma e assinar digitalmente. É aqui que eu já queria explicar com clareza, porque é a parte que mais pega gente despreparada.</Para>
+
+          <Para>O contrato diz, em resumo, o seguinte: <strong>quase todas as mercadorias que passam pelo ponto têm seguro</strong>, então se um cliente final receber algo danificado por avaria comprovada, a Coletaki cobre. Mas eles não pagam ao ponto se o motivo da devolução for avaria <strong>e</strong> o último registro do pacote tiver sido na sua casa <strong>e</strong> você não tiver comunicado o sistema que ele já chegou avariado.</Para>
+
+          <Para>Em outras palavras: você é responsável pelo pacote enquanto ele está no seu ponto. Mas você tem uma ferramenta de proteção — basta avisar no app no momento do recebimento. Se você fizer isso, sua responsabilidade tá coberta.</Para>
+
+          <Para>Logo depois do contrato veio o treinamento online de quatro horas. Cobriu uso do app, regras de conferência, leitura de QR code, registro de avaria, calendário de pagamento. Direto, sem enrolação. Na quarta-feira da semana seguinte meu ponto entrou em operação.</Para>
 
           <H2>Como funciona o dia a dia</H2>
 
@@ -157,13 +173,11 @@ export default function PageClient() {
 
           <H2>Os pontos negativos (porque tem)</H2>
 
-          <Para>Quero ser honesto contigo. Tem dois pontos negativos importantes pra considerar antes de entrar.</Para>
+          <Para>Quero ser honesto contigo. Tem dois pontos que pegam quem entra despreparado.</Para>
 
-          <Para><strong>O primeiro é responsabilidade pela integridade do pacote.</strong> Quando o motorista deixa o pacote no seu ponto, a responsabilidade passa pra você. Se algum pacote sair com avaria, semi-aberto ou quebrado, e você não registrou que ele já chegou assim, a Coletaki pode descontar isso do seu pagamento ou ainda gerar advertência.</Para>
+          <Para><strong>O primeiro é a atenção na conferência.</strong> Como o contrato deixa claro, qualquer pacote que chega com aspecto suspeito — caixa amassada, fita rompida, embalagem semi-aberta — você precisa <strong>fotografar pelo app e registrar avaria no momento do recebimento</strong>. Se você esquecer e o pacote sair quebrado, a responsabilidade é sua. Eu já fiz isso umas cinco vezes em quatro meses; em todas a Coletaki resolveu sem desconto.</Para>
 
-          <Para>O que eu faço sempre: na hora da chegada, qualquer pacote que parece estranho — caixa amassada, fita rompida, embalagem suspeita — eu <strong>fotografo na hora pelo app e marco no sistema</strong>. Isso documenta que o problema veio de fora, não foi causado por mim. Já fiz isso umas cinco vezes em quatro meses, e em todas a Coletaki resolveu sem desconto pra mim.</Para>
-
-          <Para><strong>O segundo ponto negativo é a regularidade obrigatória.</strong> O sistema da Coletaki direciona volume pra quem atende com confiabilidade. Se você falta uma passagem sem avisar antes, perde priorização. Se faltar várias vezes, pode até ser desligado. Não tem como tratar como bico — é compromisso de horário.</Para>
+          <Para><strong>O segundo é a regularidade obrigatória.</strong> O sistema direciona volume pra quem atende com confiabilidade. Quem falta passagem sem avisar antes perde priorização. Quem falta várias vezes pode ser desligado. Não dá pra tratar como bico — é compromisso de horário.</Para>
 
           <H2>O que mudou na minha rotina</H2>
 
