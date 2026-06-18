@@ -138,7 +138,9 @@ export default function PageClient() {
 
           <Para>Saí pra levar o filho, depois engatei algumas corridas de Uber pra não perder o dia. Voltei pra almoçar e tomei um susto — minha esposa já tinha falado com a equipe da Coletaki no telefone e marcado uma <strong>videochamada de verificação pra dois dias depois</strong>. O propósito da chamada era simples: confirmar que o endereço existia mesmo, que o local tinha higiene adequada e que não era nada esquisito.</Para>
 
-          <Para>Na chamada, mostrei o cômodo que tinha separado pelo celular. Eles olharam o espaço, conferiram a limpeza, verificaram que dava pra trancar e que ficava fora da circulação cotidiana. <strong>O único pedido foi pra deixar os pacotes fora do alcance das crianças.</strong> Aprovado na hora.</Para>
+          <Para>Na chamada, você precisa <strong>mostrar o rosto e apresentar um documento de identidade</strong> pra confirmar que é você mesmo. Depois disso é só mostrar o espaço pelo celular. Eles olham o cômodo, conferem a limpeza, verificam que dá pra trancar e que fica fora da circulação cotidiana. <strong>O único pedido foi pra deixar os pacotes fora do alcance das crianças e animais.</strong> Aprovado na hora.</Para>
+
+          <Para>Se durante a videochamada eles identificarem alguma irregularidade, te avisam o que precisa ajustar e dão um prazo de <strong>72 horas pra você arrumar</strong>. As regras principais que eles olham: não pode ter infiltração de água no local, não pode ser perto de janelas que dão pra rua (risco de roubo), e não pode aparecer animal no espaço durante a gravação. Se tiver um cachorro ou gato no cômodo na hora, eles não aprovam — mas basta refazer a chamada num quarto fechado ou na garagem que já passa tranquilo.</Para>
 
           <H2>O contrato de responsabilidades</H2>
 
@@ -146,7 +148,7 @@ export default function PageClient() {
 
           <Para>O contrato diz, em resumo, o seguinte: <strong>quase todas as mercadorias que passam pelo ponto têm seguro</strong>, então se um cliente final receber algo danificado por avaria comprovada, a Coletaki cobre. Mas eles não pagam ao ponto se o motivo da devolução for avaria <strong>e</strong> o último registro do pacote tiver sido na sua casa <strong>e</strong> você não tiver comunicado o sistema que ele já chegou avariado.</Para>
 
-          <Para>Em outras palavras: você é responsável pelo pacote enquanto ele está no seu ponto. Mas você tem uma ferramenta de proteção — basta avisar no app no momento do recebimento. Se você fizer isso, sua responsabilidade tá coberta.</Para>
+          <Para>Em outras palavras: você é responsável pelo pacote enquanto ele está no seu ponto. Mas você tem uma ferramenta de proteção forte — basta <strong>avisar no app no momento do recebimento que a mercadoria que você deu entrada já está com sinais de avaria, tirar foto e deixar o registro feito</strong>. Se você fizer isso, sua responsabilidade tá coberta.</Para>
 
           <Para>Logo depois do contrato veio o treinamento online de quatro horas. Cobriu uso do app, regras de conferência, leitura de QR code, registro de avaria, calendário de pagamento. Direto, sem enrolação. Na quarta-feira da semana seguinte meu ponto entrou em operação.</Para>
 
@@ -156,7 +158,9 @@ export default function PageClient() {
 
           <Para>Ele desce com os pacotes. Em geral chegam entre <strong>20 e 60 pacotes por passagem</strong>, todos pequenos — caixinhas, envelopes, embalagens leves de e-commerce comum. Eu leio o QR code de entrada de cada pacote no app, junto com o motorista, e guardo tudo no cômodo separado.</Para>
 
-          <Para>Às onze ele passa de novo. Traz mais pacotes e leva os que ficaram do dia anterior. Às duas da tarde, última passagem do dia. Quando os pacotes saem, é o mesmo procedimento — leitura de QR code de saída no app. Tudo registrado.</Para>
+          <Para>Às onze ele passa de novo. Traz mais pacotes e leva os que ficaram do dia anterior e também os que cheguei a receber pela manhã. Às duas da tarde, última passagem do dia: deixa mais alguns pacotes e recolhe parte do que ficou das onze — às vezes leva tudo, às vezes sobra um pouco que vai sair só no dia seguinte. Quando os pacotes saem, é o mesmo procedimento: <strong>leitura de QR code de saída no app, um por um</strong>.</Para>
+
+          <Para>Esse registro é fundamental. Se uma encomenda sumir em algum momento da cadeia, o sistema da Coletaki consegue rastrear pelo QR code qual foi o último local onde ela foi escaneada. Por isso é <strong>extremamente importante ler o QR de saída de todos os pacotes antes de passar pro motorista</strong> — assim você fica blindado caso algo desapareça no caminho.</Para>
 
           <Para>A parte importante é essa: <strong>eu não despacho, não atendo cliente, não tenho contato com comprador.</strong> Só recebo, leio o QR, guardo, devolvo pro motorista quando ele volta. O sistema da Coletaki cuida do resto.</Para>
 
@@ -169,25 +173,29 @@ export default function PageClient() {
 
           <H2>O pagamento: dia 1 e dia 16</H2>
 
-          <Para>O pagamento é por pacote processado, depositado <strong>quinzenalmente: todo dia 01 e todo dia 16</strong> direto na minha conta vinculada ao CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial.</Para>
+          <Para>O pagamento é por pacote processado, depositado <strong>quinzenalmente: todo dia 01 e todo dia 16</strong> direto na minha conta vinculada ao CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial. Só preciso <strong>manter os pacotes em local seguro</strong> e <strong>estar nos horários combinados de chegada e saída dos veículos</strong>. É isso.</Para>
 
           <Para>Pra você ter uma referência, esses foram meus 4 meses operando:</Para>
 
-          <Para><strong>Janeiro</strong> (primeiro mês, ritmo crescendo): R$ 2.140<br /><strong>Fevereiro</strong>: R$ 4.180<br /><strong>Março</strong> (volume estabilizou): R$ 6.020<br /><strong>Abril</strong>: R$ 5.870</Para>
+          <Para><strong>Janeiro</strong> (primeiro mês, ritmo crescendo): R$ 2.140<br /><strong>Fevereiro</strong>: R$ 4.180<br /><strong>Março</strong> (volume estabilizou): R$ 5.720<br /><strong>Abril</strong>: R$ 4.870</Para>
 
-          <Para>Hoje minha média gira entre <strong>R$ 3 mil e R$ 6 mil por mês</strong>, dependendo do volume da semana e da época. <strong>Black Friday e Natal puxam pra cima. Janeiro e fevereiro tendem a ser mais fracos.</strong></Para>
+          <Para>Hoje minha média gira entre <strong>R$ 3 mil e R$ 6 mil por mês</strong>, dependendo do volume da semana e da época. <strong>Black Friday, Natal e Dia dos Namorados puxam o volume pra cima. Janeiro e fevereiro tendem a ser meses mais fracos.</strong></Para>
 
           <H2>Os pontos negativos (porque tem)</H2>
 
           <Para>Quero ser honesto contigo. Tem dois pontos que pegam quem entra despreparado.</Para>
 
-          <Para><strong>O primeiro é a atenção na conferência.</strong> Como o contrato deixa claro, qualquer pacote que chega com aspecto suspeito — caixa amassada, fita rompida, embalagem semi-aberta — você precisa <strong>fotografar pelo app e registrar avaria no momento do recebimento</strong>. Se você esquecer e o pacote sair quebrado, a responsabilidade é sua. Eu já fiz isso umas cinco vezes em quatro meses; em todas a Coletaki resolveu sem desconto.</Para>
+          <Para><strong>O primeiro é a atenção na conferência.</strong> Como o contrato deixa claro, qualquer pacote que chega com aspecto suspeito — caixa amassada, fita rompida, embalagem semi-aberta — você precisa <strong>fotografar pelo app e registrar avaria no momento do recebimento</strong>. Se você esquecer e o pacote sair quebrado, a responsabilidade é sua. Eu já fiz isso umas cinco vezes em quatro meses; em todas a Coletaki resolveu sem desconto pra mim — porém eu também <strong>não recebi os valores referentes àquelas mercadorias específicas</strong>, porque elas voltaram pra origem em vez de serem entregues.</Para>
 
-          <Para><strong>O segundo é a regularidade obrigatória.</strong> O sistema direciona volume pra quem atende com confiabilidade. Quem falta passagem sem avisar antes perde priorização. Quem falta várias vezes pode ser desligado. Não dá pra tratar como bico — é compromisso de horário.</Para>
+          <Para><strong>O segundo é a regularidade obrigatória.</strong> Não dá pra tratar isso como renda extra sem responsabilidade. Você precisa estar em casa pra atender os motoristas nos três horários combinados — em geral <strong>8h da manhã, 11h e 14h da tarde</strong>. Quem falta passagem sem avisar antes perde priorização. Quem falta várias vezes pode ser desligado.</Para>
+
+          <Para>Posso colocar minha esposa ou outra pessoa pra atender em algum horário se precisar? Pode. Mas essa pessoa precisa <strong>fazer a entrada e saída dos pacotes no app corretamente</strong>, e manter os itens seguros até a próxima passagem. A responsabilidade continua sendo do CPF cadastrado, então o ideal é treinar quem vai te substituir antes de delegar.</Para>
 
           <H2>O que mudou na minha rotina</H2>
 
-          <Para>Hoje eu acordo às sete, tomo café com os filhos, levo eles na escola. Volto, atendo a passagem das oito. Almoço decente em casa, atendo a das onze. Tiro uma soneca se quero. Atendo a das duas. Resto da tarde tô livre — busco as crianças, faço caminhada com a esposa, janto cedo, durmo bem.</Para>
+          <Para>Hoje eu acordo às seis, tomo café com os filhos, levo eles na escola. Volto, atendo a passagem das oito. Almoço decente em casa, atendo a das onze. Tiro uma soneca se quero. Atendo a das duas. Resto da tarde tô livre — busco as crianças, faço caminhada com a esposa, janto cedo, durmo bem.</Para>
+
+          <Para>No começo, sendo bem honesto, eu ainda fazia algumas corridas de Uber depois da última passagem das duas. <strong>Era um medo bobo de chegar o dia do pagamento e nada cair na minha conta.</strong> Demorou uns dois meses pra eu acreditar que o negócio era sólido. Hoje, com a operação rodando estável e a confiança construída, prefiro priorizar minha qualidade de vida. Levo as crianças no parquinho, vou pra academia, jantar tranquilo em casa.</Para>
 
           <Para>Em mais de dez anos de CLT eu nunca tive uma rotina dessas. <strong>Essa é a diferença que ninguém te conta quando fala de "trabalhar em casa".</strong></Para>
 
@@ -202,8 +210,8 @@ export default function PageClient() {
           <Para>Esse modelo não é moda. É evolução natural do e-commerce brasileiro, que cresceu rápido demais pra ser atendido só com infraestrutura tradicional.</Para>
 
           <div style={{ textAlign: 'center', padding: '44px 0', borderTop: '1px solid ' + LINE, borderBottom: '1px solid ' + LINE, margin: '50px 0' }}>
-            <p style={{ fontSize: 16, color: INK_SOFT, lineHeight: 1.65, maxWidth: 540, margin: '0 auto 28px', fontStyle: 'italic' }}>
-              Pra conhecer a Coletaki, ver se sua região tem cobertura e fazer o cadastro pelo CPF, é tudo direto no site da empresa. Sem custo, sem compromisso.
+            <p style={{ fontSize: 16, color: INK_SOFT, lineHeight: 1.65, maxWidth: 580, margin: '0 auto 28px', fontStyle: 'italic' }}>
+              Antes de fechar quero deixar claro: <strong>não sou patrocinado pela Coletaki</strong>. Tô compartilhando aqui minha experiência pessoal e profissional com a empresa, que tem dado certo pra mim em Ribeirão Preto há quatro meses. Pode funcionar pra você do mesmo jeito ou pode não funcionar — depende da sua região, do seu espaço, da sua dedicação. Se quiser tirar suas próprias conclusões, o cadastro é direto no site oficial, gratuito, sem compromisso.
             </p>
             <a href={LINK_COLETAKI} target="_blank" rel="noopener" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: NAVY, color: '#fff', padding: '16px 32px', borderRadius: 999, fontWeight: 700, fontSize: 15, textDecoration: 'none', boxShadow: '0 10px 28px rgba(15,42,92,0.32)' }}>
               Conhecer a Coletaki →
