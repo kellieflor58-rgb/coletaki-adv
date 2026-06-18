@@ -68,11 +68,11 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.15, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          Como faturo <span style={{ color: GOLD }}>R$ 5 mil por mês</span> em casa sendo ponto de coleta de marketplace
+          De motorista de app a <span style={{ color: GOLD }}>R$ 3.000–6.000 por mês</span> como ponto de coleta de marketplace
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 640 }}>
-          Cansei da CLT e virei motorista de aplicativo pra ter horário livre. Numa corrida casual de janeiro, um passageiro me contou sobre um modelo de ponto de coleta de marketplaces que mudou tudo. Hoje, 4 meses depois, faturo em média R$ 5 mil por mês na minha garagem. Sem chefe, sem CNPJ, sem propaganda.
+          Hoje vou te contar como transformei meu apartamento num negócio: os prós, os contras, e o passo a passo pra entrar e até quanto dá pra faturar.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
