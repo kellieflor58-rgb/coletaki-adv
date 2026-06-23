@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Coffee, ArrowRight, Quote, Check, TrendingUp, Lightbulb, Calendar, Package, Home, Clock } from 'lucide-react';
+import { Coffee, ArrowRight, Quote, Check, TrendingUp, Lightbulb, Calendar } from 'lucide-react';
 
 const NAVY = '#0F2A5C';
 const GOLD = '#D4A946';
@@ -29,18 +29,6 @@ function Citacao({ children }) {
     <div style={{ background: BG_SOFT, borderLeft: '4px solid ' + GOLD, padding: '20px 24px', margin: '24px 0', borderRadius: '0 8px 8px 0' }}>
       <Quote size={22} color={GOLD} style={{ marginBottom: 8 }} />
       <div style={{ fontSize: 17, lineHeight: 1.7, color: INK, fontStyle: 'italic', fontWeight: 500 }}>{children}</div>
-    </div>
-  );
-}
-
-function CardPilar({ icon: Icon, titulo, desc }) {
-  return (
-    <div style={{ background: '#fff', border: '1px solid ' + LINE, borderRadius: 12, padding: 20 }}>
-      <div style={{ width: 44, height: 44, borderRadius: 10, background: GOLD + '20', color: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
-        <Icon size={22} />
-      </div>
-      <div style={{ fontSize: 15, fontWeight: 800, color: INK, marginBottom: 6 }}>{titulo}</div>
-      <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.6 }}>{desc}</div>
     </div>
   );
 }
@@ -132,12 +120,11 @@ export default function PageClient() {
 
         <H2>Por que esse modelo funciona tão bem</H2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 32 }} className="cards-pilares">
-          <CardPilar icon={Package} titulo="Zero investimento" desc="Você não compra nada. Usa o espaço que já tem em casa — uma prateleira na lavanderia, um canto da sala." />
-          <CardPilar icon={Home} titulo="Trabalha em casa" desc="Você não sai para entregar. Os motoboys trazem os pacotes até você e os clientes vão buscar." />
-          <CardPilar icon={Clock} titulo="Horário tranquilo" desc="Você atende em três janelas no dia — manhã, almoço e tarde. Cerca de 1 hora em cada uma." />
-          <CardPilar icon={TrendingUp} titulo="Renda escalável" desc="Quanto mais coletas, mais você ganha. Pontos bem localizados chegam a 30 coletas por dia." />
-        </div>
+        <Para>A grande sacada desse modelo é que ele tira do seu caminho praticamente todos os obstáculos de quem quer empreender.</Para>
+
+        <Para>Você não precisa investir nada — usa o espaço que já tem em casa, seja uma prateleira na lavanderia ou um canto da sala. Não precisa sair pra entregar — os motoboys dos marketplaces trazem os pacotes até você, e os clientes vão buscar na sua porta. Não precisa ficar à disposição o dia inteiro — você atende em três janelas curtas (manhã, almoço e tarde), com cerca de uma hora em cada uma.</Para>
+
+        <Para>E o melhor: a renda é escalável. Quanto mais coletas você faz, mais você ganha. Pontos bem localizados chegam tranquilamente a 30 coletas por dia.</Para>
 
         <H2>Não é bico — é parceria séria</H2>
 
@@ -286,7 +273,6 @@ export default function PageClient() {
         @media (max-width: 768px) {
           .menu-d { display: none !important; }
           .h1-main { font-size: 28px !important; }
-          .cards-pilares { grid-template-columns: 1fr !important; }
         }
       `}</style>
 
