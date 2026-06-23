@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Coffee, ArrowRight, Quote, Check, TrendingUp, Lightbulb, Calendar } from 'lucide-react';
+import { Coffee, ArrowRight, Quote, Check, TrendingUp, Lightbulb, Calendar, Package, Home, MapPin, Clock } from 'lucide-react';
 
 const NAVY = '#0F2A5C';
 const GOLD = '#D4A946';
@@ -12,9 +12,8 @@ const BG_SOFT = '#FAFBFC';
 
 const FOTO_AUTOR = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTruoFtCtl2GCdFxfesIkwY8dLRo7yubE5GL4YL7kIoUcEOrKWS0kzzD9X7&s=10';
 const FOTO_PEDRO = 'https://i.pinimg.com/736x/30/0e/0a/300e0aabcfbe9b3da8c46cd35cf30c4d.jpg';
-const FOTO_BAG = 'https://i.pinimg.com/736x/97/c3/cb/97c3cb09fdc7ec5b66c4d99f5f1b6b67.jpg';
-const FOTO_CASA = 'https://i.pinimg.com/736x/26/8d/49/268d4948ba31faf6e9c4dd0c8c0a1f88.jpg';
 const FOTO_PACOTES = 'https://i.pinimg.com/736x/d0/cb/2c/d0cb2cb20c4faf2b6f29f0a48d2c2b39.jpg';
+const FOTO_CASA = 'https://i.pinimg.com/736x/26/8d/49/268d4948ba31faf6e9c4dd0c8c0a1f88.jpg';
 
 const MENU = ['Home', 'Materias', 'Economia', 'Cidades', 'Oportunidades'];
 
@@ -35,15 +34,14 @@ function Citacao({ children }) {
   );
 }
 
-function CardIdeia({ num, titulo, desc, lucro }) {
+function CardPilar({ icon: Icon, titulo, desc }) {
   return (
-    <div style={{ background: '#fff', border: '1px solid ' + LINE, borderRadius: 12, padding: 20, marginBottom: 14, display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-      <div style={{ background: NAVY, color: '#fff', width: 40, height: 40, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16, fontWeight: 800, flexShrink: 0 }}>{num}</div>
-      <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 16, fontWeight: 800, color: INK, marginBottom: 4 }}>{titulo}</div>
-        <div style={{ fontSize: 14, color: INK_SOFT, lineHeight: 1.6, marginBottom: 8 }}>{desc}</div>
-        <div style={{ fontSize: 12, color: GOLD, fontWeight: 700, letterSpacing: '0.05em' }}>{lucro}</div>
+    <div style={{ background: '#fff', border: '1px solid ' + LINE, borderRadius: 12, padding: 20 }}>
+      <div style={{ width: 44, height: 44, borderRadius: 10, background: GOLD + '20', color: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
+        <Icon size={22} />
       </div>
+      <div style={{ fontSize: 15, fontWeight: 800, color: INK, marginBottom: 6 }}>{titulo}</div>
+      <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.6 }}>{desc}</div>
     </div>
   );
 }
@@ -87,16 +85,16 @@ export default function PageClient() {
 
         <div style={{ textAlign: 'center', marginBottom: 16 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: GOLD + '15', color: '#8a6f1f', padding: '6px 16px', borderRadius: 999, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-            <Lightbulb size={12} /> Ideias de Negocio - 8 min de leitura
+            <Lightbulb size={12} /> Ideia de Negocio - 8 min de leitura
           </div>
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.12, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          7 ideias para sair do CLT em 2026 - e a que mais cresce <span style={{ color: GOLD }}>nao exige investimento</span>
+          A ideia de negocio que ta tirando entregadores de iFood do trabalho na rua: <span style={{ color: GOLD }}>ponto de coleta em casa</span>
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 620 }}>
-          Reuni as 7 oportunidades que mais escutei nos ultimos 6 meses entre amigos, leitores e gente que tomou coragem de mudar. Tem uma especifica que vem chamando atencao - e foi a que tirou um amigo nosso do iFood.
+          Marketplaces tao pagando entre R$ 3.500 e R$ 6.000 por mes pra moradores comuns guardarem pacotes em casa. Sem investimento, sem CNPJ, sem precisar sair de casa. Vou contar como funciona - e como o Pedro saiu do iFood usando isso.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
@@ -113,51 +111,43 @@ export default function PageClient() {
           </div>
         </div>
 
-        <Para>Toda semana eu recebo umas 10 mensagens parecidas: <em>"Carlos, to cansado do trampo. O que da pra fazer hoje sem ter dinheiro pra investir?"</em></Para>
+        <Para>Toda semana eu recebo mensagem perguntando a mesma coisa: <em>"Carlos, qual ideia de negocio funciona hoje sem precisar investir?"</em></Para>
 
-        <Para>Eu sempre respondia caso por caso. Mas como ja anotei tudo o que mais funcionou, resolvi escrever esse texto. Aqui estao as <strong>7 ideias</strong> que mais aparecem - de quem largou CLT e tirou seu sustento.</Para>
+        <Para>Eu sempre respondia caso por caso. Mas tem uma ideia especifica que ta crescendo silenciosamente nos ultimos 2 anos e quase ninguem fala sobre. E hoje eu vou explicar ela inteira.</Para>
 
-        <Para>No final eu conto a historia do Pedro. Ele era entregador de iFood ate marco de 2025. Hoje fatura mais de <strong>R$ 5.000 por mes</strong> sem sair de casa - e sem ter investido um centavo. Mas vamos por partes.</Para>
+        <Para>Vou contar tambem a historia do Pedro. Ele era entregador de iFood ha 4 anos. Hoje fatura mais de <strong>R$ 5.000 por mes em casa</strong>, sem ter investido um centavo. Vamos por partes.</Para>
 
-        {/* ===== Lista de ideias ===== */}
-        <H2>1. Marmita fitness no bairro</H2>
-        <Para><strong>Quanto da:</strong> R$ 1.500 a R$ 4.000/mes. Voce produz em casa, vende pelo WhatsApp pra academias e escritorios proximos.</Para>
-        <Para><strong>Risco:</strong> Alvara da vigilancia, geladeira boa, conhecimento minimo de nutricao. Estoca pouco, perde pouco. Crescer escala junto.</Para>
+        {/* ===== Como funciona ===== */}
+        <H2>Qual e a ideia?</H2>
 
-        <H2>2. Conserto de celular em casa</H2>
-        <Para>Hoje da pra aprender pelo YouTube em 2 meses. Aparelhos parados em gavetas tem montao. Tela trincada de iPhone troca por R$ 350 e leva 15 minutos.</Para>
-        <Para><strong>Quanto da:</strong> R$ 2.000 a R$ 6.000/mes. Comeca com R$ 600 de kit basico (chave Pentalobe, ventosa, secador de calor).</Para>
+        <Para>Voce ja parou pra pensar quantos pacotes o entregador de moto leva embora porque nao tem ninguem em casa pra receber?</Para>
 
-        <H2>3. Limpeza pos-obra</H2>
-        <Para>Quem reformou em 2024-25 ta acabando agora. Limpeza pos-obra cobra R$ 8 a R$ 15 por m² e nao precisa de equipamento sofisticado.</Para>
-        <Para><strong>Quanto da:</strong> R$ 1.800 a R$ 3.500/mes trabalhando 3 dias da semana.</Para>
+        <Para>So a Shopee, Mercado Livre, Amazon e Shein juntas processam <strong>milhoes de devolucoes por mes</strong> so por isso. E sabe quanto custa pra elas trazer aquele pacote de volta, processar, tentar entregar de novo, eventualmente devolver? Custa muito.</Para>
 
-        <H2>4. Adestrador de caes na sua propria rua</H2>
-        <Para>Mais gente comprou pet na pandemia e nunca aprendeu a educar. Curso online de adestramento custa R$ 800 e te qualifica.</Para>
-        <Para><strong>Quanto da:</strong> R$ 80 a R$ 150 por sessao. 20 sessoes por mes ja virou um salario.</Para>
+        <Para>Por isso eles criaram uma solucao mais inteligente: usar <strong>moradores comuns como pontos de retirada</strong>.</Para>
 
-        <H2>5. Conserto de roupas e ajustes</H2>
-        <Para>Maquina de costura usada custa R$ 350. Bairro com lojas de moda barata sempre tem cliente. Cobra R$ 25 por barra, R$ 40 por ajuste de cintura.</Para>
-        <Para><strong>Quanto da:</strong> R$ 1.200 a R$ 2.500/mes. Sem chefe, sem horario fixo.</Para>
+        <Citacao>Voce recebe o pacote em casa, guarda numa prateleira, e o destinatario vai buscar quando puder. A empresa paga voce por cada coleta feita.</Citacao>
 
-        <H2>6. Brinquedoteca em casa pra criancas</H2>
-        <Para>Se voce mora num lugar com area aberta, da pra alugar a casa por 3 horas pra festinhas infantis. Cidades pequenas estao com falta disso.</Para>
-        <Para><strong>Quanto da:</strong> R$ 250 a R$ 600 por festa. 8 festas por mes ja vira renda boa.</Para>
+        <img src={FOTO_PACOTES} alt="Pacotes na sala" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Pacotes guardados esperando retirada. Um ponto medio gerencia entre 15 e 30 por dia.</p>
 
-        <H2>7. Ponto de coleta de marketplace - a queridinha do momento</H2>
+        <H2>Por que esse modelo funciona tao bem</H2>
 
-        <img src={FOTO_PACOTES} alt="Pacotes" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Pacotes esperando retirada na sala de um ponto de coleta.</p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 32 }} className="cards-pilares">
+          <CardPilar icon={Package} titulo="Zero investimento" desc="Nao precisa comprar nada. Voce usa o espaco que ja tem em casa - uma prateleira, um canto da lavanderia." />
+          <CardPilar icon={Home} titulo="Trabalha em casa" desc="Voce nao sai pra entregar. Os motoboys que trazem os pacotes ate voce, e os clientes vem buscar." />
+          <CardPilar icon={Clock} titulo="Horario controlado" desc="Voce atende em 3 janelas - manha, almoco, tarde. Aproximadamente 1 hora por janela." />
+          <CardPilar icon={TrendingUp} titulo="Renda escalavel" desc="Quanto mais coletas, mais voce ganha. Pontos bem localizados fazem 30+ coletas por dia." />
+        </div>
 
-        <Para>Essa aqui foi a que mais me chamou atencao. Funciona assim: marketplaces como <strong>Shopee, Mercado Livre, Amazon e Shein</strong> tem um problema gigante - muita gente nao ta em casa pra receber pacote.</Para>
+        <H2>E o ponto chave: nao e bico, e parceria</H2>
 
-        <Para>A solucao deles? Usar <strong>moradores comuns</strong> como pontos de retirada. Voce recebe os pacotes em casa, guarda numa prateleira, e os destinatarios vao buscar quando puderem.</Para>
+        <Para>Aqui esta a parte que muita gente nao entende: <strong>esse modelo nao e um bico</strong>. As empresas que operam isso de verdade fazem questao de validar cada ponto antes - porque elas precisam ter certeza que o pacote do cliente vai estar seguro.</Para>
 
-        <Para>Voce ganha por cada coleta feita. Nao precisa investir nada. Nao precisa de loja, alvara, funcionario nem CNPJ.</Para>
+        <Para>Quem opera melhor isso no Brasil hoje e a <strong><a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>Coletaki</a></strong>. Ela faz uma videochamada com voce, um consultor avalia sua casa, e so depois voce comeca a operar. Isso da seguranca tanto pra voce quanto pro marketplace.</Para>
 
-        <Citacao>O que mais me impressionou: tem morador faturando entre R$ 3.500 e R$ 6.000 por mes - apenas recebendo pacotes em horarios certos. E gente comum, sem experiencia de logistica.</Citacao>
-
-        <Para>A empresa que opera isso melhor no Brasil hoje se chama <strong><a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>Coletaki</a></strong>. Eles validam cada ponto antes (pra evitar problemas com pacote sumido) e isso da seguranca. Vou contar a historia do Pedro pra voce entender melhor.</Para>
+        <img src={FOTO_CASA} alt="Casa simples" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Uma casa simples bem localizada vale ouro pra logistica de marketplace.</p>
 
         {/* ===== Historia do Pedro ===== */}
         <div style={{ background: BG_SOFT, padding: 28, borderRadius: 14, margin: '32px 0', border: '1px solid ' + LINE }}>
@@ -172,15 +162,15 @@ export default function PageClient() {
           <img src={FOTO_PEDRO} alt="Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
           <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 24, fontStyle: 'italic' }}>Pedro Henrique, 32 anos. Ex-entregador iFood. Hoje ponto de coleta.</p>
 
-          <Para>Conheci o Pedro em fevereiro de 2025. Foi numa cafeteria aqui perto. Ele tava na fila atras de mim, de uniforme de iFood, e a gente comecou a conversar.</Para>
+          <Para>Conheci o Pedro em fevereiro de 2025 numa cafeteria aqui perto. Ele tava na fila atras de mim, de uniforme de iFood, e a gente comecou a conversar.</Para>
 
           <Para>Pedro trabalhava no iFood ha 4 anos. Saia 9 da manha, voltava as 11 da noite. Ganhava em media R$ 2.800 por mes - com sorte. Em dia de chuva ou semana de menos pedidos, R$ 1.900.</Para>
 
           <Citacao>"Carlos, eu nao sei mais. Tomei dois tombos esse ano. A moto ta no conserto. Minha esposa ta gravida do segundo. Eu nao vejo saida."</Citacao>
 
-          <Para>Naquele dia, contei sobre a Coletaki pra ele. Disse que tinha um amigo que ja tava nisso ha 6 meses e tava bem.</Para>
+          <Para>Naquele dia contei sobre a ideia de ponto de coleta pra ele. Falei que tinha um amigo que ja tava nisso ha 6 meses e tava bem.</Para>
 
-          <Para>Pedro hesitou. Voce sabe como e - <em>"nao quero perder tempo com promessa"</em>, <em>"e se nao funcionar?"</em>, <em>"e se for golpe?"</em>.</Para>
+          <Para>Pedro hesitou. Voce sabe como e - <em>"e se nao funcionar?"</em>, <em>"e se for golpe?"</em>, <em>"vou perder tempo de novo".</em></Para>
 
           <Para>Eu falei pra ele: <strong>"Pedro, voce nao precisa investir nada. So cadastra, um consultor vai te chamar numa videochamada, conhece sua casa, e ai voce decide."</strong></Para>
 
@@ -237,6 +227,21 @@ export default function PageClient() {
 
         </div>
 
+        {/* ===== Pra quem serve? ===== */}
+        <H2>Pra quem essa ideia serve?</H2>
+
+        <Para>Conversando com varios pontos ja em operacao, fiz uma lista do perfil que da mais certo:</Para>
+
+        <Para>
+          <strong style={{ color: NAVY }}>✓</strong> Mora em casa ou apartamento com algum espaco extra (lavanderia, area de servico, sala grande)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Esta em casa ao menos nos horarios principais do dia (manha, almoco, tarde)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Mora em bairro com movimento (perto de comercio, escola, centro)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Tem disposicao pra atender pessoas educadamente<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Quer renda recorrente sem precisar gerenciar empregados
+        </Para>
+
+        <Para>Se voce se encaixou em pelo menos 3 desses, vale fazer o teste. O cadastro e gratuito e a videochamada com o consultor tambem.</Para>
+
         {/* ===== CTA ===== */}
         <div style={{ background: NAVY, color: '#fff', borderRadius: 16, padding: 36, marginTop: 56, textAlign: 'center' }}>
           <TrendingUp size={32} color={GOLD} style={{ margin: '0 auto 12px', display: 'block' }} />
@@ -255,11 +260,11 @@ export default function PageClient() {
         {/* Conclusao */}
         <H2>Pra fechar</H2>
 
-        <Para>Toda decisao tem risco. As 7 ideias que listei nao sao pra todo mundo - cada uma exige um perfil. Mas se voce ta cansado do CLT, escolhe uma e vai.</Para>
+        <Para>Toda decisao tem risco. Mas tem ideias de negocio que minimizam esse risco a zero - <strong>ponto de coleta e uma delas</strong>. Voce nao investe, nao tem estoque, nao tem funcionario, e em uma semana ja ta operando.</Para>
 
-        <Para>Eu pessoalmente acho que <strong>ponto de coleta</strong> e o jeito mais inteligente de comecar - porque nao exige investimento, nao tem estoque pra perder, e em uma semana voce ta operando.</Para>
+        <Para>Pra quem ja ta cansado de bico na rua, ja tomou tombo de moto, ja teve carteira roubada, ja perdeu pacote na chuva - vale dar uma olhada com calma.</Para>
 
-        <Para>Se voce quiser dar uma olhada sem compromisso, o site da Coletaki e <a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700 }}>coletaki.com</a>. E so cadastrar. Nem precisa pagar nada pra falar com o consultor.</Para>
+        <Para>O site da Coletaki e <a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700 }}>coletaki.com</a>. E so cadastrar, eles te chamam pra videochamada e ja te dizem se serve. Sem pagar nada.</Para>
 
         <Para><em>Se essa materia ajudar voce a tomar coragem, me manda mensagem. Adoro saber das historias.</em></Para>
 
@@ -282,6 +287,7 @@ export default function PageClient() {
         @media (max-width: 768px) {
           .menu-d { display: none !important; }
           .h1-main { font-size: 28px !important; }
+          .cards-pilares { grid-template-columns: 1fr !important; }
         }
       `}</style>
 
