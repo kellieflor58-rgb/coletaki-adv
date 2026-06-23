@@ -81,7 +81,7 @@ export default function PageClient() {
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 620 }}>
-          Sem investir 1 real, Pedro se cadastrou na Coletaki e mudou de vida. Hoje fatura mais de R$ 5 mil por mês em casa, sem CNPJ, sem estoque, sem precisar sair pra entregar. Vou te contar sobre o modelo de negócio e como fazer parte.
+          Sem investir 1 real, Pedro se cadastrou na Coletaki e transformou um quartinho do apartamento em um ponto de coleta de marketplace. Hoje fatura mais de R$ 5 mil por mês em casa e aposentou a bag do iFood. Vou te contar sobre o modelo de negócio e como fazer parte.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
@@ -107,13 +107,15 @@ export default function PageClient() {
         {/* ===== Como funciona ===== */}
         <H2>Qual é a ideia?</H2>
 
-        <Para>Você já parou pra pensar quantos pacotes o entregador de moto leva de volta porque não tem ninguém em casa pra receber?</Para>
+        <Para>Pra você entender o que o Pedro tá fazendo, primeiro precisa entender o problema que ele resolve.</Para>
 
-        <Para>Só Shopee, Mercado Livre, Amazon e Shein, juntas, processam <strong>milhões de devoluções por mês</strong> por esse motivo. E sabe quanto custa pra essas empresas trazer o pacote de volta, processar, tentar entregar de novo e, no fim, devolver pro vendedor? Custa caro. Muito caro.</Para>
+        <Para>Hoje os marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: tudo isso é despachado de <strong>um único centro de distribuição (CD)</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
 
-        <Para>Pra resolver isso, elas criaram uma solução mais inteligente: usar <strong>moradores comuns como pontos de retirada</strong>.</Para>
+        <Para>Resultado: o caminhão sai do CD lotado, percorre quilômetros, e às vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas duas Black Fridays, com volume crescendo todo ano. O custo logístico vira impraticável e o prazo aperta.</Para>
 
-        <Citacao>Você recebe o pacote em casa, guarda numa prateleira, e o destinatário vai buscar quando puder. A empresa paga você por cada coleta realizada.</Citacao>
+        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a entrega usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada caminhão fazer 1 entrega numa rua, ele entrega 30 pacotes num único endereço — a casa de um morador comum. Esse morador guarda os pacotes, e os clientes do bairro vão buscar quando podem.</Para>
+
+        <Citacao>É exatamente isso que o Pedro faz hoje. O caminhão chega de manhã, deixa todos os pacotes da região, e durante o dia os vizinhos vão lá buscar. Ele recebe por cada coleta entregue.</Citacao>
 
         <img src={IMG_PACOTES} alt="Pacotes na sala" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
         <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Pacotes guardados esperando retirada. Um ponto médio movimenta entre 15 e 30 pacotes por dia.</p>
