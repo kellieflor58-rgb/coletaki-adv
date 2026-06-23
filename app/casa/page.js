@@ -1,8 +1,8 @@
 import PageClient from './PageClient';
 
 export const metadata = {
-  title: 'De entregador do iFood a R$ 5 mil por mês: a ideia que ninguém te conta | Café com Dicas',
-  description: 'Sem investir 1 real, Pedro se cadastrou na Coletaki e mudou de vida. Hoje fatura mais de R$ 5 mil por mês em casa, sem CNPJ, sem estoque.',
+  title: 'A ideia de negócio: de motorista de Uber a R$ 5 mil por mês de casa | Café com Dicas',
+  description: 'De motorista de Uber a R$ 5 mil por mês de casa, sem investir 1 real. Conheça a ideia de negócio que vem crescendo em silêncio nos últimos dois anos.',
 };
 
 export default function Page() { return <PageClient />; }

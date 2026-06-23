@@ -75,7 +75,7 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, color: NAVY, letterSpacing: '-0.025em', lineHeight: 1.1, textAlign: 'center', marginBottom: 24 }} className="h1-main">
-          A ideia de negócio em casa que <span style={{ color: GOLD }}>fez um motorista de Uber faturar R$ 5 mil por mês</span> sem investir 1 real
+          A ideia de negócio: de motorista de Uber a <span style={{ color: GOLD }}>R$ 5 mil por mês de casa</span>, sem investir 1 real
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, textAlign: 'center', maxWidth: 600, margin: '0 auto 36px' }}>
