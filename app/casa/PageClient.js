@@ -90,11 +90,11 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.12, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          A ideia de negócio que está tirando entregadores de iFood da rua: <span style={{ color: GOLD }}>ponto de coleta em casa</span>
+          De entregador do iFood a <span style={{ color: GOLD }}>R$ 5 mil por mês</span>: a ideia de negócio que ninguém te conta
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 620 }}>
-          Os grandes marketplaces estão pagando entre R$ 3.500 e R$ 6.000 por mês para moradores comuns guardarem pacotes em casa. Sem investimento, sem CNPJ, sem precisar sair pra entregar. Vou te explicar como funciona — e contar como o Pedro saiu do iFood usando esse modelo.
+          Sem investir 1 real, Pedro se cadastrou na Coletaki e mudou de vida. Hoje fatura mais de R$ 5 mil por mês em casa, sem CNPJ, sem estoque, sem precisar sair pra entregar. Vou te contar sobre o modelo de negócio e como fazer parte.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
