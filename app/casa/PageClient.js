@@ -107,51 +107,8 @@ export default function PageClient() {
 
         <Para>Toda semana eu recebo mensagem perguntando a mesma coisa: <em>"Carlos, qual ideia de negócio funciona hoje sem precisar investir?"</em></Para>
 
-        <Para>Eu sempre respondia caso a caso. Mas existe um modelo que vem crescendo em silêncio nos últimos dois anos — e quase ninguém fala sobre ele. Hoje eu vou explicar tudo do começo ao fim.</Para>
+        <Para>Hoje, em vez de dar uma resposta genérica, vou te contar uma história real — a do Pedro. Ele foi entregador do iFood por quatro anos. Hoje fatura mais de <strong>R$ 5 mil por mês</strong> sem sair de casa, e não investiu um centavo pra começar. Depois eu explico o modelo de negócio por trás disso e por que ele tá crescendo em silêncio nos últimos dois anos.</Para>
 
-        <Para>E vou contar também a história do Pedro. Ele foi entregador do iFood por quatro anos. Hoje fatura mais de <strong>R$ 5 mil por mês</strong> sem sair de casa, e não investiu um centavo pra começar. Vamos por partes.</Para>
-
-        {/* ===== Qual é a ideia / DOR ===== */}
-        <H2>Qual é a ideia?</H2>
-
-        <Para>Pra você entender o que o Pedro faz, primeiro precisa entender o problema que ele resolve.</Para>
-
-        <Para>Hoje os grandes marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: <strong>tudo isso é despachado a partir de um único centro de distribuição</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
-
-        <Para>Resultado: cada veículo sai do CD lotado, percorre quilômetros, e muitas vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas Black Fridays, com volume crescendo todo ano, e o custo logístico vira impraticável. O prazo aperta.</Para>
-
-        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a operação usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada veículo fazer uma entrega isolada numa rua, ele faz <strong>uma única parada num endereço</strong> — a casa de um morador comum — e deixa ali 30, 40, às vezes 60 pacotes de uma vez. Depois, outros veículos passam ao longo do dia pra recolher os pacotes que precisam ser entregues ali nas proximidades. E a entrega final fica muito mais ágil.</Para>
-
-        <Citacao>O ponto de coleta é a ponte entre o CD e a entrega final no bairro. O morador não atende cliente, não despacha, não tem contato com comprador. Só recebe os pacotes nos horários combinados e devolve quando outro veículo passa pra retirar.</Citacao>
-
-        {/* ===== Como funciona ===== */}
-        <H2>Como funciona o dia a dia do Pedro</H2>
-
-        <Para>Antes de continuar, deixa eu te apresentar o Pedro com mais calma — porque é a história dele que dá vida ao modelo. Vou voltar com mais detalhe sobre ele já já, mas o dia a dia da operação no quartinho dele funciona assim:</Para>
-
-        <Para><strong>Por volta das 8h da manhã</strong>, um veículo encosta na porta do prédio. Pode ser uma van do próprio CD do marketplace, pode ser um carro terceirizado contratado pela <Link>Coletaki</Link>. Pra Pedro não muda nada — o procedimento é o mesmo. O motorista desce com os pacotes do dia: em geral entre 20 e 60 caixinhas leves de e-commerce.</Para>
-
-        <Para>Pedro <strong>lê o QR code de entrada de cada pacote no aplicativo</strong> da Coletaki, junto com o motorista. Em seguida, organiza tudo no quartinho separado, em prateleiras etiquetadas. Esse processo costuma levar uns 15 a 20 minutos.</Para>
-
-        <Para><strong>Por volta das 11h</strong>, outro veículo passa. Esse traz mais alguns pacotes e leva embora boa parte dos que já estavam no ponto desde o dia anterior. Mesma rotina: leitura do QR de entrada nos novos, leitura do QR de saída nos que estão saindo. Tudo registrado no aplicativo.</Para>
-
-        <Para><strong>Por volta das 14h da tarde</strong>, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos pra entrega final no bairro. Às vezes leva tudo, às vezes sobra um pouco pra sair no dia seguinte.</Para>
-
-        <img src={IMG_PACOTES} alt="Pacotes organizados no quartinho do Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica no quartinho do Pedro: pacotes organizados aguardando a próxima passagem.</p>
-
-        <Para>A parte importante é essa: <strong>Pedro não atende cliente final, não despacha mercadoria, não tem contato com comprador</strong>. Só recebe, lê o QR, guarda, devolve pro motorista quando ele volta. O sistema da Coletaki cuida de toda a comunicação, do rastreio e do destino final dos pacotes.</Para>
-
-        <Para>Entre uma passagem e outra, Pedro está livre. Almoça com a esposa, leva a filha na escola, descansa. <strong>Trabalha menos de 2 horas por dia — distribuídas em três janelas curtas — e fatura mais do que ganhava arriscando a vida na rua.</strong></Para>
-
-        {/* ===== Por que funciona ===== */}
-        <H2>Por que esse modelo funciona tão bem</H2>
-
-        <Para>A grande sacada é que ele tira do seu caminho praticamente todos os obstáculos de quem quer empreender em casa.</Para>
-
-        <Para>Você não precisa investir nada — basta ter um cômodo limpo e seguro, com espaço pra prateleiras. Não precisa sair pra entregar — os veículos vêm até você três vezes por dia, em horários combinados. Não precisa atender ninguém — a única interação é com os motoristas que passam, e leva poucos minutos. Não precisa lidar com cliente final, devolução ou reclamação — tudo isso fica com a Coletaki.</Para>
-
-        <Para>E o pagamento é por pacote processado, <strong>depositado quinzenalmente nos dias 1 e 16 de cada mês</strong>, direto na conta vinculada ao seu CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial. Quanto mais pacotes passam, mais você ganha.</Para>
 
         {/* ===== Pedro ===== */}
         <div style={{ background: BG_SOFT, padding: 28, borderRadius: 14, margin: '32px 0', border: '1px solid ' + LINE }}>
@@ -227,6 +184,49 @@ export default function PageClient() {
           <Para>Pedro não tem discurso de coach. É um cara normal. E é justamente por isso que a história dele importa.</Para>
 
         </div>
+
+        <H2>Mas qual é a ideia por trás disso?</H2>
+
+        <Para>Agora que você conhece a história do Pedro, deixa eu te explicar o modelo de negócio inteiro — qual problema os marketplaces estão resolvendo e por que o ponto de coleta virou a peça-chave dessa engrenagem.</Para>
+        {/* ===== Qual é a ideia / DOR ===== */}
+        <Para>Hoje os grandes marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: <strong>tudo isso é despachado a partir de um único centro de distribuição</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
+
+        <Para>Resultado: cada veículo sai do CD lotado, percorre quilômetros, e muitas vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas Black Fridays, com volume crescendo todo ano, e o custo logístico vira impraticável. O prazo aperta.</Para>
+
+        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a operação usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada veículo fazer uma entrega isolada numa rua, ele faz <strong>uma única parada num endereço</strong> — a casa de um morador comum — e deixa ali 30, 40, às vezes 60 pacotes de uma vez. Depois, outros veículos passam ao longo do dia pra recolher os pacotes que precisam ser entregues ali nas proximidades. E a entrega final fica muito mais ágil.</Para>
+
+        <Citacao>O ponto de coleta é a ponte entre o CD e a entrega final no bairro. O morador não atende cliente, não despacha, não tem contato com comprador. Só recebe os pacotes nos horários combinados e devolve quando outro veículo passa pra retirar.</Citacao>
+
+        {/* ===== Como funciona ===== */}
+        <H2>Como funciona o dia a dia</H2>
+
+        <Para>Já que você conhece o Pedro, fica mais fácil entender a rotina. O dia a dia da operação no quartinho dele funciona assim:</Para>
+
+        <Para><strong>Por volta das 8h da manhã</strong>, um veículo encosta na porta do prédio. Pode ser uma van do próprio CD do marketplace, pode ser um carro terceirizado contratado pela <Link>Coletaki</Link>. Pra Pedro não muda nada — o procedimento é o mesmo. O motorista desce com os pacotes do dia: em geral entre 20 e 60 caixinhas leves de e-commerce.</Para>
+
+        <Para>Pedro <strong>lê o QR code de entrada de cada pacote no aplicativo</strong> da Coletaki, junto com o motorista. Em seguida, organiza tudo no quartinho separado, em prateleiras etiquetadas. Esse processo costuma levar uns 15 a 20 minutos.</Para>
+
+        <Para><strong>Por volta das 11h</strong>, outro veículo passa. Esse traz mais alguns pacotes e leva embora boa parte dos que já estavam no ponto desde o dia anterior. Mesma rotina: leitura do QR de entrada nos novos, leitura do QR de saída nos que estão saindo. Tudo registrado no aplicativo.</Para>
+
+        <Para><strong>Por volta das 14h da tarde</strong>, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos pra entrega final no bairro. Às vezes leva tudo, às vezes sobra um pouco pra sair no dia seguinte.</Para>
+
+        <img src={IMG_PACOTES} alt="Pacotes organizados no quartinho do Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica no quartinho do Pedro: pacotes organizados aguardando a próxima passagem.</p>
+
+        <Para>A parte importante é essa: <strong>Pedro não atende cliente final, não despacha mercadoria, não tem contato com comprador</strong>. Só recebe, lê o QR, guarda, devolve pro motorista quando ele volta. O sistema da Coletaki cuida de toda a comunicação, do rastreio e do destino final dos pacotes.</Para>
+
+        <Para>Entre uma passagem e outra, Pedro está livre. Almoça com a esposa, leva a filha na escola, descansa. <strong>Trabalha menos de 2 horas por dia — distribuídas em três janelas curtas — e fatura mais do que ganhava arriscando a vida na rua.</strong></Para>
+
+        {/* ===== Por que funciona ===== */}
+        <H2>Por que esse modelo funciona tão bem</H2>
+
+        <Para>A grande sacada é que ele tira do seu caminho praticamente todos os obstáculos de quem quer empreender em casa.</Para>
+
+        <Para>Você não precisa investir nada — basta ter um cômodo limpo e seguro, com espaço pra prateleiras. Não precisa sair pra entregar — os veículos vêm até você três vezes por dia, em horários combinados. Não precisa atender ninguém — a única interação é com os motoristas que passam, e leva poucos minutos. Não precisa lidar com cliente final, devolução ou reclamação — tudo isso fica com a Coletaki.</Para>
+
+        <Para>E o pagamento é por pacote processado, <strong>depositado quinzenalmente nos dias 1 e 16 de cada mês</strong>, direto na conta vinculada ao seu CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial. Quanto mais pacotes passam, mais você ganha.</Para>
+
+
 
         {/* ===== Pra quem serve ===== */}
         <H2>Pra quem essa ideia serve?</H2>
