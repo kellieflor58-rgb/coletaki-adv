@@ -118,29 +118,31 @@ export default function PageClient() {
 
         <Para>Hoje os grandes marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: <strong>tudo isso é despachado a partir de um único centro de distribuição</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
 
-        <Para>Resultado: o caminhão sai do CD lotado, percorre quilômetros, e muitas vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas Black Fridays, com volume crescendo todo ano, e o custo logístico vira impraticável. O prazo aperta. E o motorista de moto, que faz a ponta final, vive sobrecarregado.</Para>
+        <Para>Resultado: cada veículo sai do CD lotado, percorre quilômetros, e muitas vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas Black Fridays, com volume crescendo todo ano, e o custo logístico vira impraticável. O prazo aperta.</Para>
 
-        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a entrega usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada veículo fazer uma entrega numa rua, ele faz <strong>uma única parada num endereço</strong> — a casa de um morador comum — e deixa ali 30, 40, às vezes 60 pacotes de uma vez. Depois, outros veículos passam ao longo do dia pra recolher os pacotes que precisam seguir adiante.</Para>
+        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a operação usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada veículo fazer uma entrega isolada numa rua, ele faz <strong>uma única parada num endereço</strong> — a casa de um morador comum — e deixa ali 30, 40, às vezes 60 pacotes de uma vez. Depois, outros veículos passam ao longo do dia pra recolher os pacotes que precisam ser entregues ali nas proximidades. E a entrega final fica muito mais ágil.</Para>
 
-        <Citacao>O ponto de coleta é a ponte entre o caminhão do marketplace e os entregadores finais. O morador não atende cliente, não despacha, não tem contato com comprador. Só recebe os pacotes nos horários combinados e devolve quando outro veículo passa pra retirar.</Citacao>
+        <Citacao>O ponto de coleta é a ponte entre o CD e a entrega final no bairro. O morador não atende cliente, não despacha, não tem contato com comprador. Só recebe os pacotes nos horários combinados e devolve quando outro veículo passa pra retirar.</Citacao>
 
         {/* ===== Como funciona ===== */}
-        <H2>Como funciona o dia a dia</H2>
+        <H2>Como funciona o dia a dia do Pedro</H2>
 
-        <Para>O modelo é simples e tem horário previsível. Acompanhe:</Para>
+        <Para>Antes de continuar, deixa eu te apresentar o Pedro com mais calma — porque é a história dele que dá vida ao modelo. Vou voltar com mais detalhe sobre ele já já, mas o dia a dia da operação no quartinho dele funciona assim:</Para>
 
-        <Para><strong>Por volta das 8h da manhã</strong>, um veículo encosta na porta do ponto de coleta. Pode ser um motorista do próprio CD do marketplace, pode ser um terceirizado contratado pela <Link>Coletaki</Link>. Não muda nada pro morador. Ele desce com os pacotes — em geral entre 20 e 60 caixinhas leves de e-commerce.</Para>
+        <Para><strong>Por volta das 8h da manhã</strong>, um veículo encosta na porta do prédio. Pode ser uma van do próprio CD do marketplace, pode ser um carro terceirizado contratado pela <Link>Coletaki</Link>. Pra Pedro não muda nada — o procedimento é o mesmo. O motorista desce com os pacotes do dia: em geral entre 20 e 60 caixinhas leves de e-commerce.</Para>
 
-        <Para>O morador <strong>lê o QR code de entrada de cada pacote no aplicativo</strong> da Coletaki, junto com o motorista. Em seguida, guarda tudo num cômodo separado, organizado em prateleiras.</Para>
+        <Para>Pedro <strong>lê o QR code de entrada de cada pacote no aplicativo</strong> da Coletaki, junto com o motorista. Em seguida, organiza tudo no quartinho separado, em prateleiras etiquetadas. Esse processo costuma levar uns 15 a 20 minutos.</Para>
 
-        <Para><strong>Por volta das 11h</strong>, outro veículo passa. Esse traz mais alguns pacotes e leva embora os que já estavam no ponto desde o dia anterior. Mesma rotina: leitura do QR de entrada nos novos, leitura do QR de saída nos que estão saindo. Tudo registrado no app.</Para>
+        <Para><strong>Por volta das 11h</strong>, outro veículo passa. Esse traz mais alguns pacotes e leva embora boa parte dos que já estavam no ponto desde o dia anterior. Mesma rotina: leitura do QR de entrada nos novos, leitura do QR de saída nos que estão saindo. Tudo registrado no aplicativo.</Para>
 
-        <Para><strong>Por volta das 14h da tarde</strong>, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos. Às vezes leva tudo, às vezes sobra um pouco pra sair só no dia seguinte.</Para>
+        <Para><strong>Por volta das 14h da tarde</strong>, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos pra entrega final no bairro. Às vezes leva tudo, às vezes sobra um pouco pra sair no dia seguinte.</Para>
 
-        <img src={IMG_PACOTES} alt="Pacotes organizados no ponto de coleta" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica num ponto de coleta: pacotes organizados aguardando a próxima passagem do veículo.</p>
+        <img src={IMG_PACOTES} alt="Pacotes organizados no quartinho do Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica no quartinho do Pedro: pacotes organizados aguardando a próxima passagem.</p>
 
-        <Para>A parte importante é essa: <strong>o morador não atende cliente, não despacha mercadoria, não tem contato com comprador final</strong>. Só recebe, lê o QR, guarda, devolve pro motorista quando ele volta. O sistema da Coletaki cuida de toda a comunicação, do rastreio e do destino final dos pacotes.</Para>
+        <Para>A parte importante é essa: <strong>Pedro não atende cliente final, não despacha mercadoria, não tem contato com comprador</strong>. Só recebe, lê o QR, guarda, devolve pro motorista quando ele volta. O sistema da Coletaki cuida de toda a comunicação, do rastreio e do destino final dos pacotes.</Para>
+
+        <Para>Entre uma passagem e outra, Pedro está livre. Almoça com a esposa, leva a filha na escola, descansa. <strong>Trabalha menos de 2 horas por dia — distribuídas em três janelas curtas — e fatura mais do que ganhava arriscando a vida na rua.</strong></Para>
 
         {/* ===== Por que funciona ===== */}
         <H2>Por que esse modelo funciona tão bem</H2>
