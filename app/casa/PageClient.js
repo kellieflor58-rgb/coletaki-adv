@@ -172,19 +172,22 @@ export default function PageClient() {
 
         <Para>Comparando com Uber, eu tirava em média uns R$ 2.500 a R$ 3.000 líquidos no mês — depois de descontar combustível e manutenção. Hoje fechei o quadrimestre em torno de R$ 4 mil de média, trabalhando menos de 15% do tempo que eu trabalhava antes.</Para>
 
-        <H2>Pra que tipo de pessoa essa ideia funciona</H2>
+        <H2>Mas não é pra qualquer um</H2>
 
-        <Para>Não vou romantizar. Essa ideia não serve pra qualquer um. Conversando com outros pontos em operação e pensando no meu próprio perfil, separei o que costuma dar mais certo:</Para>
+        <Para>Antes de você correr pra se cadastrar, deixa eu ser sincero: <strong>esse modelo exige responsabilidade.</strong> Não é bico, não é "trabalha quando quiser". Os horários de chegada e saída dos veículos são combinados com antecedência e <strong>você precisa estar lá.</strong></Para>
+
+        <Para>Se você falta num dia sem avisar, <strong>vários clientes ficam sem o pacote deles</strong> — porque o motorista chega, não tem ninguém pra receber, e a entrega trava. Isso compromete o prazo dos compradores, o nome do marketplace e o seu próprio cadastro. Pontos que faltam várias vezes são desligados.</Para>
+
+        <Para>Quem entra precisa ter:</Para>
 
         <Para>
-          <strong style={{ color: NAVY }}>✓</strong> Você mora em casa ou apartamento com um cômodo sobrando (quartinho, área de serviço, garagem coberta)<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Consegue estar em casa nos horários das passagens (manhã, meio-dia, início da tarde)<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Tem cômodo seco, sem infiltração, longe de janela que dá pra rua<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Aceita seguir a rotina de registro de pacotes pelo app<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Procura renda recorrente sem precisar gerenciar funcionário, estoque ou cliente
+          <strong style={{ color: NAVY }}>✓</strong> Compromisso com os horários das três passagens do dia (manhã, meio-dia, início da tarde)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Um cômodo seco, sem infiltração, longe de janela que dá pra rua<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Disciplina pra registrar todos os pacotes no aplicativo (entrada e saída)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Vontade de ter renda recorrente sem precisar lidar com cliente, estoque ou funcionário
         </Para>
 
-        <Para>Se você se viu em pelo menos três desses, vale fazer o cadastro. Não cobra nada e a validação é gratuita.</Para>
+        <Para>Se você se viu nesses critérios, vale fazer o cadastro. Não cobra nada e a validação é gratuita.</Para>
 
         <H2>Por que esse modelo tá crescendo agora</H2>
 
