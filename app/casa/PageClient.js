@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Coffee, ArrowRight, Quote, Check, TrendingUp, Lightbulb, Calendar } from 'lucide-react';
+import { Coffee, ArrowRight, Quote, Calendar, Lightbulb, TrendingUp } from 'lucide-react';
 
 const NAVY = '#0F2A5C';
 const GOLD = '#D4A946';
@@ -31,6 +31,10 @@ function Citacao({ children }) {
       <div style={{ fontSize: 17, lineHeight: 1.7, color: INK, fontStyle: 'italic', fontWeight: 500 }}>{children}</div>
     </div>
   );
+}
+
+function Link({ children }) {
+  return <a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>{children}</a>;
 }
 
 export default function PageClient() {
@@ -81,11 +85,11 @@ export default function PageClient() {
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 620 }}>
-          Sem investir 1 real, Pedro se cadastrou na Coletaki e transformou um quartinho do apartamento em um ponto de coleta de marketplace. Hoje fatura mais de R$ 5 mil por mês em casa e aposentou a bag do iFood. Vou te contar sobre o modelo de negócio e como fazer parte.
+          Sem investir 1 real, Pedro se cadastrou na <Link>Coletaki</Link> e transformou um quartinho do apartamento em um ponto de coleta de marketplace. Hoje fatura mais de R$ 5 mil por mês em casa e aposentou a bag do iFood. Vou te contar sobre o modelo de negócio e como fazer parte.
         </p>
 
         <img src={IMG_HERO} alt="Apartamento do Pedro operando como ponto de coleta" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 36, fontStyle: 'italic' }}>O quartinho do Pedro hoje: prateleira organizada, código QR de retirada, fluxo simples.</p>
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 36, fontStyle: 'italic' }}>O quartinho do Pedro hoje: prateleira organizada, pacotes etiquetados, fluxo simples.</p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
           <div style={{ width: 80, height: 1, background: LINE }} />
@@ -103,43 +107,51 @@ export default function PageClient() {
 
         <Para>Toda semana eu recebo mensagem perguntando a mesma coisa: <em>"Carlos, qual ideia de negócio funciona hoje sem precisar investir?"</em></Para>
 
-        <Para>Eu sempre respondia caso a caso. Mas existe uma ideia que vem crescendo em silêncio nos últimos dois anos — e quase ninguém fala sobre ela. Hoje eu vou explicar tudo do começo ao fim.</Para>
+        <Para>Eu sempre respondia caso a caso. Mas existe um modelo que vem crescendo em silêncio nos últimos dois anos — e quase ninguém fala sobre ele. Hoje eu vou explicar tudo do começo ao fim.</Para>
 
-        <Para>E vou contar também a história do Pedro. Ele foi entregador de iFood por quatro anos. Hoje fatura mais de <strong>R$ 5.000 por mês</strong> trabalhando de casa, e não investiu um centavo pra começar. Vamos por partes.</Para>
+        <Para>E vou contar também a história do Pedro. Ele foi entregador do iFood por quatro anos. Hoje fatura mais de <strong>R$ 5 mil por mês</strong> sem sair de casa, e não investiu um centavo pra começar. Vamos por partes.</Para>
 
-        {/* ===== Como funciona ===== */}
+        {/* ===== Qual é a ideia / DOR ===== */}
         <H2>Qual é a ideia?</H2>
 
-        <Para>Pra você entender o que o Pedro tá fazendo, primeiro precisa entender o problema que ele resolve.</Para>
+        <Para>Pra você entender o que o Pedro faz, primeiro precisa entender o problema que ele resolve.</Para>
 
-        <Para>Hoje os marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: tudo isso é despachado de <strong>um único centro de distribuição (CD)</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
+        <Para>Hoje os grandes marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: <strong>tudo isso é despachado a partir de um único centro de distribuição</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
 
-        <Para>Resultado: o caminhão sai do CD lotado, percorre quilômetros, e às vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas duas Black Fridays, com volume crescendo todo ano. O custo logístico vira impraticável e o prazo aperta.</Para>
+        <Para>Resultado: o caminhão sai do CD lotado, percorre quilômetros, e muitas vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas Black Fridays, com volume crescendo todo ano, e o custo logístico vira impraticável. O prazo aperta. E o motorista de moto, que faz a ponta final, vive sobrecarregado.</Para>
 
-        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a entrega usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada caminhão fazer 1 entrega numa rua, ele entrega 30 pacotes num único endereço — a casa de um morador comum. Esse morador guarda os pacotes, e os clientes do bairro vão buscar quando podem.</Para>
+        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a entrega usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada veículo fazer uma entrega numa rua, ele faz <strong>uma única parada num endereço</strong> — a casa de um morador comum — e deixa ali 30, 40, às vezes 60 pacotes de uma vez. Depois, outros veículos passam ao longo do dia pra recolher os pacotes que precisam seguir adiante.</Para>
 
-        <Citacao>É exatamente isso que o Pedro faz hoje. O caminhão chega de manhã, deixa todos os pacotes da região, e durante o dia os vizinhos vão lá buscar. Ele recebe por cada coleta entregue.</Citacao>
+        <Citacao>O ponto de coleta é a ponte entre o caminhão do marketplace e os entregadores finais. O morador não atende cliente, não despacha, não tem contato com comprador. Só recebe os pacotes nos horários combinados e devolve quando outro veículo passa pra retirar.</Citacao>
 
-        <img src={IMG_PACOTES} alt="Pacotes na sala" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Pacotes guardados esperando retirada. Um ponto médio movimenta entre 15 e 30 pacotes por dia.</p>
+        {/* ===== Como funciona ===== */}
+        <H2>Como funciona o dia a dia</H2>
 
+        <Para>O modelo é simples e tem horário previsível. Acompanhe:</Para>
+
+        <Para><strong>Por volta das 8h da manhã</strong>, um veículo encosta na porta do ponto de coleta. Pode ser um motorista do próprio CD do marketplace, pode ser um terceirizado contratado pela <Link>Coletaki</Link>. Não muda nada pro morador. Ele desce com os pacotes — em geral entre 20 e 60 caixinhas leves de e-commerce.</Para>
+
+        <Para>O morador <strong>lê o QR code de entrada de cada pacote no aplicativo</strong> da Coletaki, junto com o motorista. Em seguida, guarda tudo num cômodo separado, organizado em prateleiras.</Para>
+
+        <Para><strong>Por volta das 11h</strong>, outro veículo passa. Esse traz mais alguns pacotes e leva embora os que já estavam no ponto desde o dia anterior. Mesma rotina: leitura do QR de entrada nos novos, leitura do QR de saída nos que estão saindo. Tudo registrado no app.</Para>
+
+        <Para><strong>Por volta das 14h da tarde</strong>, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos. Às vezes leva tudo, às vezes sobra um pouco pra sair só no dia seguinte.</Para>
+
+        <img src={IMG_PACOTES} alt="Pacotes organizados no ponto de coleta" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica num ponto de coleta: pacotes organizados aguardando a próxima passagem do veículo.</p>
+
+        <Para>A parte importante é essa: <strong>o morador não atende cliente, não despacha mercadoria, não tem contato com comprador final</strong>. Só recebe, lê o QR, guarda, devolve pro motorista quando ele volta. O sistema da Coletaki cuida de toda a comunicação, do rastreio e do destino final dos pacotes.</Para>
+
+        {/* ===== Por que funciona ===== */}
         <H2>Por que esse modelo funciona tão bem</H2>
 
-        <Para>A grande sacada desse modelo é que ele tira do seu caminho praticamente todos os obstáculos de quem quer empreender.</Para>
+        <Para>A grande sacada é que ele tira do seu caminho praticamente todos os obstáculos de quem quer empreender em casa.</Para>
 
-        <Para>Você não precisa investir nada — usa o espaço que já tem em casa, seja uma prateleira na lavanderia ou um canto da sala. Não precisa sair pra entregar — os motoboys dos marketplaces trazem os pacotes até você, e os clientes vão buscar na sua porta. Não precisa ficar à disposição o dia inteiro — você atende em três janelas curtas (manhã, almoço e tarde), com cerca de uma hora em cada uma.</Para>
+        <Para>Você não precisa investir nada — basta ter um cômodo limpo e seguro, com espaço pra prateleiras. Não precisa sair pra entregar — os veículos vêm até você três vezes por dia, em horários combinados. Não precisa atender ninguém — a única interação é com os motoristas que passam, e leva poucos minutos. Não precisa lidar com cliente final, devolução ou reclamação — tudo isso fica com a Coletaki.</Para>
 
-        <Para>E o melhor: a renda é escalável. Quanto mais coletas você faz, mais você ganha. Pontos bem localizados chegam tranquilamente a 30 coletas por dia.</Para>
+        <Para>E o pagamento é por pacote processado, <strong>depositado quinzenalmente nos dias 1 e 16 de cada mês</strong>, direto na conta vinculada ao seu CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial. Quanto mais pacotes passam, mais você ganha.</Para>
 
-        <H2>Não é bico — é parceria séria</H2>
-
-        <Para>Aqui vai a parte que muita gente não entende: <strong>esse modelo não é bico</strong>. As empresas que operam esse negócio de verdade fazem questão de validar cada ponto antes — porque precisam ter certeza de que o pacote do cliente vai estar seguro na sua casa.</Para>
-
-        <Para>Quem opera esse modelo de forma mais organizada no Brasil hoje é a <strong><a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>Coletaki</a></strong>. Funciona assim: você se cadastra, um consultor faz uma videochamada com você para avaliar a casa, e só depois disso você começa a operar. Isso traz segurança pros dois lados — pra você e pra empresa.</Para>
-
-
-
-        {/* ===== Historia do Pedro ===== */}
+        {/* ===== Pedro ===== */}
         <div style={{ background: BG_SOFT, padding: 28, borderRadius: 14, margin: '32px 0', border: '1px solid ' + LINE }}>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
@@ -149,21 +161,19 @@ export default function PageClient() {
 
           <H2>A história do Pedro</H2>
 
-
-
           <Para>Conheci o Pedro em fevereiro de 2025, numa cafeteria aqui do bairro. Ele estava na fila atrás de mim, com uniforme do iFood, e a gente começou a conversar.</Para>
 
-          <Para>Pedro trabalhava no aplicativo há quatro anos. Saía 9 da manhã, voltava 11 da noite. Ganhava em média R$ 2.800 por mês — quando dava sorte. Em semana de chuva ou de poucos pedidos, fechava R$ 1.900.</Para>
+          <Para>Pedro era entregador no aplicativo há quatro anos. Saía 9 da manhã, voltava 11 da noite. Ganhava em média R$ 2.800 por mês — quando dava sorte. Em semana de chuva ou de poucos pedidos, fechava R$ 1.900.</Para>
 
           <Citacao>"Carlos, eu não sei mais o que fazer. Tomei dois tombos esse ano. A moto tá no conserto. Minha esposa tá grávida do segundo. Eu não vejo saída."</Citacao>
 
-          <Para>Naquele dia eu falei pra ele sobre a ideia do ponto de coleta. Contei que um amigo meu já estava nisso há seis meses e que estava indo bem.</Para>
+          <Para>Naquele dia eu falei pra ele sobre a ideia do ponto de coleta. Contei que tinha lido sobre o modelo e que parecia ser exatamente o tipo de virada que ele precisava — trabalho de casa, horário previsível, renda recorrente.</Para>
 
           <Para>Pedro hesitou. Você sabe como é — <em>"e se não funcionar?"</em>, <em>"e se for golpe?"</em>, <em>"vou perder tempo de novo".</em></Para>
 
-          <Para>Eu disse pra ele: <strong>"Pedro, você não precisa investir nada. É só se cadastrar. Um consultor vai marcar uma videochamada com você, conhecer a sua casa, e aí você decide se quer ou não."</strong></Para>
+          <Para>Eu disse pra ele: <strong>"Pedro, você não precisa investir nada. É só se cadastrar na Coletaki. Um consultor vai marcar uma videochamada com você, conhecer o cômodo, validar o espaço, e aí você decide se quer ou não."</strong></Para>
 
-          <H2>O que aconteceu nos seis meses seguintes</H2>
+          <H2>O que aconteceu nos meses seguintes</H2>
 
           <div style={{ background: '#fff', padding: 18, borderRadius: 10, border: '1px solid ' + LINE, marginBottom: 20 }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
@@ -172,8 +182,8 @@ export default function PageClient() {
                 <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
               </div>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Cadastrou no site</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Levou 4 minutos. Em 3 dias o consultor Matheus ligou para marcar a videochamada.</div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Cadastrou no site da Coletaki</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Levou 4 minutos no celular. Em 3 dias o consultor ligou pra marcar a videochamada de verificação.</div>
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
@@ -182,8 +192,8 @@ export default function PageClient() {
                 <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
               </div>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Casa aprovada · começou a operar</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Só precisou arrumar uma prateleira na lavanderia. Na primeira semana, foram 18 coletas e R$ 416 de comissão.</div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Quartinho aprovado · começou a operar</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Só precisou montar uma prateleira simples. Na primeira semana, recebeu cerca de 80 pacotes e fechou R$ 380 de comissão.</div>
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
@@ -192,7 +202,7 @@ export default function PageClient() {
                 <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
               </div>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Largou o iFood</div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Aposentou a bag do iFood</div>
                 <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Já fechava R$ 4.300 por mês só com o ponto de coleta. Vendeu a moto. A esposa chorou de alegria.</div>
               </div>
             </div>
@@ -216,20 +226,20 @@ export default function PageClient() {
 
         </div>
 
-        {/* ===== Pra quem serve? ===== */}
+        {/* ===== Pra quem serve ===== */}
         <H2>Pra quem essa ideia serve?</H2>
 
-        <Para>Conversando com vários pontos de coleta que já estão em operação, montei a lista do perfil que tende a dar mais certo:</Para>
+        <Para>Conversando com vários pontos de coleta que já estão em operação, dá pra desenhar o perfil que tende a dar mais certo:</Para>
 
         <Para>
-          <strong style={{ color: NAVY }}>✓</strong> Mora em casa ou apartamento com algum espaço sobrando (lavanderia, área de serviço, sala grande)<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Está em casa pelo menos nos horários principais do dia (manhã, almoço e tarde)<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Mora em bairro com movimento (perto de comércio, escola ou centro)<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Tem paciência para atender as pessoas com educação<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Quer renda recorrente sem precisar gerenciar funcionário
+          <strong style={{ color: NAVY }}>✓</strong> Mora em casa ou apartamento com algum cômodo sobrando (quartinho, área de serviço, garagem coberta)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Pode estar em casa nos horários de passagem dos veículos (manhã, meio-dia e início da tarde)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Tem cômodo seco, sem infiltração, longe de janela que dá pra rua<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Aceita seguir a rotina de registro de pacotes pelo aplicativo<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Quer renda recorrente sem precisar gerenciar funcionário nem estoque
         </Para>
 
-        <Para>Se você marcou pelo menos três desses, vale a pena fazer o teste. O cadastro é gratuito e a videochamada com o consultor também.</Para>
+        <Para>Se você marcou pelo menos três desses, vale a pena testar. O cadastro é gratuito e a videochamada com o consultor também.</Para>
 
         {/* ===== CTA ===== */}
         <div style={{ background: NAVY, color: '#fff', borderRadius: 16, padding: 36, marginTop: 56, textAlign: 'center' }}>
@@ -238,7 +248,7 @@ export default function PageClient() {
             Quer descobrir se a sua casa pode virar ponto de coleta?
           </h3>
           <p style={{ fontSize: 15, opacity: 0.9, lineHeight: 1.6, margin: '0 0 24px', maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
-            Igual ao Pedro: você se cadastra, um consultor faz uma videochamada com você e já te diz se a casa serve. Sem custo, sem compromisso.
+            Igual ao Pedro: você se cadastra, um consultor faz uma videochamada com você e já te diz se o espaço serve. Sem custo, sem compromisso.
           </p>
           <a href="https://coletaki.com" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: GOLD, color: NAVY, padding: '14px 32px', borderRadius: 10, textDecoration: 'none', fontWeight: 800, fontSize: 15, letterSpacing: '-0.01em' }}>
             Ver se a minha casa serve <ArrowRight size={18} />
@@ -246,18 +256,14 @@ export default function PageClient() {
           <div style={{ fontSize: 11, opacity: 0.7, marginTop: 18 }}>Sem investimento · validação gratuita · resposta em até uma semana</div>
         </div>
 
-        {/* Conclusao */}
         <H2>Pra fechar</H2>
 
-        <Para>Toda decisão tem risco. Mas existem ideias de negócio que minimizam esse risco a quase zero — e <strong>ponto de coleta é uma delas</strong>. Você não investe, não tem estoque para encalhar, não tem funcionário pra gerenciar, e em uma semana já está operando.</Para>
+        <Para>Toda decisão tem risco. Mas existem ideias de negócio que minimizam esse risco a quase zero — e <strong>ponto de coleta é uma delas</strong>. Você não investe, não tem estoque, não tem funcionário, e em uma semana já pode estar operando.</Para>
 
-        <Para>Pra quem já está cansado de bico na rua, já tomou tombo de moto, já teve carteira roubada, já perdeu pacote na chuva — vale dar uma olhada com calma.</Para>
-
-        <Para>O site da Coletaki é <a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700 }}>coletaki.com</a>. Você se cadastra, eles te chamam pra videochamada e já te dizem se a casa serve. Sem precisar pagar nada.</Para>
+        <Para>Pra quem está cansado da rua, já tomou tombo de moto, perdeu pacote na chuva — vale dar uma olhada com calma. O site da Coletaki é <Link>coletaki.com</Link>. Você se cadastra, eles te chamam pra videochamada e já te dizem se o espaço serve. Sem precisar pagar nada.</Para>
 
         <Para><em>Se essa matéria ajudar você a tomar coragem, me manda mensagem. Adoro saber das histórias.</em></Para>
 
-        {/* Assinatura */}
         <div style={{ textAlign: 'center', marginTop: 48, paddingTop: 32, borderTop: '1px solid ' + LINE }}>
           <img src={FOTO_AUTOR} alt="Carlos" style={{ width: 92, height: 92, borderRadius: '50%', objectFit: 'cover', border: '4px solid ' + NAVY, marginBottom: 16 }} />
           <div style={{ fontSize: 18, fontWeight: 800, color: INK }}>Carlos Andrade</div>
