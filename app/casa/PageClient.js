@@ -83,7 +83,7 @@ export default function PageClient() {
         </p>
 
         <img src={IMG_HERO} alt="O quarto que virou meu ponto de coleta" style={{ width: '100%', height: 380, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>O quartinho que eu transformei em ponto de coleta. Hoje paga meus boletos.</p>
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>O quartinho que eu transformei em ponto de coleta. Hoje paga meus boletos... e minhas viagens.</p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 50 }}>
           <img src={FOTO_AUTOR} alt="Carlos Andrade" style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', border: '3px solid ' + NAVY }} />
@@ -95,7 +95,7 @@ export default function PageClient() {
 
         <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>Vamos direto ao ponto.</strong></p>
 
-        <Para>Esse texto é pra quem chegou aqui buscando ideia de negócio em casa, alguma coisa que não exija investimento, que não dependa de cliente entrar em loja, que dê pra começar rápido e que não dependa de você ser um vendedor nato. Eu vou contar o que eu encontrei, como funciona, quanto eu tô tirando, e o que você precisa pra entrar.</Para>
+        <Para>Esse texto é resposta a um monte de gente. Nos últimos meses eu venho recebendo email, mensagem no Instagram, pergunta de leitor — todo mundo querendo entender exatamente o que eu tô fazendo agora, como funciona, quanto eu tô tirando e como dá pra entrar. Em vez de responder caso por caso, resolvi escrever tudo de uma vez aqui — do começo, com calma, sem pular etapa.</Para>
 
         <Para>Meu nome é Carlos, tenho 33 anos. Vou direto na minha história pra você entender de onde eu vim — porque acho que é o que melhor explica por que esse modelo funciona pra tanta gente que tá hoje na mesma situação que eu tava.</Para>
 
