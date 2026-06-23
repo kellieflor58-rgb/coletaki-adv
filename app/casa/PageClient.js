@@ -95,31 +95,9 @@ export default function PageClient() {
 
         <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>Vamos direto ao ponto.</strong></p>
 
-        <Para>Esse texto é resposta a um monte de gente. Nos últimos meses eu venho recebendo email, mensagem no Instagram, pergunta de leitor — todo mundo querendo entender exatamente o que eu tô fazendo agora, como funciona, quanto eu tô tirando e como dá pra entrar. Em vez de responder caso por caso, resolvi escrever tudo de uma vez aqui — do começo, com calma, sem pular etapa.</Para>
+        <Para>Sou o Carlos, 33 anos. Fui motorista de Uber por um ano e meio. Trabalhava 9 horas por dia, tirava em média R$ 90 líquidos, e ainda assim o dinheiro sumia todo em gasolina e oficina. Cansei.</Para>
 
-        <Para>Meu nome é Carlos, tenho 33 anos. Vou direto na minha história pra você entender de onde eu vim — porque acho que é o que melhor explica por que esse modelo funciona pra tanta gente que tá hoje na mesma situação que eu tava.</Para>
-
-        <H2>Por que eu fui atrás de outra ideia</H2>
-
-        <Para>Há mais ou menos um ano e meio eu pedi demissão da empresa onde trabalhei dez anos. Daqueles trabalhos sem grandes perspectivas, com salário que aumentava menos que o aluguel. Saí no impulso, sem plano. Virei motorista de Uber porque foi o que tinha à mão.</Para>
-
-        <Para>No começo até deu certo. Eu tirava entre <strong>R$ 80 e R$ 110 líquidos por dia</strong> dirigindo umas 9 horas. Não era o melhor salário do mundo, mas dava algum sustento todo dia. Achei que tinha resolvido a vida.</Para>
-
-        <Para>Mas tem um detalhe que ninguém me contou antes: <strong>o carro também trabalha junto comigo.</strong> E o carro quebra. Em três meses, eu tinha gasto com pneu novo, duas trocas de óleo, pastilha de freio, alinhamento e ainda um conserto na suspensão depois de um buraco daqueles. Cada visita à mecânica comia uma semana inteira de corrida.</Para>
-
-        <Para>Aí eu sentava com a esposa pra fechar o mês e o resultado era sempre o mesmo: <strong>eu tava trabalhando pra manter o carro rodando.</strong> O dinheiro entrava na conta, mas saía no posto e na oficina. Eu mesmo tava começando a achar que tinha tomado a pior decisão da minha vida.</Para>
-
-        <H2>A ideia caiu no meu colo numa corrida</H2>
-
-        <Para>Foi numa terça à noite, comecinho de janeiro. Última corrida do dia, eu já cansado. Peguei um cara perto do centro, uns 40 anos, simpático. No meio da viagem ele me perguntou se eu trabalhava só de Uber. Eu acabei desabafando — falei do gasto com o carro, do desânimo, da sensação de não tá indo a lugar nenhum.</Para>
-
-        <div style={{ background: PAPER_WARM, borderLeft: '3px solid ' + GOLD, padding: '24px 28px', margin: '32px 0', borderRadius: '0 8px 8px 0' }}>
-          <p style={{ fontSize: 19, fontStyle: 'italic', color: NAVY, lineHeight: 1.55, margin: 0 }}>
-            "Cara, conheço um amigo que tava nessa mesma de Uber. Hoje ele virou ponto de coleta dessas empresas de marketplace — basicamente recebe pacote em casa, várias vezes por dia, e devolve pro motorista pegar de volta. Tá tirando uns quatro, cinco mil por mês. Sem ter que sair de casa."
-          </p>
-        </div>
-
-        <Para>Foi a primeira vez que eu escutei essa ideia. Pedi o nome da empresa. Ele pesquisou no celular, achou o site da <Link>Coletaki</Link> e me mandou o link pelo zap.</Para>
+        <Para>Hoje sou ponto de coleta de marketplace e fecho mês na casa dos <strong>R$ 5 mil</strong> — trabalhando menos de 2 horas por dia, de casa. Vou te explicar como funciona esse modelo, por que ele existe, e como você pode entrar nele.</Para>
 
         <H2>Mas o que é, de fato, esse "ponto de coleta"?</H2>
 
