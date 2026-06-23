@@ -84,6 +84,9 @@ export default function PageClient() {
           Sem investir 1 real, Pedro se cadastrou na Coletaki e transformou um quartinho do apartamento em um ponto de coleta de marketplace. Hoje fatura mais de R$ 5 mil por mês em casa e aposentou a bag do iFood. Vou te contar sobre o modelo de negócio e como fazer parte.
         </p>
 
+        <img src={IMG_HERO} alt="Apartamento do Pedro operando como ponto de coleta" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 36, fontStyle: 'italic' }}>O quartinho do Pedro hoje: prateleira organizada, código QR de retirada, fluxo simples.</p>
+
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
           <div style={{ width: 80, height: 1, background: LINE }} />
           <div style={{ fontSize: 14, color: GOLD, letterSpacing: '0.4em', fontWeight: 700 }}>· · ·</div>
@@ -134,8 +137,7 @@ export default function PageClient() {
 
         <Para>Quem opera esse modelo de forma mais organizada no Brasil hoje é a <strong><a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>Coletaki</a></strong>. Funciona assim: você se cadastra, um consultor faz uma videochamada com você para avaliar a casa, e só depois disso você começa a operar. Isso traz segurança pros dois lados — pra você e pra empresa.</Para>
 
-        <img src={IMG_HERO} alt="Casa simples" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Um apartamento comum operando como ponto de coleta.</p>
+
 
         {/* ===== Historia do Pedro ===== */}
         <div style={{ background: BG_SOFT, padding: 28, borderRadius: 14, margin: '32px 0', border: '1px solid ' + LINE }}>
@@ -147,8 +149,7 @@ export default function PageClient() {
 
           <H2>A história do Pedro</H2>
 
-          <img src={IMG_HERO} alt="Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-          <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 24, fontStyle: 'italic' }}>A casa do Pedro depois das adaptações. Hoje é o ponto de coleta do bairro.</p>
+
 
           <Para>Conheci o Pedro em fevereiro de 2025, numa cafeteria aqui do bairro. Ele estava na fila atrás de mim, com uniforme do iFood, e a gente começou a conversar.</Para>
 
