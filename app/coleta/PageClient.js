@@ -68,7 +68,7 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.15, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          De motorista de app a <span style={{ color: GOLD }}>R$ 3.000–6.000 por mês</span> como ponto de coleta de marketplace
+          De motorista de app a <span style={{ color: GOLD }}>R$ 5.000 por mês</span> como ponto de coleta de marketplace
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 640 }}>
