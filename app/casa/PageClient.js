@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Coffee, Heart, ArrowRight, Quote, Check } from 'lucide-react';
+import { Coffee, ArrowRight, Quote, Check, TrendingUp, Lightbulb, Calendar } from 'lucide-react';
 
 const NAVY = '#0F2A5C';
 const GOLD = '#D4A946';
@@ -10,38 +10,20 @@ const INK_MUTE = '#5B6573';
 const LINE = '#E5E9EF';
 const BG_SOFT = '#FAFBFC';
 
-const FOTO_CAMILA = 'https://i.pinimg.com/736x/30/0e/0a/300e0aabcfbe9b3da8c46cd35cf30c4d.jpg';
-const FOTO_CASAL = 'https://i.pinimg.com/736x/3d/0f/40/3d0f40b04d5f306e0a2086d83b8f5663.jpg';
-const FOTO_MOTO = 'https://i.pinimg.com/736x/97/c3/cb/97c3cb09fdc7ec5b66c4d99f5f1b6b67.jpg';
+const FOTO_AUTOR = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTruoFtCtl2GCdFxfesIkwY8dLRo7yubE5GL4YL7kIoUcEOrKWS0kzzD9X7&s=10';
+const FOTO_PEDRO = 'https://i.pinimg.com/736x/30/0e/0a/300e0aabcfbe9b3da8c46cd35cf30c4d.jpg';
+const FOTO_BAG = 'https://i.pinimg.com/736x/97/c3/cb/97c3cb09fdc7ec5b66c4d99f5f1b6b67.jpg';
 const FOTO_CASA = 'https://i.pinimg.com/736x/26/8d/49/268d4948ba31faf6e9c4dd0c8c0a1f88.jpg';
-const FOTO_FILHA = 'https://i.pinimg.com/736x/d0/cb/2c/d0cb2cb20c4faf2b6f29f0a48d2c2b39.jpg';
-const FOTO_CALDAS = 'https://i.pinimg.com/736x/c1/2a/c1/c12ac1cc5c97cb1c4a36b65a3b6ea3a3.jpg';
+const FOTO_PACOTES = 'https://i.pinimg.com/736x/d0/cb/2c/d0cb2cb20c4faf2b6f29f0a48d2c2b39.jpg';
 
-const MENU = ['Home', 'Histórias', 'Renda', 'Vida real', 'Sobre'];
+const MENU = ['Home', 'Materias', 'Economia', 'Cidades', 'Oportunidades'];
 
-function Para({ children, italic, center }) {
-  return (
-    <p style={{
-      fontSize: 17, lineHeight: 1.8, color: INK_SOFT, margin: '0 0 20px',
-      fontStyle: italic ? 'italic' : 'normal',
-      textAlign: center ? 'center' : 'left'
-    }}>
-      {children}
-    </p>
-  );
+function Para({ children }) {
+  return <p style={{ fontSize: 17, lineHeight: 1.8, color: INK_SOFT, margin: '0 0 20px' }}>{children}</p>;
 }
 
-function DataDiario({ children, mes, ano }) {
-  return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 12, marginTop: 42 }}>
-      <div style={{ background: NAVY, color: '#fff', padding: '10px 16px', borderRadius: 8, textAlign: 'center', minWidth: 76 }}>
-        <div style={{ fontSize: 10, fontWeight: 700, opacity: 0.7, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{mes}</div>
-        <div style={{ fontSize: 20, fontWeight: 800, lineHeight: 1, marginTop: 2 }}>{ano}</div>
-      </div>
-      <div style={{ flex: 1, height: 1, background: LINE }} />
-      <h2 style={{ fontSize: 22, fontWeight: 800, color: NAVY, margin: 0, letterSpacing: '-0.02em', textAlign: 'right', flexShrink: 0 }}>{children}</h2>
-    </div>
-  );
+function H2({ children }) {
+  return <h2 style={{ fontSize: 26, fontWeight: 800, color: NAVY, margin: '40px 0 18px', letterSpacing: '-0.02em', lineHeight: 1.3 }}>{children}</h2>;
 }
 
 function Citacao({ children }) {
@@ -49,6 +31,19 @@ function Citacao({ children }) {
     <div style={{ background: BG_SOFT, borderLeft: '4px solid ' + GOLD, padding: '20px 24px', margin: '24px 0', borderRadius: '0 8px 8px 0' }}>
       <Quote size={22} color={GOLD} style={{ marginBottom: 8 }} />
       <div style={{ fontSize: 17, lineHeight: 1.7, color: INK, fontStyle: 'italic', fontWeight: 500 }}>{children}</div>
+    </div>
+  );
+}
+
+function CardIdeia({ num, titulo, desc, lucro }) {
+  return (
+    <div style={{ background: '#fff', border: '1px solid ' + LINE, borderRadius: 12, padding: 20, marginBottom: 14, display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+      <div style={{ background: NAVY, color: '#fff', width: 40, height: 40, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16, fontWeight: 800, flexShrink: 0 }}>{num}</div>
+      <div style={{ flex: 1 }}>
+        <div style={{ fontSize: 16, fontWeight: 800, color: INK, marginBottom: 4 }}>{titulo}</div>
+        <div style={{ fontSize: 14, color: INK_SOFT, lineHeight: 1.6, marginBottom: 8 }}>{desc}</div>
+        <div style={{ fontSize: 12, color: GOLD, fontWeight: 700, letterSpacing: '0.05em' }}>{lucro}</div>
+      </div>
     </div>
   );
 }
@@ -68,18 +63,18 @@ export default function PageClient() {
     <div style={{ minHeight: '100vh', background: '#fff', color: INK, fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
 
       <div style={{ position: 'fixed', top: 0, left: 0, right: 0, height: 3, background: 'rgba(0,0,0,0.05)', zIndex: 100 }}>
-        <div style={{ height: '100%', width: scroll + '%', background: GOLD, transition: 'width 0.1s' }} />
+        <div style={{ height: '100%', width: scroll + '%', background: NAVY, transition: 'width 0.1s' }} />
       </div>
 
       <header style={{ background: '#fff', borderBottom: '1px solid ' + LINE, position: 'sticky', top: 3, zIndex: 50 }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '22px 28px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: 14 }}>
             <div style={{ width: 46, height: 46, borderRadius: 12, background: NAVY, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-              <Heart size={22} />
+              <Coffee size={22} />
             </div>
             <div>
-              <div style={{ fontSize: 21, fontWeight: 800, color: NAVY, letterSpacing: '-0.02em', lineHeight: 1 }}>Diário de Camila</div>
-              <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.22em', color: INK_MUTE, marginTop: 5, textTransform: 'uppercase' }}>histórias reais de quem reinventou a vida</div>
+              <div style={{ fontSize: 21, fontWeight: 800, color: NAVY, letterSpacing: '-0.02em', lineHeight: 1 }}>Cafe com Dicas</div>
+              <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.22em', color: INK_MUTE, marginTop: 5, textTransform: 'uppercase' }}>papo reto - vida real</div>
             </div>
           </a>
           <nav style={{ display: 'flex', gap: 30 }} className="menu-d">
@@ -91,213 +86,195 @@ export default function PageClient() {
       <article style={{ maxWidth: 720, margin: '0 auto', padding: '60px 24px 80px' }}>
 
         <div style={{ textAlign: 'center', marginBottom: 16 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: GOLD + '15', color: GOLD, padding: '6px 16px', borderRadius: 999, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-            <Heart size={12} /> Diário pessoal · 9 min de leitura
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: GOLD + '15', color: '#8a6f1f', padding: '6px 16px', borderRadius: 999, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+            <Lightbulb size={12} /> Ideias de Negocio - 8 min de leitura
           </div>
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.12, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          Eu pedi demissão. Ele <span style={{ color: GOLD }}>vendeu a moto</span>. Hoje a gente vive disso.
+          7 ideias para sair do CLT em 2026 - e a que mais cresce <span style={{ color: GOLD }}>nao exige investimento</span>
         </h1>
 
-        <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 580 }}>
-          Esse é o diário dos últimos 12 meses da nossa vida. Tem dia que eu olho pro Pedro dormindo e ainda não acredito que a gente conseguiu.
+        <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 620 }}>
+          Reuni as 7 oportunidades que mais escutei nos ultimos 6 meses entre amigos, leitores e gente que tomou coragem de mudar. Tem uma especifica que vem chamando atencao - e foi a que tirou um amigo nosso do iFood.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
-          <img src={FOTO_CAMILA} alt="Camila Rocha" style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', border: '3px solid ' + NAVY }} />
+          <div style={{ width: 80, height: 1, background: LINE }} />
+          <div style={{ fontSize: 14, color: GOLD, letterSpacing: '0.4em', fontWeight: 700 }}>- - -</div>
+          <div style={{ width: 80, height: 1, background: LINE }} />
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 50 }}>
+          <img src={FOTO_AUTOR} alt="Carlos Andrade" style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', border: '3px solid ' + NAVY }} />
           <div>
-            <div style={{ fontSize: 15, fontWeight: 700, color: INK }}>Camila Rocha</div>
-            <div style={{ fontSize: 12, color: INK_MUTE }}>34 anos · Ribeirão Preto · ex-operadora de telemarketing</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: INK }}>Carlos Andrade</div>
+            <div style={{ fontSize: 12, color: INK_MUTE }}>papo reto e dicas que ninguem te conta</div>
           </div>
         </div>
 
-        <img src={FOTO_CASAL} alt="Eu e o Pedro" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>Eu e o Pedro, dezembro de 2025. Primeira vez que a gente tirou férias juntos depois de 9 anos.</p>
+        <Para>Toda semana eu recebo umas 10 mensagens parecidas: <em>"Carlos, to cansado do trampo. O que da pra fazer hoje sem ter dinheiro pra investir?"</em></Para>
 
-        <Para>Antes de qualquer coisa: <strong>eu nunca quis escrever um diário público</strong>. Mas faz três meses que minha irmã insiste pra eu contar nossa história. Ela diz que tem muita gente passando o que a gente passou e precisa ouvir.</Para>
+        <Para>Eu sempre respondia caso por caso. Mas como ja anotei tudo o que mais funcionou, resolvi escrever esse texto. Aqui estao as <strong>7 ideias</strong> que mais aparecem - de quem largou CLT e tirou seu sustento.</Para>
 
-        <Para>Então tá bom. Vou contar.</Para>
+        <Para>No final eu conto a historia do Pedro. Ele era entregador de iFood ate marco de 2025. Hoje fatura mais de <strong>R$ 5.000 por mes</strong> sem sair de casa - e sem ter investido um centavo. Mas vamos por partes.</Para>
 
-        <Para>Esse texto não é sobre dinheiro. Mas tem dinheiro nele. É sobre o que mudou na nossa casa quando o Pedro parou de chegar em casa às onze da noite cheirando óleo de moto.</Para>
+        {/* ===== Lista de ideias ===== */}
+        <H2>1. Marmita fitness no bairro</H2>
+        <Para><strong>Quanto da:</strong> R$ 1.500 a R$ 4.000/mes. Voce produz em casa, vende pelo WhatsApp pra academias e escritorios proximos.</Para>
+        <Para><strong>Risco:</strong> Alvara da vigilancia, geladeira boa, conhecimento minimo de nutricao. Estoca pouco, perde pouco. Crescer escala junto.</Para>
+
+        <H2>2. Conserto de celular em casa</H2>
+        <Para>Hoje da pra aprender pelo YouTube em 2 meses. Aparelhos parados em gavetas tem montao. Tela trincada de iPhone troca por R$ 350 e leva 15 minutos.</Para>
+        <Para><strong>Quanto da:</strong> R$ 2.000 a R$ 6.000/mes. Comeca com R$ 600 de kit basico (chave Pentalobe, ventosa, secador de calor).</Para>
+
+        <H2>3. Limpeza pos-obra</H2>
+        <Para>Quem reformou em 2024-25 ta acabando agora. Limpeza pos-obra cobra R$ 8 a R$ 15 por m² e nao precisa de equipamento sofisticado.</Para>
+        <Para><strong>Quanto da:</strong> R$ 1.800 a R$ 3.500/mes trabalhando 3 dias da semana.</Para>
+
+        <H2>4. Adestrador de caes na sua propria rua</H2>
+        <Para>Mais gente comprou pet na pandemia e nunca aprendeu a educar. Curso online de adestramento custa R$ 800 e te qualifica.</Para>
+        <Para><strong>Quanto da:</strong> R$ 80 a R$ 150 por sessao. 20 sessoes por mes ja virou um salario.</Para>
 
-        {/* ===== JANEIRO ===== */}
-        <DataDiario mes="Jan" ano="25">Quando ele chegou chorando</DataDiario>
+        <H2>5. Conserto de roupas e ajustes</H2>
+        <Para>Maquina de costura usada custa R$ 350. Bairro com lojas de moda barata sempre tem cliente. Cobra R$ 25 por barra, R$ 40 por ajuste de cintura.</Para>
+        <Para><strong>Quanto da:</strong> R$ 1.200 a R$ 2.500/mes. Sem chefe, sem horario fixo.</Para>
 
-        <Para>Dia 14 de janeiro. Era terça-feira. Pedro voltou da rua às onze e meia da noite e sentou no chão da cozinha. Não tirou o casaco. Não tirou o capacete. Só sentou.</Para>
+        <H2>6. Brinquedoteca em casa pra criancas</H2>
+        <Para>Se voce mora num lugar com area aberta, da pra alugar a casa por 3 horas pra festinhas infantis. Cidades pequenas estao com falta disso.</Para>
+        <Para><strong>Quanto da:</strong> R$ 250 a R$ 600 por festa. 8 festas por mes ja vira renda boa.</Para>
 
-        <Para>Eu perguntei o que tinha acontecido. Ele falou que tinha tomado o terceiro tombo do mês. Dessa vez na chuva, na avenida Independência. Não machucou nada grave, mas ele tava com a mão tremendo.</Para>
+        <H2>7. Ponto de coleta de marketplace - a queridinha do momento</H2>
 
-        <Citacao>"Camila, eu não aguento mais. Eu olho pra Maria Eduarda dormindo e não sei se amanhã eu volto pra casa."</Citacao>
+        <img src={FOTO_PACOTES} alt="Pacotes" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Pacotes esperando retirada na sala de um ponto de coleta.</p>
 
-        <Para>Maria Eduarda tinha 4 anos. Pedro era motoboy há nove. Nove anos chegando em casa depois das dez. Nove anos de chuva, sol, trânsito de Ribeirão num verão de 41 graus.</Para>
+        <Para>Essa aqui foi a que mais me chamou atencao. Funciona assim: marketplaces como <strong>Shopee, Mercado Livre, Amazon e Shein</strong> tem um problema gigante - muita gente nao ta em casa pra receber pacote.</Para>
 
-        <Para>Naquela noite eu fiz café. Não dormimos. <strong>A gente decidiu que algo tinha que mudar.</strong> Só não sabia o quê.</Para>
+        <Para>A solucao deles? Usar <strong>moradores comuns</strong> como pontos de retirada. Voce recebe os pacotes em casa, guarda numa prateleira, e os destinatarios vao buscar quando puderem.</Para>
 
-        {/* ===== FEVEREIRO ===== */}
-        <DataDiario mes="Fev" ano="25">Eu pedi demissão</DataDiario>
+        <Para>Voce ganha por cada coleta feita. Nao precisa investir nada. Nao precisa de loja, alvara, funcionario nem CNPJ.</Para>
 
-        <Para>Eu trabalhava na operadora de telemarketing há 6 anos. Ganhava R$ 1.620 com o vale-alimentação. Saía de casa às 5 e meia da manhã pra pegar dois ônibus.</Para>
+        <Citacao>O que mais me impressionou: tem morador faturando entre R$ 3.500 e R$ 6.000 por mes - apenas recebendo pacotes em horarios certos. E gente comum, sem experiencia de logistica.</Citacao>
 
-        <Para>O pior não era o dinheiro. Era não ver minha filha. Eu chegava e ela já tava dormindo. Saía e ela ainda não tinha acordado.</Para>
+        <Para>A empresa que opera isso melhor no Brasil hoje se chama <strong><a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>Coletaki</a></strong>. Eles validam cada ponto antes (pra evitar problemas com pacote sumido) e isso da seguranca. Vou contar a historia do Pedro pra voce entender melhor.</Para>
 
-        <Para>Ela me chamava de "tia" às vezes. Eu fingia que achava engraçado.</Para>
+        {/* ===== Historia do Pedro ===== */}
+        <div style={{ background: BG_SOFT, padding: 28, borderRadius: 14, margin: '32px 0', border: '1px solid ' + LINE }}>
 
-        <Para>Pedi demissão dia 4 de fevereiro. Sem ter outro emprego. Sem plano. Minha mãe quase teve um piti — "Camila você endoidou?".</Para>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
+            <Calendar size={14} color={GOLD} />
+            <span style={{ fontSize: 11, fontWeight: 800, color: GOLD, letterSpacing: '0.15em', textTransform: 'uppercase' }}>Caso real - Marco de 2025</span>
+          </div>
 
-        <Para>Talvez. Mas eu precisava de um tempo pra pensar.</Para>
+          <H2>A historia do Pedro</H2>
 
-        {/* ===== MARCO ===== */}
-        <DataDiario mes="Mar" ano="25">A moto foi embora</DataDiario>
+          <img src={FOTO_PEDRO} alt="Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+          <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 24, fontStyle: 'italic' }}>Pedro Henrique, 32 anos. Ex-entregador iFood. Hoje ponto de coleta.</p>
 
-        <img src={FOTO_MOTO} alt="A moto do Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>A Honda Titan 2018 do Pedro. Comprou em 6 anos de boleto.</p>
+          <Para>Conheci o Pedro em fevereiro de 2025. Foi numa cafeteria aqui perto. Ele tava na fila atras de mim, de uniforme de iFood, e a gente comecou a conversar.</Para>
 
-        <Para>Em março a gente tava com R$ 940 na conta. Maria Eduarda precisava do uniforme da escola e a luz tinha vencido.</Para>
+          <Para>Pedro trabalhava no iFood ha 4 anos. Saia 9 da manha, voltava as 11 da noite. Ganhava em media R$ 2.800 por mes - com sorte. Em dia de chuva ou semana de menos pedidos, R$ 1.900.</Para>
 
-        <Para>Eu disse pro Pedro: <em>vende a moto.</em></Para>
+          <Citacao>"Carlos, eu nao sei mais. Tomei dois tombos esse ano. A moto ta no conserto. Minha esposa ta gravida do segundo. Eu nao vejo saida."</Citacao>
 
-        <Para>Ele me olhou como se eu tivesse pedido pra ele vender uma parte do corpo. Aquela moto era a vida dele. Era o que pagava as contas. Era o orgulho de ter comprado em 60 prestações.</Para>
+          <Para>Naquele dia, contei sobre a Coletaki pra ele. Disse que tinha um amigo que ja tava nisso ha 6 meses e tava bem.</Para>
 
-        <Citacao>"Mas é meu trabalho, Camila. Se eu vender a moto eu não tenho mais como ganhar dinheiro."</Citacao>
+          <Para>Pedro hesitou. Voce sabe como e - <em>"nao quero perder tempo com promessa"</em>, <em>"e se nao funcionar?"</em>, <em>"e se for golpe?"</em>.</Para>
 
-        <Para>Eu segurei a mão dele e falei: <strong>"a gente vai dar um jeito. Mas você não vai morrer numa avenida pra trazer R$ 90 por dia."</strong></Para>
+          <Para>Eu falei pra ele: <strong>"Pedro, voce nao precisa investir nada. So cadastra, um consultor vai te chamar numa videochamada, conhece sua casa, e ai voce decide."</strong></Para>
 
-        <Para>Vendemos por R$ 8.200. Pagamos contas, comprei comida, sobrou pouco mais de R$ 2.000.</Para>
+          <H2>O que aconteceu nos 6 meses seguintes</H2>
 
-        {/* ===== ABRIL ===== */}
-        <DataDiario mes="Abr" ano="25">O que mudou tudo</DataDiario>
-
-        <Para>Foi no dia 22 de abril. Eu lembro porque foi aniversário da Maria Eduarda. A gente fez bolo simples, daqueles de caixinha.</Para>
-
-        <Para>Apareceu o Júnior. Júnior é amigo de infância do Pedro, daqueles que mora 3 ruas pra baixo. Ele chegou com uma marmita de feijoada que a esposa tinha feito (porque a gente não tinha quase nada em casa naquela semana).</Para>
-
-        <Para>Ele perguntou como a gente tava. Pedro contou tudo.</Para>
-
-        <Para>O Júnior ficou olhando pra gente, em silêncio. Depois disse:</Para>
-
-        <Citacao>"Pedro, eu sou ponto de coleta da Coletaki há 6 meses. Tô tirando uns R$ 4.500 por mês só recebendo pacote em casa. Cê tem que ver isso."</Citacao>
-
-        <Para>Eu confesso que achei estranho. <em>Ponto de coleta?</em> Que negócio era esse?</Para>
-
-        <Para>Pedro pegou o celular dele e o Júnior mostrou. Marketplaces grandes — Amazon, Shein, Mercado Livre — usam casas de moradores comuns pra deixar os pacotes que os motoristas de moto não conseguem entregar (porque a pessoa não tá em casa, porque o prédio não recebe, porque o endereço é difícil).</Para>
-
-        <Para>O morador recebe o pacote, guarda na sala dele, e depois o destinatário vai buscar quando puder. <strong>A pessoa ganha por cada coleta feita.</strong></Para>
-
-        <Para>Pedro olhou pra mim. Eu olhei pra Pedro. Mesma cara. Mesma pergunta na cabeça: <em>"isso pode ser pra gente?".</em></Para>
-
-        {/* ===== MAIO ===== */}
-        <DataDiario mes="Mai" ano="25">A visita do consultor</DataDiario>
-
-        <Para>Naquela mesma semana a gente entrou no site da Coletaki. Preenchemos o cadastro. Levou uns 4 minutos.</Para>
-
-        <Para>3 dias depois, ligou no celular do Pedro: <em>"Boa tarde, aqui é o Matheus da Coletaki. Vamos marcar uma chamada de vídeo pra eu conhecer o espaço?"</em></Para>
-
-        <Para>Eu fiquei nervosa. Será que nossa casa seria aceita? A gente mora num conjuntinho simples, 2 quartos, lavanderia coberta na frente.</Para>
-
-        <Para>Marcamos a videochamada pra sexta às 4 da tarde. O Matheus foi gentil. Pediu pra gente mostrar a sala, a área da frente, onde os pacotes ficariam. Tirou prints. Anotou medidas.</Para>
-
-        <img src={FOTO_CASA} alt="Nossa lavanderia" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>A nossa lavanderia. Foi aqui que a gente começou a guardar os pacotes.</p>
-
-        <Citacao>"Camila, vocês precisam só organizar uma prateleira aqui na lavanderia. Coloca uma cortina. Em uma semana cês tão prontos."</Citacao>
-
-        <Para>Em uma semana. <strong>Uma semana.</strong> A gente tinha demorado mais tempo procurando emprego em loja sem nenhum retorno.</Para>
-
-        {/* ===== JUNHO ===== */}
-        <DataDiario mes="Jun" ano="25">A primeira semana</DataDiario>
-
-        <Para>Começamos dia 10 de junho. Recebemos um app, um QR code de entrada, um cartaz com horário.</Para>
-
-        <Para>Primeiro dia: 3 coletas. Eu fiquei ansiosa cada vez que tocava a campainha — <em>e se eu deixar cair? e se confundir?</em></Para>
-
-        <Para>Não caiu nada. Não confundi nada. Era só receber o pacote, escanear o código no app, guardar na prateleira.</Para>
-
-        <Para>Final da semana: 18 pacotes. R$ 416 só de comissão.</Para>
-
-        <Para>Pedro disse: <em>"Camila, isso aqui pode dar certo."</em></Para>
-
-        {/* ===== AGOSTO ===== */}
-        <DataDiario mes="Ago" ano="25">Quatro mil duzentos reais</DataDiario>
-
-        <Para>Em agosto fechamos R$ 4.247 só com Coletaki. Quase 3 vezes o que eu ganhava na operadora.</Para>
-
-        <Para>E sabe o que mais marcou? Não foi o dinheiro.</Para>
-
-        <Para>Foi quando a Maria Eduarda chegou da escola e a gente tava lá. Os dois. Esperando ela na porta com biscoito.</Para>
-
-        <Para>Ela me abraçou e disse: <em>"mamãe, você não vai trabalhar mais?".</em></Para>
-
-        <Citacao>"Vou sim, filha. Mas agora é aqui. Pertinho de você."</Citacao>
-
-        {/* ===== SETEMBRO ===== */}
-        <DataDiario mes="Set" ano="25">O cartão da escola</DataDiario>
-
-        <img src={FOTO_FILHA} alt="Maria Eduarda" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Maria Eduarda, 5 anos. Hoje ela faz balé porque a gente conseguiu pagar.</p>
-
-        <Para>Em setembro a Maria Eduarda trouxe um bilhete da escola — eles tavam organizando aula de balé. R$ 180 por mês.</Para>
-
-        <Para>Antes eu teria dito que não dava. Naquele dia, eu olhei pra cartão da agenda e respondi: <strong>"pode matricular".</strong></Para>
-
-        <Para>Foi a primeira vez em 5 anos que eu falei sim pra alguma coisa pra ela sem fazer conta antes.</Para>
-
-        {/* ===== NOVEMBRO ===== */}
-        <DataDiario mes="Nov" ano="25">Caldas Novas</DataDiario>
-
-        <img src={FOTO_CALDAS} alt="Caldas Novas" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Nossa primeira viagem juntos. Caldas Novas, novembro de 2025.</p>
-
-        <Para>Em novembro fechamos R$ 5.870. A gente combinou de tirar 5 dias e levar a Maria Eduarda pra Caldas Novas.</Para>
-
-        <Para>Foi a primeira viagem da vida dela. <strong>Eu chorei o caminho inteiro do carro.</strong></Para>
-
-        <Para>O Pedro segurou minha mão na BR e disse:</Para>
-
-        <Citacao>"Cami, faz 9 anos que eu te falava 'a gente vai conseguir'. Olha pra gente agora."</Citacao>
-
-        {/* ===== DEZEMBRO ===== */}
-        <DataDiario mes="Dez" ano="25">Olhei pra ele e vi paz</DataDiario>
-
-        <Para>Hoje, escrevendo esse texto, dia 18 de dezembro de 2025. Faltam 7 dias pro Natal.</Para>
-
-        <Para>Pedro tá dormindo no sofá ali do meu lado, com o controle da TV na mão. Maria Eduarda tá na casa da minha irmã, voltando amanhã.</Para>
-
-        <Para>Olhei pra ele agora e vi <strong>paz pela primeira vez em 9 anos.</strong></Para>
-
-        <Para>Não é o dinheiro. Não é só o dinheiro.</Para>
-
-        <Para>É o fato de que ele não tá lá fora, na chuva, tomando tombo. É o fato de que eu tô aqui, vendo minha filha crescer.</Para>
-
-        <Para>É o fato de que a gente fez uma escolha doida — vender a moto, pedir demissão sem garantia — e deu certo.</Para>
+          <div style={{ background: '#fff', padding: 18, borderRadius: 10, border: '1px solid ' + LINE, marginBottom: 20 }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
+              <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
+                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>MARCO</div>
+                <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
+              </div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Cadastrou no site</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Levou 4 minutos. Em 3 dias o consultor Matheus ligou pra marcar videochamada.</div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
+              <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
+                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>ABRIL</div>
+                <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
+              </div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Casa validada - comecou a operar</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>So precisou ajustar uma prateleira na lavanderia. Primeira semana: 18 coletas, R$ 416.</div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
+              <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
+                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>JULHO</div>
+                <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
+              </div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Largou o iFood</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Ja fechava R$ 4.300 mensal so com Coletaki. Vendeu a moto. Esposa chorou de alegria.</div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
+              <div style={{ background: GOLD, color: NAVY, width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
+                <div style={{ fontSize: 9, fontWeight: 800 }}>HOJE</div>
+                <div style={{ fontSize: 18, fontWeight: 800 }}>2026</div>
+              </div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Faturando R$ 5.200/mes em media</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Casa propria pintada. Filha matriculada no balle. Almoca com a esposa todo dia.</div>
+              </div>
+            </div>
+          </div>
+
+          <H2>O que ele mais valoriza hoje</H2>
+
+          <Citacao>"Nao e o dinheiro, Carlos. E poder estar em casa quando minha filha chega da escola. E nunca mais ter medo de chuva. E olhar pra minha esposa e ver que ela ta tranquila pela primeira vez em anos."</Citacao>
+
+          <Para>Pedro nao tem oratoria de coach. Ele e um cara normal. E e exatamente por isso que a historia dele vale.</Para>
+
+        </div>
 
         {/* ===== CTA ===== */}
         <div style={{ background: NAVY, color: '#fff', borderRadius: 16, padding: 36, marginTop: 56, textAlign: 'center' }}>
-          <Heart size={32} color={GOLD} style={{ margin: '0 auto 12px', display: 'block' }} />
+          <TrendingUp size={32} color={GOLD} style={{ margin: '0 auto 12px', display: 'block' }} />
           <h3 style={{ fontSize: 22, fontWeight: 800, margin: '0 0 12px', letterSpacing: '-0.02em' }}>
-            Quer saber se a sua casa serve?
+            Quer descobrir se sua casa pode virar ponto de coleta?
           </h3>
-          <p style={{ fontSize: 15, opacity: 0.9, lineHeight: 1.6, margin: '0 0 24px', maxWidth: 460, marginLeft: 'auto', marginRight: 'auto' }}>
-            O Matheus (consultor que me atendeu) faz uma chamada de vídeo de 30 minutos com você. Se sua casa servir, você começa em até uma semana — igual a gente.
+          <p style={{ fontSize: 15, opacity: 0.9, lineHeight: 1.6, margin: '0 0 24px', maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
+            Igual o Pedro, voce cadastra, um consultor faz uma videochamada com voce e ja te diz se serve. Sem custo, sem compromisso.
           </p>
-          <a href="https://www.coletaki.com/cadastro" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: GOLD, color: NAVY, padding: '14px 32px', borderRadius: 10, textDecoration: 'none', fontWeight: 800, fontSize: 15, letterSpacing: '-0.01em' }}>
-            Quero saber se serve <ArrowRight size={18} />
+          <a href="https://coletaki.com" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: GOLD, color: NAVY, padding: '14px 32px', borderRadius: 10, textDecoration: 'none', fontWeight: 800, fontSize: 15, letterSpacing: '-0.01em' }}>
+            Ver se minha casa serve <ArrowRight size={18} />
           </a>
-          <div style={{ fontSize: 11, opacity: 0.7, marginTop: 18 }}>Sem compromisso · A validação é gratuita</div>
+          <div style={{ fontSize: 11, opacity: 0.7, marginTop: 18 }}>Sem investimento - validacao gratuita - resposta em ate 1 semana</div>
         </div>
+
+        {/* Conclusao */}
+        <H2>Pra fechar</H2>
+
+        <Para>Toda decisao tem risco. As 7 ideias que listei nao sao pra todo mundo - cada uma exige um perfil. Mas se voce ta cansado do CLT, escolhe uma e vai.</Para>
+
+        <Para>Eu pessoalmente acho que <strong>ponto de coleta</strong> e o jeito mais inteligente de comecar - porque nao exige investimento, nao tem estoque pra perder, e em uma semana voce ta operando.</Para>
+
+        <Para>Se voce quiser dar uma olhada sem compromisso, o site da Coletaki e <a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700 }}>coletaki.com</a>. E so cadastrar. Nem precisa pagar nada pra falar com o consultor.</Para>
+
+        <Para><em>Se essa materia ajudar voce a tomar coragem, me manda mensagem. Adoro saber das historias.</em></Para>
 
         {/* Assinatura */}
         <div style={{ textAlign: 'center', marginTop: 48, paddingTop: 32, borderTop: '1px solid ' + LINE }}>
-          <img src={FOTO_CAMILA} alt="Camila" style={{ width: 92, height: 92, borderRadius: '50%', objectFit: 'cover', border: '4px solid ' + NAVY, marginBottom: 16 }} />
-          <div style={{ fontSize: 18, fontWeight: 800, color: INK }}>Camila Rocha</div>
-          <div style={{ fontSize: 13, color: INK_MUTE, marginTop: 4 }}>Compartilhei essa história porque me pediram. Se ajudar uma família, valeu.</div>
+          <img src={FOTO_AUTOR} alt="Carlos" style={{ width: 92, height: 92, borderRadius: '50%', objectFit: 'cover', border: '4px solid ' + NAVY, marginBottom: 16 }} />
+          <div style={{ fontSize: 18, fontWeight: 800, color: INK }}>Carlos Andrade</div>
+          <div style={{ fontSize: 13, color: INK_MUTE, marginTop: 4 }}>Escrevo sobre o que aprendi conversando com gente comum.</div>
         </div>
 
       </article>
 
       <footer style={{ background: NAVY, color: '#fff', padding: '40px 24px', textAlign: 'center', marginTop: 60 }}>
-        <div style={{ fontSize: 13, opacity: 0.7 }}>Diário do Interior · Histórias reais de quem decidiu mudar</div>
-        <div style={{ fontSize: 11, opacity: 0.5, marginTop: 6 }}>Este é um conteúdo opinativo. Coletaki é mencionada conforme experiência real.</div>
+        <div style={{ fontSize: 13, opacity: 0.7 }}>Cafe com Dicas - Diario do Interior - Conteudo independente</div>
+        <div style={{ fontSize: 11, opacity: 0.5, marginTop: 6 }}>Este e um conteudo opinativo. Coletaki e mencionada conforme experiencia real.</div>
       </footer>
 
       <style>{`
