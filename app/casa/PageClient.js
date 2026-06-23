@@ -83,7 +83,7 @@ export default function PageClient() {
         </p>
 
         <img src={IMG_HERO} alt="O quarto que virou meu ponto de coleta" style={{ width: '100%', height: 380, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>O quartinho que eu transformei em ponto de coleta. Hoje paga meus boletos... e minhas viagens.</p>
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>O quartinho que eu transformei em ponto de coleta. Hoje paga meus boletos... e minhas viagens... e minhas viagens.</p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 50 }}>
           <img src={FOTO_AUTOR} alt="Carlos Andrade" style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', border: '3px solid ' + NAVY }} />
