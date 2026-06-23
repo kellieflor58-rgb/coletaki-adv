@@ -11,9 +11,8 @@ const LINE = '#E5E9EF';
 const BG_SOFT = '#FAFBFC';
 
 const FOTO_AUTOR = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTruoFtCtl2GCdFxfesIkwY8dLRo7yubE5GL4YL7kIoUcEOrKWS0kzzD9X7&s=10';
-const FOTO_PEDRO = 'https://i.pinimg.com/736x/30/0e/0a/300e0aabcfbe9b3da8c46cd35cf30c4d.jpg';
-const FOTO_PACOTES = 'https://i.pinimg.com/736x/d0/cb/2c/d0cb2cb20c4faf2b6f29f0a48d2c2b39.jpg';
-const FOTO_CASA = 'https://i.pinimg.com/736x/26/8d/49/268d4948ba31faf6e9c4dd0c8c0a1f88.jpg';
+const IMG_HERO = 'https://i.pinimg.com/736x/d5/c1/b5/d5c1b510c3c53e23a0ba06a44235ce93.jpg';
+const IMG_PACOTES = 'https://i.pinimg.com/736x/ba/cb/93/bacb93b2f5c282e4df2281c58498058f.jpg';
 
 const MENU = ['Home', 'Matérias', 'Economia', 'Cidades', 'Oportunidades'];
 
@@ -128,7 +127,7 @@ export default function PageClient() {
 
         <Citacao>Você recebe o pacote em casa, guarda numa prateleira, e o destinatário vai buscar quando puder. A empresa paga você por cada coleta realizada.</Citacao>
 
-        <img src={FOTO_PACOTES} alt="Pacotes na sala" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <img src={IMG_PACOTES} alt="Pacotes na sala" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
         <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Pacotes guardados esperando retirada. Um ponto médio movimenta entre 15 e 30 pacotes por dia.</p>
 
         <H2>Por que esse modelo funciona tão bem</H2>
@@ -146,8 +145,8 @@ export default function PageClient() {
 
         <Para>Quem opera esse modelo de forma mais organizada no Brasil hoje é a <strong><a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>Coletaki</a></strong>. Funciona assim: você se cadastra, um consultor faz uma videochamada com você para avaliar a casa, e só depois disso você começa a operar. Isso traz segurança pros dois lados — pra você e pra empresa.</Para>
 
-        <img src={FOTO_CASA} alt="Casa simples" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Uma casa simples bem localizada vale ouro para a logística dos marketplaces.</p>
+        <img src={IMG_HERO} alt="Casa simples" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Um apartamento comum operando como ponto de coleta.</p>
 
         {/* ===== Historia do Pedro ===== */}
         <div style={{ background: BG_SOFT, padding: 28, borderRadius: 14, margin: '32px 0', border: '1px solid ' + LINE }}>
@@ -159,8 +158,8 @@ export default function PageClient() {
 
           <H2>A história do Pedro</H2>
 
-          <img src={FOTO_PEDRO} alt="Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-          <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 24, fontStyle: 'italic' }}>Pedro Henrique, 32 anos. Ex-entregador do iFood. Hoje ponto de coleta.</p>
+          <img src={IMG_HERO} alt="Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+          <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 24, fontStyle: 'italic' }}>A casa do Pedro depois das adaptações. Hoje é o ponto de coleta do bairro.</p>
 
           <Para>Conheci o Pedro em fevereiro de 2025, numa cafeteria aqui do bairro. Ele estava na fila atrás de mim, com uniforme do iFood, e a gente começou a conversar.</Para>
 
