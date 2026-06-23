@@ -81,11 +81,11 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.12, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          De entregador do iFood a <span style={{ color: GOLD }}>R$ 5 mil por mês</span>: a ideia de negócio que ninguém te conta
+          De motorista de Uber a <span style={{ color: GOLD }}>R$ 5 mil por mês</span>: a ideia de negócio que ninguém te conta
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 620 }}>
-          Sem investir 1 real, Pedro se cadastrou na <Link>Coletaki</Link> e transformou um quartinho do apartamento em um ponto de coleta de marketplace. Hoje fatura mais de R$ 5 mil por mês em casa e aposentou a bag do iFood. Vou te contar sobre o modelo de negócio e como fazer parte.
+          Sem investir 1 real, Pedro se cadastrou na <Link>Coletaki</Link> e transformou um quartinho do apartamento em um ponto de coleta de marketplace. Hoje fatura mais de R$ 5 mil por mês em casa e nem precisa mais ligar o carro. Vou te contar sobre o modelo de negócio e como fazer parte.
         </p>
 
         <img src={IMG_HERO} alt="Apartamento do Pedro operando como ponto de coleta" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
@@ -107,7 +107,7 @@ export default function PageClient() {
 
         <Para>Toda semana eu recebo mensagem perguntando a mesma coisa: <em>"Carlos, qual ideia de negócio funciona hoje sem precisar investir?"</em></Para>
 
-        <Para>Hoje, em vez de dar uma resposta genérica, vou te contar uma história real — a do Pedro. Ele foi entregador do iFood por quatro anos. Hoje fatura mais de <strong>R$ 5 mil por mês</strong> sem sair de casa, e não investiu um centavo pra começar. Depois eu explico o modelo de negócio por trás disso e por que ele tá crescendo em silêncio nos últimos dois anos.</Para>
+        <Para>Hoje, em vez de dar uma resposta genérica, vou te contar uma história real — a do Pedro. Ele rodou como motorista de Uber por três anos até descobrir que tava trabalhando pra manter o carro, não pra si mesmo. Hoje fatura mais de <strong>R$ 5 mil por mês</strong> sem sair de casa, e não investiu um centavo pra começar. Depois eu explico o modelo de negócio por trás disso e por que ele tá crescendo em silêncio nos últimos dois anos.</Para>
 
 
         {/* ===== Pedro ===== */}
@@ -122,11 +122,11 @@ export default function PageClient() {
 
           <Para>O Pedro é meu vizinho. A gente se conhece há um tempo, daqueles trocos de "bom dia" no elevador e cerveja no churrasco de fim de ano. Em fevereiro de 2025, num desses encontros corriqueiros na padaria do bairro, ele me parou pra desabafar.</Para>
 
-          <Para>Tinha quatro anos no iFood. Saía 9 da manhã, voltava 11 da noite. Ganhava em média R$ 2.800 por mês — quando dava sorte. Em semana de chuva ou de poucos pedidos, fechava R$ 1.900. A esposa estava grávida do segundo filho.</Para>
+          <Para>Pedro tinha três anos rodando como motorista de Uber. Saía cedo, voltava tarde. Tirava em média R$ 3.000 a R$ 3.500 brutos por mês, mas líquido — depois de combustível, manutenção do carro e descontos do aplicativo — sobrava muito pouco. A esposa estava grávida do segundo filho.</Para>
 
-          <Citacao>"Carlos, eu não sei mais o que fazer. Tomei dois tombos esse ano. A moto tá no conserto de novo. Eu não vejo saída."</Citacao>
+          <Citacao>"Carlos, eu trabalho 12 horas por dia e o dinheiro some no posto. Troquei pneu duas vezes esse ano. Tô gastando o que ganho só pra manter o carro rodando."</Citacao>
 
-          <Para>A gente terminou a conversa ali mesmo, no balcão da padaria. Eu disse pra ele que tinha lido sobre uma ideia que parecia exatamente o tipo de virada que ele precisava — trabalho de casa, horário previsível, renda recorrente. Mandei o link da <Link>Coletaki</Link> pelo zap.</Para>
+          <Para>A gente terminou a conversa ali mesmo, no balcão da padaria. Eu disse pra ele que tinha lido sobre uma ideia que parecia exatamente o tipo de virada que ele precisava — trabalho de casa, horário previsível, renda recorrente, sem carro pra manter. Mandei o link da <Link>Coletaki</Link> pelo zap.</Para>
 
           <Para>Pedro hesitou no começo. Você sabe como é — <em>"e se não funcionar?"</em>, <em>"e se for golpe?"</em>, <em>"vou perder tempo de novo".</em> Mas a esposa insistiu pra ele tentar. Não tinha o que perder: o cadastro era gratuito e a validação também.</Para>
 
@@ -159,8 +159,8 @@ export default function PageClient() {
                 <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
               </div>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Aposentou a bag do iFood</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Já fechava R$ 4.300 por mês só com o ponto de coleta. Vendeu a moto. A esposa chorou de alegria.</div>
+                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Largou as corridas de Uber</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Já fechava R$ 4.300 por mês só com o ponto de coleta. Tirou o carro do app. A esposa chorou de alegria.</div>
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
@@ -177,7 +177,7 @@ export default function PageClient() {
 
           <H2>O que ele mais valoriza hoje</H2>
 
-          <Citacao>"Não é o dinheiro, Carlos. É poder estar em casa quando minha filha chega da escola. É nunca mais ter medo da chuva. É olhar pra minha esposa e ver ela tranquila pela primeira vez em anos."</Citacao>
+          <Citacao>"Não é o dinheiro, Carlos. É poder estar em casa quando minha filha chega da escola. É nunca mais ter medo de um carro quebrar e o dia inteiro ir embora. É olhar pra minha esposa e ver ela tranquila pela primeira vez em anos."</Citacao>
 
           <Para>Pedro não tem discurso de coach. É um cara normal. E é justamente por isso que a história dele importa.</Para>
 
@@ -213,7 +213,7 @@ export default function PageClient() {
 
         <Para>A parte importante é essa: <strong>Pedro não atende cliente final, não despacha mercadoria, não tem contato com comprador</strong>. Só recebe, lê o QR, guarda, devolve pro motorista quando ele volta. O sistema da Coletaki cuida de toda a comunicação, do rastreio e do destino final dos pacotes.</Para>
 
-        <Para>Entre uma passagem e outra, Pedro está livre. Almoça com a esposa, leva a filha na escola, descansa. <strong>Trabalha menos de 2 horas por dia — distribuídas em três janelas curtas — e fatura mais do que ganhava arriscando a vida na rua.</strong></Para>
+        <Para>Entre uma passagem e outra, Pedro está livre. Almoça com a esposa, leva a filha na escola, descansa. <strong>Trabalha menos de 2 horas por dia — distribuídas em três janelas curtas — e fatura quase o dobro do que ganhava rodando 12 horas no aplicativo.</strong></Para>
 
         {/* ===== Por que funciona ===== */}
         <H2>Por que esse modelo funciona tão bem</H2>
@@ -260,7 +260,7 @@ export default function PageClient() {
 
         <Para>Toda decisão tem risco. Mas existem ideias de negócio que minimizam esse risco a quase zero — e <strong>ponto de coleta é uma delas</strong>. Você não investe, não tem estoque, não tem funcionário, e em uma semana já pode estar operando.</Para>
 
-        <Para>Pra quem está cansado da rua, já tomou tombo de moto, perdeu pacote na chuva — vale dar uma olhada com calma. O site da Coletaki é <Link>coletaki.com</Link>. Você se cadastra, eles te chamam pra videochamada e já te dizem se o espaço serve. Sem precisar pagar nada.</Para>
+        <Para>Pra quem está cansado de trampar 12 horas por dia pra ver o dinheiro sumir em gasolina e manutenção, ou simplesmente quer uma renda recorrente sem precisar sair de casa — vale dar uma olhada com calma. O site da Coletaki é <Link>coletaki.com</Link>. Você se cadastra, eles te chamam pra videochamada e já te dizem se o espaço serve. Sem precisar pagar nada.</Para>
 
         <Para><em>Se essa matéria ajudar você a tomar coragem, me manda mensagem. Adoro saber das histórias.</em></Para>
 
