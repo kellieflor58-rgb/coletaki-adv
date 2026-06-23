@@ -1,6 +1,7 @@
 'use client';
+
 import React from 'react';
-import { Coffee, ArrowRight, Quote, Calendar, Lightbulb, TrendingUp } from 'lucide-react';
+import { Coffee, Heart } from 'lucide-react';
 
 const NAVY = '#0F2A5C';
 const GOLD = '#D4A946';
@@ -8,33 +9,24 @@ const INK = '#0F1419';
 const INK_SOFT = '#2C3440';
 const INK_MUTE = '#5B6573';
 const LINE = '#E5E9EF';
-const BG_SOFT = '#FAFBFC';
+const PAPER = '#F6F9FC';
+const PAPER_WARM = '#FAF8F3';
 
 const FOTO_AUTOR = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTruoFtCtl2GCdFxfesIkwY8dLRo7yubE5GL4YL7kIoUcEOrKWS0kzzD9X7&s=10';
+const LINK_COLETAKI = 'https://coletaki.com';
 const IMG_HERO = 'https://i.pinimg.com/736x/d5/c1/b5/d5c1b510c3c53e23a0ba06a44235ce93.jpg';
 const IMG_PACOTES = 'https://i.pinimg.com/736x/ba/cb/93/bacb93b2f5c282e4df2281c58498058f.jpg';
 
-const MENU = ['Home', 'Matérias', 'Economia', 'Cidades', 'Oportunidades'];
+function Link({ children }) {
+  return <a href={LINK_COLETAKI} style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>{children}</a>;
+}
 
 function Para({ children }) {
-  return <p style={{ fontSize: 17, lineHeight: 1.8, color: INK_SOFT, margin: '0 0 20px' }}>{children}</p>;
+  return <p style={{ fontSize: 17.5, lineHeight: 1.8, color: INK_SOFT, marginBottom: 24 }}>{children}</p>;
 }
 
 function H2({ children }) {
-  return <h2 style={{ fontSize: 26, fontWeight: 800, color: NAVY, margin: '40px 0 18px', letterSpacing: '-0.02em', lineHeight: 1.3 }}>{children}</h2>;
-}
-
-function Citacao({ children }) {
-  return (
-    <div style={{ background: BG_SOFT, borderLeft: '4px solid ' + GOLD, padding: '20px 24px', margin: '24px 0', borderRadius: '0 8px 8px 0' }}>
-      <Quote size={22} color={GOLD} style={{ marginBottom: 8 }} />
-      <div style={{ fontSize: 17, lineHeight: 1.7, color: INK, fontStyle: 'italic', fontWeight: 500 }}>{children}</div>
-    </div>
-  );
-}
-
-function Link({ children }) {
-  return <a href="https://coletaki.com" style={{ color: NAVY, fontWeight: 700, textDecoration: 'underline' }}>{children}</a>;
+  return <h2 style={{ fontSize: 28, fontWeight: 800, color: NAVY, margin: '48px 0 20px', letterSpacing: '-0.02em', lineHeight: 1.3 }}>{children}</h2>;
 }
 
 export default function PageClient() {
@@ -57,7 +49,7 @@ export default function PageClient() {
 
       <header style={{ background: '#fff', borderBottom: '1px solid ' + LINE, position: 'sticky', top: 3, zIndex: 50 }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '22px 28px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <a href="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: 14 }}>
+          <a href="/casa" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: 14 }}>
             <div style={{ width: 46, height: 46, borderRadius: 12, background: NAVY, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
               <Coffee size={22} />
             </div>
@@ -67,35 +59,31 @@ export default function PageClient() {
             </div>
           </a>
           <nav style={{ display: 'flex', gap: 30 }} className="menu-d">
-            {MENU.map(m => <a key={m} href="#" style={{ fontSize: 13, color: INK_SOFT, textDecoration: 'none', fontWeight: 600 }}>{m}</a>)}
+            <a href="#" style={{ fontSize: 13, color: INK_SOFT, textDecoration: 'none', fontWeight: 600 }}>Posts</a>
+            <a href="#" style={{ fontSize: 13, color: INK_SOFT, textDecoration: 'none', fontWeight: 600 }}>Ideias</a>
+            <a href="#" style={{ fontSize: 13, color: INK_SOFT, textDecoration: 'none', fontWeight: 600 }}>Sobre</a>
           </nav>
         </div>
       </header>
 
-      <article style={{ maxWidth: 720, margin: '0 auto', padding: '60px 24px 80px' }}>
+      <article style={{ maxWidth: 720, margin: '0 auto', padding: '60px 28px 100px' }}>
 
-        <div style={{ textAlign: 'center', marginBottom: 16 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: GOLD + '15', color: '#8a6f1f', padding: '6px 16px', borderRadius: 999, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-            <Lightbulb size={12} /> Ideia de Negócio · 8 min de leitura
+        <div style={{ textAlign: 'center', marginBottom: 14 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: GOLD + '20', color: '#8a6f1f', padding: '5px 14px', borderRadius: 999, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+            ☕ Ideias de Negócio · 9 min de leitura
           </div>
         </div>
 
-        <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.12, letterSpacing: '-0.025em', marginBottom: 24, textAlign: 'center', color: NAVY }} className="h1-main">
-          De motorista de Uber a <span style={{ color: GOLD }}>R$ 5 mil por mês</span>: a ideia de negócio que ninguém te conta
+        <h1 style={{ fontSize: 44, fontWeight: 800, color: NAVY, letterSpacing: '-0.025em', lineHeight: 1.1, textAlign: 'center', marginBottom: 24 }} className="h1-main">
+          A ideia de negócio em casa que <span style={{ color: GOLD }}>fez um motorista de Uber faturar R$ 5 mil por mês</span> sem investir 1 real
         </h1>
 
-        <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, margin: '0 auto 36px', textAlign: 'center', maxWidth: 620 }}>
-          Sem investir 1 real, Pedro se cadastrou na <Link>Coletaki</Link> e transformou um quartinho do apartamento em um ponto de coleta de marketplace. Hoje fatura mais de R$ 5 mil por mês em casa e nem precisa mais ligar o carro. Vou te contar sobre o modelo de negócio e como fazer parte.
+        <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, textAlign: 'center', maxWidth: 600, margin: '0 auto 36px' }}>
+          Eu virei ponto de coleta de marketplace há 4 meses. Aposentei o Uber, abri uma renda nova de casa e venho contar tudo: o que é, como entrei, e como você pode entrar também.
         </p>
 
-        <img src={IMG_HERO} alt="Apartamento do Pedro operando como ponto de coleta" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 36, fontStyle: 'italic' }}>O quartinho do Pedro hoje: prateleira organizada, pacotes etiquetados, fluxo simples.</p>
-
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 36 }}>
-          <div style={{ width: 80, height: 1, background: LINE }} />
-          <div style={{ fontSize: 14, color: GOLD, letterSpacing: '0.4em', fontWeight: 700 }}>· · ·</div>
-          <div style={{ width: 80, height: 1, background: LINE }} />
-        </div>
+        <img src={IMG_HERO} alt="O quarto que virou meu ponto de coleta" style={{ width: '100%', height: 380, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>O quartinho que eu transformei em ponto de coleta. Hoje paga meus boletos.</p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 50 }}>
           <img src={FOTO_AUTOR} alt="Carlos Andrade" style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', border: '3px solid ' + NAVY }} />
@@ -105,166 +93,135 @@ export default function PageClient() {
           </div>
         </div>
 
-        <Para>Toda semana eu recebo mensagem perguntando a mesma coisa: <em>"Carlos, qual ideia de negócio funciona hoje sem precisar investir?"</em></Para>
+        <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>Vamos direto ao ponto.</strong></p>
 
-        <Para>Hoje, em vez de dar uma resposta genérica, vou te contar uma história real — a do Pedro. Ele rodou como motorista de Uber por três anos até descobrir que tava trabalhando pra manter o carro, não pra si mesmo. Hoje fatura mais de <strong>R$ 5 mil por mês</strong> sem sair de casa, e não investiu um centavo pra começar. Depois eu explico o modelo de negócio por trás disso e por que ele tá crescendo em silêncio nos últimos dois anos.</Para>
+        <Para>Esse texto é pra quem chegou aqui buscando ideia de negócio em casa, alguma coisa que não exija investimento, que não dependa de cliente entrar em loja, que dê pra começar rápido e que não dependa de você ser um vendedor nato. Eu vou contar o que eu encontrei, como funciona, quanto eu tô tirando, e o que você precisa pra entrar.</Para>
 
+        <Para>Meu nome é Carlos, tenho 33 anos. Vou direto na minha história pra você entender de onde eu vim — porque acho que é o que melhor explica por que esse modelo funciona pra tanta gente que tá hoje na mesma situação que eu tava.</Para>
 
-        {/* ===== Pedro ===== */}
-        <div style={{ background: BG_SOFT, padding: 28, borderRadius: 14, margin: '32px 0', border: '1px solid ' + LINE }}>
+        <H2>Por que eu fui atrás de outra ideia</H2>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
-            <Calendar size={14} color={GOLD} />
-            <span style={{ fontSize: 11, fontWeight: 800, color: GOLD, letterSpacing: '0.15em', textTransform: 'uppercase' }}>Caso real · Março de 2025</span>
-          </div>
+        <Para>Há mais ou menos um ano e meio eu pedi demissão da empresa onde trabalhei dez anos. Daqueles trabalhos sem grandes perspectivas, com salário que aumentava menos que o aluguel. Saí no impulso, sem plano. Virei motorista de Uber porque foi o que tinha à mão.</Para>
 
-          <H2>A história do Pedro</H2>
+        <Para>No começo até deu certo. Eu tirava entre <strong>R$ 80 e R$ 110 líquidos por dia</strong> dirigindo umas 9 horas. Não era o melhor salário do mundo, mas dava algum sustento todo dia. Achei que tinha resolvido a vida.</Para>
 
-          <Para>O Pedro é meu vizinho. A gente se conhece há um tempo, daqueles trocos de "bom dia" no elevador e cerveja no churrasco de fim de ano. Em fevereiro de 2025, num desses encontros corriqueiros na padaria do bairro, ele me parou pra desabafar.</Para>
+        <Para>Mas tem um detalhe que ninguém me contou antes: <strong>o carro também trabalha junto comigo.</strong> E o carro quebra. Em três meses, eu tinha gasto com pneu novo, duas trocas de óleo, pastilha de freio, alinhamento e ainda um conserto na suspensão depois de um buraco daqueles. Cada visita à mecânica comia uma semana inteira de corrida.</Para>
 
-          <Para>Pedro tinha três anos rodando como motorista de Uber. Saía cedo, voltava tarde. Tirava em média R$ 3.000 a R$ 3.500 brutos por mês, mas líquido — depois de combustível, manutenção do carro e descontos do aplicativo — sobrava muito pouco. A esposa estava grávida do segundo filho.</Para>
+        <Para>Aí eu sentava com a esposa pra fechar o mês e o resultado era sempre o mesmo: <strong>eu tava trabalhando pra manter o carro rodando.</strong> O dinheiro entrava na conta, mas saía no posto e na oficina. Eu mesmo tava começando a achar que tinha tomado a pior decisão da minha vida.</Para>
 
-          <Citacao>"Carlos, eu trabalho 12 horas por dia e o dinheiro some no posto. Troquei pneu duas vezes esse ano. Tô gastando o que ganho só pra manter o carro rodando."</Citacao>
+        <H2>A ideia caiu no meu colo numa corrida</H2>
 
-          <Para>A gente terminou a conversa ali mesmo, no balcão da padaria. Eu disse pra ele que tinha lido sobre uma ideia que parecia exatamente o tipo de virada que ele precisava — trabalho de casa, horário previsível, renda recorrente, sem carro pra manter. Mandei o link da <Link>Coletaki</Link> pelo zap.</Para>
+        <Para>Foi numa terça à noite, comecinho de janeiro. Última corrida do dia, eu já cansado. Peguei um cara perto do centro, uns 40 anos, simpático. No meio da viagem ele me perguntou se eu trabalhava só de Uber. Eu acabei desabafando — falei do gasto com o carro, do desânimo, da sensação de não tá indo a lugar nenhum.</Para>
 
-          <Para>Pedro hesitou no começo. Você sabe como é — <em>"e se não funcionar?"</em>, <em>"e se for golpe?"</em>, <em>"vou perder tempo de novo".</em> Mas a esposa insistiu pra ele tentar. Não tinha o que perder: o cadastro era gratuito e a validação também.</Para>
-
-          <H2>O que aconteceu nos meses seguintes</H2>
-
-          <div style={{ background: '#fff', padding: 18, borderRadius: 10, border: '1px solid ' + LINE, marginBottom: 20 }}>
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
-              <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
-                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>FEV</div>
-                <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Cadastrou no site da Coletaki</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Levou 4 minutos no celular. Em 2 dias o consultor ligou pra marcar a videochamada de verificação.</div>
-              </div>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
-              <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
-                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>FEV</div>
-                <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Quartinho aprovado · começou a operar</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>10 dias depois do cadastro já estava recebendo pacotes. Só precisou montar uma prateleira simples. Primeira semana: 80 pacotes, R$ 380 de comissão.</div>
-              </div>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
-              <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
-                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>JULHO</div>
-                <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Largou as corridas de Uber</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Já fechava R$ 4.300 por mês só com o ponto de coleta. Tirou o carro do app. A esposa chorou de alegria.</div>
-              </div>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
-              <div style={{ background: GOLD, color: NAVY, width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
-                <div style={{ fontSize: 9, fontWeight: 800 }}>HOJE</div>
-                <div style={{ fontSize: 18, fontWeight: 800 }}>2026</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Faturando R$ 5.200 por mês em média</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Casa própria pintada. Filha matriculada no balé. Almoça com a esposa todo dia.</div>
-              </div>
-            </div>
-          </div>
-
-          <H2>O que ele mais valoriza hoje</H2>
-
-          <Citacao>"Não é o dinheiro, Carlos. É poder estar em casa quando minha filha chega da escola. É nunca mais ter medo de um carro quebrar e o dia inteiro ir embora. É olhar pra minha esposa e ver ela tranquila pela primeira vez em anos."</Citacao>
-
-          <Para>Pedro não tem discurso de coach. É um cara normal. E é justamente por isso que a história dele importa.</Para>
-
+        <div style={{ background: PAPER_WARM, borderLeft: '3px solid ' + GOLD, padding: '24px 28px', margin: '32px 0', borderRadius: '0 8px 8px 0' }}>
+          <p style={{ fontSize: 19, fontStyle: 'italic', color: NAVY, lineHeight: 1.55, margin: 0 }}>
+            "Cara, conheço um amigo que tava nessa mesma de Uber. Hoje ele virou ponto de coleta dessas empresas de marketplace — basicamente recebe pacote em casa, várias vezes por dia, e devolve pro motorista pegar de volta. Tá tirando uns quatro, cinco mil por mês. Sem ter que sair de casa."
+          </p>
         </div>
 
-        <H2>Mas qual é a ideia por trás disso?</H2>
+        <Para>Foi a primeira vez que eu escutei essa ideia. Pedi o nome da empresa. Ele pesquisou no celular, achou o site da <Link>Coletaki</Link> e me mandou o link pelo zap.</Para>
 
-        <Para>Agora que você conhece a história do Pedro, deixa eu te explicar o modelo de negócio inteiro — qual problema os marketplaces estão resolvendo e por que o ponto de coleta virou a peça-chave dessa engrenagem.</Para>
-        {/* ===== Qual é a ideia / DOR ===== */}
-        <Para>Hoje os grandes marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: <strong>tudo isso é despachado a partir de um único centro de distribuição</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
+        <H2>Mas o que é, de fato, esse "ponto de coleta"?</H2>
+
+        <Para>Esse modelo existe porque os grandes marketplaces (Shopee, Mercado Livre, Amazon, Shein) prometem entrega cada vez mais rápida — em muitos casos no mesmo dia ou em 24 horas. Só que tem um detalhe que poucos enxergam: <strong>tudo isso é despachado a partir de um único centro de distribuição</strong>, geralmente afastado dos bairros onde os clientes moram.</Para>
 
         <Para>Resultado: cada veículo sai do CD lotado, percorre quilômetros, e muitas vezes precisa entrar num bairro inteiro só pra fazer <strong>uma única entrega</strong>. Some isso à explosão de pedidos das últimas Black Fridays, com volume crescendo todo ano, e o custo logístico vira impraticável. O prazo aperta.</Para>
 
-        <Para>A saída encontrada pelos marketplaces foi inteligente: <strong>descentralizar a operação usando pontos de coleta espalhados pelos bairros</strong>. Em vez de cada veículo fazer uma entrega isolada numa rua, ele faz <strong>uma única parada num endereço</strong> — a casa de um morador comum — e deixa ali 30, 40, às vezes 60 pacotes de uma vez. Depois, outros veículos passam ao longo do dia pra recolher os pacotes que precisam ser entregues ali nas proximidades. E a entrega final fica muito mais ágil.</Para>
+        <Para>A saída encontrada foi descentralizar a operação usando <strong>pontos de coleta espalhados pelos bairros</strong>. Em vez de cada veículo fazer uma entrega isolada numa rua, ele faz uma única parada num endereço — a casa de um morador — e deixa ali 30, 40, às vezes 60 pacotes de uma vez. Depois, outros veículos passam ao longo do dia pra recolher os pacotes que precisam ser entregues ali nas proximidades. A entrega final fica muito mais ágil.</Para>
 
-        <Citacao>O ponto de coleta é a ponte entre o CD e a entrega final no bairro. O morador não atende cliente, não despacha, não tem contato com comprador. Só recebe os pacotes nos horários combinados e devolve quando outro veículo passa pra retirar.</Citacao>
+        <Para>E é exatamente esse "morador" que eu virei. Esse é o negócio.</Para>
 
-        {/* ===== Como funciona ===== */}
-        <H2>Como funciona o dia a dia</H2>
+        <H2>O cadastro e a verificação</H2>
 
-        <Para>Já que você conhece o Pedro, fica mais fácil entender a rotina. O dia a dia da operação no quartinho dele funciona assim:</Para>
+        <Para>Cheguei em casa depois daquela corrida, contei pra esposa, e ela respondeu uma coisa que ficou na minha cabeça: <em>"Carlos, pelo menos tenta. Se der ruim, sinceramente, não tem muito como piorar."</em></Para>
 
-        <Para><strong>Por volta das 8h da manhã</strong>, um veículo encosta na porta do prédio. Pode ser uma van do próprio CD do marketplace, pode ser um carro terceirizado contratado pela <Link>Coletaki</Link>. Pra Pedro não muda nada — o procedimento é o mesmo. O motorista desce com os pacotes do dia: em geral entre 20 e 60 caixinhas leves de e-commerce.</Para>
+        <Para>No dia seguinte, antes mesmo de levar o filho na escola, abri o site da <Link>Coletaki</Link> e a gente foi preenchendo o cadastro juntos no celular. Levou uns três minutos. Pediu CEP pra confirmar cobertura da região, nome, CPF, endereço, descrição do espaço e horários disponíveis.</Para>
 
-        <Para>Pedro <strong>lê o QR code de entrada de cada pacote no aplicativo</strong> da Coletaki, junto com o motorista. Em seguida, organiza tudo no quartinho separado, em prateleiras etiquetadas. Esse processo costuma levar uns 15 a 20 minutos.</Para>
+        <Para>Voltei pra almoçar e tomei um susto — minha esposa já tinha falado com a equipe da Coletaki no telefone e marcado uma <strong>videochamada de verificação pra dois dias depois</strong>. A chamada serve pra confirmar que o endereço existe mesmo, que o local tem higiene adequada e que dá pra trancar. Eles olham o cômodo pelo celular, conferem se tem infiltração, se fica longe de janela voltada pra rua, e se não tem cachorro ou gato circulando no espaço.</Para>
 
-        <Para><strong>Por volta das 11h</strong>, outro veículo passa. Esse traz mais alguns pacotes e leva embora boa parte dos que já estavam no ponto desde o dia anterior. Mesma rotina: leitura do QR de entrada nos novos, leitura do QR de saída nos que estão saindo. Tudo registrado no aplicativo.</Para>
+        <Para>No meu caso foi aprovado na hora. Em alguns casos eles pedem ajustes e dão prazo de 72 horas pra você resolver. Em seguida me mandaram um <strong>contrato de responsabilidades</strong> pra assinatura digital — que basicamente cobre o seguinte: as mercadorias têm seguro, mas você é responsável por registrar avaria no app caso receba algo danificado. Se você registra, tá blindado. Se não registra, cai na sua responsabilidade.</Para>
 
-        <Para><strong>Por volta das 14h da tarde</strong>, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos pra entrega final no bairro. Às vezes leva tudo, às vezes sobra um pouco pra sair no dia seguinte.</Para>
+        <Para>Depois disso vieram <strong>4 horas de treinamento online</strong> cobrindo uso do app, leitura de QR code e calendário de pagamento. Na semana seguinte meu ponto entrou em operação.</Para>
 
-        <img src={IMG_PACOTES} alt="Pacotes organizados no quartinho do Pedro" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica no quartinho do Pedro: pacotes organizados aguardando a próxima passagem.</p>
+        <Para><strong>Do cadastro à primeira coleta foram 11 dias.</strong> Sem investir um real.</Para>
 
-        <Para>A parte importante é essa: <strong>Pedro não atende cliente final, não despacha mercadoria, não tem contato com comprador</strong>. Só recebe, lê o QR, guarda, devolve pro motorista quando ele volta. O sistema da Coletaki cuida de toda a comunicação, do rastreio e do destino final dos pacotes.</Para>
+        <H2>Como é o dia a dia</H2>
 
-        <Para>Entre uma passagem e outra, Pedro está livre. Almoça com a esposa, leva a filha na escola, descansa. <strong>Trabalha menos de 2 horas por dia — distribuídas em três janelas curtas — e fatura quase o dobro do que ganhava rodando 12 horas no aplicativo.</strong></Para>
+        <Para>Por volta das 8h da manhã, um veículo encosta na porta. Pode ser uma van do CD do marketplace, pode ser um carro terceirizado contratado pela <Link>Coletaki</Link>. Não muda nada pra mim. O motorista desce com os pacotes — em geral entre 20 e 60 caixinhas leves de e-commerce.</Para>
 
-        {/* ===== Por que funciona ===== */}
-        <H2>Por que esse modelo funciona tão bem</H2>
+        <Para>Eu leio o QR code de entrada de cada pacote no aplicativo, junto com ele. Em seguida, organizo tudo no quartinho separado, em prateleiras. Esse processo leva uns 15 a 20 minutos.</Para>
 
-        <Para>A grande sacada é que ele tira do seu caminho praticamente todos os obstáculos de quem quer empreender em casa.</Para>
+        <Para>Às 11h, outro veículo passa. Esse traz mais alguns pacotes e leva embora boa parte dos que já estavam no ponto. Mesma rotina: leitura do QR de entrada nos novos, leitura do QR de saída nos que saem. Tudo registrado no app.</Para>
 
-        <Para>Você não precisa investir nada — basta ter um cômodo limpo e seguro, com espaço pra prateleiras. Não precisa sair pra entregar — os veículos vêm até você três vezes por dia, em horários combinados. Não precisa atender ninguém — a única interação é com os motoristas que passam, e leva poucos minutos. Não precisa lidar com cliente final, devolução ou reclamação — tudo isso fica com a Coletaki.</Para>
+        <Para>Às 14h, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos. Às vezes leva tudo, às vezes sobra um pouco pra sair só no dia seguinte.</Para>
 
-        <Para>E o pagamento é por pacote processado, <strong>depositado quinzenalmente nos dias 1 e 16 de cada mês</strong>, direto na conta vinculada ao seu CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial. Quanto mais pacotes passam, mais você ganha.</Para>
+        <img src={IMG_PACOTES} alt="Pacotes organizados aguardando próxima passagem" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica: 30 pacotes recém-chegados, aguardando a próxima passagem.</p>
 
+        <Para>A parte importante é essa: <strong>eu não atendo cliente final, não despacho mercadoria, não tenho contato com comprador.</strong> Só recebo, leio o QR, guardo, devolvo pro motorista quando ele volta. O sistema da Coletaki cuida do resto — comunicação, rastreio, destino final.</Para>
 
+        <Para>Entre uma passagem e outra eu fico livre. Almoço com a esposa, busco meu filho na escola, faço o que dá. <strong>Trabalho menos de 2 horas por dia distribuídas em três janelas curtas — e fatura mais do que ganhava rodando 12 horas no aplicativo.</strong></Para>
 
-        {/* ===== Pra quem serve ===== */}
-        <H2>Pra quem essa ideia serve?</H2>
+        <H2>Quanto isso dá, na prática</H2>
 
-        <Para>Conversando com vários pontos de coleta que já estão em operação, dá pra desenhar o perfil que tende a dar mais certo:</Para>
+        <Para>O pagamento é por pacote processado, depositado <strong>quinzenalmente todo dia 1 e dia 16</strong>, direto na conta vinculada ao CPF. Sem mensalidade, sem taxa de adesão, sem investimento inicial.</Para>
+
+        <Para>Esses foram meus quatro primeiros meses:</Para>
+
+        <Para><strong>Janeiro</strong> (primeiro mês, volume crescendo): R$ 2.140<br /><strong>Fevereiro</strong>: R$ 4.180<br /><strong>Março</strong> (estabilizou): R$ 5.720<br /><strong>Abril</strong>: R$ 4.870</Para>
+
+        <Para>Comparando com Uber, eu tirava em média uns R$ 2.500 a R$ 3.000 líquidos no mês — depois de descontar combustível e manutenção. Hoje fechei o quadrimestre em torno de R$ 4 mil de média, trabalhando menos de 15% do tempo que eu trabalhava antes.</Para>
+
+        <H2>Pra que tipo de pessoa essa ideia funciona</H2>
+
+        <Para>Não vou romantizar. Essa ideia não serve pra qualquer um. Conversando com outros pontos em operação e pensando no meu próprio perfil, separei o que costuma dar mais certo:</Para>
 
         <Para>
-          <strong style={{ color: NAVY }}>✓</strong> Mora em casa ou apartamento com algum cômodo sobrando (quartinho, área de serviço, garagem coberta)<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Pode estar em casa nos horários de passagem dos veículos (manhã, meio-dia e início da tarde)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Você mora em casa ou apartamento com um cômodo sobrando (quartinho, área de serviço, garagem coberta)<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Consegue estar em casa nos horários das passagens (manhã, meio-dia, início da tarde)<br/>
           <strong style={{ color: NAVY }}>✓</strong> Tem cômodo seco, sem infiltração, longe de janela que dá pra rua<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Aceita seguir a rotina de registro de pacotes pelo aplicativo<br/>
-          <strong style={{ color: NAVY }}>✓</strong> Quer renda recorrente sem precisar gerenciar funcionário nem estoque
+          <strong style={{ color: NAVY }}>✓</strong> Aceita seguir a rotina de registro de pacotes pelo app<br/>
+          <strong style={{ color: NAVY }}>✓</strong> Procura renda recorrente sem precisar gerenciar funcionário, estoque ou cliente
         </Para>
 
-        <Para>Se você marcou pelo menos três desses, vale a pena testar. O cadastro é gratuito e a videochamada com o consultor também.</Para>
+        <Para>Se você se viu em pelo menos três desses, vale fazer o cadastro. Não cobra nada e a validação é gratuita.</Para>
 
-        {/* ===== CTA ===== */}
-        <div style={{ background: NAVY, color: '#fff', borderRadius: 16, padding: 36, marginTop: 56, textAlign: 'center' }}>
-          <TrendingUp size={32} color={GOLD} style={{ margin: '0 auto 12px', display: 'block' }} />
-          <h3 style={{ fontSize: 22, fontWeight: 800, margin: '0 0 12px', letterSpacing: '-0.02em' }}>
-            Quer descobrir se a sua casa pode virar ponto de coleta?
+        <H2>Por que esse modelo tá crescendo agora</H2>
+
+        <Para>Esse não é um modelo de hoje. Plataformas como Amazon Hub Counter e Mercado Livre Agência já existem há anos. A diferença é que <strong>essas plataformas grandes só aceitam comércios estabelecidos</strong> — papelaria, mercadinho, gráfica. Pra moradores comuns, é difícil entrar.</Para>
+
+        <Para>A Coletaki nasceu pra preencher esse vão: ela trabalha com <strong>pessoas físicas, em residências</strong>, e cuida da validação e logística. O modelo dela tem crescido rápido porque os marketplaces precisam de capilaridade — quanto mais pontos espalhados pelos bairros, mais barato e rápido fica entregar.</Para>
+
+        <Para>Pra você ter ideia, a estimativa interna da empresa é que precisariam de pelo menos 5 mil pontos novos só nos próximos 12 meses pra atender a demanda atual.</Para>
+
+        <H2>Como entrar</H2>
+
+        <Para>O processo é exatamente o que eu descrevi acima. Você acessa o site da <Link>Coletaki</Link>, preenche o cadastro (3 a 4 minutos), agenda a videochamada de verificação, assina o contrato de responsabilidades, faz o treinamento e começa a operar. Do início ao fim, demora de 7 a 14 dias.</Para>
+
+        <Para>O cadastro não cobra nada. A validação não cobra nada. Não tem mensalidade, taxa de adesão, ou compra de produto. Você só ganha quando o pacote passa pelo seu ponto.</Para>
+
+        <div style={{ background: NAVY, color: '#fff', borderRadius: 16, padding: 40, marginTop: 50, textAlign: 'center' }}>
+          <h3 style={{ fontSize: 24, fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.02em', lineHeight: 1.25 }}>
+            Quer ver se a sua casa serve?
           </h3>
-          <p style={{ fontSize: 15, opacity: 0.9, lineHeight: 1.6, margin: '0 0 24px', maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
-            Igual ao Pedro: você se cadastra, um consultor faz uma videochamada com você e já te diz se o espaço serve. Sem custo, sem compromisso.
+          <p style={{ fontSize: 15, opacity: 0.9, lineHeight: 1.6, margin: '0 0 26px', maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
+            Igual eu fiz: você se cadastra no site, faz uma videochamada com o consultor e já recebe a resposta. Sem compromisso e sem custo.
           </p>
-          <a href="https://coletaki.com" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: GOLD, color: NAVY, padding: '14px 32px', borderRadius: 10, textDecoration: 'none', fontWeight: 800, fontSize: 15, letterSpacing: '-0.01em' }}>
-            Ver se a minha casa serve <ArrowRight size={18} />
+          <a href={LINK_COLETAKI} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: GOLD, color: NAVY, padding: '15px 36px', borderRadius: 10, textDecoration: 'none', fontWeight: 800, fontSize: 15, letterSpacing: '-0.01em' }}>
+            Quero fazer meu cadastro →
           </a>
-          <div style={{ fontSize: 11, opacity: 0.7, marginTop: 18 }}>Sem investimento · validação gratuita · resposta em até uma semana</div>
+          <div style={{ fontSize: 11, opacity: 0.65, marginTop: 18 }}>cadastro grátis · validação grátis · resposta em até 14 dias</div>
         </div>
 
         <H2>Pra fechar</H2>
 
-        <Para>Toda decisão tem risco. Mas existem ideias de negócio que minimizam esse risco a quase zero — e <strong>ponto de coleta é uma delas</strong>. Você não investe, não tem estoque, não tem funcionário, e em uma semana já pode estar operando.</Para>
+        <Para>Quem tá pesquisando ideia de negócio sabe que a maior parte das opções exige ou capital, ou risco alto, ou tempo de maturação. Ponto de coleta de marketplace é uma das poucas que não exige nada disso. Não é mágico, não é fácil pra todo mundo, mas é simples — e pra quem tem o perfil certo, funciona.</Para>
 
-        <Para>Pra quem está cansado de trampar 12 horas por dia pra ver o dinheiro sumir em gasolina e manutenção, ou simplesmente quer uma renda recorrente sem precisar sair de casa — vale dar uma olhada com calma. O site da Coletaki é <Link>coletaki.com</Link>. Você se cadastra, eles te chamam pra videochamada e já te dizem se o espaço serve. Sem precisar pagar nada.</Para>
+        <Para>Eu não imaginava que ia escrever esse texto há um ano. Tava só tentando me virar com o Uber. Hoje passo o dia inteiro em casa, almoço com a esposa, busco meu filho na escola, e fecho mês com 50% a mais do que eu ganhava na rua.</Para>
 
-        <Para><em>Se essa matéria ajudar você a tomar coragem, me manda mensagem. Adoro saber das histórias.</em></Para>
+        <Para>Se isso fizer sentido pra você, o site é <Link>coletaki.com</Link>. Boa sorte aí.</Para>
 
-        <div style={{ textAlign: 'center', marginTop: 48, paddingTop: 32, borderTop: '1px solid ' + LINE }}>
+        <div style={{ textAlign: 'center', marginTop: 60, paddingTop: 36, borderTop: '1px solid ' + LINE }}>
           <img src={FOTO_AUTOR} alt="Carlos" style={{ width: 92, height: 92, borderRadius: '50%', objectFit: 'cover', border: '4px solid ' + NAVY, marginBottom: 16 }} />
           <div style={{ fontSize: 18, fontWeight: 800, color: INK }}>Carlos Andrade</div>
           <div style={{ fontSize: 13, color: INK_MUTE, marginTop: 4 }}>Escrevo sobre o que aprendi conversando com gente comum.</div>
