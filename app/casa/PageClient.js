@@ -120,39 +120,37 @@ export default function PageClient() {
 
           <H2>A história do Pedro</H2>
 
-          <Para>Conheci o Pedro em fevereiro de 2025, numa cafeteria aqui do bairro. Ele estava na fila atrás de mim, com uniforme do iFood, e a gente começou a conversar.</Para>
+          <Para>O Pedro é meu vizinho. A gente se conhece há um tempo, daqueles trocos de "bom dia" no elevador e cerveja no churrasco de fim de ano. Em fevereiro de 2025, num desses encontros corriqueiros na padaria do bairro, ele me parou pra desabafar.</Para>
 
-          <Para>Pedro era entregador no aplicativo há quatro anos. Saía 9 da manhã, voltava 11 da noite. Ganhava em média R$ 2.800 por mês — quando dava sorte. Em semana de chuva ou de poucos pedidos, fechava R$ 1.900.</Para>
+          <Para>Tinha quatro anos no iFood. Saía 9 da manhã, voltava 11 da noite. Ganhava em média R$ 2.800 por mês — quando dava sorte. Em semana de chuva ou de poucos pedidos, fechava R$ 1.900. A esposa estava grávida do segundo filho.</Para>
 
-          <Citacao>"Carlos, eu não sei mais o que fazer. Tomei dois tombos esse ano. A moto tá no conserto. Minha esposa tá grávida do segundo. Eu não vejo saída."</Citacao>
+          <Citacao>"Carlos, eu não sei mais o que fazer. Tomei dois tombos esse ano. A moto tá no conserto de novo. Eu não vejo saída."</Citacao>
 
-          <Para>Naquele dia eu falei pra ele sobre a ideia do ponto de coleta. Contei que tinha lido sobre o modelo e que parecia ser exatamente o tipo de virada que ele precisava — trabalho de casa, horário previsível, renda recorrente.</Para>
+          <Para>A gente terminou a conversa ali mesmo, no balcão da padaria. Eu disse pra ele que tinha lido sobre uma ideia que parecia exatamente o tipo de virada que ele precisava — trabalho de casa, horário previsível, renda recorrente. Mandei o link da <Link>Coletaki</Link> pelo zap.</Para>
 
-          <Para>Pedro hesitou. Você sabe como é — <em>"e se não funcionar?"</em>, <em>"e se for golpe?"</em>, <em>"vou perder tempo de novo".</em></Para>
-
-          <Para>Eu disse pra ele: <strong>"Pedro, você não precisa investir nada. É só se cadastrar na Coletaki. Um consultor vai marcar uma videochamada com você, conhecer o cômodo, validar o espaço, e aí você decide se quer ou não."</strong></Para>
+          <Para>Pedro hesitou no começo. Você sabe como é — <em>"e se não funcionar?"</em>, <em>"e se for golpe?"</em>, <em>"vou perder tempo de novo".</em> Mas a esposa insistiu pra ele tentar. Não tinha o que perder: o cadastro era gratuito e a validação também.</Para>
 
           <H2>O que aconteceu nos meses seguintes</H2>
 
           <div style={{ background: '#fff', padding: 18, borderRadius: 10, border: '1px solid ' + LINE, marginBottom: 20 }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
               <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
-                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>MARÇO</div>
+                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>FEV</div>
                 <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
               </div>
               <div>
                 <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Cadastrou no site da Coletaki</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Levou 4 minutos no celular. Em 3 dias o consultor ligou pra marcar a videochamada de verificação.</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Levou 4 minutos no celular. Em 2 dias o consultor ligou pra marcar a videochamada de verificação.</div>
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
               <div style={{ background: NAVY, color: '#fff', width: 64, padding: '8px 0', borderRadius: 8, textAlign: 'center', flexShrink: 0 }}>
-                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>ABRIL</div>
+                <div style={{ fontSize: 9, fontWeight: 700, opacity: 0.7 }}>FEV</div>
                 <div style={{ fontSize: 18, fontWeight: 800 }}>25</div>
               </div>
               <div>
                 <div style={{ fontSize: 14, fontWeight: 800, color: INK, marginBottom: 2 }}>Quartinho aprovado · começou a operar</div>
-                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>Só precisou montar uma prateleira simples. Na primeira semana, recebeu cerca de 80 pacotes e fechou R$ 380 de comissão.</div>
+                <div style={{ fontSize: 13, color: INK_SOFT, lineHeight: 1.5 }}>10 dias depois do cadastro já estava recebendo pacotes. Só precisou montar uma prateleira simples. Primeira semana: 80 pacotes, R$ 380 de comissão.</div>
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14, paddingBottom: 14, borderBottom: '1px solid ' + LINE }}>
