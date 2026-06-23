@@ -156,7 +156,7 @@ export default function PageClient() {
         <Para>Às 14h, última passagem do dia. Mais alguns pacotes chegam e parte dos que ficaram das 11h são recolhidos. Às vezes leva tudo, às vezes sobra um pouco pra sair só no dia seguinte.</Para>
 
         <img src={IMG_PACOTES} alt="Pacotes organizados aguardando próxima passagem" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica: 30 pacotes recém-chegados, aguardando a próxima passagem.</p>
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Manhã típica: 55 pacotes recém-chegados, aguardando a próxima passagem.</p>
 
         <Para>A parte importante é essa: <strong>eu não atendo cliente final, não despacho mercadoria, não tenho contato com comprador.</strong> Só recebo, leio o QR, guardo, devolvo pro motorista quando ele volta. O sistema da Coletaki cuida do resto — comunicação, rastreio, destino final.</Para>
 
