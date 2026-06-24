@@ -76,7 +76,7 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, color: INK, letterSpacing: '-0.025em', lineHeight: 1.1, textAlign: 'center', marginBottom: 24 }} className="h1-main">
-          <span style={{ color: ORANGE }}>Pare de baixar PDF genérico</span> da internet pros seus alunos autistas — eu também fazia isso, e descobri algo melhor
+          <span style={{ color: ORANGE }}>Pare de baixar PDF genérico</span> da internet para seus alunos autistas. Comece a usar isto.
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, textAlign: 'center', maxWidth: 600, margin: '0 auto 36px' }}>
