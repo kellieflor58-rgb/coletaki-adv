@@ -76,7 +76,7 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, color: INK, letterSpacing: '-0.025em', lineHeight: 1.1, textAlign: 'center', marginBottom: 24 }} className="h1-main">
-          Como eu atendo <span style={{ color: ORANGE }}>37 alunos autistas</span>, com plano individual pra cada um — e ainda entrego algo além da aula
+          <span style={{ color: ORANGE }}>Pare de baixar PDF genérico</span> da internet pros seus alunos autistas — eu também fazia isso, e descobri algo melhor
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, textAlign: 'center', maxWidth: 600, margin: '0 auto 36px' }}>
@@ -100,7 +100,7 @@ export default function PageClient() {
 
         <Para>Eu sou a Miriam, 42 anos, professora de educação especial há 18. Vou te contar uma coisa que mudou minha trajetória profissional nos últimos dois anos.</Para>
 
-        <Para>Em 2024, eu tinha <strong>9 alunos autistas</strong> na minha turma. Era uma turma bem montada, eu dava o meu melhor, mas a gente sabe como é: faltava tempo pra entender cada criança a fundo, faltava material adequado, faltava ferramenta. Eu fazia o que dava, e me sentia constantemente devendo pra eles.</Para>
+        <Para>Em 2024, eu tinha <strong>9 alunos autistas divididos em 4 turmas</strong>. Era uma turma bem montada, eu dava o meu melhor, mas a gente sabe como é: faltava tempo pra entender cada criança a fundo, faltava material adequado, faltava ferramenta. Eu fazia o que dava, e me sentia constantemente devendo pra eles.</Para>
 
         <Para>Hoje, fim de 2026, atendo <strong>37 crianças no espectro</strong>. Não foi porque a escola cresceu — é porque <strong>os próprios pais começaram a procurar a escola pedindo pra que o filho fosse pra minha turma</strong>. E pais conversam entre si. Quando viram resultado nos filhos um do outro, a fila virou bola de neve.</Para>
 
