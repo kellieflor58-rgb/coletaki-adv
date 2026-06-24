@@ -96,15 +96,11 @@ export default function PageClient() {
 
         <p style={{ fontSize: 21, color: INK, marginBottom: 24 }}><strong>Oi, colega.</strong></p>
 
-        <Para>Esse texto é só pra você, professora. Que já passou por noites planejando aula sem saber se o material vai funcionar, que já chorou no recreio porque um aluno autista travou e você não sabia o que fazer, que já comprou apostila do próprio bolso porque a escola não tem.</Para>
+        <Para>Sou a Miriam, 42 anos, professora de educação especial há 18.</Para>
 
-        <Para>Eu sou a Miriam, 42 anos, professora de educação especial há 18. Vou te contar uma coisa que mudou minha trajetória profissional nos últimos dois anos.</Para>
+        <Para>Em 2022, eu tinha 9 alunos autistas divididos em 4 turmas. Eram turmas bem montadas, eu dava o meu melhor. Hoje, em 2026, atendo 37 crianças no espectro.</Para>
 
-        <Para>Em 2024, eu tinha <strong>9 alunos autistas divididos em 4 turmas</strong>. Era uma turma bem montada, eu dava o meu melhor, mas a gente sabe como é: faltava tempo pra entender cada criança a fundo, faltava material adequado, faltava ferramenta. Eu fazia o que dava, e me sentia constantemente devendo pra eles.</Para>
-
-        <Para>Hoje, fim de 2026, atendo <strong>37 crianças no espectro</strong>. Não foi porque a escola cresceu — é porque <strong>os próprios pais começaram a procurar a escola pedindo pra que o filho fosse pra minha turma</strong>. E pais conversam entre si. Quando viram resultado nos filhos um do outro, a fila virou bola de neve.</Para>
-
-        <Para>O que mudou em dois anos? Eu encontrei uma ferramenta que me deu o que eu não tinha: <strong>tempo, clareza e profundidade pra trabalhar cada criança como ela merece</strong>. Vou te contar tudo.</Para>
+        <Para>Esse texto é pra dividir com vocês um pouco do que mudou no caminho, principalmente sobre o material que eu uso em sala. Porque eu já passei muito tempo baixando PDF aleatório da internet, plastificando recorte de revista, comprando apostila no fim do mês. Hoje eu trabalho diferente. Vale a conversa.</Para>
 
         <H2>Fazer o básico não é mais o suficiente</H2>
 
@@ -195,19 +191,19 @@ export default function PageClient() {
 
         <Para>É por isso que os pais viraram meus aliados. <strong>Eles me indicam pra outros pais.</strong> Não porque eu sou genial — porque eu tenho informação real sobre cada filho deles. E informação é o que muda uma criança de lugar.</Para>
 
-        <H2>Pra você que tá lendo agora</H2>
+        <H2>Por que tô compartilhando isso</H2>
 
-        <Para>Se você é professora e tá lendo isso, eu sei o que tá passando pela sua cabeça: <em>"Será que serve pra mim?"</em>. Eu te respondo: serve sim, e funciona melhor quanto mais alunos autistas você tiver — porque a personalização individual é onde o app brilha.</Para>
+        <Para>Sei que professora de educação especial é resistente a indicação de app — porque a gente já testou muita coisa que prometia e entregou pouco. Eu também era assim. Só comecei a usar porque foi indicação de colega que confio.</Para>
 
-        <Para>Você pode cadastrar todos os seus alunos no mesmo app, gerir o histórico de cada um, imprimir o material da semana de uma vez, e acompanhar a evolução pelo painel. <strong>É o assistente pedagógico que eu queria ter tido nos meus primeiros 17 anos de carreira.</strong></Para>
+        <Para>Se você cuida de crianças no espectro e ainda está só com PDF da internet, vale dar uma olhada. Não é mágica, mas economiza horas de planejamento e dá clareza sobre cada criança.</Para>
 
         <div style={{ background: ORANGE, color: '#fff', borderRadius: 16, padding: 40, marginTop: 50, textAlign: 'center' }}>
           <Sparkles size={32} color="#fff" style={{ margin: '0 auto 12px', display: 'block' }} />
           <h3 style={{ fontSize: 24, fontWeight: 800, margin: '0 0 14px', letterSpacing: '-0.02em', lineHeight: 1.25 }}>
-            Conheça o GeniousTea
+            Quer dar uma olhada?
           </h3>
           <p style={{ fontSize: 15, opacity: 0.95, lineHeight: 1.6, margin: '0 0 26px', maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
-            App de atividades pedagógicas personalizadas para crianças no espectro. Cadastre seus alunos, acompanhe a evolução de cada um e tenha material pronto toda semana.
+            O site do GeniousTea. Você cria conta, cadastra seus alunos e o app monta o material. Sem cartão de crédito.
           </p>
           <a href={LINK_APP} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#fff', color: ORANGE_DARK, padding: '15px 36px', borderRadius: 10, textDecoration: 'none', fontWeight: 800, fontSize: 15, letterSpacing: '-0.01em' }}>
             Quero testar com meus alunos →
@@ -217,11 +213,7 @@ export default function PageClient() {
 
         <H2>Pra fechar</H2>
 
-        <Para>Eu sei que a gente, professora de educação especial, é resistente a "mais um app" — porque já tentou muita coisa que prometia o mundo e entregou pouco. Eu também era assim. Só testei o <Link>GeniousTea</Link> porque foi indicação de uma colega que eu confio.</Para>
-
-        <Para>Hoje eu indico ele de coração pras minhas colegas. Não porque é perfeito — porque me devolveu a alegria de ensinar sem me esgotar. E eu vejo nas crianças o resultado disso semana após semana.</Para>
-
-        <Para>Se você quiser conversar, me chama nos comentários ou no Instagram. Adoro trocar com outras professoras.</Para>
+        <Para>Se você quiser trocar uma ideia sobre como você trabalha com seus alunos autistas, me chama nos comentários ou no Instagram. Adoro conversar com outras professoras.</Para>
 
         <Para><em>Com carinho,<br/>Miriam.</em></Para>
 
