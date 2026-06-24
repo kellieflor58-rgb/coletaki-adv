@@ -119,7 +119,15 @@ export default function PageClient() {
         <img src={FOTO_APP} alt="Painel do GeniousTea com os alunos cadastrados" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
         <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>O painel dos meus 9 alunos cadastrados, cada um com seu perfil individual.</p>
 
-        <H2>Como funciona no meu dia a dia</H2>
+        <H2>Organizo minhas 4 turmas dentro do app</H2>
+
+        <Para>Antes de mostrar a rotina, deixa eu te explicar como organizo tudo no <Link>GeniousTea</Link>: dentro do app eu cadastrei minhas <strong>4 turmas com nome próprio</strong> — "Turma das Estrelas" (manhã, fundamental I), "Turma do Sol" (tarde, alfabetização), "Turma da Lua" (manhã, pré-escola) e "Turma Arco-Íris" (turma de inclusão multisseriada).</Para>
+
+        <Para>Dentro de cada turma, eu adiciono os alunos: nome, idade, gênero, nível de suporte (1, 2 ou 3) e as áreas que cada criança precisa desenvolver. Cada um tem o <strong>seu perfil individual</strong>, separado dos outros, com histórico próprio e trilha personalizada. Não se mistura.</Para>
+
+        <Para>Eu posso entrar na Turma das Estrelas e ver só os alunos dela. Posso filtrar por nível de suporte. Posso ver evolução individual ou em grupo. <strong>Pra quem atende várias turmas ao mesmo tempo, isso é o que faltava.</strong> Eu nunca mais precisei abrir caderninho ou planilha do Excel pra organizar quem é quem.</Para>
+
+                <H2>Como funciona no meu dia a dia</H2>
 
         <Para>De manhã, antes da aula, eu abro o app e vejo a trilha de cada aluno pro dia. Imprimo o PDF da atividade individual de cada um. <strong>Não preciso mais sentar pra planejar de zero</strong> — o app já considerou o desempenho da semana passada e propôs o próximo passo.</Para>
 
