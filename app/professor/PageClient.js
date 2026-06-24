@@ -13,7 +13,7 @@ const LINE = '#FFE5D4';
 const PAPER_WARM = '#FFFBF7';
 
 const FOTO_MIRIAM = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face';
-const FOTO_SALA = 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&h=600&fit=crop';
+const FOTO_SALA = '/atividade-pdf-x.jpg';
 const FOTO_ATIVIDADE = 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&h=600&fit=crop';
 const FOTO_APP = 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=900&h=600&fit=crop';
 const LINK_APP = 'https://genioustea.com';
@@ -84,7 +84,7 @@ export default function PageClient() {
         </p>
 
         <img src={FOTO_SALA} alt="Sala de aula com material pedagógico" style={{ width: '100%', height: 380, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>Uma manhã típica na minha sala. Cada criança fazendo a sua atividade — todas diferentes.</p>
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>É exatamente esse tipo de PDF genérico que eu parei de usar. Te explico por quê.</p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 50 }}>
           <img src={FOTO_MIRIAM} alt="Miriam Sales" style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', border: '3px solid ' + ORANGE }} />
