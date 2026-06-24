@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Heart, Sparkles, BookOpen, TrendingUp } from 'lucide-react';
+import { BookOpen, Sparkles, Printer, Users } from 'lucide-react';
 
 const ORANGE = '#FF6B35';
 const ORANGE_DARK = '#E5562C';
@@ -80,10 +80,10 @@ export default function PageClient() {
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, textAlign: 'center', maxWidth: 600, margin: '0 auto 36px' }}>
-          Professora de educação especial há 18 anos. Há dois anos eu tinha 9 alunos. Hoje tenho 37 — porque os próprios pais começaram a procurar por mim. Vou contar o que mudou, e o app que me deu o controle real do desenvolvimento de cada criança.
+          Sou professora de educação especial há 18 anos. Em 2022 eu atendia 9 alunos autistas em 4 turmas. Hoje atendo 37 — porque os pais pediram pra escola. Te conto o que mudou no meu trabalho, e a ferramenta que devolveu o tempo que eu não tinha.
         </p>
 
-        <img src={FOTO_SALA} alt="Sala de aula com material pedagógico" style={{ width: '100%', height: 380, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <img src={FOTO_SALA} alt="Atividade de PDF genérico marcado com X vermelho" style={{ width: '100%', height: 380, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
         <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 40, fontStyle: 'italic' }}>É exatamente esse tipo de PDF genérico que eu parei de usar. Te explico por quê.</p>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 50 }}>
@@ -98,100 +98,112 @@ export default function PageClient() {
 
         <Para>Sou a Miriam, 42 anos, professora de educação especial há 18.</Para>
 
-        <Para>Em 2022, eu tinha 9 alunos autistas divididos em 4 turmas. Eram turmas bem montadas, eu dava o meu melhor. Hoje, em 2026, atendo 37 crianças no espectro.</Para>
+        <Para>Em 2022, eu tinha 9 alunos autistas divididos em 4 turmas. Eram turmas bem montadas, eu dava o meu melhor. Hoje, em 2026, atendo 37 crianças no espectro. Não foi porque a escola cresceu — foi porque, nos últimos dois anos, eu mudei o jeito de trabalhar. E os pais começaram a perceber.</Para>
 
-        <Para>Esse texto é pra dividir com vocês um pouco do que mudou no caminho, principalmente sobre o material que eu uso em sala. Porque eu já passei muito tempo baixando PDF aleatório da internet, plastificando recorte de revista, comprando apostila no fim do mês. Hoje eu trabalho diferente. Vale a conversa.</Para>
+        <Para>Quero te contar o que mudou. Não vou romantizar, não vou vender mágica. Vou falar como uma colega que já passou por onde você provavelmente está agora.</Para>
 
-        <H2>Fazer o básico não é mais o suficiente</H2>
+        <H2>A dor que eu carregava — e que você talvez também carregue</H2>
 
-        <Para>A verdade é dura, mas precisa ser dita: <strong>professora de educação especial que só faz o básico — apostila padrão, recorta-cola, atividade genérica — não tá agregando o que essas crianças precisam.</strong> Cada criança no espectro tem um caminho único de desenvolvimento. Tratar todas igual é, no fundo, deixar de tratar.</Para>
+        <Para>Por 16 anos eu fiz o que era possível com o que tinha. Apostila padrão da rede pública. Atividade de pintar e ligar. PDF do Pinterest. Recorte de revista plastificado. Material avulso comprado do meu próprio bolso no fim do mês. <strong>Aquilo me consumia.</strong></Para>
 
-        <Para>Em 2024, eu tinha 9 alunos com 9 diagnósticos diferentes. Davi de 7 anos, nível 2, ainda não verbalizava. Helena de 6, nível 1, em alfabetização. Caio de 9, nível 2, fixação em números. Manu de 5, nível 1, dificuldade motora. E mais cinco. <strong>Cada um precisava de um caminho diferente</strong> — e eu não tinha como entregar isso sozinha.</Para>
+        <Para>Eu chegava em casa às sete da noite e ainda passava mais três horas planejando aula. No fim de semana inteiro, mais oito horas. E quando segunda-feira chegava, eu não tinha certeza se o material ia <em>realmente</em> servir pra cada aluno — porque cada um deles é um universo. <strong>Eu trabalhava muito e dormia mal, com a sensação constante de estar devendo.</strong></Para>
 
-        <Para>Aí você abre a apostila padrão da rede e percebe: <em>"isso não vai servir pra nenhum deles"</em>. Começa a recortar, adaptar, imprimir extra, plastificar. Gasta o fim de semana inteiro. E na hora da aula o Davi não engata, o Caio terminou em 5 minutos e quer mais, e a Manu não conseguiu nem segurar o lápis. A gente sente que tá fazendo o máximo, mas sabe que não tá entregando o que cada um precisa. <strong>Não é falta de empenho. É falta de ferramenta.</strong></Para>
+        <Para>E o pior não era o cansaço meu. Era o que isso causava nas crianças. <strong>Quando você entrega material genérico pra uma criança autista, ela não engata.</strong> O Davi, de 7 anos, ficava 5 minutos olhando pro papel sem entender o que era pra fazer. A Helena terminava em meio minuto e travava sem ter pra onde ir. O Caio resistia, se irritava, jogava o lápis no chão. A Manu nem segurava o lápis direito.</Para>
 
-        <H2>Como o GeniousTea entrou na minha rotina</H2>
+        <Para>Eu via aqueles olhinhos esperando de mim algo que servisse. <strong>E eu não tinha como entregar.</strong> Não por falta de empenho. Por falta de ferramenta.</Para>
 
-        <Para>Uma colega minha, a Renata, me indicou o <Link>GeniousTea</Link>. Ela disse que era um app pensado especificamente pra <strong>professoras de educação especial</strong>, com material adaptado pra crianças no espectro. Achei mais um app — mas decidi testar primeiro com minha filha em casa antes de levar pra sala.</Para>
+        <H2>O que ninguém te conta sobre fazer "o básico"</H2>
 
-        <Para>Em dois dias eu já sabia que ia adotar com a turma. Cadastrei meus 9 alunos no app, um por um. Pra cada criança preencho <strong>idade, gênero, nível de suporte (1, 2 ou 3), e em quais áreas ela precisa evoluir</strong> — matemática, alfabetização, leitura, escrita, comunicação, comportamento, rotina. O app monta um caminho personalizado pra cada perfil.</Para>
+        <Para>Tem uma verdade incômoda que poucas pessoas dizem em alto e bom som: <strong>professora de educação especial que só faz o básico não está agregando o que essas crianças precisam.</strong> O básico — apostila padrão, atividade igual pra todo mundo, planejamento improvisado — pode até ocupar o tempo de aula, mas não desenvolve.</Para>
 
-        <img src={FOTO_APP} alt="Painel do GeniousTea com os alunos cadastrados" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>O painel dos meus 9 alunos cadastrados, cada um com seu perfil individual.</p>
+        <Para>A criança autista não precisa de qualquer atividade. Ela precisa da atividade <strong>certa</strong>, no <strong>nível certo</strong>, no <strong>momento certo</strong>. Tem que estimular sem sobrecarregar. Tem que desafiar sem frustrar. Tem que vir na linguagem que aquela criança específica entende — visual, auditiva, motora, lúdica. <strong>Cada perfil é único, e o material precisa acompanhar isso.</strong></Para>
 
-        <H2>Organizo minhas 4 turmas dentro do app</H2>
+        <Para>Quando eu tratava todos meus 9 alunos do mesmo jeito, eu estava, na prática, deixando de tratar. Aquilo me machucava como profissional e como ser humano. Mas eu não sabia outra forma.</Para>
 
-        <Para>Antes de mostrar a rotina, deixa eu te explicar como organizo tudo no <Link>GeniousTea</Link>: dentro do app eu cadastrei minhas <strong>4 turmas com nome próprio</strong> — "Turma das Estrelas" (manhã, fundamental I), "Turma do Sol" (tarde, alfabetização), "Turma da Lua" (manhã, pré-escola) e "Turma Arco-Íris" (turma de inclusão multisseriada).</Para>
+        <H2>O que mudou foi ter uma ferramenta de verdade</H2>
 
-        <Para>Dentro de cada turma, eu adiciono os alunos: nome, idade, gênero, nível de suporte (1, 2 ou 3) e as áreas que cada criança precisa desenvolver. Cada um tem o <strong>seu perfil individual</strong>, separado dos outros, com histórico próprio e trilha personalizada. Não se mistura.</Para>
+        <Para>Uma colega da escola, a Renata, me indicou o <Link>GeniousTea</Link>. Foi com desconfiança que eu testei. Já tinha visto tanta promessa furada que minha primeira reação foi <em>"mais um app".</em> Mas usei por uma semana, e em sete dias entendi que tinha encontrado o que faltava na minha rotina.</Para>
 
-        <Para>Eu posso entrar na Turma das Estrelas e ver só os alunos dela. Posso filtrar por nível de suporte. Posso ver evolução individual ou em grupo. <strong>Pra quem atende várias turmas ao mesmo tempo, isso é o que faltava.</strong> Eu nunca mais precisei abrir caderninho ou planilha do Excel pra organizar quem é quem.</Para>
+        <Para>O GeniousTea foi <strong>desenvolvido com base científica</strong> — tem fonoaudiólogas, psicopedagogas e terapeutas ocupacionais por trás da criação dos materiais. Não é um app feito por programador que viu nicho. As atividades têm propósito pedagógico claro, com progressão de dificuldade pensada pra estimular a <strong>neuroplasticidade cerebral</strong> de criança no espectro. Cada coisa ali tem razão de ser.</Para>
 
-                <H2>Como funciona no meu dia a dia</H2>
+        <H2>Como eu organizo minhas 4 turmas dentro do app</H2>
 
-        <Para>De manhã, antes da aula, eu abro o app e vejo a trilha de cada aluno pro dia. Imprimo o PDF da atividade individual de cada um. <strong>Não preciso mais sentar pra planejar de zero</strong> — o app já considerou o desempenho da semana passada e propôs o próximo passo.</Para>
+        <Para>A primeira coisa que fiz foi cadastrar minhas turmas, cada uma com nome próprio: "Turma das Estrelas" (fundamental I da manhã), "Turma do Sol" (alfabetização da tarde), "Turma da Lua" (pré-escola da manhã) e "Turma Arco-Íris" (turma de inclusão multisseriada).</Para>
 
-        <Para>Quando chego em sala, distribuo: o Davi recebe atividade de pareamento visual (figura com figura). A Helena recebe sílabas. O Caio recebe sequência numérica até 50. A Manu recebe atividade motora com pontilhado. Tudo personalizado, tudo no nível certo de cada um.</Para>
+        <Para>Dentro de cada turma, eu cadastro os alunos um por um. Pra cada aluno preencho <strong>nome, idade, gênero, nível de suporte (1, 2 ou 3), áreas que precisam ser trabalhadas</strong> (matemática, alfabetização, leitura, escrita, comunicação, comportamento, motricidade) e o estágio atual em cada uma. <strong>Cada criança tem perfil individual, separado dos outros, com histórico próprio.</strong> Não se mistura.</Para>
 
-        <Para>E aqui vem a parte que eu mais gosto: <strong>se uma criança não reage à atividade, eu não fico travada</strong>. Entro no app, ajusto o nível pra baixo no perfil dela, e o app já me devolve uma atividade mais simples — algo que ela consiga fazer pra retomar a confiança. Depois vai subindo aos poucos, conforme ela responde. Isso é o que estimula a <strong>neuroplasticidade</strong> — pequenos desafios sucessivos no ritmo certo.</Para>
+        <Para>Pra quem atende várias turmas como eu, isso é libertador. Eu entro na Turma das Estrelas e vejo só os alunos dela. Filtro por nível de suporte. Comparo evolução entre crianças com perfil parecido. <strong>Nunca mais precisei abrir caderninho ou planilha do Excel pra lembrar quem é quem.</strong></Para>
 
-        <H2>O histórico de cada aluno</H2>
+        <H2>O que o app faz que economiza minhas horas de planejamento</H2>
 
-        <Para>Pra mim, isso aqui é ouro: o app guarda o <strong>histórico completo de cada criança</strong>. Quando ela começou, em que nível estava, quanto tempo levou pra dominar cada habilidade, em que área ela tá mais forte, em que área tá travando.</Para>
+        <img src={FOTO_APP} alt="Tela do app GeniousTea" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>O painel onde gerencio meus 37 alunos divididos por turma.</p>
 
-        <Para>Hoje eu sei, sem precisar consultar caderninho, que:</Para>
+        <Para>Aqui vem a parte que mudou minha vida prática: o app <strong>gera as atividades automaticamente</strong> pra cada perfil cadastrado. Não preciso mais procurar, garimpar, baixar, adaptar. Eu abro o app, escolho o aluno, escolho a área que quero trabalhar — e o sistema me devolve um material personalizado, no nível certo, com base no histórico de evolução daquela criança.</Para>
+
+        <Para>E o melhor de tudo: <strong>cada atividade vem em PDF pronto pra imprimir, com um único clique.</strong> Cliquei, abriu o PDF, mandei pra impressora. Em segundos tenho o material individual de cada aluno da semana inteira na minha mão.</Para>
+
+        <Para>Faz a conta comigo: antes eu gastava 12 horas por semana entre planejamento, busca de material e adaptação. <strong>Hoje gasto 40 minutos.</strong> O resto do tempo eu uso pra observar mais cada criança em sala, conversar com os pais, descansar, viver. E o resultado pedagógico melhorou — não piorou.</Para>
+
+        <H2>Como funciona no meu dia a dia</H2>
+
+        <Para>Toda segunda de manhã eu abro o app, vejo a trilha sugerida pra cada aluno baseada no desempenho da semana anterior, e mando imprimir. <strong>Em 15 minutos eu tenho 37 atividades individuais prontas pra semana.</strong></Para>
+
+        <Para>Em sala, distribuo: o Davi recebe atividade de pareamento visual (figura com figura). A Helena recebe um exercício de sílabas. O Caio recebe sequência numérica. A Manu recebe atividade motora com pontilhado. Cada um faz exatamente o que precisa fazer naquele momento.</Para>
+
+        <Para>E aqui vem a função que mais usei nos últimos meses: <strong>se uma criança não responde à atividade, eu não fico travada</strong>. Entro no perfil dela no app, ajusto o nível pra baixo, e o sistema me devolve uma versão mais simples — algo que ela consiga fazer pra retomar a confiança. Conforme ela responde, o nível sobe automaticamente. <strong>Isso é o que estimula a neuroplasticidade: pequenos desafios sucessivos, no ritmo de cada criança.</strong></Para>
+
+        <H2>O histórico que me dá clareza real sobre cada criança</H2>
+
+        <Para>Pra mim, isso aqui é ouro. O app guarda o histórico completo de cada aluno — quando começou, em que nível estava, quanto tempo levou pra dominar cada habilidade, em que área avança rápido, em que área trava.</Para>
+
+        <Para>Hoje eu sei, sem precisar consultar nada:</Para>
 
         <Para>
-          <strong style={{ color: ORANGE_DARK }}>·</strong> O Davi avança rápido em pareamento visual mas trava em sequência. Estimulo mais visual com ele.<br/>
+          <strong style={{ color: ORANGE_DARK }}>·</strong> O Davi avança rápido em pareamento visual e trava em sequência. Estimulo mais visual com ele.<br/>
           <strong style={{ color: ORANGE_DARK }}>·</strong> A Helena ama jogos de letra e som. Por ali ela aprende qualquer coisa.<br/>
           <strong style={{ color: ORANGE_DARK }}>·</strong> O Caio é um gênio em matemática mas resiste à escrita. Uso números pra introduzir letras.<br/>
           <strong style={{ color: ORANGE_DARK }}>·</strong> A Manu ainda tá no motor fino, mas avançou muito em 4 meses.
         </Para>
 
-        <Para>Essa clareza dos <strong>pontos fortes e pontos a desenvolver</strong> de cada criança eu nunca tive antes. Tava sempre na cabeça, sempre achando que ia esquecer. Agora tá registrado, organizado, com gráfico de evolução.</Para>
+        <Para>Essa clareza sobre <strong>pontos fortes e pontos a desenvolver</strong> de cada criança é o tipo de informação que toda professora de inclusão precisa ter — e dificilmente consegue construir só com caderno e memória. O app organiza isso pra mim. Em qualquer momento eu abro e vejo.</Para>
 
-        <H2>Conduzindo o estímulo certo, no momento certo</H2>
+        <H2>Eu enxergo cada criança como ela é — e mostro isso pros pais</H2>
 
-        <img src={FOTO_ATIVIDADE} alt="Material em PDF impresso pra cada aluno" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
-        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>As atividades impressas que eu separo por aluno no início da semana.</p>
+        <Para>O ganho que ninguém me tinha contado antes: <strong>com o histórico organizado, eu consigo dar feedback de verdade pros pais</strong>. Não aquela conversa genérica de "tá indo bem". Eu sento com a família e digo:</Para>
 
-        <Para>O <Link>GeniousTea</Link> foi <strong>desenvolvido com base em estudos científicos</strong> sobre desenvolvimento infantil e intervenção pedagógica em crianças com TEA. Tem fonoaudióloga, psicopedagoga e terapeuta ocupacional na construção dos materiais. Dá pra sentir quando você usa — cada atividade tem propósito pedagógico claro, não é só "pintar o desenho".</Para>
+        <Para><em>"Olha, o Davi tá demonstrando muita reação a estímulo sonoro. Responde a música, bate o pé no ritmo, sorri quando ouve melodia. Pode ser uma porta de entrada importante. Tenta colocar música em casa nos momentos de tensão, vê se ajuda na regulação. E se tiverem como, vale pensar em musicalização."</em></Para>
 
-        <Para>Em sala, isso vira poder. Quando o Caio termina rápido e quer mais, eu já tenho a próxima atividade pronta — no nível dele, na área dele. Quando a Manu trava, eu ajusto o nível e ela continua. Quando o Davi responde positivamente a algo novo, eu marco no app e o sistema entende esse padrão pra propor mais coisas parecidas.</Para>
+        <Para>Esse tipo de observação muda o jogo. Os pais saem da reunião com uma direção concreta — não com uma frase vaga. Eles entendem que o filho tem inclinações, força, caminho. E podem continuar o trabalho em casa. <strong>O desenvolvimento de uma criança autista não para no portão da escola — começa lá e continua em casa.</strong></Para>
 
-        <Para>Eu deixei de ser uma professora que <em>tenta</em> e passei a ser uma professora que <strong>conduz com intenção</strong>.</Para>
+        <Para>Pra Helena, indiquei leitura de história antes de dormir, virou rotina. Pro Caio, mostrei que ele tinha fascínio por números e a mãe começou a usar isso no supermercado. Pra Manu, sugeri massinha como exercício de motricidade caseiro.</Para>
+
+        <Para>É por isso que os pais viraram meus aliados. Eles começaram a indicar a escola pra outros pais. <strong>Não porque eu sou genial — porque eu tenho informação real sobre cada filho deles.</strong> E informação muda uma criança de lugar.</Para>
 
         <H2>O que mudou nos meus alunos em 6 meses</H2>
 
-        <Para>Não vou dar dado bonito, vou contar o que eu vi:</Para>
+        <img src={FOTO_ATIVIDADE} alt="Material em PDF separado por aluno" style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
+        <p style={{ fontSize: 12, color: INK_MUTE, textAlign: 'center', marginBottom: 30, fontStyle: 'italic' }}>Os materiais individuais que separo por aluno no início da semana — todos vindos do app.</p>
 
-        <Para>O Davi, que não verbalizava nada, hoje aponta pra figura quando eu pergunto. Foi sutil, mas pra quem trabalha com TEA sabe que é gigante.</Para>
+        <Para>Não vou dar número bonito, vou contar o que vi:</Para>
+
+        <Para>O Davi, que não verbalizava, hoje aponta pra figura quando eu pergunto. Pra quem trabalha com TEA sabe que é avanço gigante.</Para>
 
         <Para>A Helena tá lendo palavrinha de 3 sílabas. No início era impossível mantê-la em atividade por mais de 2 minutos.</Para>
 
         <Para>O Caio aceitou fazer escrita pela primeira vez em janeiro — porque a atividade veio amarrada num problema de matemática.</Para>
 
-        <Para>A Manu segura o lápis sozinha agora. Antes precisava de minha mão por cima.</Para>
+        <Para>A Manu segura o lápis sozinha agora. Antes precisava da minha mão por cima.</Para>
 
-        <Para>E o mais importante: <strong>eu não tô mais esgotada no domingo</strong>. Meu planejamento da semana toda demora 40 minutos no app. Antes era 4 horas no fim de semana e mais 1 hora todas as noites.</Para>
-
-        <H2>Eu enxergo cada criança como ela é — e mostro isso pros pais</H2>
-
-        <Para>Esse pra mim é o ganho que ninguém me contou antes: <strong>com o histórico de cada aluno organizado no app, eu finalmente consigo dar feedback de verdade pros pais</strong>. Não aquela conversa genérica de "tá indo bem, evoluindo aos pouquinhos". Eu sento com a família e digo:</Para>
-
-        <Para><em>"Olha, o Davi tá demonstrando muita reação a estímulo sonoro. Ele responde a música, bate o pé no ritmo, sorri quando ouve melodia. Pode ser uma porta de entrada importante. Tenta colocar música em casa nos momentos de tensão, vê se ajuda na regulação. E se tiverem como, vale pensar em musicalização."</em></Para>
-
-        <Para>Esse tipo de observação <strong>muda tudo</strong>. Os pais saem da reunião com uma direção concreta — não com uma frase vaga. Eles entendem que o filho deles tem inclinações, tem força, tem caminho. E eles podem incentivar isso em casa. <strong>O desenvolvimento de uma criança autista não para no portão da escola</strong> — começa lá e continua em casa.</Para>
-
-        <Para>Pra Helena, eu indiquei que ela respondia muito bem a leitura de história antes de dormir — virou rotina na casa dela. Pro Caio, mostrei que ele tinha fascínio por números e a mãe começou a usar isso no supermercado. Pra Manu, a fisioterapia caseira com massinha trouxe avanço incrível na motricidade.</Para>
-
-        <Para>É por isso que os pais viraram meus aliados. <strong>Eles me indicam pra outros pais.</strong> Não porque eu sou genial — porque eu tenho informação real sobre cada filho deles. E informação é o que muda uma criança de lugar.</Para>
+        <Para>E o mais importante pra mim: <strong>eu não tô mais esgotada</strong>. Eu durmo. Tenho tempo pra família. Pro meu próprio descanso. E ensino melhor que nunca.</Para>
 
         <H2>Por que tô compartilhando isso</H2>
 
-        <Para>Sei que professora de educação especial é resistente a indicação de app — porque a gente já testou muita coisa que prometia e entregou pouco. Eu também era assim. Só comecei a usar porque foi indicação de colega que confio.</Para>
+        <Para>Não escrevi esse texto porque alguém me pediu. Escrevi porque, em 18 anos de profissão, nunca tive uma ferramenta que me deixasse trabalhar com a dignidade que essas crianças merecem. Tive que descobrir tarde demais — e isso me incomoda.</Para>
 
-        <Para>Se você cuida de crianças no espectro e ainda está só com PDF da internet, vale dar uma olhada. Não é mágica, mas economiza horas de planejamento e dá clareza sobre cada criança.</Para>
+        <Para>Se você cuida de criança no espectro autista e ainda tá apenas com PDF da internet e apostila padrão, eu te peço uma coisa: <strong>dá uma olhada</strong>. Não custa nada criar conta no <Link>GeniousTea</Link>. Cadastra um aluno, gera uma atividade, imprime. Vê na prática se faz sentido pra sua realidade.</Para>
+
+        <Para>Não é mágica. Não substitui sua experiência, seu vínculo com a criança, sua intuição de educadora. Mas <strong>te devolve o tempo</strong> que você não tem — e te dá a profundidade que sua sala precisa.</Para>
 
         <div style={{ background: ORANGE, color: '#fff', borderRadius: 16, padding: 40, marginTop: 50, textAlign: 'center' }}>
           <Sparkles size={32} color="#fff" style={{ margin: '0 auto 12px', display: 'block' }} />
@@ -199,12 +211,12 @@ export default function PageClient() {
             Quer dar uma olhada?
           </h3>
           <p style={{ fontSize: 15, opacity: 0.95, lineHeight: 1.6, margin: '0 0 26px', maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
-            O site do GeniousTea. Você cria conta, cadastra seus alunos e o app monta o material. Sem cartão de crédito.
+            Cria sua conta, cadastra seus alunos, gera as atividades. Sem cartão de crédito. Sem prazo de teste.
           </p>
           <a href={LINK_APP} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#fff', color: ORANGE_DARK, padding: '15px 36px', borderRadius: 10, textDecoration: 'none', fontWeight: 800, fontSize: 15, letterSpacing: '-0.01em' }}>
-            Quero testar com meus alunos →
+            Conhecer o GeniousTea →
           </a>
-          <div style={{ fontSize: 11, opacity: 0.85, marginTop: 18 }}>cadastro grátis · materiais imediatos · base científica</div>
+          <div style={{ fontSize: 11, opacity: 0.85, marginTop: 18 }}>cadastro grátis · atividades em PDF · base científica</div>
         </div>
 
         <H2>Pra fechar</H2>
