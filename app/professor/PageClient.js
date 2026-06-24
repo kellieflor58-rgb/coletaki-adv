@@ -179,18 +179,6 @@ export default function PageClient() {
 
         <Para>É por isso que os pais viraram meus aliados. <strong>Eles me indicam pra outros pais.</strong> Não porque eu sou genial — porque eu tenho informação real sobre cada filho deles. E informação é o que muda uma criança de lugar.</Para>
 
-        <H2>Eu enxergo cada criança como ela é — e mostro isso pros pais</H2>
-
-        <Para>Esse pra mim é o ganho que ninguém me contou antes: <strong>com o histórico de cada aluno organizado no app, eu finalmente consigo dar feedback de verdade pros pais</strong>. Não aquela conversa genérica de "tá indo bem, evoluindo aos pouquinhos". Eu sento com a família e digo:</Para>
-
-        <Para><em>"Olha, o Davi tá demonstrando muita reação a estímulo sonoro. Ele responde a música, bate o pé no ritmo, sorri quando ouve melodia. Pode ser uma porta de entrada importante. Tenta colocar música em casa nos momentos de tensão, vê se ajuda na regulação. E se tiverem como, vale pensar em musicalização."</em></Para>
-
-        <Para>Esse tipo de observação <strong>muda tudo</strong>. Os pais saem da reunião com uma direção concreta — não com uma frase vaga. Eles entendem que o filho deles tem inclinações, tem força, tem caminho. E eles podem incentivar isso em casa. <strong>O desenvolvimento de uma criança autista não para no portão da escola</strong> — começa lá e continua em casa.</Para>
-
-        <Para>Pra Helena, eu indiquei que ela respondia muito bem a leitura de história antes de dormir — virou rotina na casa dela. Pro Caio, mostrei que ele tinha fascínio por números e a mãe começou a usar isso no supermercado. Pra Manu, a fisioterapia caseira com massinha trouxe avanço incrível na motricidade.</Para>
-
-        <Para>É por isso que os pais viraram meus aliados. <strong>Eles me indicam pra outros pais.</strong> Não porque eu sou genial — porque eu tenho informação real sobre cada filho deles. E informação é o que muda uma criança de lugar.</Para>
-
         <H2>Por que tô compartilhando isso</H2>
 
         <Para>Sei que professora de educação especial é resistente a indicação de app — porque a gente já testou muita coisa que prometia e entregou pouco. Eu também era assim. Só comecei a usar porque foi indicação de colega que confio.</Para>
