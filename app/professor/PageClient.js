@@ -76,11 +76,11 @@ export default function PageClient() {
         </div>
 
         <h1 style={{ fontSize: 44, fontWeight: 800, color: INK, letterSpacing: '-0.025em', lineHeight: 1.1, textAlign: 'center', marginBottom: 24 }} className="h1-main">
-          Como eu atendo <span style={{ color: ORANGE }}>9 alunos autistas</span> em sala, com perfil individual de cada um
+          Como eu atendo <span style={{ color: ORANGE }}>37 alunos autistas</span>, com plano individual pra cada um — e ainda entrego algo além da aula
         </h1>
 
         <p style={{ fontSize: 19, color: INK_SOFT, lineHeight: 1.6, textAlign: 'center', maxWidth: 600, margin: '0 auto 36px' }}>
-          Professora de educação especial há 18 anos. Vou contar como o app que eu uso me ajuda a personalizar atividade pra cada aluno, registrar histórico de evolução e ajustar o nível em tempo real conforme o desempenho de cada criança.
+          Professora de educação especial há 18 anos. Há dois anos eu tinha 9 alunos. Hoje tenho 37 — porque os próprios pais começaram a procurar por mim. Vou contar o que mudou, e o app que me deu o controle real do desenvolvimento de cada criança.
         </p>
 
         <img src={FOTO_SALA} alt="Sala de aula com material pedagógico" style={{ width: '100%', height: 380, objectFit: 'cover', borderRadius: 14, marginBottom: 12 }} />
@@ -98,17 +98,21 @@ export default function PageClient() {
 
         <Para>Esse texto é só pra você, professora. Que já passou por noites planejando aula sem saber se o material vai funcionar, que já chorou no recreio porque um aluno autista travou e você não sabia o que fazer, que já comprou apostila do próprio bolso porque a escola não tem.</Para>
 
-        <Para>Eu sou a Miriam, 42 anos, professora de educação especial há 18. Hoje atendo <strong>9 crianças no espectro autista</strong> na minha turma da APAE. Cada uma com um diagnóstico diferente, idade diferente, nível de suporte diferente, fase de aprendizagem diferente. Por anos eu fiz milagre com pouco — adaptava cartilha, recortava revista, baixava PDF aleatório da internet.</Para>
+        <Para>Eu sou a Miriam, 42 anos, professora de educação especial há 18. Vou te contar uma coisa que mudou minha trajetória profissional nos últimos dois anos.</Para>
 
-        <Para>Há um ano comecei a usar um app que mudou minha rotina de planejamento e o desempenho dos meus alunos. Vou te contar tudo: como funciona, por que funciona, e como eu uso hoje.</Para>
+        <Para>Em 2024, eu tinha <strong>9 alunos autistas</strong> na minha turma. Era uma turma bem montada, eu dava o meu melhor, mas a gente sabe como é: faltava tempo pra entender cada criança a fundo, faltava material adequado, faltava ferramenta. Eu fazia o que dava, e me sentia constantemente devendo pra eles.</Para>
 
-        <H2>O problema que toda professora de inclusão conhece</H2>
+        <Para>Hoje, fim de 2026, atendo <strong>37 crianças no espectro</strong>. Não foi porque a escola cresceu — é porque <strong>os próprios pais começaram a procurar a escola pedindo pra que o filho fosse pra minha turma</strong>. E pais conversam entre si. Quando viram resultado nos filhos um do outro, a fila virou bola de neve.</Para>
 
-        <Para>Você tem o Davi de 7 anos, nível 2, ainda não verbaliza. Tem a Helena de 6, nível 1, alfabetizando. Tem o Caio de 9, nível 2, fixação em números. Tem a Manu de 5, nível 1, dificuldade motora. E mais cinco. <strong>Cada um precisa de um caminho diferente.</strong></Para>
+        <Para>O que mudou em dois anos? Eu encontrei uma ferramenta que me deu o que eu não tinha: <strong>tempo, clareza e profundidade pra trabalhar cada criança como ela merece</strong>. Vou te contar tudo.</Para>
 
-        <Para>Aí você abre a apostila padrão da rede e percebe: <em>"isso não vai servir pra nenhum deles".</em> Começa a recortar, adaptar, imprimir extra, plastificar. Gasta seu fim de semana inteiro. E na hora da aula, o Davi não engata, o Caio terminou em 5 minutos e quer mais, e a Manu não conseguiu nem segurar o lápis pra começar.</Para>
+        <H2>Fazer o básico não é mais o suficiente</H2>
 
-        <Para>A gente sente que tá fazendo o máximo, mas sabe que não tá conseguindo dar pra cada um o que cada um precisa. <strong>Não é falta de empenho. É falta de ferramenta.</strong></Para>
+        <Para>A verdade é dura, mas precisa ser dita: <strong>professora de educação especial que só faz o básico — apostila padrão, recorta-cola, atividade genérica — não tá agregando o que essas crianças precisam.</strong> Cada criança no espectro tem um caminho único de desenvolvimento. Tratar todas igual é, no fundo, deixar de tratar.</Para>
+
+        <Para>Em 2024, eu tinha 9 alunos com 9 diagnósticos diferentes. Davi de 7 anos, nível 2, ainda não verbalizava. Helena de 6, nível 1, em alfabetização. Caio de 9, nível 2, fixação em números. Manu de 5, nível 1, dificuldade motora. E mais cinco. <strong>Cada um precisava de um caminho diferente</strong> — e eu não tinha como entregar isso sozinha.</Para>
+
+        <Para>Aí você abre a apostila padrão da rede e percebe: <em>"isso não vai servir pra nenhum deles"</em>. Começa a recortar, adaptar, imprimir extra, plastificar. Gasta o fim de semana inteiro. E na hora da aula o Davi não engata, o Caio terminou em 5 minutos e quer mais, e a Manu não conseguiu nem segurar o lápis. A gente sente que tá fazendo o máximo, mas sabe que não tá entregando o que cada um precisa. <strong>Não é falta de empenho. É falta de ferramenta.</strong></Para>
 
         <H2>Como o GeniousTea entrou na minha rotina</H2>
 
@@ -166,6 +170,18 @@ export default function PageClient() {
         <Para>A Manu segura o lápis sozinha agora. Antes precisava de minha mão por cima.</Para>
 
         <Para>E o mais importante: <strong>eu não tô mais esgotada no domingo</strong>. Meu planejamento da semana toda demora 40 minutos no app. Antes era 4 horas no fim de semana e mais 1 hora todas as noites.</Para>
+
+        <H2>Eu enxergo cada criança como ela é — e mostro isso pros pais</H2>
+
+        <Para>Esse pra mim é o ganho que ninguém me contou antes: <strong>com o histórico de cada aluno organizado no app, eu finalmente consigo dar feedback de verdade pros pais</strong>. Não aquela conversa genérica de "tá indo bem, evoluindo aos pouquinhos". Eu sento com a família e digo:</Para>
+
+        <Para><em>"Olha, o Davi tá demonstrando muita reação a estímulo sonoro. Ele responde a música, bate o pé no ritmo, sorri quando ouve melodia. Pode ser uma porta de entrada importante. Tenta colocar música em casa nos momentos de tensão, vê se ajuda na regulação. E se tiverem como, vale pensar em musicalização."</em></Para>
+
+        <Para>Esse tipo de observação <strong>muda tudo</strong>. Os pais saem da reunião com uma direção concreta — não com uma frase vaga. Eles entendem que o filho deles tem inclinações, tem força, tem caminho. E eles podem incentivar isso em casa. <strong>O desenvolvimento de uma criança autista não para no portão da escola</strong> — começa lá e continua em casa.</Para>
+
+        <Para>Pra Helena, eu indiquei que ela respondia muito bem a leitura de história antes de dormir — virou rotina na casa dela. Pro Caio, mostrei que ele tinha fascínio por números e a mãe começou a usar isso no supermercado. Pra Manu, a fisioterapia caseira com massinha trouxe avanço incrível na motricidade.</Para>
+
+        <Para>É por isso que os pais viraram meus aliados. <strong>Eles me indicam pra outros pais.</strong> Não porque eu sou genial — porque eu tenho informação real sobre cada filho deles. E informação é o que muda uma criança de lugar.</Para>
 
         <H2>Pra você que tá lendo agora</H2>
 
