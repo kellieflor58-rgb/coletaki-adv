@@ -66,10 +66,10 @@ export default function Page() {
 
         {/* AUTOR */}
         <div style={{ display:'flex', alignItems:'center', gap:12, paddingBottom:20, borderBottom:'1px solid '+LINE, marginBottom:24, fontFamily:'Inter, sans-serif' }}>
-          <img src={FOTO_AUTOR} alt="Mariana Soares" style={{ width:44, height:44, borderRadius:'50%', objectFit:'cover' }} />
+          <img src={FOTO_AUTOR} alt="Mariano Soares" style={{ width:44, height:44, borderRadius:'50%', objectFit:'cover' }} />
           <div>
-            <div style={{ fontSize:14, fontWeight:700, color:INK }}>Mariana Soares</div>
-            <div style={{ fontSize:12, color:INK_MUTE }}>Editoria de Oportunidades · Publicado em {data}</div>
+            <div style={{ fontSize:14, fontWeight:700, color:INK }}>Mariano Soares</div>
+            <div style={{ fontSize:12, color:INK_MUTE }}>Editor de Oportunidades · Publicado em 26 de maio de 2026</div>
           </div>
         </div>
 
