@@ -85,7 +85,7 @@ export default function Page() {
         <div style={{ fontSize:18, lineHeight:1.75, color:INK_SOFT }}>
           
           <p style={{ marginBottom:20 }}>
-            <strong style={{ color:INK }}>Em fevereiro de 2026, uma operação silenciosa começou a se espalhar pelo Brasil.</strong> Sem propaganda na TV, sem outdoors caros, sem campanha em redes sociais. Apenas o boca a boca de pessoas comuns que descobriram uma forma diferente de ganhar dinheiro: virar ponto de coleta da <strong>Coletaki</strong>, uma nova rede que conecta marketplaces como Shopee, Mercado Livre e Pegaki a moradores que cedem um espaço da casa para armazenar pacotes.
+            <strong style={{ color:INK }}>Em fevereiro de 2026, uma operação silenciosa começou a se espalhar pelo Brasil.</strong> Sem propaganda na TV, sem outdoors caros, sem campanha em redes sociais. Apenas o boca a boca de pessoas comuns que descobriram uma forma diferente de ganhar dinheiro: virar ponto de coleta da <a href="https://coletaki.com" target="_blank" rel="noopener noreferrer" style={{ color:RED, textDecoration:'underline', fontWeight:700 }}>Coletaki</a>, uma nova rede que conecta marketplaces como Shopee, Mercado Livre e Pegaki a moradores que cedem um espaço da casa para armazenar pacotes.
           </p>
 
           <p style={{ marginBottom:20 }}>
