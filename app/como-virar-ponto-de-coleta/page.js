@@ -15,6 +15,7 @@ const GREEN = '#16a34a';
 const GREEN_SOFT = '#dcfce7';
 
 const IMAGEM_HERO = 'https://i.pinimg.com/736x/d5/c1/b5/d5c1b510c3c53e23a0ba06a44235ce93.jpg';
+const IMG_EDILEUZA = 'https://i.pinimg.com/736x/ba/cb/93/bacb93b2f5c282e4df2281c58498058f.jpg';
 const FOTO_AUTOR = 'https://media.licdn.com/dms/image/v2/D4D03AQEcZc_WGkcu7g/profile-displayphoto-scale_400_400/B4DZkRAeUnGkAg-/0/1756926962727?e=2147483647&v=beta&t=wuS4qcfeklxK1C8kXVF8qubvgpHUzu9rLo-BFViGai0';
 
 const MENU = ['Home','Matérias','Economia','Cidades','Oportunidades'];
@@ -118,8 +119,12 @@ export default function Page() {
             Cada ponto recebe os pacotes da sua microrregião em uma janela única: das <strong>08h às 14h</strong>, de segunda a sábado. Esse é o compromisso obrigatório do ponto — alguém precisa estar disponível no local nesse horário (pode ser o titular, cônjuge, familiar ou pessoa de confiança previamente cadastrada).
           </p>
 
-          <p style={{ marginBottom:30 }}>
+          <p style={{ marginBottom:20 }}>
             Durante esse período, o veículo parceiro passa duas a três vezes para deixar pacotes novos e recolher os que já têm rota de saída. Os clientes que escolheram a modalidade "pickup" também aparecem no endereço para retirar seus produtos diretamente — pagando antes pelo marketplace, sem dinheiro envolvido no ponto.
+          </p>
+
+          <p style={{ marginBottom:30 }}>
+            <strong style={{ color:INK }}>Todo o controle é feito pelo aplicativo da Coletaki.</strong> A cada pacote que chega, o ponto de coleta lê o QR Code com a câmera do celular pra dar entrada no sistema. Quando o pacote sai — seja recolhido pelo veículo parceiro ou retirado pelo próprio cliente — basta ler o QR Code novamente para registrar a saída. Esse processo simples garante rastreabilidade total e é o que define a remuneração mensal do ponto.
           </p>
 
           {/* BOX STATS */}
@@ -154,8 +159,24 @@ export default function Page() {
             No primeiro mês completo, ela faturou <strong>R$ 2.430</strong>. No segundo, com a movimentação aumentando, passou de <strong>R$ 3.800</strong>. Em datas como Black Friday e Natal, a remuneração saltou para mais de <strong>R$ 5.000</strong> em um único mês.
           </p>
 
-          <p style={{ marginBottom:30 }}>
+          <p style={{ marginBottom:24 }}>
             "O melhor é que eu não preciso sair de casa. Meu marido trabalha fora, mas eu fico aqui das 8 às 14 normalmente. Já estava em casa mesmo. Agora isso virou dinheiro entrando todo mês."
+          </p>
+
+          {/* Foto do espaco da Edileuza */}
+          <div style={{ marginBottom:30 }}>
+            <img src={IMG_EDILEUZA} alt="Espaço da Edileuza" style={{ width:'100%', borderRadius:6, display:'block' }} />
+            <p style={{ fontSize:12, color:INK_MUTE, marginTop:8, fontStyle:'italic', fontFamily:'Inter, sans-serif' }}>
+              O cantinho da casa da Edileuza, em uma área coberta de cerca de 2m², acomoda em média 30 a 50 pacotes por dia em rotação.
+            </p>
+          </div>
+
+          <p style={{ marginBottom:20 }}>
+            Sobre a operação no dia a dia, ela conta que a parte que mais a surpreendeu foi a praticidade do aplicativo:
+          </p>
+
+          <p style={{ marginBottom:30, paddingLeft:20, borderLeft:'3px solid '+LINE, fontStyle:'italic', color:INK }}>
+            "Eu achei que ia ser complicado, mas é só ler o QR Code do pacote com a câmera. Entra no app, dá entrada, e fica lá tudo organizado por código. Na hora que o motorista da Coletaki vem buscar, ou que o cliente passa pra retirar, eu leio o QR Code de novo e pronto. O sistema sabe exatamente o que entrou e o que saiu. Eu não preciso anotar nada em caderno, não preciso ficar somando pacote, nada. O app faz tudo."
           </p>
 
           {/* QUEM PODE */}
