@@ -55,12 +55,12 @@ export default function Page() {
       {/* HEADLINE */}
       <div style={{ maxWidth:760, margin:'0 auto', padding:'0 20px' }}>
         <h1 style={{ fontSize:46, fontWeight:900, lineHeight:1.1, letterSpacing:'-0.02em', margin:'0 0 18px' }}>
-          R$ 3 a R$ 6 mil por mês sem sair de casa e sem chefe?
+          R$ 6 mil por mês sem sair de casa e sem chefe?
           <br/>
-          <span style={{ color:RED }}>Coletaki chegou no Brasil em 2026 mudando vidas.</span>
+          <span style={{ color:RED }}>Coletaki chegou no Brasil.</span>
         </h1>
         <p style={{ fontSize:18, color:INK_SOFT, lineHeight:1.55, margin:'0 0 24px', fontStyle:'italic' }}>
-          Nova rede de pontos de coleta de marketplaces está transformando garagens, áreas de serviço e cômodos vazios em fonte de renda recorrente — sem CNPJ, sem vendedor, e sem precisar sair pra entregar nada.
+          Tem um cômodo, quartinho, garagem ou área de serviço com espaço sobrando? A Coletaki está cadastrando pontos de coleta em milhares de bairros pelo Brasil — moradores comuns estão usando esses espaços como fonte de renda recorrente, sem precisar entregar, vender ou abrir empresa. <strong>Descubra como funciona e até quanto você pode faturar.</strong>
         </p>
 
         {/* AUTOR */}
