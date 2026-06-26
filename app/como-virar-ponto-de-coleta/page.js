@@ -61,7 +61,7 @@ export default function Page() {
           <span style={{ color:RED }}>Coletaki chegou no Brasil.</span>
         </h1>
         <p style={{ fontSize:18, color:INK_SOFT, lineHeight:1.55, margin:'0 0 24px', fontStyle:'italic' }}>
-          Tem um cômodo, quartinho, garagem ou área de serviço com espaço sobrando? A Coletaki está cadastrando pontos de coleta em milhares de bairros pelo Brasil — moradores comuns estão usando esses espaços como fonte de renda recorrente, sem precisar entregar, vender ou abrir empresa. <strong>Descubra como funciona e até quanto você pode faturar.</strong>
+          Tem um cômodo, quartinho, garagem ou área de serviço com espaço sobrando? A <a href="https://coletaki.com" target="_blank" rel="noopener noreferrer" style={{ color:RED, textDecoration:'underline', fontWeight:700 }}>Coletaki</a> está cadastrando pontos de coleta em milhares de bairros pelo Brasil — moradores comuns estão usando esses espaços como fonte de renda recorrente, sem precisar entregar, vender ou abrir empresa. <strong>Descubra como funciona e até quanto você pode faturar.</strong>
         </p>
 
         {/* AUTOR */}
@@ -112,7 +112,7 @@ export default function Page() {
           </h2>
 
           <p style={{ marginBottom:20 }}>
-            A Coletaki opera com um modelo descentralizado de logística urbana. Em vez de manter armazéns gigantes e funcionários CLT, a empresa monta uma rede de pontos espalhados pelos bairros das cidades — geralmente em residências comuns, garagens ou pequenos comércios.
+            A <a href="https://coletaki.com" target="_blank" rel="noopener noreferrer" style={{ color:RED, textDecoration:'underline', fontWeight:700 }}>Coletaki</a> opera com um modelo descentralizado de logística urbana. Em vez de manter armazéns gigantes e funcionários CLT, a empresa monta uma rede de pontos espalhados pelos bairros das cidades — geralmente em residências comuns, garagens ou pequenos comércios.
           </p>
 
           <p style={{ marginBottom:20 }}>
@@ -124,7 +124,7 @@ export default function Page() {
           </p>
 
           <p style={{ marginBottom:30 }}>
-            <strong style={{ color:INK }}>Todo o controle é feito pelo aplicativo da Coletaki.</strong> A cada pacote que chega, o ponto de coleta lê o QR Code com a câmera do celular pra dar entrada no sistema. Quando o pacote sai — seja recolhido pelo veículo parceiro ou retirado pelo próprio cliente — basta ler o QR Code novamente para registrar a saída. Esse processo simples garante rastreabilidade total e é o que define a remuneração mensal do ponto.
+            <strong style={{ color:INK }}>Todo o controle é feito pelo aplicativo da <a href="https://coletaki.com" target="_blank" rel="noopener noreferrer" style={{ color:RED, textDecoration:'underline', fontWeight:700 }}>Coletaki</a>.</strong> A cada pacote que chega, o ponto de coleta lê o QR Code com a câmera do celular pra dar entrada no sistema. Quando o pacote sai — seja recolhido pelo veículo parceiro ou retirado pelo próprio cliente — basta ler o QR Code novamente para registrar a saída. Esse processo simples garante rastreabilidade total e é o que define a remuneração mensal do ponto.
           </p>
 
           {/* BOX STATS */}
@@ -148,7 +148,7 @@ export default function Page() {
           </h2>
 
           <p style={{ marginBottom:20 }}>
-            Edileuza Ramos, 47 anos, mãe de três filhos, foi uma das primeiras a se cadastrar quando a Coletaki abriu a operação no interior. Moradora de um bairro residencial, ela vinha tentando vender bolos pela vizinhança sem muito sucesso quando uma amiga mandou o link da empresa.
+            Edileuza Ramos, 47 anos, mãe de três filhos, foi uma das primeiras a se cadastrar quando a <a href="https://coletaki.com" target="_blank" rel="noopener noreferrer" style={{ color:RED, textDecoration:'underline', fontWeight:700 }}>Coletaki</a> abriu a operação no interior. Moradora de um bairro residencial, ela vinha tentando vender bolos pela vizinhança sem muito sucesso quando uma amiga mandou o link da empresa.
           </p>
 
           <p style={{ marginBottom:20 }}>
@@ -244,11 +244,11 @@ export default function Page() {
           </p>
 
           <p style={{ marginBottom:20 }}>
-            A solução da Coletaki é descentralizar: ao invés de um único depósito atendendo uma cidade inteira, dezenas de pontos pequenos atendem cada bairro. O entregador faz rotas curtas, com muitos pacotes, em pouco tempo. O marketplace economiza em frete. O cliente recebe mais rápido. E o morador que cedeu o espaço da casa fatura por isso.
+            A solução da <a href="https://coletaki.com" target="_blank" rel="noopener noreferrer" style={{ color:RED, textDecoration:'underline', fontWeight:700 }}>Coletaki</a> é descentralizar: ao invés de um único depósito atendendo uma cidade inteira, dezenas de pontos pequenos atendem cada bairro. O entregador faz rotas curtas, com muitos pacotes, em pouco tempo. O marketplace economiza em frete. O cliente recebe mais rápido. E o morador que cedeu o espaço da casa fatura por isso.
           </p>
 
           <p style={{ marginBottom:20 }}>
-            É um modelo que beneficia todos os elos — e por isso vem se espalhando rapidamente. A previsão da Coletaki é fechar 2026 com mais de 5.000 pontos ativos em 24 estados brasileiros.
+            É um modelo que beneficia todos os elos — e por isso vem se espalhando rapidamente. A previsão da <a href="https://coletaki.com" target="_blank" rel="noopener noreferrer" style={{ color:RED, textDecoration:'underline', fontWeight:700 }}>Coletaki</a> é fechar 2026 com mais de 5.000 pontos ativos em 24 estados brasileiros.
           </p>
 
           <p style={{ marginBottom:40 }}>
